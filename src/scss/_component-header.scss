@@ -32,15 +32,19 @@
   align-items: center;
   justify-content: center;
   padding: 8px;
+
+  &:hover {
+    .header__social-image {
+      fill: #000;
+    }
+  }
 }
 
 .header__social-image {
   fill: #fff;
   transition: 300ms fill;
 
-  &:hover {
-    fill: #000;
-  }
+
 }
 
 .header__working-time, .header__geolocation, .header__phone {

@@ -1324,13 +1324,13 @@ select:-webkit-autofill:focus {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 8px; }
+  .header__social-link:hover .header__social-image {
+    fill: #000; }
 
 .header__social-image {
   fill: #fff;
   -webkit-transition: 300ms fill;
   transition: 300ms fill; }
-  .header__social-image:hover {
-    fill: #000; }
 
 .header__working-time, .header__geolocation, .header__phone {
   font-size: 18px;

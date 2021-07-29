@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03d7f0c3-a1fa-4b92-829b-c90f74363e25" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Calibri.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Calibri.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/header/clock.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/header/geolokation.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/css/sourcemaps/styles.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/sourcemaps/styles.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/css/styles.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/styles.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/subset-Riffic-Bold.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/fonts/Riffic-Bold.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/subset-Riffic-Bold.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/fonts/Riffic-Bold.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/partials/components/header.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/components/header.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/_component-header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_component-header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/_fontface.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_fontface.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/_global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_global.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/_reset.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_reset.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +83,7 @@
       <workItem from="1627541291477" duration="48000" />
       <workItem from="1627541347320" duration="34000" />
       <workItem from="1627541389257" duration="534000" />
-      <workItem from="1627544038999" duration="8220000" />
+      <workItem from="1627544038999" duration="8343000" />
     </task>
     <servers />
   </component>
