@@ -10,16 +10,16 @@
   --max-container-width: 124rem;
   --content-padding: 2rem;
   --underline-color: #FF546C;
-  --circe: 'Riffic', sans-serif;
   --main-color: #fff;
   --secondary-color: #240956;
+  --riffic: 'Riffic', sans-serif;
+  --calibri: 'Calibri', sans-serif;
 }
 
 html {
   box-sizing: border-box;
   font-size: 10px;
   -webkit-text-size-adjust: 100%;
-  --riffic: 'Riffic', sans-serif;
   @include noHighlight();
 }
 

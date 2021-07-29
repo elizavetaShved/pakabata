@@ -23,29 +23,65 @@
 .header__social-wrapper {
   display: flex;
   align-items: center;
-  margin-right: 66px;
+  margin-right: 56px;
+  margin-left: -8px;
 }
 
 .header__social-link {
   display: flex;
   align-items: center;
   justify-content: center;
-
-  & + & {
-    margin-left: 16px;
-  }
+  padding: 8px;
 }
 
 .header__social-image {
   fill: #fff;
+  transition: 300ms fill;
 
   &:hover {
     fill: #000;
   }
 }
 
-.header__working-time {
+.header__working-time, .header__geolocation, .header__phone {
+  font-size: 18px;
+  line-height: 22px;
+}
 
+.header__working-time, .header__geolocation {
+  position: relative;
+  margin-right: 32px;
+
+  &:before {
+    position: absolute;
+    content: '';
+    top: 2px;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+}
+
+.header__working-time {
+  padding-left: 26px;
+
+  &:before {
+    width: 20px;
+    height: 20px;
+    background-image: url('../img/header/clock.svg');
+  }
+}
+
+.header__geolocation {
+  display: inline-block;
+  padding-left: 22px;
+
+  &:before {
+    width: 16px;
+    height: 16px;
+    background-image: url('../img/header/geolokation.svg');
+  }
 }
 
 .header__content-navigate {
@@ -68,6 +104,11 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   white-space: nowrap;
+  transition: 300ms color;
+
+  &:hover {
+    color: #000;
+  }
 }
 
 .header__content-navigate-btns {

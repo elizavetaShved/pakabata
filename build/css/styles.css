@@ -971,16 +971,16 @@ button.swiper-pagination-bullet {
   --max-container-width: 124rem;
   --content-padding: 2rem;
   --underline-color: #FF546C;
-  --circe: 'Riffic', sans-serif;
   --main-color: #fff;
-  --secondary-color: #240956; }
+  --secondary-color: #240956;
+  --riffic: 'Riffic', sans-serif;
+  --calibri: 'Calibri', sans-serif; }
 
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 10px;
   -webkit-text-size-adjust: 100%;
-  --riffic: 'Riffic', sans-serif;
   -webkit-tap-highlight-color: transparent; }
 
 body {
@@ -1209,6 +1209,12 @@ select:-webkit-autofill:focus {
   background: transparent;
   border: 2px solid #9267C2; }
 
+.gl-font-riffic {
+  font-family: var(--riffic); }
+
+.gl-font-calibri {
+  font-family: var(--calibri); }
+
 .container {
   width: 100%;
   max-width: 1520px;
@@ -1259,7 +1265,14 @@ select:-webkit-autofill:focus {
 
 @font-face {
   font-family: 'Riffic';
-  src: url("../assets/fonts/subset-Riffic-Bold.woff2") format("woff2"), url("../assets/fonts/subset-Riffic-Bold.woff") format("woff");
+  src: url("../assets/fonts/Riffic-Bold.woff2") format("woff2"), url("../assets/fonts/Riffic-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Calibri';
+  src: url("../assets/fonts/Calibri.woff2") format("woff2"), url("../assets/fonts/Calibri.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap; }
@@ -1297,7 +1310,8 @@ select:-webkit-autofill:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 66px; }
+  margin-right: 56px;
+  margin-left: -8px; }
 
 .header__social-link {
   display: -webkit-box;
@@ -1308,14 +1322,46 @@ select:-webkit-autofill:focus {
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
-  .header__social-link + .header__social-link {
-    margin-left: 16px; }
+          justify-content: center;
+  padding: 8px; }
 
 .header__social-image {
-  fill: #fff; }
+  fill: #fff;
+  -webkit-transition: 300ms fill;
+  transition: 300ms fill; }
   .header__social-image:hover {
     fill: #000; }
+
+.header__working-time, .header__geolocation, .header__phone {
+  font-size: 18px;
+  line-height: 22px; }
+
+.header__working-time, .header__geolocation {
+  position: relative;
+  margin-right: 32px; }
+  .header__working-time:before, .header__geolocation:before {
+    position: absolute;
+    content: '';
+    top: 2px;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; }
+
+.header__working-time {
+  padding-left: 26px; }
+  .header__working-time:before {
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/header/clock.svg"); }
+
+.header__geolocation {
+  display: inline-block;
+  padding-left: 22px; }
+  .header__geolocation:before {
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/header/geolokation.svg"); }
 
 .header__content-navigate {
   display: -webkit-box;
@@ -1344,7 +1390,11 @@ select:-webkit-autofill:focus {
   font-weight: bold;
   letter-spacing: 2px;
   text-transform: uppercase;
-  white-space: nowrap; }
+  white-space: nowrap;
+  -webkit-transition: 300ms color;
+  transition: 300ms color; }
+  .header__menu-item:hover {
+    color: #000; }
 
 .header__content-navigate-btns {
   display: -webkit-box;
