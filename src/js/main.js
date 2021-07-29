@@ -8,6 +8,7 @@ import phoneMask from './phoneMask';
 import onlyNumeric from './onlyNumeric';
 import fileUpload from './fileUpload';
 import componentBanner from './component-banner';
+import componentVideo from './component-video';
 
 document.addEventListener('DOMContentLoaded', function() {
     polyfills();
@@ -19,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
     onlyNumeric();
     fileUpload();
     componentBanner();
+    componentVideo();
 });
 
 window.addEventListener('load', function() {
