@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="03d7f0c3-a1fa-4b92-829b-c90f74363e25" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Riffic-Bold.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/fonts/Riffic-Bold.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/header/background.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/header/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/_component-header.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/_content.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/_fontface.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/css/sourcemaps/styles.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/sourcemaps/styles.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/css/styles.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/styles.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/icons/fb.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/icons/ok.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/icons/twitter.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/icons/vk.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/js/app.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/icons/fb.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/icons/ok.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/icons/twitter.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/icons/vk.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/data/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/data/index.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/partials/components/header.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/components/header.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/partials/layouts/layout.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/layouts/layout.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_global.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_layout.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/styles.scss" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1vwmus7nVqFez7alrPvdXkA0zKX" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/fonts" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.SCSS" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\web\pakabata\src\assets\fonts" />
+      <recent name="C:\web\pakabata\src\scss" />
+      <recent name="C:\web\pakabata\src\img\header" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\web\pakabata\src\assets\fonts" />
+      <recent name="C:\web\pakabata\src\scss" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="03d7f0c3-a1fa-4b92-829b-c90f74363e25" name="Default Changelist" comment="" />
+      <created>1627481750635</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1627481750635</updated>
+      <workItem from="1627481752652" duration="139000" />
+      <workItem from="1627481900137" duration="7100000" />
+      <workItem from="1627541291477" duration="48000" />
+      <workItem from="1627541347320" duration="34000" />
+      <workItem from="1627541389257" duration="534000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
