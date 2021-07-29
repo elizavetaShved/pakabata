@@ -1592,7 +1592,9 @@ select:-webkit-autofill:focus {
     background-position: center; }
 
 .video__link-text-wrapper {
-  background: url(https://im0-tub-ru.yandex.net/i?id=eab0e1b995f2c8861ea50c27af8601bb-l&n=13);
+  background-image: url("../img/video/font-background.png");
+  background-position: left -10px;
+  background-color: #D394FB;
   background-size: cover; }
 
 .video__link-text {
