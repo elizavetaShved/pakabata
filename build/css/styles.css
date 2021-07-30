@@ -1215,6 +1215,25 @@ select:-webkit-autofill:focus {
 .gl-font-calibri {
   font-family: var(--calibri); }
 
+.gl-title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.18em;
+  color: #FF546C;
+  margin-bottom: 18px;
+  text-transform: uppercase; }
+
+.gl-subtitle {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+  color: #240956;
+  margin-bottom: 60px; }
+
+.gl-nowrap {
+  white-space: nowrap; }
+
 .container {
   width: 100%;
   max-width: 1520px;
@@ -1783,3 +1802,62 @@ select:-webkit-autofill:focus {
 
 .bulletin-board__link-icon--cafe {
   background-image: url("../img/bulletin-board/cafe.svg"); }
+
+.about-park {
+  height: 2000px;
+  background-image: url("../img/about-park/background.svg");
+  background-position: top 200px left 50%;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.about-park__info-wrapper {
+  position: relative;
+  margin-bottom: 66px; }
+
+.about-park__info-content {
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 82px rgba(93, 16, 182, 0.1049);
+          box-shadow: 0 0 82px rgba(93, 16, 182, 0.1049);
+  border-radius: 20px;
+  padding: 82px 98px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 100px; }
+
+.about-park__info-caption-number-wrapper {
+  background-image: url("../img/about-park/mask-text-1.svg");
+  background-color: #5215AA;
+  background-size: cover;
+  margin-bottom: 8px; }
+
+.about-park__info-caption-number {
+  color: #000;
+  background: #fff;
+  mix-blend-mode: lighten;
+  font-weight: bold;
+  font-size: 70px; }
+
+.about-park__info-caption-text {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 38px;
+  color: #5215AA; }
+
+.about-park__info-value {
+  font-size: 18px;
+  line-height: 22px;
+  color: #240956; }
+
+.about-park__funny-guy-image {
+  position: absolute;
+  content: '';
+  top: -110px;
+  right: 80px;
+  width: 366px;
+  height: 238px;
+  background-image: url("../img/about-park/funny-guy.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  z-index: -1; }

@@ -9,6 +9,7 @@ import onlyNumeric from './onlyNumeric';
 import fileUpload from './fileUpload';
 import componentBanner from './component-banner';
 import componentVideo from './component-video';
+import componentAboutPark from './componentAboutPark';
 
 document.addEventListener('DOMContentLoaded', function() {
     polyfills();
@@ -21,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
     fileUpload();
     componentBanner();
     componentVideo();
+    componentAboutPark();
 });
 
 window.addEventListener('load', function() {
