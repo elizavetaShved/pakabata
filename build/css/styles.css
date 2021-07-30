@@ -1803,11 +1803,17 @@ select:-webkit-autofill:focus {
   background-image: url("../img/bulletin-board/cafe.svg"); }
 
 .about-park {
-  background-image: url("../img/about-park/qwe.svg");
-  background-position: bottom;
-  background-repeat: no-repeat;
   padding-bottom: 90px;
-  margin-bottom: 120px; }
+  margin-bottom: 120px;
+  position: relative; }
+
+.about-park__blob {
+  position: absolute;
+  top: 190px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 1275px;
+  width: 100vw; }
 
 .about-park__info-wrapper {
   position: relative;
