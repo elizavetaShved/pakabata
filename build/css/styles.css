@@ -1661,3 +1661,126 @@ select:-webkit-autofill:focus {
   fill: #fff;
   -webkit-transition: 300ms fill;
   transition: 300ms fill; }
+
+.bulletin-board {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 64px;
+  margin-bottom: 140px; }
+  @media only screen and (max-width: 1400px) {
+    .bulletin-board {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 40px; } }
+  @media only screen and (max-width: 1024px) {
+    .bulletin-board {
+      grid-template-columns: 1fr; } }
+
+.bulletin-board__link-container {
+  position: relative; }
+  .bulletin-board__link-container:hover .bulletin-board__link-content:before {
+    opacity: 1; }
+  .bulletin-board__link-container:hover .bulletin-board__back-background-item:nth-child(1) {
+    top: -20px; }
+  .bulletin-board__link-container:hover .bulletin-board__back-background-item:nth-child(2) {
+    right: -28px; }
+  .bulletin-board__link-container:hover .bulletin-board__back-background-item:nth-child(3) {
+    bottom: -20px; }
+  .bulletin-board__link-container:hover .bulletin-board__back-background-item:nth-child(4) {
+    bottom: -27px; }
+  .bulletin-board__link-container:hover .bulletin-board__back-background-item:nth-child(5) {
+    left: -38px; }
+
+.bulletin-board__link-content {
+  background: #fff;
+  -webkit-box-shadow: 2px 2px 8px rgba(93, 16, 182, 0.03), 4px 4px 50px rgba(93, 16, 182, 0.08);
+          box-shadow: 2px 2px 8px rgba(93, 16, 182, 0.03), 4px 4px 50px rgba(93, 16, 182, 0.08);
+  border-radius: 20px;
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 1;
+  overflow: hidden;
+  position: relative; }
+  .bulletin-board__link-content:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background: linear-gradient(102.1deg, #FFFEDE -28.56%, #F4D1D1 141.58%), linear-gradient(0deg, #F3EBEA, #F3EBEA), #FAF1CC;
+    -webkit-transition: opacity 500ms;
+    transition: opacity 500ms;
+    opacity: 0; }
+
+.bulletin-board__back-background-item {
+  position: absolute;
+  content: '';
+  z-index: -1;
+  -webkit-transition: 300ms top, 300ms right, 300ms bottom, 300ms left;
+  transition: 300ms top, 300ms right, 300ms bottom, 300ms left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  .bulletin-board__back-background-item:nth-child(1) {
+    width: 242px;
+    height: 120px;
+    top: 0;
+    left: 100px;
+    background-image: url("../img/bulletin-board/back-background-1.svg");
+    background-position: top; }
+  .bulletin-board__back-background-item:nth-child(2) {
+    width: 136px;
+    height: 152px;
+    top: -8px;
+    right: 0;
+    background-image: url("../img/bulletin-board/back-background-2.svg"); }
+  .bulletin-board__back-background-item:nth-child(3) {
+    width: 226px;
+    height: 118px;
+    bottom: 0;
+    left: 120px;
+    background-image: url("../img/bulletin-board/back-background-3.svg"); }
+  .bulletin-board__back-background-item:nth-child(4) {
+    width: 146px;
+    height: 130px;
+    bottom: 0;
+    left: 0;
+    background-image: url("../img/bulletin-board/back-background-4.svg");
+    background-position: bottom; }
+  .bulletin-board__back-background-item:nth-child(5) {
+    width: 108px;
+    height: 118px;
+    top: -18px;
+    left: 0;
+    background-image: url("../img/bulletin-board/back-background-5.svg"); }
+
+.bulletin-board__link-title {
+  font-weight: bold;
+  font-size: 24px;
+  color: #240956; }
+
+.bulletin-board__link-icon {
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center; }
+
+.bulletin-board__link-icon--holidays {
+  background-image: url("../img/bulletin-board/holidays.svg"); }
+
+.bulletin-board__link-icon--price {
+  background-image: url("../img/bulletin-board/price.svg"); }
+
+.bulletin-board__link-icon--cafe {
+  background-image: url("../img/bulletin-board/cafe.svg"); }
