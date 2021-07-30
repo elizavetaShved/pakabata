@@ -1,4 +1,4 @@
-<section class="about-park">
+<section class="about-park" id="about-park-host">
   <div class="container">
     <div class="gl-title">О парке</div>
     <div class="gl-subtitle">Проведите праздник в ПАКАБАТА</div>
@@ -64,7 +64,99 @@
         </div>
       </div>
 
-      <div class="about-park__funny-guy-image"></div>
+      <div class="about-park__dude-image"></div>
+    </div>
+
+    <div class="about-park__slider-block-wrapper">
+      <div class="about-park__slider">
+        <div class="about-park__swiper-container swiper-container">
+          <div class="about-park__swiper-wrapper swiper-wrapper">
+            <div class="about-park__swiper-slide swiper-slide">
+              <div class="about-park__swiper-slide-card">
+                <img src="img/about-park/slide-1.jpg" alt="slide" class="about-park__swiper-slide-image"
+                     data-sizes="auto">
+              </div>
+            </div>
+            <div class="about-park__swiper-slide swiper-slide">
+              <div class="about-park__swiper-slide-card">
+                <img src="img/about-park/slide-1.jpg" alt="slide" class="about-park__swiper-slide-image"
+                     data-sizes="auto">
+              </div>
+            </div>
+            <div class="about-park__swiper-slide swiper-slide">
+              <div class="about-park__swiper-slide-card">
+                <img src="img/about-park/slide-1.jpg" alt="slide" class="about-park__swiper-slide-image"
+                     data-sizes="auto">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button type="button" class="about-park__btn-prev"></button>
+        <button type="button" class="about-park__btn-next"></button>
+      </div>
+
+      <div class="about-park__navigation-wrapper">
+        <div class="about-park__navigation-caption">
+          Бомбезные аттракционы
+        </div>
+        <ul class="about-park__navigation-btns-list">
+          <li class="about-park__navigation-btn-wrapper about-park__navigation-btn-wrapper--active">
+            <button type="button" class="about-park__navigation-btn">
+              Батуты
+            </button>
+          </li>
+          <li class="about-park__navigation-btn-wrapper about-park__navigation-btn-wrapper--active">
+            <button type="button" class="about-park__navigation-btn">
+              Тарзанки
+            </button>
+          </li>
+          <li class="about-park__navigation-btn-wrapper about-park__navigation-btn-wrapper--active">
+            <button type="button" class="about-park__navigation-btn">
+              Тюбинги
+            </button>
+          </li>
+          <li class="about-park__navigation-btn-wrapper about-park__navigation-btn-wrapper--active">
+            <button type="button" class="about-park__navigation-btn">
+              Горки с виражами
+            </button>
+          </li>
+          <li class="about-park__navigation-btn-wrapper about-park__navigation-btn-wrapper--active">
+            <button type="button" class="about-park__navigation-btn">
+              Высотный лабиринт
+            </button>
+          </li>
+          <li class="about-park__navigation-btn-wrapper about-park__navigation-btn-wrapper--active">
+            <button type="button" class="about-park__navigation-btn">
+              Комната с видеопроекцией
+            </button>
+          </li>
+          <li class="about-park__navigation-btn-wrapper about-park__navigation-btn-wrapper--active">
+            <button type="button" class="about-park__navigation-btn">
+              Игровая площадка для малышей от 0 до 5 лет
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <button type="button" class="about-park__btn-video-wrapper">
+      <span class="about-park__btn-video-top-caption gl-font-calibri">Посмотрите</span>
+      <span class="about-park__btn-video-bottom-caption">3Д-тур</span>
+    </button>
+
+    <div class="gl-video-modal-container about-park__modal-container">
+      <div class="gl-video-modal-wrapper">
+        <video autoplay muted loop class="gl-video-modal-video-wrapper">
+          <source src="assets/mp4/video.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <button type="button" class="gl-video-close-btn about-park__close-btn">
+        <svg width="24" height="24" aria-hidden="true" class="gl-video-close-icon">
+          <use xlink:href="#close"></use>
+        </svg>
+      </button>
     </div>
   </div>
 </section>

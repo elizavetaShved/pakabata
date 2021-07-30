@@ -8,7 +8,7 @@
 
 :root {
   --max-container-width: 124rem;
-  --content-padding: 2rem;
+  --content-padding: 6rem;
   --underline-color: #FF546C;
   --main-color: #fff;
   --secondary-color: #240956;
@@ -212,7 +212,7 @@ td, th {
 
 ::selection {
   color: white;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
 }
 
 input:-webkit-autofill,

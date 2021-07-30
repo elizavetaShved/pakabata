@@ -969,7 +969,7 @@ button.swiper-pagination-bullet {
 
 :root {
   --max-container-width: 124rem;
-  --content-padding: 2rem;
+  --content-padding: 6rem;
   --underline-color: #FF546C;
   --main-color: #fff;
   --secondary-color: #240956;
@@ -1175,11 +1175,11 @@ td, th {
 
 ::-moz-selection {
   color: white;
-  background-color: var(--primary-color); }
+  background-color: var(--secondary-color); }
 
 ::selection {
   color: white;
-  background-color: var(--primary-color); }
+  background-color: var(--secondary-color); }
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
@@ -1233,6 +1233,61 @@ select:-webkit-autofill:focus {
 
 .gl-nowrap {
   white-space: nowrap; }
+
+.gl-video-modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.64);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: 400ms opacity;
+  transition: 400ms opacity; }
+  .gl-video-modal-container.mod-show {
+    opacity: 1;
+    z-index: 2; }
+
+.gl-video-modal-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.gl-video-modal-video-wrapper {
+  width: 90%;
+  height: 80%;
+  overflow: hidden;
+  border-radius: 16px; }
+
+.gl-video-close-btn {
+  position: absolute;
+  content: '';
+  top: 30px;
+  right: 30px;
+  z-index: 2; }
+  .gl-video-close-btn:hover .gl-video-close-icon {
+    fill: #000; }
+
+.gl-video-close-icon {
+  fill: #fff;
+  -webkit-transition: 300ms fill;
+  transition: 300ms fill; }
 
 .container {
   width: 100%;
@@ -1556,11 +1611,11 @@ select:-webkit-autofill:focus {
 
 .banner__btn-prev {
   left: 44px;
-  background-image: url("../img/banner/arrow-left.svg"); }
+  background-image: url("../img/icons/arrow-left.svg"); }
 
 .banner__btn-next {
   right: 44px;
-  background-image: url("../img/banner/arrow-right.svg"); }
+  background-image: url("../img/icons/arrow-right.svg"); }
 
 .banner__pagination.swiper-pagination {
   bottom: 64px; }
@@ -1623,62 +1678,6 @@ select:-webkit-autofill:focus {
   font-size: 15px;
   letter-spacing: .18em;
   text-transform: uppercase; }
-
-.video__modal-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.64);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  z-index: -1;
-  opacity: 0;
-  -webkit-transition: 400ms opacity;
-  transition: 400ms opacity; }
-
-.video__modal-container--show {
-  opacity: 1;
-  z-index: 2; }
-
-.video__modal-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-
-.video__modal-video-wrapper {
-  width: 90%;
-  height: 80%;
-  overflow: hidden;
-  border-radius: 16px; }
-
-.video__close-btn {
-  position: absolute;
-  content: '';
-  top: 30px;
-  right: 30px;
-  z-index: 2; }
-  .video__close-btn:hover .video__close-icon {
-    fill: #000; }
-
-.video__close-icon {
-  fill: #fff;
-  -webkit-transition: 300ms fill;
-  transition: 300ms fill; }
 
 .bulletin-board {
   width: 100%;
@@ -1804,11 +1803,11 @@ select:-webkit-autofill:focus {
   background-image: url("../img/bulletin-board/cafe.svg"); }
 
 .about-park {
-  height: 2000px;
-  background-image: url("../img/about-park/background.svg");
-  background-position: top 200px left 50%;
+  background-image: url("../img/about-park/qwe.svg");
+  background-position: bottom;
   background-repeat: no-repeat;
-  background-size: cover; }
+  padding-bottom: 90px;
+  margin-bottom: 120px; }
 
 .about-park__info-wrapper {
   position: relative;
@@ -1849,15 +1848,168 @@ select:-webkit-autofill:focus {
   line-height: 22px;
   color: #240956; }
 
-.about-park__funny-guy-image {
+.about-park__dude-image {
   position: absolute;
   content: '';
   top: -110px;
   right: 80px;
   width: 366px;
   height: 238px;
-  background-image: url("../img/about-park/funny-guy.png");
+  background-image: url("../img/about-park/dude.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   z-index: -1; }
+
+.about-park__slider-block-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 30px; }
+
+.about-park__slider {
+  position: relative;
+  width: 68%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 68%;
+          flex: 1 1 68%; }
+
+.about-park__swiper-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden; }
+
+.about-park__swiper-slide-card {
+  position: relative; }
+  .about-park__swiper-slide-card:before {
+    content: '';
+    display: block;
+    width: 100%;
+    padding-bottom: 56.25%; }
+
+.about-park__swiper-slide-image {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0; }
+
+.about-park__btn-prev, .about-park__btn-next {
+  position: absolute;
+  content: '';
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 64px;
+  height: 70px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  z-index: 2; }
+
+.about-park__btn-prev {
+  left: -46px;
+  background-image: url("../img/icons/arrow-left.svg"); }
+
+.about-park__btn-next {
+  right: -46px;
+  background-image: url("../img/icons/arrow-right.svg"); }
+
+.about-park__navigation-wrapper {
+  margin-left: 130px; }
+
+.about-park__navigation-caption {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 54px; }
+
+.about-park__navigation-btns-list {
+  margin: -8px 0; }
+
+.about-park__navigation-btn-wrapper {
+  position: relative;
+  z-index: 2; }
+  .about-park__navigation-btn-wrapper + .about-park__navigation-btn-wrapper {
+    margin-top: 32px; }
+  .about-park__navigation-btn-wrapper:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    -webkit-transform: translate(-25%, -25%);
+            transform: translate(-25%, -25%);
+    width: 26px;
+    height: 26px;
+    background-color: #FF546C;
+    border-radius: 100%;
+    z-index: -1;
+    -webkit-transition: 400ms width, 400ms height, 400ms -webkit-transform;
+    transition: 400ms width, 400ms height, 400ms -webkit-transform;
+    transition: 400ms width, 400ms height, 400ms transform;
+    transition: 400ms width, 400ms height, 400ms transform, 400ms -webkit-transform; }
+  .about-park__navigation-btn-wrapper:after {
+    position: absolute;
+    content: '';
+    top: -10px;
+    left: -12px;
+    background-color: #fff;
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    opacity: 0;
+    -webkit-transition: 400ms opacity;
+    transition: 400ms opacity; }
+  .about-park__navigation-btn-wrapper.mod-active:before {
+    width: 52px;
+    height: 52px;
+    -webkit-transform: translate(-45%, -45%);
+            transform: translate(-45%, -45%); }
+  .about-park__navigation-btn-wrapper.mod-active:after {
+    opacity: 1; }
+  @media only screen and (max-width: 1600px) {
+    .about-park__navigation-btn-wrapper + .about-park__navigation-btn-wrapper {
+      margin-top: 16px; } }
+
+.about-park__navigation-btn {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  padding: 8px;
+  z-index: 2;
+  text-align: start; }
+
+.about-park__btn-video-wrapper {
+  height: 80px;
+  padding-left: 106px;
+  position: relative; }
+  .about-park__btn-video-wrapper:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    background-image: url("../img/about-park/btn-video.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; }
+
+.about-park__btn-video-top-caption {
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 4px;
+  display: block; }
+
+.about-park__btn-video-bottom-caption {
+  font-size: 24px;
+  line-height: 28px;
+  display: block; }

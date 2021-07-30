@@ -1,9 +1,9 @@
 .about-park {
-  height: 2000px;
-  background-image: url('../img/about-park/background.svg');
-  background-position: top 200px left 50%;
+  background-image: url('../img/about-park/qwe.svg');
+  background-position: bottom;
   background-repeat: no-repeat;
-  background-size: cover;
+  padding-bottom: 90px;
+  margin-bottom: 120px;
 }
 
 .about-park__info-wrapper {
@@ -42,6 +42,7 @@
   line-height: 28px;
   margin-bottom: 38px;
   color: #5215AA;
+
 }
 
 .about-park__info-value {
@@ -50,16 +51,194 @@
   color: #240956;
 }
 
-.about-park__funny-guy-image {
+.about-park__dude-image {
   position: absolute;
   content: '';
   top: -110px; // 134 в полый рост // todo выползацие чувака - либа "https://greensock.com/scrolltrigger/"
   right: 80px;
   width: 366px;
   height: 238px;
-  background-image: url('../img/about-park/funny-guy.png');
+  background-image: url('../img/about-park/dude.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   z-index: -1;
+}
+
+.about-park__slider-block-wrapper {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.about-park__slider {
+  position: relative;
+  width: 68%;
+  flex: 1 1 68%;
+}
+
+.about-park__swiper-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.about-park__swiper-slide-card {
+  position: relative;
+
+  &:before {
+    content: '';
+    display: block;
+    width: 100%;
+    padding-bottom: 56.25%;
+  }
+}
+
+.about-park__swiper-slide-image {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.about-park__btn-prev, .about-park__btn-next {
+  position: absolute;
+  content: '';
+  top: 50%;
+  transform: translateY(-50%);
+  width: 64px;
+  height: 70px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  z-index: 2;
+}
+
+.about-park__btn-prev {
+  left: -46px;
+  background-image: url('../img/icons/arrow-left.svg');
+}
+
+.about-park__btn-next {
+  right: -46px;
+  background-image: url('../img/icons/arrow-right.svg');
+}
+
+//
+
+.about-park__navigation-wrapper {
+  margin-left: 130px;
+}
+
+.about-park__navigation-caption {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 54px;
+}
+
+.about-park__navigation-btns-list {
+  margin: -8px 0;
+}
+
+.about-park__navigation-btn-wrapper {
+  position: relative;
+  z-index: 2;
+
+  & + & {
+    margin-top: 32px;
+  }
+
+  &:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    transform: translate(-25%, -25%);
+    width: 26px;
+    height: 26px;
+    background-color: #FF546C;
+    border-radius: 100%;
+    z-index: -1;
+    transition: 400ms width, 400ms height, 400ms transform;
+  }
+
+  &:after {
+    position: absolute;
+    content: '';
+    top: -10px;
+    left: -12px;
+    background-color: #fff;
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    opacity: 0;
+    transition: 400ms opacity;
+  }
+
+  &.mod-active {
+    &:before {
+      width: 52px;
+      height: 52px;
+      transform: translate(-45%, -45%);
+    }
+
+    &:after {
+      opacity: 1;
+    }
+  }
+
+  @include breakpoint(large-desktop) {
+    & + & {
+      margin-top: 16px;
+    }
+  }
+}
+
+.about-park__navigation-btn {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  padding: 8px;
+  z-index: 2;
+  text-align: start;
+}
+
+//
+
+.about-park__btn-video-wrapper {
+  height: 80px;
+  padding-left: 106px;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    background-image: url('../img/about-park/btn-video.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+}
+
+.about-park__btn-video-top-caption {
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.about-park__btn-video-bottom-caption {
+  font-size: 24px;
+  line-height: 28px;
+  display: block;
 }

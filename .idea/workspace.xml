@@ -2,26 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03d7f0c3-a1fa-4b92-829b-c90f74363e25" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/img/about-park/background.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/about-park/funny-guy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/about-park/mask-text-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/about-park/mask-text-2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/componentAboutPark.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/partials/components/component-about-park.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/_component-about-park.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/about-park/btn-video.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/about-park/qwe.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/about-park/slide-1.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/css/sourcemaps/styles.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/sourcemaps/styles.min.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/css/styles.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/styles.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/banner/arrow-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/banner/arrow-right.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/about-park/funny-guy.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/about-park/dude.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/banner/arrow-left.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/icons/arrow-left.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/banner/arrow-right.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/icons/arrow-right.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/component-banner.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/componentBanner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/component-video.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/componentVideo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/componentAboutPark.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/componentAboutPark.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/partials/components/component-about-park.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/components/component-about-park.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/partials/components/component-banner.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/components/component-banner.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/partials/components/component-video.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/components/component-video.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/partials/components/components-bulletin-board.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/components/components-bulletin-board.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/partials/components/sprite.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/components/sprite.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_component-about-park.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_component-about-park.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_component-banner.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_component-banner.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_component-video.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_component-video.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/_global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_global.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_reset.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_reset.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +56,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/img/bulletin-board" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/img/about-park" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -61,18 +68,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\web\pakabata\src\img\about-park" />
       <recent name="C:\web\pakabata\src\img\bulletin-board" />
       <recent name="C:\web\pakabata\src\img\banner" />
       <recent name="C:\web\pakabata\src\img\header" />
       <recent name="C:\web\pakabata\src\assets\fonts" />
-      <recent name="C:\web\pakabata\src\scss" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\web\pakabata\src\img\icons" />
       <recent name="C:\web\pakabata\src\img\about-park" />
       <recent name="C:\web\pakabata\src\assets" />
       <recent name="C:\web\pakabata\src\img" />
       <recent name="C:\web\pakabata\src" />
-      <recent name="C:\web\pakabata\src\mp4" />
     </key>
   </component>
   <component name="RunManager">
@@ -105,7 +112,7 @@
       <workItem from="1627541291477" duration="48000" />
       <workItem from="1627541347320" duration="34000" />
       <workItem from="1627541389257" duration="534000" />
-      <workItem from="1627544038999" duration="39077000" />
+      <workItem from="1627544038999" duration="50943000" />
     </task>
     <servers />
   </component>

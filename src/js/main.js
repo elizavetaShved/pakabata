@@ -7,8 +7,8 @@ import customSelects from './customSelects';
 import phoneMask from './phoneMask';
 import onlyNumeric from './onlyNumeric';
 import fileUpload from './fileUpload';
-import componentBanner from './component-banner';
-import componentVideo from './component-video';
+import componentBanner from './componentBanner';
+import componentVideo from './componentVideo';
 import componentAboutPark from './componentAboutPark';
 
 document.addEventListener('DOMContentLoaded', function() {

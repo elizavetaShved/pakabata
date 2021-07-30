@@ -47,3 +47,55 @@
 .gl-nowrap {
   white-space: nowrap;
 }
+
+.gl-video-modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .64);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+  opacity: 0;
+  transition: 400ms opacity;
+
+  &.mod-show {
+    opacity: 1;
+    z-index: 2;
+  }
+}
+
+.gl-video-modal-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gl-video-modal-video-wrapper {
+  width: 90%;
+  height: 80%;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.gl-video-close-btn {
+  position: absolute;
+  content: '';
+  top: 30px;
+  right: 30px;
+  z-index: 2;
+
+  &:hover {
+    .gl-video-close-icon {
+      fill: #000;
+    }
+  }
+}
+
+.gl-video-close-icon {
+  fill: #fff;
+  transition: 300ms fill;
+}
