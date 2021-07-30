@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03d7f0c3-a1fa-4b92-829b-c90f74363e25" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/img/video/font-background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/icons/close.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/mp4/video.mp4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/css/sourcemaps/styles.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/sourcemaps/styles.min.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/css/styles.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/styles.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/component-video.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/component-video.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/partials/components/component-video.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/components/component-video.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/partials/components/sprite.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/components/sprite.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/_component-video.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_component-video.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +41,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/img/banner" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../arthall" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -53,11 +59,11 @@
       <recent name="C:\web\pakabata\src\scss" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\web\pakabata\src\img\video" />
       <recent name="C:\web\pakabata\src\img" />
+      <recent name="C:\web\pakabata\src" />
+      <recent name="C:\web\pakabata\src\mp4" />
+      <recent name="C:\web\pakabata\src\img\video" />
       <recent name="C:\web\pakabata\src\img\banner" />
-      <recent name="C:\web\pakabata\src\js" />
-      <recent name="C:\web\pakabata\src\assets\fonts" />
     </key>
   </component>
   <component name="RunManager">
@@ -90,7 +96,7 @@
       <workItem from="1627541291477" duration="48000" />
       <workItem from="1627541347320" duration="34000" />
       <workItem from="1627541389257" duration="534000" />
-      <workItem from="1627544038999" duration="24214000" />
+      <workItem from="1627544038999" duration="28372000" />
     </task>
     <servers />
   </component>

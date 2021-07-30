@@ -1,7 +1,22 @@
-<section class="video">
-  <a href="#" class="video__link">
-    <span class="video__link-text-wrapper">
-      <span class="video__link-text">видео о парке</span>
+<section class="video" id="video-host">
+  <button type="button" class="video__btn">
+    <span class="video__btn-text-wrapper">
+      <span class="video__btn-text">видео о парке</span>
     </span>
-  </a>
+  </button>
+
+  <div class="video__modal-container">
+    <div class="video__modal-wrapper">
+      <video autoplay muted loop class="video__modal-video-wrapper">
+<!--        todo перенести папку-->
+        <source src="img/mp4/video.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <button type="button" class="video__close-btn">
+      <svg width="24" height="24" aria-hidden="true" class="video__close-icon">
+        <use xlink:href="#close"></use>
+      </svg>
+    </button>
+  </div>
 </section>

@@ -1568,7 +1568,7 @@ select:-webkit-autofill:focus {
       -ms-flex-pack: center;
           justify-content: center; }
 
-.video__link {
+.video__btn {
   color: black !important;
   padding-left: 60px;
   position: relative;
@@ -1579,7 +1579,7 @@ select:-webkit-autofill:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  .video__link:before {
+  .video__btn:before {
     position: absolute;
     content: '';
     top: 0;
@@ -1591,13 +1591,13 @@ select:-webkit-autofill:focus {
     background-repeat: no-repeat;
     background-position: center; }
 
-.video__link-text-wrapper {
+.video__btn-text-wrapper {
   background-image: url("../img/video/font-background.png");
   background-position: left -10px;
   background-color: #D394FB;
   background-size: cover; }
 
-.video__link-text {
+.video__btn-text {
   color: #000;
   background: #fff;
   mix-blend-mode: lighten;
@@ -1605,3 +1605,59 @@ select:-webkit-autofill:focus {
   font-size: 15px;
   letter-spacing: .18em;
   text-transform: uppercase; }
+
+.video__modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.64);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: 400ms opacity;
+  transition: 400ms opacity; }
+
+.video__modal-container--show {
+  opacity: 1;
+  z-index: 2; }
+
+.video__modal-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.video__modal-video-wrapper {
+  width: 90%;
+  height: 80%;
+  overflow: hidden;
+  border-radius: 16px; }
+
+.video__close-btn {
+  position: absolute;
+  content: '';
+  top: 30px;
+  right: 30px;
+  z-index: 2; }
+  .video__close-btn:hover .video__close-icon {
+    fill: #000; }
+
+.video__close-icon {
+  fill: #fff;
+  -webkit-transition: 300ms fill;
+  transition: 300ms fill; }
