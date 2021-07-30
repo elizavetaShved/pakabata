@@ -2,25 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03d7f0c3-a1fa-4b92-829b-c90f74363e25" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/img/bulletin-board/back-background-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/bulletin-board/back-background-2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/bulletin-board/back-background-3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/bulletin-board/back-background-4.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/bulletin-board/back-background-5.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/bulletin-board/cafe.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/bulletin-board/holidays.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/bulletin-board/price.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/partials/components/components-bulletin-board.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/_components-bulletin-board.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/css/sourcemaps/styles.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/sourcemaps/styles.min.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/css/styles.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/styles.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/mp4/video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/mp4/video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/partials/components/component-banner.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/components/component-banner.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/partials/components/component-video.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/components/component-video.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_component-banner.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_component-banner.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +93,7 @@
       <workItem from="1627541291477" duration="48000" />
       <workItem from="1627541347320" duration="34000" />
       <workItem from="1627541389257" duration="534000" />
-      <workItem from="1627544038999" duration="34269000" />
+      <workItem from="1627544038999" duration="34618000" />
     </task>
     <servers />
   </component>
