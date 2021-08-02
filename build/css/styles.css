@@ -1550,19 +1550,19 @@ select:-webkit-autofill:focus {
       -ms-flex-align: center;
           align-items: center; }
 
-.gl-input-number-value-wrapper {
+.gl-input-number-value {
   font-size: 14px;
   border: 1px solid #FF546C;
   border-radius: 34px;
   margin: 0 8px;
-  width: 42px; }
-
-.gl-input-number-value {
+  width: 42px;
   display: block;
   padding: 0 16px; }
 
 .gl-input-number-btn {
   display: block; }
+  .gl-input-number-btn svg {
+    fill: var(--secondary-color); }
 
 .gl-slider-block-wrapper {
   display: -webkit-box;

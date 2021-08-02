@@ -119,19 +119,20 @@
   align-items: center;
 }
 
-.gl-input-number-value-wrapper {
+.gl-input-number-value {
   font-size: 14px;
   border: 1px solid #FF546C;
   border-radius: 34px;
   margin: 0 8px;
   width: 42px; // todo высчитывать ширину через JS
-}
-
-.gl-input-number-value {
   display: block;
   padding: 0 16px;
 }
 
 .gl-input-number-btn {
   display: block;
+
+  svg {
+    fill: var(--secondary-color)
+  }
 }

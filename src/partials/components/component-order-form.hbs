@@ -26,16 +26,14 @@
       <div class="gl-input-wrapper gl-input-number-wrapper gl-font-calibri">
         <div class="gl-input-number-text">Детей</div>
         <div class="gl-input-number-panel">
-          <button type="button" class="gl-input-number-btn">
-            <svg width="20" height="20" aria-hidden="true" class="gl-input-number-btn-minus-icon">
+          <button type="button" class="gl-input-number-btn" id="children-btn-minus">
+            <svg width="20" height="20" aria-hidden="true">
               <use xlink:href="#minus"></use>
             </svg>
           </button>
-          <label class="gl-input-number-value-wrapper">
-            <input type="number" class="gl-input-number-value" value="1">
-          </label>
-          <button type="button" class="gl-input-number-btn">
-            <svg width="20" height="20" aria-hidden="true" class="gl-input-number-btn-plus-icon">
+          <input type="number" class="gl-input-number-value" value="1" id="children-input">
+          <button type="button" class="gl-input-number-btn" id="children-btn-plus">
+            <svg width="20" height="20" aria-hidden="true">
               <use xlink:href="#plus"></use>
             </svg>
           </button>
@@ -56,9 +54,9 @@
     </div>
   </div>
 
-  <!--      <div class="gl-datepicker-container">-->
-  <!--        <label class="gl-datepicker-wrapper" >-->
-  <!--          <input type="text" class="gl-datepicker" placeholder="Дата мероприятия" readonly>-->
-  <!--        </label>-->
-  <!--      </div>-->
+<!--  <div class="gl-datepicker-container">-->
+<!--    <label class="gl-datepicker-wrapper">-->
+<!--      <input type="text" class="gl-datepicker" placeholder="Дата мероприятия" readonly>-->
+<!--    </label>-->
+<!--  </div>-->
 </form>
