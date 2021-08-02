@@ -16,9 +16,8 @@
     border-radius: 10px;
     top: -26px !important;
     left: 88px !important;
-    width: 338px !important;
-    height: min-content !important;
-    padding: 26px 28px !important;
+    padding: 26px 16px !important;
+    box-shadow: 0 0 82px rgba(93, 16, 182, 0.1049);
   }
 
   .datepicker-switch {
@@ -76,5 +75,30 @@
     &:before {
       background-image: url('../img/common/arrows/mark-right.svg');
     }
+  }
+
+  .datepicker td, .datepicker th {
+    text-align: center;
+    width: 40px !important;
+    height: 32px !important;
+    border-radius: 4px;
+    border: 0;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--secondary-color);
+
+    &:nth-child(6), &:nth-child(7) {
+      color: var(--third-color);
+    }
+  }
+
+  .datepicker table tr td.active,
+  .datepicker table tr td.active.disabled,
+  .datepicker table tr td.active.disabled:hover,
+  .datepicker table tr td.active:hover {
+    text-shadow: none;
+    background: var(--third-color);
+    border-radius: 100%;
+    color: #fff;
   }
 }

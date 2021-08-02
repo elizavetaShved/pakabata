@@ -1497,30 +1497,30 @@ select:-webkit-autofill:focus {
   .gl-input-wrapper + .gl-input-wrapper {
     margin-top: 8px; }
 
-.gl-input::-webkit-input-placeholder {
+.gl-input {
   font-size: 16px;
   line-height: 22px;
   color: var(--secondary-color); }
-
-.gl-input::-moz-placeholder {
-  font-size: 16px;
-  line-height: 22px;
-  color: var(--secondary-color); }
-
-.gl-input:-ms-input-placeholder {
-  font-size: 16px;
-  line-height: 22px;
-  color: var(--secondary-color); }
-
-.gl-input::-ms-input-placeholder {
-  font-size: 16px;
-  line-height: 22px;
-  color: var(--secondary-color); }
-
-.gl-input::placeholder {
-  font-size: 16px;
-  line-height: 22px;
-  color: var(--secondary-color); }
+  .gl-input::-webkit-input-placeholder {
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--secondary-color); }
+  .gl-input::-moz-placeholder {
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--secondary-color); }
+  .gl-input:-ms-input-placeholder {
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--secondary-color); }
+  .gl-input::-ms-input-placeholder {
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--secondary-color); }
+  .gl-input::placeholder {
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--secondary-color); }
 
 .gl-input-textarea {
   height: 80px; }
@@ -1735,6 +1735,84 @@ select:-webkit-autofill:focus {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center; }
+
+.gl-datepicker {
+  padding-left: 30px;
+  background-image: url("../img/common/calendar.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left top 50%;
+  cursor: pointer; }
+
+.gl-datepicker-container {
+  position: relative; }
+  .gl-datepicker-container .datepicker {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 10px;
+    top: -26px !important;
+    left: 88px !important;
+    padding: 26px 16px !important;
+    -webkit-box-shadow: 0 0 82px rgba(93, 16, 182, 0.1049);
+            box-shadow: 0 0 82px rgba(93, 16, 182, 0.1049); }
+  .gl-datepicker-container .datepicker-switch {
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: var(--riffic);
+    text-align: center;
+    margin-bottom: 20px; }
+  .gl-datepicker-container .datepicker-switch, .gl-datepicker-container .prev, .gl-datepicker-container .next {
+    padding-bottom: 20px; }
+  .gl-datepicker-container .prev, .gl-datepicker-container .next {
+    content: '';
+    position: relative;
+    width: 20px;
+    height: 20px;
+    cursor: pointer; }
+    .gl-datepicker-container .prev:after, .gl-datepicker-container .next:after {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      top: 0;
+      left: 0;
+      z-index: 1; }
+    .gl-datepicker-container .prev:before, .gl-datepicker-container .next:before {
+      position: absolute;
+      content: '';
+      width: 20px;
+      height: 20px;
+      top: 0;
+      right: 0;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      z-index: 2; }
+  .gl-datepicker-container .prev:before {
+    background-image: url("../img/common/arrows/mark-left.svg"); }
+  .gl-datepicker-container .next:before {
+    background-image: url("../img/common/arrows/mark-right.svg"); }
+  .gl-datepicker-container .datepicker td, .gl-datepicker-container .datepicker th {
+    text-align: center;
+    width: 40px !important;
+    height: 32px !important;
+    border-radius: 4px;
+    border: 0;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--secondary-color); }
+    .gl-datepicker-container .datepicker td:nth-child(6), .gl-datepicker-container .datepicker td:nth-child(7), .gl-datepicker-container .datepicker th:nth-child(6), .gl-datepicker-container .datepicker th:nth-child(7) {
+      color: var(--third-color); }
+  .gl-datepicker-container .datepicker table tr td.active,
+  .gl-datepicker-container .datepicker table tr td.active.disabled,
+  .gl-datepicker-container .datepicker table tr td.active.disabled:hover,
+  .gl-datepicker-container .datepicker table tr td.active:hover {
+    text-shadow: none;
+    background: var(--third-color);
+    border-radius: 100%;
+    color: #fff; }
 
 .header__container {
   margin-top: 20px;
