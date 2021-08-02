@@ -1976,22 +1976,24 @@ select:-webkit-autofill:focus {
   .about-park__navigation-btn-wrapper:after {
     position: absolute;
     content: '';
-    top: -10px;
-    left: -12px;
+    top: 0;
+    left: 0;
     background-color: #fff;
     width: 6px;
     height: 6px;
     border-radius: 100%;
     opacity: 0;
-    -webkit-transition: 1000ms opacity;
-    transition: 1000ms opacity; }
+    -webkit-transition: 500ms opacity, 500ms top, 500ms left;
+    transition: 500ms opacity, 500ms top, 500ms left; }
   .about-park__navigation-btn-wrapper.mod-active:before {
     width: 52px;
     height: 52px;
     -webkit-transform: translate(-45%, -45%);
             transform: translate(-45%, -45%); }
   .about-park__navigation-btn-wrapper.mod-active:after {
-    opacity: 1; }
+    opacity: 1;
+    top: -10px;
+    left: -12px; }
   @media only screen and (max-width: 1600px) {
     .about-park__navigation-btn-wrapper + .about-park__navigation-btn-wrapper {
       margin-top: 16px; } }
@@ -2031,7 +2033,7 @@ select:-webkit-autofill:focus {
   line-height: 28px;
   display: block; }
 
-.holidays {
+.holidays__content-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2089,9 +2091,6 @@ select:-webkit-autofill:focus {
   height: 554px;
   margin-bottom: 60px; }
 
-.holidays__order {
-  margin-left: 30px; }
-
 .holidays__main-link-icon.mod-menu {
   background-image: url("../img/holidays/menu.svg"); }
 
@@ -2125,3 +2124,22 @@ select:-webkit-autofill:focus {
 
 .holidays__back-background-wrapper .gl-main-link-back-item:nth-child(5) {
   display: none; }
+
+.holidays__order {
+  margin-left: 30px;
+  padding: 46px 42px;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content; }
+
+.holidays__order-title {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 28px;
+  margin-bottom: 30px;
+  color: var(--secondary-color); }
+
+.holidays__order-subtitle {
+  color: var(--secondary-color);
+  opacity: 0.3;
+  margin-bottom: 14px; }

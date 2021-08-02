@@ -1,4 +1,5 @@
 import { Navigation, Swiper, Mousewheel } from 'swiper';
+import commonMainSlider from './commonMainSlider';
 
 Swiper.use([Navigation]);
 Swiper.use([Mousewheel]);
@@ -14,13 +15,17 @@ export default function componentAboutPark() {
   const closeVideoBtn = hostElem.querySelector('.about-park__close-btn');
   const videoContainerElem = hostElem.querySelector('.about-park__modal-container');
 
+  const swiperContainer = hostElem.querySelector('.about-park__swiper-container');
+
+  commonMainSlider(swiperContainer, navigationBtnsArr, navigationBtnWrappersArr);
+
+  // вычисление высоты блока
   openVideoBtn.onclick = () => {
     videoContainerElem.classList.add('mod-show');
   }
 
   closeVideoBtn.onclick = () => {
     videoContainerElem.classList.remove('mod-show');
-
   }
 
   const setHeightInfoBlocks = () => {
@@ -35,29 +40,7 @@ export default function componentAboutPark() {
 
   setHeightInfoBlocks();
 
-  const swiper = new Swiper(hostElem.querySelector('.about-park__swiper-container'), {
-    cssMode: true,
-    navigation: {
-      nextEl: '.about-park__btn-next',
-      prevEl: '.about-park__btn-prev',
-    },
-    pagination: {
-      el: '.swiper-pagination',
-    },
-    mousewheel: true,
-    keyboard: true,
-  });
+  window.addEventListener('resize', setHeightInfoBlocks);
 
-  navigationBtnsArr.forEach((btnItem, btnIndex) => {
-    btnItem.onclick = () => {
-      navigationBtnWrappersArr.forEach((btnWrapperItem, btnWrapperIndex) => {
-        if (btnIndex === btnWrapperIndex) {
-          btnWrapperItem.classList.add('mod-active');
-        } else {
-          btnWrapperItem.classList.remove('mod-active');
-        }
-      })
-      swiper.slideTo(btnIndex);
-    }
-  })
+  // < вычисление высоты блока
 }

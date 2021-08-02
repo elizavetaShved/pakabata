@@ -112,14 +112,14 @@
   &:after {
     position: absolute;
     content: '';
-    top: -10px;
-    left: -12px;
+    top: 0;
+    left: 0;
     background-color: #fff;
     width: 6px;
     height: 6px;
     border-radius: 100%;
     opacity: 0;
-    transition: 1000ms opacity;
+    transition: 500ms opacity, 500ms top, 500ms left;
   }
 
   &.mod-active {
@@ -131,6 +131,8 @@
 
     &:after {
       opacity: 1;
+      top: -10px;
+      left: -12px;
     }
   }
 
