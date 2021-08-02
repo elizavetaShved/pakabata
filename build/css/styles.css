@@ -1564,6 +1564,51 @@ select:-webkit-autofill:focus {
   .gl-input-number-btn svg {
     fill: var(--secondary-color); }
 
+.order-form__checkbox-wrapper {
+  cursor: pointer; }
+  .order-form__checkbox-wrapper .order-form__checkbox {
+    display: none; }
+    .order-form__checkbox-wrapper .order-form__checkbox:checked + .order-form__checkbox-content .order-form__checkbox-content-icon {
+      background-image: url("../img/common/checked-checkbox.svg"); }
+
+.order-form__checkbox-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 12px;
+  opacity: 0.3;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+.order-form__checkbox-content-text {
+  font-size: 12px;
+  line-height: 14px;
+  color: #150533; }
+
+.order-form__checkbox-content-icon {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #240956;
+  border-radius: 5px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-size: 9px 9px;
+  background-position: center; }
+
+.order-form__btn-submit-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 16px; }
+
+.order-form__btn-submit {
+  min-width: 214px; }
+
 .gl-slider-block-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2285,9 +2330,6 @@ select:-webkit-autofill:focus {
   height: 554px;
   margin-bottom: 60px; }
 
-.holidays__main-link-icon.mod-menu {
-  background-image: url("../img/holidays/menu.svg"); }
-
 .holidays__main-link-container:hover .gl-main-link-back-item:nth-child(1) {
   top: -16px;
   left: -8px; }
@@ -2319,7 +2361,7 @@ select:-webkit-autofill:focus {
 .holidays__back-background-wrapper .gl-main-link-back-item:nth-child(5) {
   display: none; }
 
-.order-form__order {
+.order-form {
   margin-left: 30px;
   padding: 46px 42px;
   height: -webkit-min-content;
