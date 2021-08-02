@@ -9,9 +9,10 @@ export default function commonDatepicker(datepicker) {
       language: 'ru',
       autoclose: true
     })
-    .on('show', () => {
-      datepicker.classList.add('commonDatepicker-shown')
-    }).on('hide', () => {
-    datepicker.classList.remove('commonDatepicker-shown')
-  });
+    // .on('show', () => {
+    //   datepicker.classList.add('commonDatepicker-shown')
+    // })
+    // .on('hide', () => {
+    // datepicker.classList.remove('commonDatepicker-shown')
+  // });
 }

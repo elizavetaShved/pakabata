@@ -1736,10 +1736,6 @@ select:-webkit-autofill:focus {
   background-size: contain;
   background-position: center; }
 
-.gl-datepicker-container {
-  background: black;
-  display: block; }
-
 .header__container {
   margin-top: 20px;
   margin-bottom: 40px;
@@ -2262,7 +2258,10 @@ select:-webkit-autofill:focus {
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
-  width: 454px; }
+  width: 454px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 454px;
+          flex: 0 0 454px; }
 
 .order-form__order-title {
   font-weight: bold;

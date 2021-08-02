@@ -2,8 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03d7f0c3-a1fa-4b92-829b-c90f74363e25" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/js/componentOrderForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/componentOrderForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/_controls.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_controls.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/common/arrows/mark-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/common/arrows/mark-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/_press-center.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/css/sourcemaps/styles.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/sourcemaps/styles.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/css/styles.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/styles.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/icons/calendar.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/common/calendar.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/commonDatepicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/commonDatepicker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/partials/components/component-order-form.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/components/component-order-form.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/partials/components/sprite.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/components/sprite.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_common-datepicker.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_common-datepicker.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_component-order-form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_component-order-form.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/styles.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +53,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/scss" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -51,18 +65,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\web\pakabata\src\js" />
+      <recent name="C:\web\pakabata\src\scss" />
       <recent name="C:\web\pakabata\src\img\common\arrows" />
+      <recent name="C:\web\pakabata\src\js" />
       <recent name="C:\web\pakabata\src\img\holidays" />
       <recent name="C:\web\pakabata\src\img\about-park" />
-      <recent name="C:\web\pakabata\src\img\bulletin-board" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\web\pakabata\src\img\common" />
       <recent name="C:\web\pakabata\src\img\icons" />
       <recent name="C:\web\pakabata\src\img\common\arrows" />
       <recent name="C:\web\pakabata\src\img\common\silhouettes-background" />
       <recent name="C:\web\pakabata\src\img\about-park" />
-      <recent name="C:\web\pakabata\src\assets" />
     </key>
   </component>
   <component name="RunManager">
@@ -97,7 +111,7 @@
       <workItem from="1627541389257" duration="534000" />
       <workItem from="1627544038999" duration="50943000" />
       <workItem from="1627657744274" duration="1287000" />
-      <workItem from="1627885669101" duration="23297000" />
+      <workItem from="1627885669101" duration="27521000" />
     </task>
     <servers />
   </component>
