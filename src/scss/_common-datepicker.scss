@@ -9,6 +9,7 @@
 
 .gl-datepicker-container {
   position: relative;
+  cursor: pointer;
 
   .datepicker {
     position: absolute;
@@ -18,19 +19,21 @@
     left: 88px !important;
     padding: 26px 16px !important;
     box-shadow: 0 0 82px rgba(93, 16, 182, 0.1049);
-  }
+    width: 338px;
 
-  .datepicker-switch {
-    font-size: 14px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-family: var(--riffic);
-    text-align: center;
-    margin-bottom: 20px;
-  }
+    .datepicker-switch {
+      font-size: 14px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-family: var(--riffic);
+      text-align: center;
+      margin-bottom: 20px;
+      cursor: pointer !important;
+    }
 
-  .datepicker-switch, .prev, .next {
-    padding-bottom: 20px;
+    .datepicker-switch, .prev, .next {
+      padding-bottom: 20px;
+    }
   }
 
   .prev, .next {
@@ -79,8 +82,7 @@
 
   .datepicker td, .datepicker th {
     text-align: center;
-    width: 40px !important;
-    height: 32px !important;
+    padding: 4px 12px;
     border-radius: 4px;
     border: 0;
     font-size: 16px;
@@ -92,13 +94,41 @@
     }
   }
 
+  .datepicker th {
+    cursor: auto;
+  }
+
   .datepicker table tr td.active,
   .datepicker table tr td.active.disabled,
   .datepicker table tr td.active.disabled:hover,
-  .datepicker table tr td.active:hover {
+  .datepicker table tr td.active:hover,
+  .datepicker table tr td.day.focused, .datepicker table tr td.day:hover {
     text-shadow: none;
     background: var(--third-color);
     border-radius: 100%;
     color: #fff;
   }
+
+  .datepicker table tr td span.focused,
+  .datepicker table tr td span:hover {
+    text-shadow: none;
+    background: var(--third-color);
+    border-radius: 100%;
+    color: #fff;
+  }
+
+  .datepicker .next:hover, .datepicker .prev:hover {
+    cursor: pointer;
+  }
+}
+
+.datepicker table tr td span {
+  display: block;
+  width: 23%;
+  height: 54px;
+  line-height: 54px;
+  float: left;
+  padding: 2px;
+  cursor: pointer;
+  border-radius: 4px;
 }

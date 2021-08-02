@@ -10,7 +10,10 @@ export default function componentOrderForm() {
   const childrenPlusBtn = hostElem.querySelector('#children-btn-plus');
   const childrenInput = hostElem.querySelector('#children-input');
 
-  childrenInput.style.width = `${ INPUT_WIDTH }px`
+  const form = new FormData(hostElem);
+  // todo собрать форму
+
+  childrenInput.style.width = `${ INPUT_WIDTH }px`;
 
   childrenMinusBtn.onclick = () => {
     if (childrenInput.value >= MIN_LENGTH_CHILDREN) {

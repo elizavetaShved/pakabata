@@ -1788,7 +1788,8 @@ select:-webkit-autofill:focus {
   cursor: pointer; }
 
 .gl-datepicker-container {
-  position: relative; }
+  position: relative;
+  cursor: pointer; }
   .gl-datepicker-container .datepicker {
     position: absolute;
     background-color: #fff;
@@ -1797,16 +1798,18 @@ select:-webkit-autofill:focus {
     left: 88px !important;
     padding: 26px 16px !important;
     -webkit-box-shadow: 0 0 82px rgba(93, 16, 182, 0.1049);
-            box-shadow: 0 0 82px rgba(93, 16, 182, 0.1049); }
-  .gl-datepicker-container .datepicker-switch {
-    font-size: 14px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-family: var(--riffic);
-    text-align: center;
-    margin-bottom: 20px; }
-  .gl-datepicker-container .datepicker-switch, .gl-datepicker-container .prev, .gl-datepicker-container .next {
-    padding-bottom: 20px; }
+            box-shadow: 0 0 82px rgba(93, 16, 182, 0.1049);
+    width: 338px; }
+    .gl-datepicker-container .datepicker .datepicker-switch {
+      font-size: 14px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-family: var(--riffic);
+      text-align: center;
+      margin-bottom: 20px;
+      cursor: pointer !important; }
+    .gl-datepicker-container .datepicker .datepicker-switch, .gl-datepicker-container .datepicker .prev, .gl-datepicker-container .datepicker .next {
+      padding-bottom: 20px; }
   .gl-datepicker-container .prev, .gl-datepicker-container .next {
     content: '';
     position: relative;
@@ -1839,8 +1842,7 @@ select:-webkit-autofill:focus {
     background-image: url("../img/common/arrows/mark-right.svg"); }
   .gl-datepicker-container .datepicker td, .gl-datepicker-container .datepicker th {
     text-align: center;
-    width: 40px !important;
-    height: 32px !important;
+    padding: 4px 12px;
     border-radius: 4px;
     border: 0;
     font-size: 16px;
@@ -1848,14 +1850,35 @@ select:-webkit-autofill:focus {
     color: var(--secondary-color); }
     .gl-datepicker-container .datepicker td:nth-child(6), .gl-datepicker-container .datepicker td:nth-child(7), .gl-datepicker-container .datepicker th:nth-child(6), .gl-datepicker-container .datepicker th:nth-child(7) {
       color: var(--third-color); }
+  .gl-datepicker-container .datepicker th {
+    cursor: auto; }
   .gl-datepicker-container .datepicker table tr td.active,
   .gl-datepicker-container .datepicker table tr td.active.disabled,
   .gl-datepicker-container .datepicker table tr td.active.disabled:hover,
-  .gl-datepicker-container .datepicker table tr td.active:hover {
+  .gl-datepicker-container .datepicker table tr td.active:hover,
+  .gl-datepicker-container .datepicker table tr td.day.focused, .gl-datepicker-container .datepicker table tr td.day:hover {
     text-shadow: none;
     background: var(--third-color);
     border-radius: 100%;
     color: #fff; }
+  .gl-datepicker-container .datepicker table tr td span.focused,
+  .gl-datepicker-container .datepicker table tr td span:hover {
+    text-shadow: none;
+    background: var(--third-color);
+    border-radius: 100%;
+    color: #fff; }
+  .gl-datepicker-container .datepicker .next:hover, .gl-datepicker-container .datepicker .prev:hover {
+    cursor: pointer; }
+
+.datepicker table tr td span {
+  display: block;
+  width: 23%;
+  height: 54px;
+  line-height: 54px;
+  float: left;
+  padding: 2px;
+  cursor: pointer;
+  border-radius: 4px; }
 
 .header__container {
   margin-top: 20px;
