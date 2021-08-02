@@ -1730,11 +1730,9 @@ select:-webkit-autofill:focus {
   color: var(--secondary-color); }
 
 .gl-main-link-icon {
-  width: 50px;
   height: 50px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center; }
+  width: auto !important;
+  margin-left: 20px; }
 
 .gl-datepicker {
   padding-left: 30px;
@@ -2072,15 +2070,6 @@ select:-webkit-autofill:focus {
   @media only screen and (max-width: 1024px) {
     .bulletin-board {
       grid-template-columns: 1fr; } }
-
-.bulletin-board__main-link-icon.mod-holidays {
-  background-image: url("../img/bulletin-board/holidays.svg"); }
-
-.bulletin-board__main-link-icon.mod-price {
-  background-image: url("../img/bulletin-board/price.svg"); }
-
-.bulletin-board__main-link-icon.mod-cafe {
-  background-image: url("../img/bulletin-board/cafe.svg"); }
 
 .about-park {
   padding-bottom: 90px;

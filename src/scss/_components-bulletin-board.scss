@@ -11,17 +11,3 @@
     grid-template-columns: 1fr;
   }
 }
-
-.bulletin-board__main-link-icon {
-  &.mod-holidays {
-    background-image: url('../img/bulletin-board/holidays.svg');
-  }
-
-  &.mod-price {
-    background-image: url('../img/bulletin-board/price.svg')
-  }
-
-  &.mod-cafe {
-    background-image: url('../img/bulletin-board/cafe.svg')
-  }
-}
