@@ -2,23 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03d7f0c3-a1fa-4b92-829b-c90f74363e25" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/js/commonMainLinks.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/commonMainSlider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/componentsBulletinBoard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/icons/minus.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/icons/plus.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/commonDatepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/componentOrderForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/partials/components/component-order-form.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/_common-datepicker.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/_component-order-form.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/_controls.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/css/sourcemaps/styles.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/sourcemaps/styles.min.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/css/styles.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/styles.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/componentAboutPark.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/componentAboutPark.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/componentHolidays.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/componentHolidays.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/partials/components/component-holidays.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/components/component-holidays.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/partials/components/components-bulletin-board.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/components/components-bulletin-board.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/partials/components/sprite.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/components/sprite.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/_component-about-park.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_component-about-park.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/_component-holidays.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_component-holidays.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/_global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_global.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_main-link.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_common-main-link.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_reset.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_reset.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_slider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_common-slider.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/styles.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +64,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/img/common/arrows" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/js" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -66,17 +76,17 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\web\pakabata\src\js" />
       <recent name="C:\web\pakabata\src\img\common\arrows" />
       <recent name="C:\web\pakabata\src\img\holidays" />
       <recent name="C:\web\pakabata\src\img\about-park" />
       <recent name="C:\web\pakabata\src\img\bulletin-board" />
-      <recent name="C:\web\pakabata\src\img\banner" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\web\pakabata\src\img\icons" />
       <recent name="C:\web\pakabata\src\img\common\arrows" />
       <recent name="C:\web\pakabata\src\img\common\silhouettes-background" />
       <recent name="C:\web\pakabata\src\img\about-park" />
-      <recent name="C:\web\pakabata\src\img\icons" />
       <recent name="C:\web\pakabata\src\assets" />
     </key>
   </component>
@@ -112,7 +122,7 @@
       <workItem from="1627541389257" duration="534000" />
       <workItem from="1627544038999" duration="50943000" />
       <workItem from="1627657744274" duration="1287000" />
-      <workItem from="1627885669101" duration="13439000" />
+      <workItem from="1627885669101" duration="21318000" />
     </task>
     <servers />
   </component>

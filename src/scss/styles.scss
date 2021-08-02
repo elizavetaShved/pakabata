@@ -5,8 +5,10 @@
 @import 'layout';
 @import 'sizes';
 @import 'fontface';
-@import 'slider';
-@import 'main-link';
+@import 'controls';
+@import 'common-slider';
+@import 'common-main-link';
+@import 'common-datepicker';
 
 @import 'component-header';
 @import 'component-banner';
@@ -14,3 +16,4 @@
 @import 'components-bulletin-board';
 @import 'component-about-park';
 @import 'component-holidays';
+@import 'component-order-form';

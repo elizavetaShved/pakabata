@@ -1,0 +1,137 @@
+.gl-main-btn, .gl-transparent-btn {
+  padding: 18px 26px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.gl-main-btn {
+  background: linear-gradient(300.27deg, #FFE98B 9.78%, #D74479 88.27%);
+}
+
+.gl-transparent-btn {
+  background: transparent;
+  border: 2px solid #9267C2;
+}
+
+.gl-radio-btn-wrapper {
+  width: 100%;
+}
+
+// неактивная кнопка
+.gl-radio-btn-content-wrapper {
+  border: 1px dashed rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 300ms background-color;
+}
+
+.gl-radio-btn-content {
+  font-size: 16px;
+  line-height: 20px;
+  color: #000;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    background-color: #fff;
+    opacity: 0;
+  }
+}
+
+.gl-radio-btn-wrapper {
+  .gl-radio-btn {
+    display: none;
+
+    &:checked {
+      // активная кнопка
+      + .gl-radio-btn-content-wrapper {
+        border: none;
+        background-color: var(--third-color);
+
+        .gl-radio-btn-content {
+          color: #fff;
+          padding-left: 10px;
+
+          &:before {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+.gl-input-wrapper {
+  display: block;
+  background: #F7F7F7;
+  border-radius: 10px;
+  padding: 14px;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--secondary-color);
+
+  & + & {
+    margin-top: 8px;
+  }
+}
+
+.gl-input {
+  &::placeholder {
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--secondary-color);
+  }
+}
+
+.gl-input-textarea {
+  height: 80px;
+}
+
+.gl-input-number-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gl-input-number-text {
+  user-select: none;
+  flex-grow: 1;
+}
+
+.gl-input-number-panel {
+  display: flex;
+  align-items: center;
+}
+
+.gl-input-number-value-wrapper {
+  font-size: 14px;
+  border: 1px solid #FF546C;
+  border-radius: 34px;
+  margin: 0 8px;
+  width: 42px; // todo высчитывать ширину через JS
+}
+
+.gl-input-number-value {
+  display: block;
+  padding: 0 16px;
+}
+
+.gl-input-number-btn {
+  display: block;
+}

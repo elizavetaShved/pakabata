@@ -1,0 +1,64 @@
+<form class="gl-main-block order-form__order" id="order-form-host">
+  <div class="order-form__order-title">
+    Закажите праздник
+  </div>
+
+  <div class="order-form__place-wrapper">
+    <div class="order-form__order-subtitle gl-font-calibri">
+      Выберите место проведения
+    </div>
+    <div class="order-form__radio-btns-list">
+      <label class="gl-radio-btn-wrapper">
+        <input type="radio" class="gl-radio-btn" name="place-holiday" checked>
+        <span class="gl-radio-btn-content-wrapper gl-font-calibri">
+          <span class="gl-radio-btn-content">Банкетный домик</span>
+        </span>
+      </label>
+      <label class="gl-radio-btn-wrapper">
+        <input type="radio" class="gl-radio-btn" name="place-holiday">
+        <span class="gl-radio-btn-content-wrapper gl-font-calibri">
+          <span class="gl-radio-btn-content">Кафе</span>
+        </span>
+      </label>
+    </div>
+
+    <div class="order-form__inputs-text-list">
+      <div class="gl-input-wrapper gl-input-number-wrapper gl-font-calibri">
+        <div class="gl-input-number-text">Детей</div>
+        <div class="gl-input-number-panel">
+          <button type="button" class="gl-input-number-btn">
+            <svg width="20" height="20" aria-hidden="true" class="gl-input-number-btn-minus-icon">
+              <use xlink:href="#minus"></use>
+            </svg>
+          </button>
+          <label class="gl-input-number-value-wrapper">
+            <input type="number" class="gl-input-number-value" value="1">
+          </label>
+          <button type="button" class="gl-input-number-btn">
+            <svg width="20" height="20" aria-hidden="true" class="gl-input-number-btn-plus-icon">
+              <use xlink:href="#plus"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <label class="gl-input-wrapper gl-font-calibri">
+        <input type="text" class="gl-input" placeholder="Ваше ФИО">
+      </label>
+
+      <label class="gl-input-wrapper gl-font-calibri">
+        <input type="text" class="gl-input" placeholder="Телефон">
+      </label>
+
+      <label class="gl-input-wrapper gl-font-calibri">
+        <textarea class="gl-input gl-input-textarea" placeholder="Комментарий"></textarea>
+      </label>
+    </div>
+  </div>
+
+  <!--      <div class="gl-datepicker-container">-->
+  <!--        <label class="gl-datepicker-wrapper" >-->
+  <!--          <input type="text" class="gl-datepicker" placeholder="Дата мероприятия" readonly>-->
+  <!--        </label>-->
+  <!--      </div>-->
+</form>

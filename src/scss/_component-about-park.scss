@@ -103,7 +103,7 @@
     transform: translate(-25%, -25%);
     width: 26px;
     height: 26px;
-    background-color: #FF546C;
+    background-color: var(--third-color);
     border-radius: 100%;
     z-index: -1;
     transition: 400ms width, 400ms height, 400ms transform;

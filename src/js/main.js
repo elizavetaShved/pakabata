@@ -12,6 +12,7 @@ import componentVideo from './componentVideo';
 import componentAboutPark from './componentAboutPark';
 import componentHolidays from './componentHolidays';
 import componentsBulletinBoard from './componentsBulletinBoard';
+import componentOrderForm from './componentOrderForm';
 
 document.addEventListener('DOMContentLoaded', function() {
     polyfills();
@@ -28,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
     componentVideo();
     componentAboutPark();
     componentHolidays();
+    componentOrderForm();
 });
 
 window.addEventListener('load', function() {

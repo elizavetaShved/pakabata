@@ -1,5 +1,7 @@
 import commonMainLinks from './commonMainLinks';
 import commonMainSlider from './commonMainSlider';
+import 'bootstrap-datepicker';
+import 'bootstrap-datepicker/js/locales/bootstrap-datepicker.ru';
 
 export default function componentHolidays() {
   const hostElem = document.querySelector('#holidays-host');

@@ -1,0 +1,69 @@
+.gl-slider-block-wrapper {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.gl-slider {
+  position: relative;
+  width: 68%;
+  flex: 1 1 68%;
+}
+
+.gl-swiper-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.gl-swiper-slide-card {
+  position: relative;
+  height: 100%;
+
+  &:before {
+    content: '';
+    display: block;
+    width: 100%;
+    padding-bottom: 56.25%;
+  }
+}
+.gl-swiper-slide-image {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.gl-btn-prev, .gl-btn-next {
+  position: absolute;
+  content: '';
+  top: 50%;
+  transform: translateY(-50%);
+  width: 64px;
+  height: 70px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  z-index: 2;
+}
+
+.gl-btn-prev {
+  left: -46px;
+  background-image: url('../img/common/arrows/arrow-left.svg');
+
+  &.mod-light-background {
+    background-image: url('../img/common/arrows/arrow-left-dark.svg');
+  }
+}
+
+.gl-btn-next {
+  right: -46px;
+  background-image: url('../img/common/arrows/arrow-right.svg');
+
+  &.mod-light-background {
+    background-image: url('../img/common/arrows/arrow-right-dark.svg');
+  }
+}

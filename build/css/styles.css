@@ -970,9 +970,9 @@ button.swiper-pagination-bullet {
 :root {
   --max-container-width: 124rem;
   --content-padding: 6rem;
-  --underline-color: #FF546C;
   --main-color: #fff;
   --secondary-color: #240956;
+  --third-color: #FF546C;
   --riffic: 'Riffic', sans-serif;
   --calibri: 'Calibri', sans-serif; }
 
@@ -1020,7 +1020,6 @@ textarea {
   outline: none;
   -webkit-box-shadow: none;
           box-shadow: none;
-  border-radius: 0;
   width: 100%;
   background-color: transparent;
   display: block; }
@@ -1192,23 +1191,6 @@ select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
   background-color: transparent; }
 
-.gl-main-btn, .gl-transparent-btn {
-  padding: 18px 26px;
-  border-radius: 10px;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 17px;
-  white-space: nowrap;
-  text-transform: uppercase;
-  letter-spacing: 2px; }
-
-.gl-main-btn {
-  background: linear-gradient(300.27deg, #FFE98B 9.78%, #D74479 88.27%); }
-
-.gl-transparent-btn {
-  background: transparent;
-  border: 2px solid #9267C2; }
-
 .gl-font-riffic {
   font-family: var(--riffic); }
 
@@ -1220,7 +1202,7 @@ select:-webkit-autofill:focus {
   font-size: 20px;
   line-height: 28px;
   letter-spacing: 0.18em;
-  color: #FF546C;
+  color: var(--third-color);
   margin-bottom: 18px;
   text-transform: uppercase; }
 
@@ -1437,6 +1419,151 @@ select:-webkit-autofill:focus {
   font-style: normal;
   font-display: swap; }
 
+.gl-main-btn, .gl-transparent-btn {
+  padding: 18px 26px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+
+.gl-main-btn {
+  background: linear-gradient(300.27deg, #FFE98B 9.78%, #D74479 88.27%); }
+
+.gl-transparent-btn {
+  background: transparent;
+  border: 2px solid #9267C2; }
+
+.gl-radio-btn-wrapper {
+  width: 100%; }
+
+.gl-radio-btn-content-wrapper {
+  border: 1px dashed rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #fff;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 300ms background-color;
+  transition: 300ms background-color; }
+
+.gl-radio-btn-content {
+  font-size: 16px;
+  line-height: 20px;
+  color: #000;
+  position: relative; }
+  .gl-radio-btn-content:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    background-color: #fff;
+    opacity: 0; }
+
+.gl-radio-btn-wrapper .gl-radio-btn {
+  display: none; }
+  .gl-radio-btn-wrapper .gl-radio-btn:checked + .gl-radio-btn-content-wrapper {
+    border: none;
+    background-color: var(--third-color); }
+    .gl-radio-btn-wrapper .gl-radio-btn:checked + .gl-radio-btn-content-wrapper .gl-radio-btn-content {
+      color: #fff;
+      padding-left: 10px; }
+      .gl-radio-btn-wrapper .gl-radio-btn:checked + .gl-radio-btn-content-wrapper .gl-radio-btn-content:before {
+        opacity: 1; }
+
+.gl-input-wrapper {
+  display: block;
+  background: #F7F7F7;
+  border-radius: 10px;
+  padding: 14px;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--secondary-color); }
+  .gl-input-wrapper + .gl-input-wrapper {
+    margin-top: 8px; }
+
+.gl-input::-webkit-input-placeholder {
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--secondary-color); }
+
+.gl-input::-moz-placeholder {
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--secondary-color); }
+
+.gl-input:-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--secondary-color); }
+
+.gl-input::-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--secondary-color); }
+
+.gl-input::placeholder {
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--secondary-color); }
+
+.gl-input-textarea {
+  height: 80px; }
+
+.gl-input-number-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.gl-input-number-text {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
+
+.gl-input-number-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.gl-input-number-value-wrapper {
+  font-size: 14px;
+  border: 1px solid #FF546C;
+  border-radius: 34px;
+  margin: 0 8px;
+  width: 42px; }
+
+.gl-input-number-value {
+  display: block;
+  padding: 0 16px; }
+
+.gl-input-number-btn {
+  display: block; }
+
 .gl-slider-block-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1608,6 +1735,10 @@ select:-webkit-autofill:focus {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center; }
+
+.gl-datepicker-container {
+  background: black;
+  display: block; }
 
 .header__container {
   margin-top: 20px;
@@ -1966,7 +2097,7 @@ select:-webkit-autofill:focus {
             transform: translate(-25%, -25%);
     width: 26px;
     height: 26px;
-    background-color: #FF546C;
+    background-color: var(--third-color);
     border-radius: 100%;
     z-index: -1;
     -webkit-transition: 400ms width, 400ms height, 400ms -webkit-transform;
@@ -2125,21 +2256,28 @@ select:-webkit-autofill:focus {
 .holidays__back-background-wrapper .gl-main-link-back-item:nth-child(5) {
   display: none; }
 
-.holidays__order {
+.order-form__order {
   margin-left: 30px;
   padding: 46px 42px;
   height: -webkit-min-content;
   height: -moz-min-content;
-  height: min-content; }
+  height: min-content;
+  width: 454px; }
 
-.holidays__order-title {
+.order-form__order-title {
   font-weight: bold;
   font-size: 32px;
   line-height: 28px;
   margin-bottom: 30px;
   color: var(--secondary-color); }
 
-.holidays__order-subtitle {
+.order-form__order-subtitle {
   color: var(--secondary-color);
   opacity: 0.3;
   margin-bottom: 14px; }
+
+.order-form__radio-btns-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 8px;
+  margin-bottom: 24px; }

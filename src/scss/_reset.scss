@@ -9,9 +9,9 @@
 :root {
   --max-container-width: 124rem;
   --content-padding: 6rem;
-  --underline-color: #FF546C;
   --main-color: #fff;
   --secondary-color: #240956;
+  --third-color: #FF546C;
   --riffic: 'Riffic', sans-serif;
   --calibri: 'Calibri', sans-serif;
 }
@@ -62,7 +62,6 @@ textarea {
   font: inherit;
   outline: none;
   box-shadow: none;
-  border-radius: 0;
   width: 100%;
   background-color: transparent;
   display: block;
