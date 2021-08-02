@@ -18,9 +18,6 @@
 }
 
 .about-park__info-content {
-  background-color: #fff;
-  box-shadow: 0 0 82px rgba(93, 16, 182, 0.1049);
-  border-radius: 20px;
   padding: 82px 98px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -54,7 +51,7 @@
 .about-park__info-value {
   font-size: 18px;
   line-height: 22px;
-  color: #240956;
+  color: var(--secondary-color);
 }
 
 .about-park__dude-image {
@@ -69,68 +66,6 @@
   background-size: contain;
   background-position: center;
   z-index: -1;
-}
-
-.about-park__slider-block-wrapper {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 30px;
-}
-
-.about-park__slider {
-  position: relative;
-  width: 68%;
-  flex: 1 1 68%;
-}
-
-.about-park__swiper-container {
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-  overflow: hidden;
-}
-
-.about-park__swiper-slide-card {
-  position: relative;
-
-  &:before {
-    content: '';
-    display: block;
-    width: 100%;
-    padding-bottom: 56.25%;
-  }
-}
-
-.about-park__swiper-slide-image {
-  position: absolute;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-}
-
-.about-park__btn-prev, .about-park__btn-next {
-  position: absolute;
-  content: '';
-  top: 50%;
-  transform: translateY(-50%);
-  width: 64px;
-  height: 70px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  z-index: 2;
-}
-
-.about-park__btn-prev {
-  left: -46px;
-  background-image: url('../img/icons/arrow-left.svg');
-}
-
-.about-park__btn-next {
-  right: -46px;
-  background-image: url('../img/icons/arrow-right.svg');
 }
 
 //
@@ -184,7 +119,7 @@
     height: 6px;
     border-radius: 100%;
     opacity: 0;
-    transition: 400ms opacity;
+    transition: 1000ms opacity;
   }
 
   &.mod-active {

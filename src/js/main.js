@@ -10,6 +10,7 @@ import fileUpload from './fileUpload';
 import componentBanner from './componentBanner';
 import componentVideo from './componentVideo';
 import componentAboutPark from './componentAboutPark';
+import componentHolidays from './componentHolidays';
 
 document.addEventListener('DOMContentLoaded', function() {
     polyfills();
@@ -23,6 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
     componentBanner();
     componentVideo();
     componentAboutPark();
+    componentHolidays();
 });
 
 window.addEventListener('load', function() {

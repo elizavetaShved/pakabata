@@ -40,8 +40,18 @@
   font-weight: bold;
   font-size: 48px;
   line-height: 56px;
-  color: #240956;
+  color: var(--secondary-color);
   margin-bottom: 60px;
+}
+
+.gl-main-block {
+  background: #fff;
+  box-shadow: 0 0 82px rgba(93, 16, 182, 0.1049);
+  border-radius: 20px;
+}
+
+.gl-small-block {
+
 }
 
 .gl-nowrap {
