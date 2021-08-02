@@ -81,16 +81,37 @@
       }
 
       &:nth-child(3) {
-        bottom: -20px;
+        bottom: -16px;
+        left: 42px;
       }
 
       &:nth-child(4) {
-        bottom: -27px;
+        bottom: -8px;
+        left: -14px;
       }
+    }
+  }
+}
 
-      &:nth-child(5) {
-        left: -38px;
-      }
+.holidays__back-background-wrapper {
+  .gl-main-link-back-item {
+    &:nth-child(1) {
+      left: 0;
+    }
+
+    &:nth-child(3) {
+      left: 0;
+    }
+
+    &:nth-child(4) {
+      transform: rotate(26deg);
+      width: 126px;
+      height: 110px;
+      bottom: 4px;
+    }
+
+    &:nth-child(5) {
+      display: none;
     }
   }
 }

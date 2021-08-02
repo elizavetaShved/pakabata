@@ -1525,6 +1525,7 @@ select:-webkit-autofill:focus {
 
 .gl-main-link-content {
   background: #fff;
+  height: 100%;
   -webkit-box-shadow: 2px 2px 8px rgba(93, 16, 182, 0.03), 4px 4px 50px rgba(93, 16, 182, 0.08);
           box-shadow: 2px 2px 8px rgba(93, 16, 182, 0.03), 4px 4px 50px rgba(93, 16, 182, 0.08);
   border-radius: 20px;
@@ -2102,10 +2103,25 @@ select:-webkit-autofill:focus {
   right: -18px; }
 
 .holidays__main-link-container:hover .gl-main-link-back-item:nth-child(3) {
-  bottom: -20px; }
+  bottom: -16px;
+  left: 42px; }
 
 .holidays__main-link-container:hover .gl-main-link-back-item:nth-child(4) {
-  bottom: -27px; }
+  bottom: -8px;
+  left: -14px; }
 
-.holidays__main-link-container:hover .gl-main-link-back-item:nth-child(5) {
-  left: -38px; }
+.holidays__back-background-wrapper .gl-main-link-back-item:nth-child(1) {
+  left: 0; }
+
+.holidays__back-background-wrapper .gl-main-link-back-item:nth-child(3) {
+  left: 0; }
+
+.holidays__back-background-wrapper .gl-main-link-back-item:nth-child(4) {
+  -webkit-transform: rotate(26deg);
+          transform: rotate(26deg);
+  width: 126px;
+  height: 110px;
+  bottom: 4px; }
+
+.holidays__back-background-wrapper .gl-main-link-back-item:nth-child(5) {
+  display: none; }
