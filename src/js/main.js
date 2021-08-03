@@ -14,6 +14,7 @@ import componentHolidays from './componentHolidays';
 import componentsBulletinBoard from './componentsBulletinBoard';
 import componentOrderForm from './componentOrderForm';
 import componentAboutFamilyPakaf from './componentAboutFamilyPakaf';
+import componentCostVisit from './componentCostVisit';
 
 document.addEventListener('DOMContentLoaded', function() {
     polyfills();
@@ -32,6 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
     componentHolidays();
     componentOrderForm();
     componentAboutFamilyPakaf();
+    componentCostVisit();
 });
 
 window.addEventListener('load', function() {
