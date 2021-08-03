@@ -3,14 +3,58 @@
   <component name="ChangeListManager">
     <list default="true" id="03d7f0c3-a1fa-4b92-829b-c90f74363e25" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/css/sourcemaps/styles.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/sourcemaps/styles.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/css/styles.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/styles.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/commonDatepicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/commonDatepicker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/componentOrderForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/componentOrderForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/_common-datepicker.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_common-datepicker.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Calibri.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Calibri.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Riffic-Bold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Riffic-Bold.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/js/backend.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/js/ie11CustomProperties.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/mp4/video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/css/sourcemaps/styles.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/css/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/css/styles.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/about-park/background.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/about-park/blob.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/about-park/btn-video.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/about-park/dude.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/about-park/mask-text-1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/about-park/mask-text-2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/about-park/slide-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/banner/banner-image-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/bulletin-board/cafe.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/bulletin-board/holidays.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/bulletin-board/price.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/common/arrows/arrow-left-dark.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/common/arrows/arrow-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/common/arrows/arrow-right-dark.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/common/arrows/arrow-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/common/silhouettes/back-background-1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/common/silhouettes/back-background-2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/common/silhouettes/back-background-3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/common/silhouettes/back-background-4.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/common/silhouettes/back-background-5.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/header/background.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/header/clock.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/header/geolokation.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/header/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/holidays/animators.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/holidays/aquagrim.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/holidays/cake.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/holidays/decoration.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/holidays/hollidays-cropped-photo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/holidays/hollidays-photo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/holidays/menu.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/holidays/pizza.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/holidays/show.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/holidays/slide-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/icons/close.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/icons/inst.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/icons/ok.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/icons/vk.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/video/font-background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/img/video/video-palay.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/js/app.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +149,7 @@
       <workItem from="1627544038999" duration="50943000" />
       <workItem from="1627657744274" duration="1287000" />
       <workItem from="1627885669101" duration="31135000" />
-      <workItem from="1627931063515" duration="3795000" />
+      <workItem from="1627931063515" duration="4464000" />
     </task>
     <servers />
   </component>
