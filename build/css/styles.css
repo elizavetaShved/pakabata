@@ -2781,6 +2781,10 @@ select:-webkit-autofill:focus {
   height: 640px;
   position: relative; }
 
+.map__container {
+  -webkit-clip-path: ellipse(94% 60% at 50% 60%);
+          clip-path: ellipse(94% 60% at 50% 60%); }
+
 .map__wrapper {
   position: relative; }
   .map__wrapper::after {
@@ -2845,3 +2849,12 @@ select:-webkit-autofill:focus {
   color: var(--third-color) !important; }
   .map__hint-info-item-value-email:hover {
     text-decoration: underline; }
+
+.footer {
+  background-color: #7E1CEF;
+  background-image: url("../img/footer/background.svg");
+  background-size: contain;
+  background-position: center; }
+
+.footer__logo-block {
+  margin-bottom: 84px; }

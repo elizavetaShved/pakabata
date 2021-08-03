@@ -3,6 +3,10 @@
   position: relative;
 }
 
+.map__container {
+  clip-path: ellipse(94% 60% at 50% 60%);
+}
+
 .map__wrapper {
   position: relative;
   &::after {
