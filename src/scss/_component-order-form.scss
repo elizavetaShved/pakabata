@@ -1,9 +1,19 @@
 .order-form {
   margin-left: 30px;
-  padding: 46px 42px;
   height: min-content;
   width: 454px;
   flex: 0 0 454px;
+}
+
+.order-form__form-wrapper {
+  padding-top: 46px;
+  padding-bottom: 46px;
+  position: relative;
+}
+
+.order-form__padding-content {
+  padding-left: 42px;
+  padding-right: 42px;
 }
 
 .order-form__order-title {
@@ -25,4 +35,63 @@
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 8px;
   margin-bottom: 24px;
+}
+
+.order-form__contacts-wrapper {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: var(--secondary-color);
+}
+
+.order-form__contacts-caption {
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 14px;
+}
+
+.order-form__contacts-phone {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.order-form__back-background-item {
+  position: absolute;
+  content: '';
+  z-index: -1;
+  transition: 300ms top, 300ms right, 300ms bottom, 300ms left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &:nth-child(1) {
+    width: 487px;
+    height: 419px;
+    top: -82px;
+    left: 0;
+    background-image: url('../img/order-form/silhouettes/back-background-1.svg');
+  }
+
+  &:nth-child(2) {
+    width: 538px;
+    height: 456px;
+    bottom: -30px;
+    right: -70px;
+    background-image: url('../img/order-form/silhouettes/back-background-2.svg');
+  }
+
+  &:nth-child(3) {
+    width: 180px;
+    height: 252px;
+    top: 190px;
+    left: -64px;
+    background-image: url('../img/order-form/silhouettes/back-background-3.svg');
+  }
+
+  &:nth-child(4) {
+    width: 196px;
+    height: 196px;
+    top: 46px;
+    left: -56px;
+    background-image: url('../img/order-form/silhouettes/back-background-4.svg');
+  }
 }

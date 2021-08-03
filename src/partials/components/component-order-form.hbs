@@ -1,74 +1,92 @@
-<form class="gl-main-block order-form" id="order-form-host">
-  <div class="order-form__order-title">
-    Закажите праздник
-  </div>
-
-  <div class="order-form__place-wrapper">
-    <div class="order-form__order-subtitle gl-font-calibri">
-      Выберите место проведения
+<div class="order-form">
+  <form class="gl-main-block order-form__form-wrapper order-form__padding-content" id="order-form-host">
+    <div class="order-form__order-title">
+      Закажите праздник
     </div>
-    <div class="order-form__radio-btns-list">
-      <label class="gl-radio-btn-wrapper">
-        <input type="radio" class="gl-radio-btn" name="place-holiday" checked>
-        <span class="gl-radio-btn-content-wrapper gl-font-calibri">
+
+    <div class="order-form__place-wrapper">
+      <div class="order-form__order-subtitle gl-font-calibri">
+        Выберите место проведения
+      </div>
+      <div class="order-form__radio-btns-list">
+        <label class="gl-radio-btn-wrapper">
+          <input type="radio" class="gl-radio-btn" name="place-holiday" checked>
+          <span class="gl-radio-btn-content-wrapper gl-font-calibri">
           <span class="gl-radio-btn-content">Банкетный домик</span>
         </span>
-      </label>
-      <label class="gl-radio-btn-wrapper">
-        <input type="radio" class="gl-radio-btn" name="place-holiday">
-        <span class="gl-radio-btn-content-wrapper gl-font-calibri">
+        </label>
+        <label class="gl-radio-btn-wrapper">
+          <input type="radio" class="gl-radio-btn" name="place-holiday">
+          <span class="gl-radio-btn-content-wrapper gl-font-calibri">
           <span class="gl-radio-btn-content">Кафе</span>
         </span>
-      </label>
-    </div>
+        </label>
+      </div>
 
-    <div class="order-form__inputs-text-list">
-      <div class="gl-input-wrapper gl-input-number-wrapper gl-font-calibri">
-        <div class="gl-input-number-text">Детей</div>
-        <div class="gl-input-number-panel">
-          <button type="button" class="gl-input-number-btn" id="children-btn-minus">
-            <svg width="20" height="20" aria-hidden="true">
-              <use xlink:href="#minus"></use>
-            </svg>
-          </button>
-          <input type="number" class="gl-input-number-value" value="1" id="children-input">
-          <button type="button" class="gl-input-number-btn" id="children-btn-plus">
-            <svg width="20" height="20" aria-hidden="true">
-              <use xlink:href="#plus"></use>
-            </svg>
-          </button>
+      <div class="order-form__inputs-text-list">
+        <div class="gl-input-wrapper gl-input-number-wrapper gl-font-calibri">
+          <div class="gl-input-number-text">Детей</div>
+          <div class="gl-input-number-panel">
+            <button type="button" class="gl-input-number-btn" id="children-btn-minus">
+              <svg width="20" height="20" aria-hidden="true">
+                <use xlink:href="#minus"></use>
+              </svg>
+            </button>
+            <input type="number" class="gl-input-number-value" value="1" id="children-input">
+            <button type="button" class="gl-input-number-btn" id="children-btn-plus">
+              <svg width="20" height="20" aria-hidden="true">
+                <use xlink:href="#plus"></use>
+              </svg>
+            </button>
+          </div>
         </div>
+
+        <div class="gl-input-wrapper gl-datepicker-container gl-font-calibri">
+          <input type="text" class="gl-input gl-datepicker" placeholder="Дата мероприятия" readonly>
+        </div>
+
+        <label class="gl-input-wrapper gl-font-calibri">
+          <input type="text" class="gl-input" placeholder="Ваше ФИО">
+        </label>
+
+        <label class="gl-input-wrapper gl-font-calibri">
+          <input type="text" class="gl-input" placeholder="Телефон">
+        </label>
+
+        <label class="gl-input-wrapper gl-font-calibri">
+          <textarea class="gl-input gl-input-textarea" placeholder="Комментарий"></textarea>
+        </label>
       </div>
 
-      <div class="gl-input-wrapper gl-datepicker-container gl-font-calibri">
-        <input type="text" class="gl-input gl-datepicker" placeholder="Дата мероприятия" readonly>
-      </div>
-
-      <label class="gl-input-wrapper gl-font-calibri">
-        <input type="text" class="gl-input" placeholder="Ваше ФИО">
-      </label>
-
-      <label class="gl-input-wrapper gl-font-calibri">
-        <input type="text" class="gl-input" placeholder="Телефон">
-      </label>
-
-      <label class="gl-input-wrapper gl-font-calibri">
-        <textarea class="gl-input gl-input-textarea" placeholder="Комментарий"></textarea>
-      </label>
-    </div>
-
-    <label class="order-form__checkbox-wrapper">
-      <input type="checkbox" class="order-form__checkbox">
-      <span class="order-form__checkbox-content gl-font-calibri">
+      <label class="order-form__checkbox-wrapper">
+        <input type="checkbox" class="order-form__checkbox">
+        <span class="order-form__checkbox-content gl-font-calibri">
          <span class="order-form__checkbox-content-icon"></span>
         <span class="order-form__checkbox-content-text">
           Нажимая эту кнопку вы соглашаетесь на обработку персональных данных
         </span>
       </span>
-    </label>
+      </label>
 
-    <div class="order-form__btn-submit-wrapper">
-      <button type="button" class="gl-main-btn order-form__btn-submit">Отправить</button>
+      <div class="order-form__btn-submit-wrapper">
+        <button type="button" class="gl-main-btn order-form__btn-submit">Отправить</button>
+      </div>
     </div>
+
+    <div class="order-form__back-background-wrapper">
+      <span class="order-form__back-background-item"></span>
+      <span class="order-form__back-background-item"></span>
+      <span class="order-form__back-background-item"></span>
+      <span class="order-form__back-background-item"></span>
+    </div>
+  </form>
+
+  <div class="order-form__contacts-wrapper order-form__padding-content">
+    <div class="order-form__contacts-caption gl-font-calibri">
+      При возникновении любых вопросов вам сможет ответить наш менеджер Елена Шилова
+    </div>
+    <a href="tel:+79788993485" class="order-form__contacts-phone">
+      +7 (978) 899-34-85
+    </a>
   </div>
-</form>
+</div>

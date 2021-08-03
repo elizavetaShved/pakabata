@@ -1279,7 +1279,7 @@ select:-webkit-autofill:focus {
 
 .container {
   width: 100%;
-  max-width: 1520px;
+  max-width: 1640px;
   margin: 0 auto;
   padding: 0 var(--content-padding); }
   @supports (width: max(20vw, 100px)) {
@@ -1795,11 +1795,12 @@ select:-webkit-autofill:focus {
     background-color: #fff;
     border-radius: 10px;
     top: -26px !important;
-    left: 88px !important;
+    left: auto !important;
+    right: -22px !important;
     padding: 26px 16px !important;
     -webkit-box-shadow: 0 0 82px rgba(93, 16, 182, 0.1049);
             box-shadow: 0 0 82px rgba(93, 16, 182, 0.1049);
-    width: 338px; }
+    width: 303px; }
     .gl-datepicker-container .datepicker .datepicker-switch {
       font-size: 14px;
       letter-spacing: 2px;
@@ -1842,11 +1843,10 @@ select:-webkit-autofill:focus {
     background-image: url("../img/common/arrows/mark-right.svg"); }
   .gl-datepicker-container .datepicker td, .gl-datepicker-container .datepicker th {
     text-align: center;
-    padding: 4px 12px;
     border-radius: 4px;
     border: 0;
     font-size: 16px;
-    line-height: 30px;
+    padding: 9px 11px;
     color: var(--secondary-color); }
     .gl-datepicker-container .datepicker td:nth-child(6), .gl-datepicker-container .datepicker td:nth-child(7), .gl-datepicker-container .datepicker th:nth-child(6), .gl-datepicker-container .datepicker th:nth-child(7) {
       color: var(--third-color); }
@@ -2295,6 +2295,9 @@ select:-webkit-autofill:focus {
   line-height: 28px;
   display: block; }
 
+.holidays {
+  margin-bottom: 160px; }
+
 .holidays__content-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2304,10 +2307,7 @@ select:-webkit-autofill:focus {
           justify-content: space-between; }
 
 .holidays__main-block {
-  width: 936px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 936px;
-          flex: 1 1 936px; }
+  width: 936px; }
 
 .holidays__services-wrapper {
   padding: 60px 40px 60px 260px;
@@ -2386,7 +2386,6 @@ select:-webkit-autofill:focus {
 
 .order-form {
   margin-left: 30px;
-  padding: 46px 42px;
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
@@ -2394,6 +2393,15 @@ select:-webkit-autofill:focus {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 454px;
           flex: 0 0 454px; }
+
+.order-form__form-wrapper {
+  padding-top: 46px;
+  padding-bottom: 46px;
+  position: relative; }
+
+.order-form__padding-content {
+  padding-left: 42px;
+  padding-right: 42px; }
 
 .order-form__order-title {
   font-weight: bold;
@@ -2412,3 +2420,51 @@ select:-webkit-autofill:focus {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 8px;
   margin-bottom: 24px; }
+
+.order-form__contacts-wrapper {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: var(--secondary-color); }
+
+.order-form__contacts-caption {
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 14px; }
+
+.order-form__contacts-phone {
+  font-weight: bold;
+  font-size: 22px; }
+
+.order-form__back-background-item {
+  position: absolute;
+  content: '';
+  z-index: -1;
+  -webkit-transition: 300ms top, 300ms right, 300ms bottom, 300ms left;
+  transition: 300ms top, 300ms right, 300ms bottom, 300ms left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  .order-form__back-background-item:nth-child(1) {
+    width: 487px;
+    height: 419px;
+    top: -82px;
+    left: 0;
+    background-image: url("../img/order-form/silhouettes/back-background-1.svg"); }
+  .order-form__back-background-item:nth-child(2) {
+    width: 538px;
+    height: 456px;
+    bottom: -30px;
+    right: -70px;
+    background-image: url("../img/order-form/silhouettes/back-background-2.svg"); }
+  .order-form__back-background-item:nth-child(3) {
+    width: 180px;
+    height: 252px;
+    top: 190px;
+    left: -64px;
+    background-image: url("../img/order-form/silhouettes/back-background-3.svg"); }
+  .order-form__back-background-item:nth-child(4) {
+    width: 196px;
+    height: 196px;
+    top: 46px;
+    left: -56px;
+    background-image: url("../img/order-form/silhouettes/back-background-4.svg"); }

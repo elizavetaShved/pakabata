@@ -2,15 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03d7f0c3-a1fa-4b92-829b-c90f74363e25" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/img/order-form/dude-commemt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/order-form/dude.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/order-form/silhouettes/back-background-1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/order-form/silhouettes/back-background-2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/order-form/silhouettes/back-background-3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/order-form/silhouettes/back-background-4.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/css/sourcemaps/styles.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/sourcemaps/styles.min.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/css/styles.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/styles.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/commonDatepicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/commonDatepicker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/componentOrderForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/componentOrderForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/partials/components/component-order-form.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/components/component-order-form.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/_common-datepicker.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_common-datepicker.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_component-holidays.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_component-holidays.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_component-order-form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_component-order-form.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_layout.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +54,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/img/order-form" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -58,11 +66,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\web\pakabata\src\img\order-form" />
       <recent name="C:\web\pakabata\src\scss" />
       <recent name="C:\web\pakabata\src\img\common\arrows" />
       <recent name="C:\web\pakabata\src\js" />
       <recent name="C:\web\pakabata\src\img\holidays" />
-      <recent name="C:\web\pakabata\src\img\about-park" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\web\pakabata\src\img\common" />
@@ -122,5 +130,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
