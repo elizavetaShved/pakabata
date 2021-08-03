@@ -27,33 +27,6 @@
   grid-column-end: 4;
 }
 
-.header__social-wrapper {
-  display: flex;
-  align-items: center;
-  margin-right: 56px;
-  margin-left: -8px;
-}
-
-.header__social-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 8px;
-
-  &:hover {
-    .header__social-image {
-      fill: #000;
-    }
-  }
-}
-
-.header__social-image {
-  fill: #fff;
-  transition: 300ms fill;
-
-
-}
-
 .header__working-time, .header__geolocation, .header__phone {
   font-size: 18px;
   line-height: 22px;

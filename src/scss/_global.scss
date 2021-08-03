@@ -34,6 +34,31 @@
   white-space: nowrap;
 }
 
+.gl-social-wrapper {
+  display: flex;
+  align-items: center;
+  margin-right: 56px;
+  margin-left: -8px;
+}
+
+.gl-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+
+  &:hover {
+    .gl-social-image {
+      fill: var(--third-color);
+    }
+  }
+}
+
+.gl-social-image {
+  fill: #fff;
+  transition: 300ms fill;
+}
+
 .gl-video-modal-container {
   position: fixed;
   top: 0;
