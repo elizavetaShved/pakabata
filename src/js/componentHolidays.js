@@ -8,7 +8,7 @@ export default function componentHolidays() {
   const mainLinkContainer = hostElem.querySelectorAll('.gl-main-link-container');
   const swiperContainer = hostElem.querySelector('.holidays__swiper-container');
 
-  commonMainSlider(swiperContainer);
+  commonMainSlider(swiperContainer, '.holidays__btn-next', '.holidays__btn-prev');
 
   commonMainLinks(mainLinkContainer);
 }

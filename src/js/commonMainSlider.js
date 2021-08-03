@@ -1,11 +1,11 @@
 import { Swiper } from 'swiper';
 
-export default function commonMainSlider(swiperContainer, navigationBtnsArr, navigationBtnWrappersArr) {
+export default function commonMainSlider(swiperContainer, btnNextClassName, btnPrevClassName) {
   const swiper = new Swiper(swiperContainer, {
     cssMode: true,
     navigation: {
-      nextEl: '.holidays__btn-next',
-      prevEl: '.holidays__btn-prev',
+      nextEl: btnNextClassName,
+      prevEl: btnPrevClassName,
     },
     pagination: {
       el: '.swiper-pagination',
@@ -13,21 +13,4 @@ export default function commonMainSlider(swiperContainer, navigationBtnsArr, nav
     mousewheel: true,
     keyboard: true,
   });
-
-  if (navigationBtnsArr && navigationBtnWrappersArr) {
-    navigationBtnsArr.forEach((btnItem, btnIndex) => {
-      btnItem.onclick = () => {
-        console.log(123)
-        navigationBtnWrappersArr.forEach((btnWrapperItem, btnWrapperIndex) => {
-          if (btnIndex === btnWrapperIndex) {
-            btnWrapperItem.classList.add('mod-active');
-            console.log(btnWrapperItem)
-          } else {
-            btnWrapperItem.classList.remove('mod-active');
-          }
-        })
-        swiper.slideTo(btnIndex);
-      }
-    })
-  }
 }

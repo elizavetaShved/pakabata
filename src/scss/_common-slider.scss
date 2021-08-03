@@ -1,13 +1,14 @@
 .gl-slider-block-wrapper {
   display: flex;
   align-items: flex-start;
+  justify-content: space-between;
   margin-bottom: 30px;
 }
 
 .gl-slider {
   position: relative;
   width: 68%;
-  flex: 1 1 68%;
+  flex: 0 0 68%;
 }
 
 .gl-swiper-container {

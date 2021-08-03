@@ -13,6 +13,7 @@ import componentAboutPark from './componentAboutPark';
 import componentHolidays from './componentHolidays';
 import componentsBulletinBoard from './componentsBulletinBoard';
 import componentOrderForm from './componentOrderForm';
+import componentAboutFamilyPakaf from './componentAboutFamilyPakaf';
 
 document.addEventListener('DOMContentLoaded', function() {
     polyfills();
@@ -30,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
     componentAboutPark();
     componentHolidays();
     componentOrderForm();
+    componentAboutFamilyPakaf();
 });
 
 window.addEventListener('load', function() {

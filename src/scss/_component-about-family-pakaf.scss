@@ -1,0 +1,57 @@
+.about-family-pakaf {
+  position: relative;
+  height: 862px;
+  margin-bottom: 100px;
+}
+
+.about-family-pakaf__blob {
+  position: absolute;
+  top: -44px;
+  object-fit: cover;
+  height: 100%;
+  width: 100vw;
+}
+
+.about-family-pakaf__info-wrapper {
+  min-width: 518px;
+  z-index: 2;
+  margin-right: 74px;
+}
+
+.about-family-pakaf__slider-block-wrapper {
+  padding-top: 122px;
+  align-items: center;
+}
+
+.about-family-pakaf__subtitle {
+  color: var(--main-color);
+}
+
+.about-family-pakaf__caption {
+  font-size: 24px;
+  line-height: 34px;
+  margin-bottom: 40px;
+}
+
+.about-family-pakaf__main-btn {
+  min-width: 284px;
+}
+
+.about-family-pakaf__main-btn-text {
+  padding-right: 48px;
+  position: relative;
+}
+
+.about-family-pakaf__main-btn-icon {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 28px;
+  width: auto !important;
+}
+
+.about-family-pakaf-slider {
+  width: 50%;
+  flex: 0 0 50%;
+}
