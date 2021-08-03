@@ -2209,7 +2209,8 @@ select:-webkit-autofill:focus {
   z-index: -1; }
 
 .about-park__navigation-wrapper {
-  margin-left: 130px; }
+  margin-left: 130px;
+  z-index: 2; }
 
 .about-park__navigation-caption {
   font-weight: bold;
@@ -2224,7 +2225,11 @@ select:-webkit-autofill:focus {
 
 .about-park__navigation-btn-wrapper {
   position: relative;
-  z-index: 2; }
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  padding: 8px;
+  text-align: start; }
   .about-park__navigation-btn-wrapper + .about-park__navigation-btn-wrapper {
     margin-top: 32px; }
   .about-park__navigation-btn-wrapper:before {
@@ -2243,38 +2248,9 @@ select:-webkit-autofill:focus {
     transition: 400ms width, 400ms height, 400ms -webkit-transform;
     transition: 400ms width, 400ms height, 400ms transform;
     transition: 400ms width, 400ms height, 400ms transform, 400ms -webkit-transform; }
-  .about-park__navigation-btn-wrapper:after {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    background-color: #fff;
-    width: 6px;
-    height: 6px;
-    border-radius: 100%;
-    opacity: 0;
-    -webkit-transition: 500ms opacity, 500ms top, 500ms left;
-    transition: 500ms opacity, 500ms top, 500ms left; }
-  .about-park__navigation-btn-wrapper.mod-active:before {
-    width: 52px;
-    height: 52px;
-    -webkit-transform: translate(-45%, -45%);
-            transform: translate(-45%, -45%); }
-  .about-park__navigation-btn-wrapper.mod-active:after {
-    opacity: 1;
-    top: -10px;
-    left: -12px; }
   @media only screen and (max-width: 1600px) {
     .about-park__navigation-btn-wrapper + .about-park__navigation-btn-wrapper {
       margin-top: 16px; } }
-
-.about-park__navigation-btn {
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 28px;
-  padding: 8px;
-  z-index: 2;
-  text-align: start; }
 
 .about-park__btn-video-wrapper {
   height: 80px;
