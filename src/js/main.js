@@ -13,6 +13,9 @@ import componentAboutPark from './componentAboutPark';
 import componentHolidays from './componentHolidays';
 import componentsBulletinBoard from './componentsBulletinBoard';
 import componentOrderForm from './componentOrderForm';
+import componentAboutFamilyPakaf from './componentAboutFamilyPakaf';
+import componentCostVisit from './componentCostVisit';
+import componentMap from './componentMap';
 
 document.addEventListener('DOMContentLoaded', function() {
     polyfills();
@@ -30,6 +33,9 @@ document.addEventListener('DOMContentLoaded', function() {
     componentAboutPark();
     componentHolidays();
     componentOrderForm();
+    componentAboutFamilyPakaf();
+    componentCostVisit();
+    componentMap();
 });
 
 window.addEventListener('load', function() {

@@ -8,16 +8,13 @@ export default function componentAboutPark() {
   const hostElem = document.querySelector('#about-park-host');
   const infoCaptionTextElem = hostElem.querySelectorAll('.about-park__info-caption-text');
 
-  const navigationBtnWrappersArr = hostElem.querySelectorAll('.about-park__navigation-btn-wrapper');
-  const navigationBtnsArr = hostElem.querySelectorAll('.about-park__navigation-btn');
-
   const openVideoBtn = hostElem.querySelector('.about-park__btn-video-wrapper');
   const closeVideoBtn = hostElem.querySelector('.about-park__close-btn');
   const videoContainerElem = hostElem.querySelector('.about-park__modal-container');
 
   const swiperContainer = hostElem.querySelector('.about-park__swiper-container');
 
-  commonMainSlider(swiperContainer, navigationBtnsArr, navigationBtnWrappersArr);
+  commonMainSlider(swiperContainer, '.about-park__btn-next', '.about-park__btn-prev');
 
   // вычисление высоты блока
   openVideoBtn.onclick = () => {

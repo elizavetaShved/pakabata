@@ -16,10 +16,11 @@
     background-color: #fff;
     border-radius: 10px;
     top: -26px !important;
-    left: 88px !important;
+    left: auto !important;
+    right: -22px !important;
     padding: 26px 16px !important;
     box-shadow: 0 0 82px rgba(93, 16, 182, 0.1049);
-    width: 338px;
+    width: 303px;
 
     .datepicker-switch {
       font-size: 14px;
@@ -82,11 +83,10 @@
 
   .datepicker td, .datepicker th {
     text-align: center;
-    padding: 4px 12px;
     border-radius: 4px;
     border: 0;
     font-size: 16px;
-    line-height: 30px;
+    padding: 9px 11px;
     color: var(--secondary-color);
 
     &:nth-child(6), &:nth-child(7) {
