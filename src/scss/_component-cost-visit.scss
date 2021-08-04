@@ -4,19 +4,7 @@ $padding-content-price-extension: 40px;
 .cost-visit {
   display: flex;
   justify-content: space-between;
-  min-height: 636px;
-  position: relative;
-  margin-bottom: 60px;
-
-  &:before {
-    position: absolute;
-    content: '';
-    background-image: url('../img/cost-visit/dude-full.png');
-    width: 1014px;
-    height: 1332px;
-    bottom: -1000px;
-    left: -130px;
-  }
+  margin-bottom: 112px;
 }
 
 .cost-visit__header-wrapper {
