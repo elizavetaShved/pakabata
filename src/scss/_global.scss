@@ -65,7 +65,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, .64);
+  background-color: var(--back-background-modal);
   display: flex;
   align-items: center;
   justify-content: center;

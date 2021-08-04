@@ -1,11 +1,18 @@
 .container {
+  margin: 0 auto;
   width: 100%;
   max-width: 1640px;
-  margin: 0 auto;
-  padding: 0 var(--content-padding);
-  @supports (width: max(20vw, 100px)) {
-    padding-left: max(env(safe-area-inset-left, 1.4rem), var(--content-padding));
-    padding-right: max(env(safe-area-inset-right, 1.4rem), var(--content-padding));
+  padding-left: 40px;
+  padding-right: 40px;
+
+  @include breakpoint(tablet) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @include breakpoint(mobile) {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
