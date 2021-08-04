@@ -16,6 +16,7 @@ import componentOrderForm from './componentOrderForm';
 import componentAboutFamilyPakaf from './componentAboutFamilyPakaf';
 import componentCostVisit from './componentCostVisit';
 import componentMap from './componentMap';
+import componentHeader from './componentHeader';
 
 document.addEventListener('DOMContentLoaded', function() {
     polyfills();
@@ -27,6 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
     onlyNumeric();
     fileUpload();
 
+    componentHeader();
     componentBanner();
     componentsBulletinBoard();
     componentVideo();

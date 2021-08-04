@@ -1,56 +1,14 @@
-<header class="header__container container">
+<header class="header__container container" id="header-host">
   <div class="header__logo-wrapper">
     <img src="img/common/logo.png" alt="logo" class="header__logo" data-sizes="auto">
   </div>
 
-  <div class="header__content-social gl-lg-desk-hide">
-    <div class="gl-social-wrapper">
-      <a href="#" class="gl-social-link">
-        <svg width="16" height="16" aria-hidden="true" class="gl-social-image">
-          <use xlink:href="#inst"></use>
-        </svg>
-      </a>
-      <a href="#" class="gl-social-link">
-        <svg width="16" height="8" aria-hidden="true" class="gl-social-image">
-          <use xlink:href="#vk"></use>
-        </svg>
-      </a>
-      <a href="#" class="gl-social-link">
-        <svg width="9" height="16" aria-hidden="true" class="gl-social-image">
-          <use xlink:href="#ok"></use>
-        </svg>
-      </a>
-    </div>
-
-    <div class="header__working-time gl-font-calibri">
-      пн-пт 9:00-18:00
-    </div>
-
-    <a href="#" class="header__geolocation gl-font-calibri">
-      Казань, ТЦ Парк Хаус
-    </a>
-
-    <a href="tel:+78005555555" class="header__phone gl-font-calibri">
-      8 800 555-55-55
-    </a>
+  <div class="header__content-contacts-wrapper gl-lg-desk-hide">
+    {{> header-contacts }}
   </div>
 
-  <div class="header__navigate-menu gl-desk-hide">
-    <a href="#" class="header__menu-item">
-      О парке
-    </a>
-    <a href="#" class="header__menu-item">
-      Цены
-    </a>
-    <a href="#" class="header__menu-item">
-      Праздники в Пакабата
-    </a>
-    <a href="#" class="header__menu-item">
-      Контакты
-    </a>
-    <a href="#" class="header__menu-item">
-      Кафе
-    </a>
+  <div class="header__navigate-menu-wrapper gl-desk-hide">
+    {{> header-navigate-menu }}
   </div>
 
   <div class="header__content-navigate-btns gl-desk-hide">
@@ -81,7 +39,17 @@
     </button>
   </div>
 
-  <div class="header__sidebar-container">
-    <div class="header__sidebar-wrapper"></div>
+  <div class="header__sidebar-container gl-desk-show">
+    <div class="header__sidebar-wrapper">
+      <div class="header__sidebar-logo-wrapper">
+        <img src="img/common/logo.png" alt="logo" class="header__sidebar-logo" data-sizes="auto">
+      </div>
+      <div class="header__sidebar-navigate-menu">
+        {{> header-navigate-menu }}
+      </div>
+      <div class="header__sidebar-contacts">
+        {{> header-contacts }}
+      </div>
+    </div>
   </div>
 </header>
