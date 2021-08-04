@@ -1,3 +1,8 @@
+:root {
+  --padding-page-content-tablet: 30px;
+  --padding-page-content-mobile: 30px;
+}
+
 .container {
   width: 100%;
   max-width: 1640px;
@@ -5,13 +10,13 @@
   padding: 0 var(--content-padding);
 
   @include breakpoint(tablet) {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: var(--padding-page-content-tablet);
+    padding-right: var(--padding-page-content-tablet);
   }
 
   @include breakpoint(mobile) {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: var(--padding-page-content-mobile);
+    padding-right: var(--padding-page-content-mobile);
   }
 }
 

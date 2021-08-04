@@ -1331,6 +1331,10 @@ select:-webkit-autofill:focus {
   -webkit-transition: 300ms fill;
   transition: 300ms fill; }
 
+:root {
+  --padding-page-content-tablet: 30px;
+  --padding-page-content-mobile: 30px; }
+
 .container {
   width: 100%;
   max-width: 1640px;
@@ -1338,12 +1342,12 @@ select:-webkit-autofill:focus {
   padding: 0 var(--content-padding); }
   @media only screen and (max-width: 1024px) {
     .container {
-      padding-left: 30px;
-      padding-right: 30px; } }
+      padding-left: var(--padding-page-content-tablet);
+      padding-right: var(--padding-page-content-tablet); } }
   @media only screen and (max-width: 640px) {
     .container {
-      padding-left: 20px;
-      padding-right: 20px; } }
+      padding-left: var(--padding-page-content-mobile);
+      padding-right: var(--padding-page-content-mobile); } }
 
 .layout-wrapper {
   -webkit-box-flex: 1;
@@ -2693,12 +2697,12 @@ select:-webkit-autofill:focus {
       max-width: 1640px;
       margin: 0 auto;
       padding: 0 var(--content-padding);
-      padding-left: 30px;
-      padding-right: 30px; } }
+      padding-left: var(--padding-page-content-tablet);
+      padding-right: var(--padding-page-content-tablet); } }
   @media only screen and (max-width: 640px) {
     .about-park__navigation-wrapper {
-      padding-left: 20px;
-      padding-right: 20px; } }
+      padding-left: var(--padding-page-content-mobile);
+      padding-right: var(--padding-page-content-mobile); } }
 
 .about-park__navigation-caption {
   font-weight: bold;
@@ -2793,13 +2797,25 @@ select:-webkit-autofill:focus {
 
 .holidays {
   margin-bottom: 160px; }
+  @media only screen and (max-width: 1024px) {
+    .holidays {
+      padding: 0; } }
 
 .holidays__title-wrapper {
   width: 60%;
   margin-bottom: 60px; }
   @media only screen and (max-width: 1400px) {
     .holidays__title-wrapper {
-      width: 100%; } }
+      width: 100%;
+      margin-bottom: 40px; } }
+  @media only screen and (max-width: 1024px) {
+    .holidays__title-wrapper {
+      padding-left: var(--padding-page-content-tablet);
+      padding-right: var(--padding-page-content-tablet); } }
+  @media only screen and (max-width: 640px) {
+    .holidays__title-wrapper {
+      padding-left: var(--padding-page-content-mobile);
+      padding-right: var(--padding-page-content-mobile); } }
 
 .holidays__content-wrapper {
   display: -webkit-box;
@@ -2818,25 +2834,65 @@ select:-webkit-autofill:focus {
     .holidays__main-block {
       width: 100%; } }
 
-.holidays__services-wrapper {
-  padding: 60px 40px 60px 260px;
-  position: relative;
+@media only screen and (max-width: 1024px) {
+  .holidays__services-container-block {
+    padding-left: var(--padding-page-content-tablet);
+    padding-right: var(--padding-page-content-tablet); } }
+
+@media only screen and (max-width: 640px) {
+  .holidays__services-container-block {
+    padding-left: var(--padding-page-content-mobile);
+    padding-right: var(--padding-page-content-mobile); } }
+
+.holidays__services-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   overflow: hidden;
+  margin-bottom: 60px; }
+  @media only screen and (max-width: 1024px) {
+    .holidays__services-container {
+      margin-bottom: 40px; } }
+  @media only screen and (max-width: 768px) {
+    .holidays__services-container {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
+
+.holidays__services-title-wrapper {
+  width: 180px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 180px;
+          flex: 0 0 180px;
+  padding: 30px 40px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  -webkit-clip-path: ellipse(63% 82% at 36% 50%);
+          clip-path: ellipse(63% 82% at 36% 50%); }
+  @media only screen and (max-width: 768px) {
+    .holidays__services-title-wrapper {
+      width: 100%;
+      -webkit-clip-path: ellipse(82% 83% at 50% 17%);
+              clip-path: ellipse(82% 83% at 50% 17%); } }
+
+.holidays__services-wrapper {
+  padding: 60px 40px 60px 70px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 50px 20px;
-  margin-bottom: 60px; }
-  .holidays__services-wrapper:before {
-    position: absolute;
-    content: '';
-    width: 180px;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-image: url("../img/holidays/hollidays-cropped-photo.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; }
+  grid-gap: 50px 30px; }
+  @media only screen and (max-width: 1024px) {
+    .holidays__services-wrapper {
+      grid-template-columns: repeat(2, 1fr); } }
+  @media only screen and (max-width: 576px) {
+    .holidays__services-wrapper {
+      padding: 40px 30px;
+      grid-gap: 40px 44px; } }
 
 .holidays__services-item-icon {
   width: auto !important;
@@ -2844,6 +2900,10 @@ select:-webkit-autofill:focus {
   -o-object-fit: contain;
      object-fit: contain;
   margin-bottom: 18px; }
+  @media only screen and (max-width: 768px) {
+    .holidays__services-item-icon {
+      height: 60px;
+      margin-bottom: 12px; } }
 
 .holidays__services-item-caption {
   font-weight: bold;
@@ -2851,16 +2911,61 @@ select:-webkit-autofill:focus {
   line-height: 28px;
   color: var(--secondary-color);
   margin-bottom: 16px; }
+  @media only screen and (max-width: 768px) {
+    .holidays__services-item-caption {
+      font-size: 16px;
+      margin-bottom: 8px; } }
 
 .holidays__services-item-value {
   font-size: 16px;
   line-height: 22px;
   color: var(--secondary-color); }
+  @media only screen and (max-width: 768px) {
+    .holidays__services-item-value {
+      font-size: 14px; } }
 
 .holidays__slider {
   width: 100%;
-  height: 554px;
-  margin-bottom: 60px; }
+  margin-bottom: 60px;
+  position: relative; }
+  @media only screen and (max-width: 1024px) {
+    .holidays__slider {
+      position: initial; } }
+
+.holidays__slider-title {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  z-index: 2;
+  width: 290px; }
+  @media only screen and (max-width: 1024px) {
+    .holidays__slider-title {
+      position: initial;
+      top: auto;
+      left: auto;
+      color: var(--secondary-color);
+      padding-left: var(--padding-page-content-tablet);
+      padding-right: var(--padding-page-content-tablet);
+      margin-bottom: 24px; } }
+  @media only screen and (max-width: 640px) {
+    .holidays__slider-title {
+      padding-left: var(--padding-page-content-mobile);
+      padding-right: var(--padding-page-content-mobile); } }
+
+@media only screen and (max-width: 1024px) {
+  .holidays__main-link-list {
+    padding-left: var(--padding-page-content-tablet);
+    padding-right: var(--padding-page-content-tablet);
+    grid-template-columns: 1fr;
+    margin-bottom: 75px; } }
+
+@media only screen and (max-width: 640px) {
+  .holidays__main-link-list {
+    padding-left: var(--padding-page-content-mobile);
+    padding-right: var(--padding-page-content-mobile); } }
 
 .holidays__main-link-container:hover .gl-main-link-back-item:nth-child(1) {
   top: -16px;
@@ -2904,14 +3009,22 @@ select:-webkit-autofill:focus {
   height: min-content; }
   @media only screen and (max-width: 1400px) {
     .holidays__dude-wrapper {
-      position: relative;
-      top: auto;
-      right: auto; } }
+      position: inherit;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; } }
 
 .holidays__dude-content {
   position: relative;
   width: 100%;
   height: 100%; }
+  @media only screen and (max-width: 1400px) {
+    .holidays__dude-content {
+      margin-bottom: 82px;
+      width: auto; } }
 
 .holidays__dude-icon {
   position: absolute;
@@ -2921,6 +3034,10 @@ select:-webkit-autofill:focus {
   width: 198px;
   -o-object-fit: contain;
      object-fit: contain; }
+  @media only screen and (max-width: 1400px) {
+    .holidays__dude-icon {
+      top: 40px;
+      left: 216px; } }
 
 .holidays__dude-comment {
   position: absolute;
@@ -2937,6 +3054,12 @@ select:-webkit-autofill:focus {
   line-height: 28px;
   padding: 8px 20px;
   color: var(--secondary-color); }
+  @media only screen and (max-width: 1400px) {
+    .holidays__dude-comment {
+      position: inherit;
+      top: auto;
+      left: auto;
+      margin-right: 60px; } }
 
 .order-form {
   margin-left: 30px;
@@ -2948,6 +3071,15 @@ select:-webkit-autofill:focus {
       -ms-flex: 0 0 454px;
           flex: 0 0 454px;
   position: relative; }
+  @media only screen and (max-width: 1024px) {
+    .order-form {
+      padding-left: var(--padding-page-content-tablet);
+      padding-right: var(--padding-page-content-tablet);
+      margin-left: 0; } }
+  @media only screen and (max-width: 640px) {
+    .order-form {
+      padding-left: var(--padding-page-content-mobile);
+      padding-right: var(--padding-page-content-mobile); } }
 
 .order-form__form-wrapper {
   padding-top: 46px;

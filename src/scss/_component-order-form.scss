@@ -4,6 +4,17 @@
   width: 454px;
   flex: 0 0 454px;
   position: relative;
+
+  @include breakpoint(tablet) {
+    padding-left: var(--padding-page-content-tablet);
+    padding-right: var(--padding-page-content-tablet);
+    margin-left: 0
+  }
+
+  @include breakpoint(mobile) {
+    padding-left: var(--padding-page-content-mobile);
+    padding-right: var(--padding-page-content-mobile);
+  }
 }
 
 .order-form__form-wrapper {

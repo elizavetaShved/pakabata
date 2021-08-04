@@ -2,6 +2,10 @@ $main-block-width: 60%;
 
 .holidays {
   margin-bottom: 160px;
+
+  @include breakpoint(tablet) {
+    padding: 0;
+  }
 }
 
 .holidays__title-wrapper {
@@ -10,6 +14,17 @@ $main-block-width: 60%;
 
   @include breakpoint(desktop) {
     width: 100%;
+    margin-bottom: 40px;
+  }
+
+  @include breakpoint(tablet) {
+    padding-left: var(--padding-page-content-tablet);
+    padding-right: var(--padding-page-content-tablet);
+  }
+
+  @include breakpoint(mobile) {
+    padding-left: var(--padding-page-content-mobile);
+    padding-right: var(--padding-page-content-mobile);
   }
 }
 
@@ -30,26 +45,64 @@ $main-block-width: 60%;
   }
 }
 
-.holidays__services-wrapper {
-  padding: 60px 40px 60px 260px;
-  position: relative;
+.holidays__services-container-block {
+  @include breakpoint(tablet) {
+    padding-left: var(--padding-page-content-tablet);
+    padding-right: var(--padding-page-content-tablet);
+  }
+
+  @include breakpoint(mobile) {
+    padding-left: var(--padding-page-content-mobile);
+    padding-right: var(--padding-page-content-mobile);
+  }
+}
+
+.holidays__services-container {
+  display: flex;
   overflow: hidden;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 50px 20px;
   margin-bottom: 60px;
 
-  &:before {
-    position: absolute;
-    content: '';
-    width: 180px;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-image: url('../img/holidays/hollidays-cropped-photo.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  @include breakpoint(tablet) {
+    margin-bottom: 40px;
+  }
+
+  @include breakpoint(small-tablet) {
+    flex-direction: column;
+  }
+}
+
+.holidays__services-title-wrapper {
+  width: 180px;
+  flex: 0 0 180px;
+  padding: 30px 40px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  clip-path: ellipse(63% 82% at 36% 50%);
+
+  @include breakpoint(small-tablet) {
+    width: 100%;
+    clip-path: ellipse(82% 83% at 50% 17%);
+  }
+}
+
+.holidays__services-wrapper {
+  padding: 60px 40px 60px 70px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px 30px;
+
+  @include breakpoint(tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include breakpoint(small-mobile) {
+    padding: 40px 30px;
+    grid-gap: 40px 44px;
   }
 }
 
@@ -58,6 +111,11 @@ $main-block-width: 60%;
   height: 36px;
   object-fit: contain;
   margin-bottom: 18px;
+
+  @include breakpoint(small-tablet) {
+    height: 60px;
+    margin-bottom: 12px;
+  }
 }
 
 .holidays__services-item-caption {
@@ -66,18 +124,71 @@ $main-block-width: 60%;
   line-height: 28px;
   color: var(--secondary-color);
   margin-bottom: 16px;
+
+  @include breakpoint(small-tablet) {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
 }
 
 .holidays__services-item-value {
   font-size: 16px;
   line-height: 22px;
   color: var(--secondary-color);
+
+  @include breakpoint(small-tablet) {
+    font-size: 14px;
+  }
 }
 
 .holidays__slider {
   width: 100%;
-  height: 554px;
   margin-bottom: 60px;
+  position: relative;
+
+  @include breakpoint(tablet) {
+    position: initial;
+  }
+}
+
+.holidays__slider-title {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  z-index: 2;
+  width: 290px;
+
+  @include breakpoint(tablet) {
+    position: initial;
+    top: auto;
+    left: auto;
+    color: var(--secondary-color);
+    padding-left: var(--padding-page-content-tablet);
+    padding-right: var(--padding-page-content-tablet);
+    margin-bottom: 24px;
+  }
+
+  @include breakpoint(mobile) {
+    padding-left: var(--padding-page-content-mobile);
+    padding-right: var(--padding-page-content-mobile);
+  }
+}
+
+.holidays__main-link-list {
+  @include breakpoint(tablet) {
+    padding-left: var(--padding-page-content-tablet);
+    padding-right: var(--padding-page-content-tablet);
+    grid-template-columns: 1fr;
+    margin-bottom: 75px;
+  }
+
+  @include breakpoint(mobile) {
+    padding-left: var(--padding-page-content-mobile);
+    padding-right: var(--padding-page-content-mobile);
+  }
 }
 
 .holidays__main-link-container {
@@ -137,9 +248,9 @@ $main-block-width: 60%;
   height: min-content;
 
   @include breakpoint(desktop) {
-    position: relative;
-    top: auto;
-    right: auto;
+    position: inherit;
+    display: flex;
+    justify-content: flex-end;
   }
 }
 
@@ -147,6 +258,11 @@ $main-block-width: 60%;
   position: relative;
   width: 100%;
   height: 100%;
+
+  @include breakpoint(desktop) {
+    margin-bottom: 82px;
+    width: auto;
+  }
 }
 
 .holidays__dude-icon {
@@ -156,6 +272,11 @@ $main-block-width: 60%;
   right: 0;
   width: 198px;
   object-fit: contain;
+
+  @include breakpoint(desktop) {
+    top: 40px;
+    left: 216px;
+  }
 }
 
 .holidays__dude-comment {
@@ -171,4 +292,11 @@ $main-block-width: 60%;
   line-height: 28px;
   padding: 8px 20px;
   color: var(--secondary-color);
+
+  @include breakpoint(desktop) {
+    position: inherit;
+    top: auto;
+    left: auto;
+    margin-right: 60px;
+  }
 }
