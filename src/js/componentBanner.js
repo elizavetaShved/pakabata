@@ -8,15 +8,27 @@ export default function componentBanner() {
   const hostElem = document.querySelector('#banner-host');
 
   const swiper = new Swiper(hostElem.querySelector('.banner__container'), {
-    cssMode: true,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
     pagination: {
-      el: '.swiper-pagination',
+      el: '.swiper-pagination'
     },
-    mousewheel: true,
+    slidesPerView: 1.12,
+    spaceBetween: 8,
+    centeredSlides: true,
+    virtual: true,
+    lazy: true,
     keyboard: true,
+    breakpoints: {
+      640: {
+        slidesPerView: 1.08,
+        spaceBetween: 16,
+      },
+      1024: {
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        slidesPerView: 1
+      }
+    }
   });
 }
