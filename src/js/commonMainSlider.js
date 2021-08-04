@@ -1,16 +1,27 @@
-import { Swiper } from 'swiper';
+import { Mousewheel, Navigation, Pagination, Swiper } from 'swiper';
+
+Swiper.use([Navigation]);
+Swiper.use([Mousewheel]);
+Swiper.use([Pagination]);
 
 export default function commonMainSlider(swiperContainer, btnNextClassName, btnPrevClassName) {
   const swiper = new Swiper(swiperContainer, {
-    cssMode: true,
+    slidesPerView: 1.12,
+    spaceBetween: 8,
+    centeredSlides: true,
+    virtual: true,
     navigation: {
       nextEl: btnNextClassName,
       prevEl: btnPrevClassName,
     },
-    pagination: {
-      el: '.swiper-pagination',
-    },
-    mousewheel: true,
-    keyboard: true,
+    breakpoints: {
+      640: {
+        slidesPerView: 1.08,
+        spaceBetween: 16,
+      },
+      1024: {
+        slidesPerView: 1,
+      }
+    }
   });
 }

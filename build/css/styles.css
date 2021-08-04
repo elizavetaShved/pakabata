@@ -1332,10 +1332,6 @@ select:-webkit-autofill:focus {
   max-width: 1640px;
   margin: 0 auto;
   padding: 0 var(--content-padding); }
-  @supports (width: max(20vw, 100px)) {
-    .container {
-      padding-left: max(env(safe-area-inset-left, 1.4rem), var(--content-padding));
-      padding-right: max(env(safe-area-inset-right, 1.4rem), var(--content-padding)); } }
   @media only screen and (max-width: 1024px) {
     .container {
       padding-left: 30px;
@@ -1768,6 +1764,12 @@ select:-webkit-autofill:focus {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 30px; }
+  @media only screen and (max-width: 1024px) {
+    .gl-slider-block-wrapper {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
 .gl-slider {
   position: relative;
@@ -1775,12 +1777,23 @@ select:-webkit-autofill:focus {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 68%;
           flex: 0 0 68%; }
+  @media only screen and (max-width: 1024px) {
+    .gl-slider {
+      width: 100%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 100%;
+              flex: 0 0 100%;
+      margin-bottom: 40px; } }
 
 .gl-swiper-container {
   width: 100%;
-  height: 100%;
-  border-radius: 20px;
-  overflow: hidden; }
+  height: 620px; }
+  @media only screen and (max-width: 1400px) {
+    .gl-swiper-container {
+      height: 426px; } }
+  @media only screen and (max-width: 576px) {
+    .gl-swiper-container {
+      height: 230px; } }
 
 .gl-swiper-slide-card {
   position: relative;
@@ -1798,7 +1811,8 @@ select:-webkit-autofill:focus {
   width: 100%;
   height: 100%;
   left: 0;
-  top: 0; }
+  top: 0;
+  border-radius: 20px; }
 
 .gl-btn-prev, .gl-btn-next {
   position: absolute;
@@ -1812,6 +1826,9 @@ select:-webkit-autofill:focus {
   background-size: contain;
   background-position: center;
   z-index: 2; }
+  @media only screen and (max-width: 1024px) {
+    .gl-btn-prev, .gl-btn-next {
+      display: none; } }
 
 .gl-btn-prev {
   left: -46px;
@@ -2532,31 +2549,71 @@ select:-webkit-autofill:focus {
 .about-park {
   padding-bottom: 90px;
   margin-bottom: 120px;
-  position: relative; }
+  position: relative;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content; }
+  @media only screen and (max-width: 1200px) {
+    .about-park {
+      margin-bottom: 80px; } }
+  @media only screen and (max-width: 576px) {
+    .about-park {
+      margin-bottom: 40px; } }
+
+@media only screen and (max-width: 1024px) {
+  .about-park__no-container {
+    padding: 0; } }
 
 .about-park__blob {
   position: absolute;
   top: 190px;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 1275px;
+  height: 90%;
   width: 100vw; }
+  @media only screen and (max-width: 1200px) {
+    .about-park__blob {
+      top: 158px; } }
+  @media only screen and (max-width: 425px) {
+    .about-park__blob {
+      top: 126px; } }
+  @media only screen and (max-width: 370px) {
+    .about-park__blob {
+      top: 126px; } }
 
 .about-park__info-wrapper {
   position: relative;
   margin-bottom: 66px; }
+  @media only screen and (max-width: 1200px) {
+    .about-park__info-wrapper {
+      margin-bottom: 40px; } }
 
 .about-park__info-content {
   padding: 82px 98px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 100px; }
+  @media only screen and (max-width: 1400px) {
+    .about-park__info-content {
+      padding: 66px 60px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 70px 60px; } }
+  @media only screen and (max-width: 576px) {
+    .about-park__info-content {
+      padding: 50px 20px;
+      grid-gap: 40px 30px; } }
 
 .about-park__info-caption-number-wrapper {
   background-image: url("../img/about-park/mask-text-1.svg");
   background-color: #5215AA;
   background-size: cover;
   margin-bottom: 8px; }
+  @media only screen and (max-width: 1200px) {
+    .about-park__info-caption-number-wrapper {
+      margin-bottom: 10px; } }
+  @media only screen and (max-width: 576px) {
+    .about-park__info-caption-number-wrapper {
+      margin-bottom: 20px; } }
 
 .about-park__info-caption-number {
   color: #000;
@@ -2564,6 +2621,12 @@ select:-webkit-autofill:focus {
   mix-blend-mode: lighten;
   font-weight: bold;
   font-size: 70px; }
+  @media only screen and (max-width: 1200px) {
+    .about-park__info-caption-number {
+      font-size: 50px; } }
+  @media only screen and (max-width: 576px) {
+    .about-park__info-caption-number {
+      font-size: 30px; } }
 
 .about-park__info-caption-text {
   font-weight: bold;
@@ -2571,11 +2634,29 @@ select:-webkit-autofill:focus {
   line-height: 28px;
   margin-bottom: 38px;
   color: #5215AA; }
+  @media only screen and (max-width: 1200px) {
+    .about-park__info-caption-text {
+      font-size: 18px;
+      margin-bottom: 28px;
+      line-height: 24px; } }
+  @media only screen and (max-width: 576px) {
+    .about-park__info-caption-text {
+      font-size: 16px;
+      margin-bottom: 16px;
+      line-height: 20px; } }
 
 .about-park__info-value {
   font-size: 18px;
   line-height: 22px;
   color: var(--secondary-color); }
+  @media only screen and (max-width: 1200px) {
+    .about-park__info-value {
+      font-size: 18px;
+      line-height: 20px; } }
+  @media only screen and (max-width: 576px) {
+    .about-park__info-value {
+      font-size: 14px;
+      line-height: 18px; } }
 
 .about-park__dude-image {
   position: absolute;
@@ -2589,10 +2670,31 @@ select:-webkit-autofill:focus {
   background-size: contain;
   background-position: center;
   z-index: -1; }
+  @media only screen and (max-width: 1600px) {
+    .about-park__dude-image {
+      right: 40px; } }
+  @media only screen and (max-width: 1400px) {
+    .about-park__dude-image {
+      right: 0; } }
 
 .about-park__navigation-wrapper {
   margin-left: 130px;
   z-index: 2; }
+  @media only screen and (max-width: 1400px) {
+    .about-park__navigation-wrapper {
+      margin-left: 60px; } }
+  @media only screen and (max-width: 1024px) {
+    .about-park__navigation-wrapper {
+      width: 100%;
+      max-width: 1640px;
+      margin: 0 auto;
+      padding: 0 var(--content-padding);
+      padding-left: 30px;
+      padding-right: 30px; } }
+  @media only screen and (max-width: 640px) {
+    .about-park__navigation-wrapper {
+      padding-left: 20px;
+      padding-right: 20px; } }
 
 .about-park__navigation-caption {
   font-weight: bold;
@@ -2604,16 +2706,34 @@ select:-webkit-autofill:focus {
 
 .about-park__navigation-btns-list {
   margin: -8px 0; }
+  @media only screen and (max-width: 1024px) {
+    .about-park__navigation-btns-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 30px 10px; } }
+  @media only screen and (max-width: 576px) {
+    .about-park__navigation-btns-list {
+      grid-template-columns: repeat(2, 1fr); } }
 
 .about-park__navigation-btn-wrapper {
   position: relative;
   font-weight: bold;
   font-size: 20px;
-  line-height: 28px;
   padding: 8px;
-  text-align: start; }
+  text-align: start;
+  margin-left: 8px; }
+  @media only screen and (max-width: 1200px) {
+    .about-park__navigation-btn-wrapper {
+      font-size: 16px;
+      line-height: 20px; } }
   .about-park__navigation-btn-wrapper + .about-park__navigation-btn-wrapper {
     margin-top: 32px; }
+    @media only screen and (max-width: 1600px) {
+      .about-park__navigation-btn-wrapper + .about-park__navigation-btn-wrapper {
+        margin-top: 16px; } }
+    @media only screen and (max-width: 1024px) {
+      .about-park__navigation-btn-wrapper + .about-park__navigation-btn-wrapper {
+        margin-top: 0; } }
   .about-park__navigation-btn-wrapper:before {
     position: absolute;
     content: '';
@@ -2630,9 +2750,6 @@ select:-webkit-autofill:focus {
     transition: 400ms width, 400ms height, 400ms -webkit-transform;
     transition: 400ms width, 400ms height, 400ms transform;
     transition: 400ms width, 400ms height, 400ms transform, 400ms -webkit-transform; }
-  @media only screen and (max-width: 1600px) {
-    .about-park__navigation-btn-wrapper + .about-park__navigation-btn-wrapper {
-      margin-top: 16px; } }
 
 .about-park__btn-video-wrapper {
   height: 80px;
@@ -2649,6 +2766,15 @@ select:-webkit-autofill:focus {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center; }
+
+@media only screen and (max-width: 1024px) {
+  .about-park__btn-video-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
 
 .about-park__btn-video-top-caption {
   font-size: 16px;

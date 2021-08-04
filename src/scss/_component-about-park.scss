@@ -2,19 +2,50 @@
   padding-bottom: 90px;
   margin-bottom: 120px;
   position: relative;
+  height: min-content;
+
+  @include breakpoint(laptop) {
+    margin-bottom: 80px;
+  }
+
+  @include breakpoint(small-mobile) {
+    margin-bottom: 40px;
+  }
+}
+
+.about-park__no-container {
+  @include breakpoint(tablet) {
+    padding: 0;
+  }
 }
 
 .about-park__blob {
   position: absolute;
   top: 190px;
   object-fit: cover;
-  height: 1275px;
+  height: 90%;
   width: 100vw;
+
+  @include breakpoint(laptop) {
+    top: 158px;
+  }
+
+  @include breakpoint(xx-mobile) {
+    top: 126px;
+  }
+
+  @include breakpoint(supersmall-mobile) {
+    top: 126px;
+  }
 }
 
 .about-park__info-wrapper {
   position: relative;
   margin-bottom: 66px;
+
+  @include breakpoint(laptop) {
+    margin-bottom: 40px;
+  }
 }
 
 .about-park__info-content {
@@ -22,6 +53,17 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 100px;
+
+  @include breakpoint(desktop) {
+    padding: 66px 60px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 70px 60px;
+  }
+
+  @include breakpoint(small-mobile) {
+    padding: 50px 20px;
+    grid-gap: 40px 30px;
+  }
 }
 
 .about-park__info-caption-number-wrapper {
@@ -29,6 +71,14 @@
   background-color: #5215AA;
   background-size: cover;
   margin-bottom: 8px;
+
+  @include breakpoint(laptop) {
+    margin-bottom: 10px;
+  }
+
+  @include breakpoint(small-mobile) {
+    margin-bottom: 20px;
+  }
 }
 
 .about-park__info-caption-number {
@@ -37,6 +87,14 @@
   mix-blend-mode: lighten;
   font-weight: bold;
   font-size: 70px;
+
+  @include breakpoint(laptop) {
+    font-size: 50px;
+  }
+
+  @include breakpoint(small-mobile) {
+    font-size: 30px;
+  }
 }
 
 .about-park__info-caption-text {
@@ -46,12 +104,33 @@
   margin-bottom: 38px;
   color: #5215AA;
 
+  @include breakpoint(laptop) {
+    font-size: 18px;
+    margin-bottom: 28px;
+    line-height: 24px;
+  }
+
+  @include breakpoint(small-mobile) {
+    font-size: 16px;
+    margin-bottom: 16px;
+    line-height: 20px;
+  }
 }
 
 .about-park__info-value {
   font-size: 18px;
   line-height: 22px;
   color: var(--secondary-color);
+
+  @include breakpoint(laptop) {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  @include breakpoint(small-mobile) {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 
 .about-park__dude-image {
@@ -66,6 +145,14 @@
   background-size: contain;
   background-position: center;
   z-index: -1;
+
+  @include breakpoint(large-desktop) {
+    right: 40px;
+  }
+
+  @include breakpoint(desktop) {
+    right: 0;
+  }
 }
 
 //
@@ -73,6 +160,24 @@
 .about-park__navigation-wrapper {
   margin-left: 130px;
   z-index: 2;
+
+  @include breakpoint(desktop) {
+    margin-left: 60px;
+  }
+
+  @include breakpoint(tablet) {
+    width: 100%;
+    max-width: 1640px;
+    margin: 0 auto;
+    padding: 0 var(--content-padding);
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @include breakpoint(mobile) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .about-park__navigation-caption {
@@ -86,18 +191,41 @@
 
 .about-park__navigation-btns-list {
   margin: -8px 0;
+
+  @include breakpoint(tablet) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px 10px;
+  }
+
+  @include breakpoint(small-mobile) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .about-park__navigation-btn-wrapper {
   position: relative;
   font-weight: bold;
   font-size: 20px;
-  line-height: 28px;
   padding: 8px;
   text-align: start;
+  margin-left: 8px;
+
+  @include breakpoint(laptop) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 
   & + & {
     margin-top: 32px;
+
+    @include breakpoint(large-desktop) {
+      margin-top: 16px;
+    }
+
+    @include breakpoint(tablet) {
+      margin-top: 0;
+    }
   }
 
   &:before {
@@ -112,12 +240,6 @@
     border-radius: 100%;
     z-index: -1;
     transition: 400ms width, 400ms height, 400ms transform;
-  }
-
-  @include breakpoint(large-desktop) {
-    & + & {
-      margin-top: 16px;
-    }
   }
 }
 
@@ -143,6 +265,13 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+  }
+}
+
+.about-park__btn-video-container {
+  @include breakpoint(tablet) {
+    display: flex;
+    justify-content: center;
   }
 }
 
