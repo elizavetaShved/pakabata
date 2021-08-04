@@ -2,6 +2,10 @@
   margin-bottom: 48px;
   display: flex;
   justify-content: center;
+
+  @include breakpoint(small-mobile) {
+    margin-bottom: 40px;
+  }
 }
 
 .video__btn {
@@ -23,6 +27,24 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+
+    @include breakpoint(tablet) {
+      width: 40px;
+    }
+
+    @include breakpoint(small-mobile) {
+      width: 32px;
+    }
+  }
+
+  @include breakpoint(tablet) {
+    padding-left: 50px;
+    height: 40px;
+  }
+
+  @include breakpoint(small-mobile) {
+    padding-left: 48px;
+    height: 32px;
   }
 }
 

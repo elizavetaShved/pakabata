@@ -38,6 +38,14 @@
     width: 100vw;
     height: 406px;
     z-index: -1;
+
+    @include breakpoint(tablet) {
+      height: 284px;
+    }
+
+    @include breakpoint(small-mobile) {
+      height: 162px;
+    }
   }
 }
 

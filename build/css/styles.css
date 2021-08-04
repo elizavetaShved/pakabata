@@ -1370,6 +1370,12 @@ select:-webkit-autofill:focus {
     width: 100vw;
     height: 406px;
     z-index: -1; }
+    @media only screen and (max-width: 1024px) {
+      .layout-wrapper:after {
+        height: 284px; } }
+    @media only screen and (max-width: 576px) {
+      .layout-wrapper:after {
+        height: 162px; } }
 
 .layout-content {
   -webkit-box-flex: 1;
@@ -2437,6 +2443,9 @@ select:-webkit-autofill:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+  @media only screen and (max-width: 576px) {
+    .video {
+      margin-bottom: 40px; } }
 
 .video__btn {
   color: black !important;
@@ -2460,6 +2469,20 @@ select:-webkit-autofill:focus {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center; }
+    @media only screen and (max-width: 1024px) {
+      .video__btn:before {
+        width: 40px; } }
+    @media only screen and (max-width: 576px) {
+      .video__btn:before {
+        width: 32px; } }
+  @media only screen and (max-width: 1024px) {
+    .video__btn {
+      padding-left: 50px;
+      height: 40px; } }
+  @media only screen and (max-width: 576px) {
+    .video__btn {
+      padding-left: 48px;
+      height: 32px; } }
 
 .video__btn-text-wrapper {
   background-image: url("../img/video/font-background.png");
