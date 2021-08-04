@@ -1830,6 +1830,12 @@ select:-webkit-autofill:focus {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 18px; }
+  @media only screen and (max-width: 1024px) {
+    .gl-main-links-list {
+      grid-gap: 12px; } }
+  @media only screen and (max-width: 576px) {
+    .gl-main-links-list {
+      grid-gap: 8px; } }
 
 .gl-main-link-container {
   position: relative; }
@@ -1926,11 +1932,21 @@ select:-webkit-autofill:focus {
   font-weight: bold;
   font-size: 24px;
   color: var(--secondary-color); }
+  @media only screen and (max-width: 576px) {
+    .gl-main-link-title {
+      font-size: 20px; } }
 
 .gl-main-link-icon {
   height: 50px;
   width: auto !important;
   margin-left: 20px; }
+  @media only screen and (max-width: 576px) {
+    .gl-main-link-icon {
+      height: 32px;
+      margin-left: 10px; } }
+  @media only screen and (max-width: 370px) {
+    .gl-main-link-icon {
+      height: 24px; } }
 
 .gl-datepicker {
   padding-left: 30px;
@@ -2499,16 +2515,19 @@ select:-webkit-autofill:focus {
   letter-spacing: .18em;
   text-transform: uppercase; }
 
-.bulletin-board {
+.bulletin-board__links-list {
   width: 100%;
   margin-bottom: 140px; }
   @media only screen and (max-width: 1400px) {
-    .bulletin-board {
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 40px; } }
+    .bulletin-board__links-list {
+      grid-template-columns: repeat(2, 1fr); } }
   @media only screen and (max-width: 1024px) {
-    .bulletin-board {
-      grid-template-columns: 1fr; } }
+    .bulletin-board__links-list {
+      grid-template-columns: 1fr;
+      margin-bottom: 100px; } }
+  @media only screen and (max-width: 576px) {
+    .bulletin-board__links-list {
+      margin-bottom: 60px; } }
 
 .about-park {
   padding-bottom: 90px;

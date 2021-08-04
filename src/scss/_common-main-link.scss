@@ -3,6 +3,14 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 18px;
+
+  @include breakpoint(tablet) {
+    grid-gap: 12px;
+  }
+
+  @include breakpoint(small-mobile) {
+    grid-gap: 8px;
+  }
 }
 
 .gl-main-link-container {
@@ -127,10 +135,23 @@
   font-weight: bold;
   font-size: 24px;
   color: var(--secondary-color);
+
+  @include breakpoint(small-mobile) {
+    font-size: 20px;
+  }
 }
 
 .gl-main-link-icon {
   height: 50px;
   width: auto !important;
   margin-left: 20px;
+
+  @include breakpoint(small-mobile) {
+    height: 32px;
+    margin-left: 10px;
+  }
+
+  @include breakpoint(supersmall-mobile) {
+    height: 24px;
+  }
 }

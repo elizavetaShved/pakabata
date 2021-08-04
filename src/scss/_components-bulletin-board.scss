@@ -1,13 +1,17 @@
-.bulletin-board {
+.bulletin-board__links-list {
   width: 100%;
   margin-bottom: 140px;
 
   @include breakpoint(desktop) {
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 40px;
   }
 
   @include breakpoint(tablet) {
     grid-template-columns: 1fr;
+    margin-bottom: 100px;
+  }
+
+  @include breakpoint(small-mobile) {
+    margin-bottom: 60px;
   }
 }
