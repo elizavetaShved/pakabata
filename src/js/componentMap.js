@@ -25,7 +25,7 @@ export default function componentMap() {
     const center = [lat, lng];
 
     const mapInstance = new ymaps.Map(mapElem, {
-      center: [55.75779320527944,52.44201624664151],
+      center: [55.75488271170576, 52.44037859194363],
       zoom: 15,
       controls: []
     });

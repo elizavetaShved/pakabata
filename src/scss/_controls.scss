@@ -1,5 +1,12 @@
+$main-btn-height-dest: 54px;
+$transparent-btn-height-dest: 50px; // (54 - (2 + 2))
+$main-btn-height-laptop: 50px;
+$transparent-btn-height-laptop: 46px; // (50 - (2 + 2))
+$transparent-btn-border: 2px;
+
 .gl-main-btn, .gl-transparent-btn {
-  padding: 18px 26px;
+  padding: 0 26px;
+  height: $main-btn-height-dest;
   border-radius: 10px;
   font-weight: bold;
   font-size: 14px;
@@ -7,15 +14,111 @@
   white-space: nowrap;
   text-transform: uppercase;
   letter-spacing: 2px;
+
+  @include breakpoint(large-desktop) {
+    padding: 0 18px;
+    height: $main-btn-height-laptop;
+    font-size: 12px;
+  }
+}
+
+.gl-btn-container {
+  display: block;
+  overflow: hidden;
+}
+
+.gl-btn-wrapper {
+  display: flex;
+  flex-direction: column;
+  transform: translateY(0px);
+  transition: 300ms transform;
+}
+
+.gl-btn-content-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .gl-main-btn {
   background: linear-gradient(300.27deg, #FFE98B 9.78%, #D74479 88.27%);
+
+  &:hover {
+    .gl-btn-wrapper {
+      transform: translateY(-$main-btn-height-dest);
+
+      @include breakpoint(large-desktop) {
+        transform: translateY(-$main-btn-height-laptop);
+      }
+    }
+  }
+
+  .gl-btn-container {
+    display: block;
+    height: $main-btn-height-dest;
+    overflow: hidden;
+
+    @include breakpoint(large-desktop) {
+      height: $main-btn-height-laptop;
+    }
+  }
+
+  .gl-btn-wrapper {
+    height: calc(#{$main-btn-height-dest} * 2);
+
+    @include breakpoint(large-desktop) {
+      height: calc(#{$main-btn-height-laptop} * 2);
+    }
+  }
+
+  .gl-btn-content-item {
+    height: $main-btn-height-dest;
+
+    @include breakpoint(large-desktop) {
+      height: $main-btn-height-laptop;
+    }
+  }
 }
 
 .gl-transparent-btn {
   background: transparent;
-  border: 2px solid #9267C2;
+  border: $transparent-btn-border solid #9267C2;
+
+  &:hover {
+    .gl-btn-wrapper {
+      transform: translateY(-$transparent-btn-height-dest);
+
+      @include breakpoint(large-desktop) {
+        transform: translateY(-$transparent-btn-height-laptop);
+      }
+    }
+  }
+
+  .gl-btn-container {
+    display: block;
+    height: $transparent-btn-height-dest;
+    overflow: hidden;
+
+    @include breakpoint(large-desktop) {
+      height: $transparent-btn-height-laptop;
+    }
+  }
+
+  .gl-btn-wrapper {
+    height: calc(#{$transparent-btn-height-dest} * 2);
+
+    @include breakpoint(large-desktop) {
+      height: calc(#{$transparent-btn-height-laptop} * 2);
+    }
+  }
+
+  .gl-btn-content-item {
+    height: $transparent-btn-height-dest;
+
+    @include breakpoint(large-desktop) {
+      height: $transparent-btn-height-laptop;
+    }
+  }
 }
 
 .gl-radio-btn-wrapper {
