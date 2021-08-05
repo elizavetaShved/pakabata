@@ -1,5 +1,7 @@
 <div class="order-form">
-  {{> component-holidays-dude }}
+  <div class="gl-desk-hide">
+    {{> component-holidays-dude }}
+  </div>
 
   <form class="gl-main-block order-form__form-wrapper order-form__padding-content" id="order-form-host">
     <div class="order-form__order-title">
@@ -26,7 +28,7 @@
       </div>
 
       <div class="order-form__inputs-text-list">
-        <div class="gl-input-wrapper gl-input-number-wrapper gl-font-calibri">
+        <div class="gl-input-wrapper gl-input-number-wrapper gl-font-calibri order-form__input-children-wrapper">
           <div class="gl-input-number-text">Детей</div>
           <div class="gl-input-number-panel">
             <button type="button" class="gl-input-number-btn" id="children-btn-minus">
@@ -43,19 +45,19 @@
           </div>
         </div>
 
-        <div class="gl-input-wrapper gl-datepicker-container gl-font-calibri">
+        <div class="order-form__input-hide-mobile gl-input-wrapper gl-datepicker-container gl-font-calibri order-form__input-date-wrapper">
           <input type="text" class="gl-input gl-datepicker" placeholder="Дата мероприятия" readonly>
         </div>
 
-        <label class="gl-input-wrapper gl-font-calibri">
+        <label class="gl-input-wrapper gl-font-calibri order-form__input-name-wrapper">
           <input type="text" class="gl-input" placeholder="Ваше ФИО">
         </label>
 
-        <label class="gl-input-wrapper gl-font-calibri">
+        <label class="order-form__input-hide-mobile gl-input-wrapper gl-font-calibri">
           <input type="text" class="gl-input" placeholder="Телефон">
         </label>
 
-        <label class="gl-input-wrapper gl-font-calibri">
+        <label class="order-form__input-hide-mobile gl-input-wrapper gl-font-calibri">
           <textarea class="gl-input gl-input-textarea" placeholder="Комментарий"></textarea>
         </label>
       </div>

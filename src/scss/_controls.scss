@@ -190,8 +190,19 @@ $transparent-btn-border: 2px;
   line-height: 22px;
   color: var(--secondary-color);
 
-  & + & {
-    margin-top: 8px;
+  &.order-form__input-hide-mobile {
+    @include breakpoint(desktop) {
+      max-height: 0;
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
+      transition: 300ms max-height, 300ms padding, margin-top 300ms;
+
+      &.mod-show {
+        padding: 14px;
+        max-height: 52px;
+      }
+    }
   }
 }
 
@@ -219,6 +230,8 @@ $transparent-btn-border: 2px;
 .gl-input-number-text {
   user-select: none;
   flex-grow: 1;
+  display: flex;
+  align-items: center;
 }
 
 .gl-input-number-panel {
@@ -234,10 +247,17 @@ $transparent-btn-border: 2px;
   width: 42px; // default, а вообще проставляется в JS
   display: block;
   padding: 0 16px;
+  text-align: center;
+  line-height: 22px;
+
+  @include breakpoint(small-tablet) {
+    line-height: 28px;
+  }
 }
 
 .gl-input-number-btn {
-  display: block;
+  display: flex;
+  align-items: center;
 
   svg {
     fill: var(--secondary-color)
@@ -282,16 +302,25 @@ $transparent-btn-border: 2px;
   background-repeat: no-repeat;
   background-size: 9px 9px;
   background-position: center;
+  flex: 0 0 18px;
 }
 
 .order-form__btn-submit-wrapper {
   display: flex;
   justify-content: flex-end;
   margin-top: 16px;
+
+  @include breakpoint(small-mobile) {
+    margin-top: 32px;
+  }
 }
 
 .order-form__btn-submit {
   min-width: 214px;
+
+  @include breakpoint(small-mobile) {
+    width: 100%;
+  }
 }
 
 .gl-close-btn-wrapper {

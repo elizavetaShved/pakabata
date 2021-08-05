@@ -1633,8 +1633,17 @@ select:-webkit-autofill:focus {
   font-size: 16px;
   line-height: 22px;
   color: var(--secondary-color); }
-  .gl-input-wrapper + .gl-input-wrapper {
-    margin-top: 8px; }
+  @media only screen and (max-width: 1400px) {
+    .gl-input-wrapper.order-form__input-hide-mobile {
+      max-height: 0;
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
+      -webkit-transition: 300ms max-height, 300ms padding, margin-top 300ms;
+      transition: 300ms max-height, 300ms padding, margin-top 300ms; }
+      .gl-input-wrapper.order-form__input-hide-mobile.mod-show {
+        padding: 14px;
+        max-height: 52px; } }
 
 .gl-input {
   font-size: 16px;
@@ -1679,7 +1688,13 @@ select:-webkit-autofill:focus {
           user-select: none;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
-          flex-grow: 1; }
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .gl-input-number-panel {
   display: -webkit-box;
@@ -1696,10 +1711,20 @@ select:-webkit-autofill:focus {
   margin: 0 8px;
   width: 42px;
   display: block;
-  padding: 0 16px; }
+  padding: 0 16px;
+  text-align: center;
+  line-height: 22px; }
+  @media only screen and (max-width: 768px) {
+    .gl-input-number-value {
+      line-height: 28px; } }
 
 .gl-input-number-btn {
-  display: block; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   .gl-input-number-btn svg {
     fill: var(--secondary-color); }
 
@@ -1734,7 +1759,10 @@ select:-webkit-autofill:focus {
   margin-right: 10px;
   background-repeat: no-repeat;
   background-size: 9px 9px;
-  background-position: center; }
+  background-position: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 18px;
+          flex: 0 0 18px; }
 
 .order-form__btn-submit-wrapper {
   display: -webkit-box;
@@ -1744,9 +1772,15 @@ select:-webkit-autofill:focus {
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin-top: 16px; }
+  @media only screen and (max-width: 576px) {
+    .order-form__btn-submit-wrapper {
+      margin-top: 32px; } }
 
 .order-form__btn-submit {
   min-width: 214px; }
+  @media only screen and (max-width: 576px) {
+    .order-form__btn-submit {
+      width: 100%; } }
 
 .gl-close-btn-wrapper {
   position: absolute;
@@ -1864,7 +1898,11 @@ select:-webkit-autofill:focus {
       grid-gap: 8px; } }
 
 .gl-main-link-container {
-  position: relative; }
+  position: relative;
+  min-height: 132px; }
+  @media only screen and (max-width: 768px) {
+    .gl-main-link-container {
+      min-height: auto; } }
   .gl-main-link-container:hover {
     text-decoration: none; }
     .gl-main-link-container:hover .gl-main-link-content:before {
@@ -1914,7 +1952,7 @@ select:-webkit-autofill:focus {
     -webkit-transition: opacity 500ms;
     transition: opacity 500ms;
     opacity: 0; }
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 768px) {
     .gl-main-link-content {
       padding: 34px 30px; } }
   @media only screen and (max-width: 576px) {
@@ -1951,7 +1989,7 @@ select:-webkit-autofill:focus {
     background-image: url("../img/common/silhouettes/back-background-3.svg"); }
   .gl-main-link-back-item:nth-child(4) {
     width: 146px;
-    height: 130px;
+    height: 102px;
     bottom: 0;
     left: 0;
     background-image: url("../img/common/silhouettes/back-background-4.svg");
@@ -2599,7 +2637,7 @@ select:-webkit-autofill:focus {
   @media only screen and (max-width: 1200px) {
     .about-park__blob {
       top: 158px; } }
-  @media only screen and (max-width: 425px) {
+  @media only screen and (max-width: 426px) {
     .about-park__blob {
       top: 126px; } }
   @media only screen and (max-width: 370px) {
@@ -3001,12 +3039,15 @@ select:-webkit-autofill:focus {
       bottom: 8px;
       left: 8px; } }
 
+@media only screen and (max-width: 1400px) {
+  .holidays__main-link-list {
+    margin-bottom: 75px; } }
+
 @media only screen and (max-width: 1024px) {
   .holidays__main-link-list {
     padding-left: var(--padding-page-content-tablet);
     padding-right: var(--padding-page-content-tablet);
-    grid-template-columns: 1fr;
-    margin-bottom: 75px; } }
+    grid-template-columns: 1fr; } }
 
 @media only screen and (max-width: 640px) {
   .holidays__main-link-list {
@@ -3116,16 +3157,26 @@ select:-webkit-autofill:focus {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 454px;
           flex: 0 0 454px;
-  position: relative; }
+  position: relative;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box; }
   @media only screen and (max-width: 1024px) {
     .order-form {
+      margin-left: 0;
       padding-left: var(--padding-page-content-tablet);
-      padding-right: var(--padding-page-content-tablet);
-      margin-left: 0; } }
+      padding-right: var(--padding-page-content-tablet); } }
   @media only screen and (max-width: 640px) {
     .order-form {
       padding-left: var(--padding-page-content-mobile);
       padding-right: var(--padding-page-content-mobile); } }
+  @media only screen and (max-width: 576px) {
+    .order-form {
+      width: 100%;
+      -webkit-box-flex: 1;
+          -ms-flex: auto;
+              flex: auto;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box; } }
 
 .order-form__form-wrapper {
   padding-top: 46px;
@@ -3153,11 +3204,40 @@ select:-webkit-autofill:focus {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 8px;
   margin-bottom: 24px; }
+  @media only screen and (max-width: 768px) {
+    .order-form__radio-btns-list {
+      grid-template-columns: repeat(2, auto); } }
+
+.order-form__inputs-text-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 8px; }
+
+@media only screen and (max-width: 768px) {
+  .order-form__input-children-wrapper {
+    grid-row-start: 2;
+    grid-row-end: 3; } }
+
+@media only screen and (max-width: 768px) {
+  .order-form__input-date-wrapper {
+    grid-row-start: 3;
+    grid-row-end: 4; } }
+
+@media only screen and (max-width: 768px) {
+  .order-form__input-name-wrapper {
+    grid-row-start: 1;
+    grid-row-end: 2; } }
 
 .order-form__contacts-wrapper {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   color: var(--secondary-color); }
+  @media only screen and (max-width: 426px) {
+    .order-form__contacts-wrapper {
+      padding-left: 0;
+      padding-right: 0;
+      margin-top: 26px;
+      margin-bottom: 12px; } }
 
 .order-form__contacts-caption {
   font-size: 16px;
@@ -3183,24 +3263,47 @@ select:-webkit-autofill:focus {
     top: -82px;
     left: 0;
     background-image: url("../img/order-form/silhouettes/back-background-1.svg"); }
+    @media only screen and (max-width: 576px) {
+      .order-form__back-background-item:nth-child(1) {
+        width: 360px;
+        height: 306px;
+        top: -62px;
+        left: -32px; } }
   .order-form__back-background-item:nth-child(2) {
     width: 538px;
     height: 456px;
     bottom: -30px;
     right: -70px;
     background-image: url("../img/order-form/silhouettes/back-background-2.svg"); }
+    @media only screen and (max-width: 576px) {
+      .order-form__back-background-item:nth-child(2) {
+        top: -32px;
+        bottom: auto;
+        right: -183px;
+        -webkit-transform: rotate(-46deg);
+                transform: rotate(-46deg); } }
   .order-form__back-background-item:nth-child(3) {
     width: 180px;
     height: 252px;
     top: 190px;
     left: -64px;
     background-image: url("../img/order-form/silhouettes/back-background-3.svg"); }
+    @media only screen and (max-width: 576px) {
+      .order-form__back-background-item:nth-child(3) {
+        -webkit-transform: rotate(-216deg);
+                transform: rotate(-216deg);
+        left: -74px;
+        top: auto;
+        bottom: 0; } }
   .order-form__back-background-item:nth-child(4) {
     width: 196px;
     height: 196px;
     top: 46px;
     left: -56px;
     background-image: url("../img/order-form/silhouettes/back-background-4.svg"); }
+    @media only screen and (max-width: 576px) {
+      .order-form__back-background-item:nth-child(4) {
+        top: 30%; } }
 
 .about-family-pakaf {
   position: relative;

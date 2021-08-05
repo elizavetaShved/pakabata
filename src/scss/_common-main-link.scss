@@ -15,6 +15,11 @@
 
 .gl-main-link-container {
   position: relative;
+  min-height: 132px;
+
+  @include breakpoint(small-tablet) {
+    min-height: auto;
+  }
 
   &:hover {
     text-decoration: none;
@@ -78,7 +83,7 @@
     opacity: 0;
   }
 
-  @include breakpoint(tablet) {
+  @include breakpoint(small-tablet) {
     padding: 34px 30px;
   }
 
@@ -123,7 +128,7 @@
 
   &:nth-child(4) {
     width: 146px;
-    height: 130px;
+    height: 102px;
     bottom: 0;
     left: 0;
     background-image: url('../img/common/silhouettes/back-background-4.svg');

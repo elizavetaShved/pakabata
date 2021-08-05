@@ -3,6 +3,7 @@ export default function commonMainLinks(mainLinkContainer) {
     let containerHeight = 0;
 
     mainLinkContainer.forEach(item => {
+      item.style.height = 'auto';
       const itemHeight = item.clientHeight;
       containerHeight = itemHeight > containerHeight ? itemHeight : containerHeight;
     })

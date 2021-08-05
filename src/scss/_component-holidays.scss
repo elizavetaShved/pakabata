@@ -211,11 +211,14 @@ $main-block-width: 60%;
 }
 
 .holidays__main-link-list {
+  @include breakpoint(desktop) {
+    margin-bottom: 75px;
+  }
+
   @include breakpoint(tablet) {
     padding-left: var(--padding-page-content-tablet);
     padding-right: var(--padding-page-content-tablet);
     grid-template-columns: 1fr;
-    margin-bottom: 75px;
   }
 
   @include breakpoint(mobile) {

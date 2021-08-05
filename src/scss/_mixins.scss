@@ -200,7 +200,7 @@
       @content;
     }
   } @else if $class == xx-mobile {
-    @media only screen and (max-width: (425px)) {
+    @media only screen and (max-width: (426px)) {
       @content;
     }
   } @else if $class == supersmall-mobile {

@@ -4,16 +4,23 @@
   width: 454px;
   flex: 0 0 454px;
   position: relative;
+  box-sizing: content-box;
 
   @include breakpoint(tablet) {
+    margin-left: 0;
     padding-left: var(--padding-page-content-tablet);
     padding-right: var(--padding-page-content-tablet);
-    margin-left: 0
   }
 
   @include breakpoint(mobile) {
     padding-left: var(--padding-page-content-mobile);
     padding-right: var(--padding-page-content-mobile);
+  }
+
+  @include breakpoint(small-mobile) {
+    width: 100%;
+    flex: auto;
+    box-sizing: border-box;
   }
 }
 
@@ -47,12 +54,50 @@
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 8px;
   margin-bottom: 24px;
+
+  @include breakpoint(small-tablet) {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+.order-form__inputs-text-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 8px;
+}
+
+.order-form__input-children-wrapper {
+  @include breakpoint(small-tablet) {
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+}
+
+.order-form__input-date-wrapper {
+  @include breakpoint(small-tablet) {
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+}
+
+.order-form__input-name-wrapper {
+  @include breakpoint(small-tablet) {
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
 }
 
 .order-form__contacts-wrapper {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   color: var(--secondary-color);
+
+  @include breakpoint(xx-mobile) {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 26px;
+    margin-bottom: 12px;
+  }
 }
 
 .order-form__contacts-caption {
@@ -81,6 +126,13 @@
     top: -82px;
     left: 0;
     background-image: url('../img/order-form/silhouettes/back-background-1.svg');
+
+    @include breakpoint(small-mobile) {
+      width: 360px;
+      height: 306px;
+      top: -62px;
+      left: -32px;
+    }
   }
 
   &:nth-child(2) {
@@ -89,6 +141,13 @@
     bottom: -30px;
     right: -70px;
     background-image: url('../img/order-form/silhouettes/back-background-2.svg');
+
+    @include breakpoint(small-mobile) {
+      top: -32px;
+      bottom: auto;
+      right: -183px;
+      transform: rotate(-46deg);
+    }
   }
 
   &:nth-child(3) {
@@ -97,6 +156,13 @@
     top: 190px;
     left: -64px;
     background-image: url('../img/order-form/silhouettes/back-background-3.svg');
+
+    @include breakpoint(small-mobile) {
+      transform: rotate(-216deg);
+      left: -74px;
+      top: auto;
+      bottom: 0;
+    }
   }
 
   &:nth-child(4) {
@@ -105,5 +171,9 @@
     top: 46px;
     left: -56px;
     background-image: url('../img/order-form/silhouettes/back-background-4.svg');
+
+    @include breakpoint(small-mobile) {
+      top: 30%
+    }
   }
 }
