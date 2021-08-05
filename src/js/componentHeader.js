@@ -1,4 +1,4 @@
-import { lockScroll } from './scrollBlocker';
+import { lockScroll, unlockScroll } from './scrollBlocker';
 import { checkExistParent } from './checkExistParent';
 
 export default function componentHeader() {
@@ -9,18 +9,25 @@ export default function componentHeader() {
   const closeBtn = hostElem.querySelector('.header__sidebar-close-btn-wrapper');
 
   burgerBtn.onclick = () => {
-    sidebarContainerElem.classList.add('mod-open');
-    lockScroll(sidebarWrapperElem);
+    onLockScroll();
   }
 
   sidebarContainerElem.onclick = (e) => {
     if (e.target === sidebarContainerElem || checkExistParent(e.target, closeBtn)) {
-      sidebarContainerElem.classList.remove('mod-open');
+      onUnlockScroll();
     }
   }
 
   closeBtn.onclick = () => {
+    onLockScroll();
+  }
+
+  const onLockScroll = () => {
     sidebarContainerElem.classList.add('mod-open');
     lockScroll(sidebarWrapperElem);
+  }
+  const onUnlockScroll = () => {
+    sidebarContainerElem.classList.remove('mod-open');
+    unlockScroll(sidebarWrapperElem);
   }
 }
