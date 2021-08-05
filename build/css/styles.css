@@ -1097,9 +1097,10 @@ a {
   text-decoration: none;
   -webkit-transition: 150ms color;
   transition: 150ms color; }
-  a:hover {
-    color: var(--third-color) !important;
-    text-decoration: underline; }
+  @media only screen and (min-width: 641px) {
+    a:hover {
+      color: var(--third-color) !important;
+      text-decoration: underline; } }
   a:link, a:visited {
     color: inherit; }
 
@@ -3750,8 +3751,12 @@ select:-webkit-autofill:focus {
       margin-top: 26px; } }
 
 .map {
-  height: 670px;
-  position: relative; }
+  height: 710px;
+  position: relative;
+  margin-bottom: -40px; }
+  @media only screen and (max-width: 1400px) {
+    .map {
+      height: 500px; } }
   .map:before {
     position: absolute;
     content: '';
@@ -3764,14 +3769,23 @@ select:-webkit-autofill:focus {
     @media only screen and (max-width: 1400px) {
       .map:before {
         content: none; } }
+  @media only screen and (max-width: 768px) {
+    .map {
+      height: 400px; } }
 
 .map__container {
   -webkit-clip-path: ellipse(94% 60% at 50% 60%);
           clip-path: ellipse(94% 60% at 50% 60%);
-  overflow: hidden; }
+  overflow: hidden;
+  height: 100%; }
+  @media only screen and (max-width: 768px) {
+    .map__container {
+      -webkit-clip-path: none;
+              clip-path: none; } }
 
 .map__wrapper {
-  position: relative; }
+  position: relative;
+  height: 100%; }
   .map__wrapper::after {
     content: '';
     display: block;
@@ -3797,10 +3811,18 @@ select:-webkit-autofill:focus {
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
-  color: black; }
+  color: black;
+  z-index: 2; }
+  @media only screen and (max-width: 768px) {
+    .map__hint-wrapper {
+      top: 26px;
+      width: 100%; } }
 
 .map__hint-subtitle {
   margin-bottom: 48px; }
+  @media only screen and (max-width: 768px) {
+    .map__hint-subtitle {
+      margin-bottom: 0; } }
 
 .map__hint-info-block {
   width: 100%;
@@ -3813,6 +3835,13 @@ select:-webkit-autofill:focus {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 30px;
   color: var(--secondary-color); }
+  @media only screen and (max-width: 768px) {
+    .map__hint-info-block {
+      margin-top: 218px; } }
+  @media only screen and (max-width: 576px) {
+    .map__hint-info-block {
+      grid-template-columns: 1fr;
+      grid-gap: 20px; } }
 
 .map__hint-info-item-caption {
   font-weight: bold;

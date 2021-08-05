@@ -133,8 +133,10 @@ a {
   transition: 150ms color;
 
   &:hover {
-    color: var(--third-color) !important;
-    text-decoration: underline;
+    @include breakpointMF(small-tablet) {
+      color: var(--third-color) !important;
+      text-decoration: underline;
+    }
   }
 
   &:link,

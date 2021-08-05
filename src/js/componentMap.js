@@ -24,8 +24,15 @@ export default function componentMap() {
 
     const center = [lat, lng];
 
+    let geoPing;
+    if (window.innerWidth >=768) {
+      geoPing = [55.75823642395186,52.4381519897397]
+    } else {
+      geoPing = center;
+    }
+
     const mapInstance = new ymaps.Map(mapElem, {
-      center: [55.75488271170576, 52.44037859194363],
+      center: geoPing,
       zoom: 15,
       controls: []
     });
@@ -56,12 +63,7 @@ export default function componentMap() {
         hideIconOnBalloonOpen: false,
         balloonCloseButton: false,
         ...pinOptions
-      },
-      // properties: {
-      //     balloonContent: balloonContent
-      // }
+      }
     });
-
-    // objectManager.objects.balloon.open(1);
   }
 }
