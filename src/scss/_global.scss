@@ -42,7 +42,7 @@
     margin-bottom: 0;
   }
 
-  @include breakpoint(tablet) {
+  @include breakpoint(desktop) {
     font-size: 38px;
     line-height: 48px;
     margin-bottom: 50px;

@@ -3,6 +3,10 @@ $main-block-width: 60%;
 .holidays {
   margin-bottom: 160px;
 
+  @include breakpoint(desktop) {
+    margin-bottom: 40px;
+  }
+
   @include breakpoint(tablet) {
     padding: 0;
   }

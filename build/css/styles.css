@@ -1230,7 +1230,7 @@ select:-webkit-autofill:focus {
   margin-bottom: 60px; }
   .gl-subtitle:last-child {
     margin-bottom: 0; }
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 1400px) {
     .gl-subtitle {
       font-size: 38px;
       line-height: 48px;
@@ -2852,6 +2852,9 @@ select:-webkit-autofill:focus {
 
 .holidays {
   margin-bottom: 160px; }
+  @media only screen and (max-width: 1400px) {
+    .holidays {
+      margin-bottom: 40px; } }
   @media only screen and (max-width: 1024px) {
     .holidays {
       padding: 0; } }
@@ -3307,7 +3310,9 @@ select:-webkit-autofill:focus {
 
 .about-family-pakaf {
   position: relative;
-  height: 862px;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
   margin-bottom: 100px; }
 
 .about-family-pakaf__blob {
@@ -3317,11 +3322,20 @@ select:-webkit-autofill:focus {
      object-fit: cover;
   height: 100%;
   width: 100vw; }
+  @media only screen and (max-width: 1024px) {
+    .about-family-pakaf__blob {
+      top: 0; } }
 
 .about-family-pakaf__info-wrapper {
-  min-width: 518px;
   z-index: 2;
   margin-right: 74px; }
+  @media only screen and (max-width: 1400px) {
+    .about-family-pakaf__info-wrapper {
+      margin-right: 54px; } }
+  @media only screen and (max-width: 1024px) {
+    .about-family-pakaf__info-wrapper {
+      margin-right: 0;
+      margin-bottom: 40px; } }
 
 .about-family-pakaf__slider-block-wrapper {
   padding-top: 122px;
@@ -3331,11 +3345,28 @@ select:-webkit-autofill:focus {
 
 .about-family-pakaf__subtitle {
   color: var(--main-color); }
+  @media only screen and (max-width: 1400px) {
+    .about-family-pakaf__subtitle {
+      margin-bottom: 30px; } }
+  @media only screen and (max-width: 576px) {
+    .about-family-pakaf__subtitle {
+      margin-bottom: 16px; } }
 
 .about-family-pakaf__caption {
   font-size: 24px;
   line-height: 34px;
   margin-bottom: 40px; }
+  @media only screen and (max-width: 1400px) {
+    .about-family-pakaf__caption {
+      font-size: 20px;
+      line-height: 26px; } }
+  @media only screen and (max-width: 1024px) {
+    .about-family-pakaf__caption {
+      margin-bottom: 0; } }
+  @media only screen and (max-width: 576px) {
+    .about-family-pakaf__caption {
+      font-size: 14px;
+      line-height: 20px; } }
 
 .about-family-pakaf__main-btn {
   min-width: 284px; }
@@ -3358,6 +3389,24 @@ select:-webkit-autofill:focus {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
           flex: 0 0 50%; }
+  @media only screen and (max-width: 1400px) {
+    .about-family-pakaf-slider {
+      width: 60%;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 60%;
+              flex: 0 0 60%; } }
+  @media only screen and (max-width: 1024px) {
+    .about-family-pakaf-slider {
+      padding: 0;
+      width: 100%;
+      -webkit-box-flex: 1;
+          -ms-flex: auto;
+              flex: auto;
+      margin-bottom: 48px; } }
+
+@media only screen and (max-width: 1024px) {
+  .about-family-pakaf__btn-menu-wrapper {
+    margin-bottom: 52px; } }
 
 .cost-visit {
   display: -webkit-box;
