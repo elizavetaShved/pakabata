@@ -5,6 +5,7 @@ $padding-content-price-extension: 40px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 112px;
+  padding-top: 100px;
 
   @include breakpoint(desktop) {
     flex-direction: column;

@@ -1,15 +1,19 @@
 .about-park {
   padding-bottom: 90px;
-  margin-bottom: 120px;
   position: relative;
   height: min-content;
+  padding-top: 140px;
+
+  @include breakpoint(tablet) {
+    padding-top: 100px;
+  }
 
   @include breakpoint(laptop) {
-    margin-bottom: 80px;
+    padding-top: 80px;
   }
 
   @include breakpoint(small-mobile) {
-    margin-bottom: 40px;
+    padding-top: 60px;
   }
 }
 

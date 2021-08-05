@@ -2601,32 +2601,30 @@ select:-webkit-autofill:focus {
   text-transform: uppercase; }
 
 .bulletin-board__links-list {
-  width: 100%;
-  margin-bottom: 140px; }
+  width: 100%; }
   @media only screen and (max-width: 1400px) {
     .bulletin-board__links-list {
       grid-template-columns: repeat(2, 1fr); } }
   @media only screen and (max-width: 1024px) {
     .bulletin-board__links-list {
-      grid-template-columns: 1fr;
-      margin-bottom: 100px; } }
-  @media only screen and (max-width: 576px) {
-    .bulletin-board__links-list {
-      margin-bottom: 60px; } }
+      grid-template-columns: 1fr; } }
 
 .about-park {
   padding-bottom: 90px;
-  margin-bottom: 120px;
   position: relative;
   height: -webkit-min-content;
   height: -moz-min-content;
-  height: min-content; }
+  height: min-content;
+  padding-top: 140px; }
+  @media only screen and (max-width: 1024px) {
+    .about-park {
+      padding-top: 100px; } }
   @media only screen and (max-width: 1200px) {
     .about-park {
-      margin-bottom: 80px; } }
+      padding-top: 80px; } }
   @media only screen and (max-width: 576px) {
     .about-park {
-      margin-bottom: 40px; } }
+      padding-top: 60px; } }
 
 @media only screen and (max-width: 1024px) {
   .about-park__no-container {
@@ -2856,13 +2854,17 @@ select:-webkit-autofill:focus {
   display: block; }
 
 .holidays {
-  margin-bottom: 160px; }
+  margin-bottom: 160px;
+  padding-top: 120px; }
   @media only screen and (max-width: 1400px) {
     .holidays {
       margin-bottom: 40px; } }
   @media only screen and (max-width: 1024px) {
     .holidays {
       padding: 0; } }
+  @media only screen and (max-width: 576px) {
+    .holidays {
+      padding-top: 40px; } }
 
 .holidays__title-wrapper {
   width: 60%;
@@ -3315,8 +3317,7 @@ select:-webkit-autofill:focus {
 
 .about-family-pakaf {
   position: relative;
-  height: 820px;
-  margin-bottom: 100px; }
+  height: 820px; }
   @media only screen and (max-width: 1200px) {
     .about-family-pakaf {
       height: 700px; } }
@@ -3437,7 +3438,8 @@ select:-webkit-autofill:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 112px; }
+  margin-bottom: 112px;
+  padding-top: 100px; }
   @media only screen and (max-width: 1400px) {
     .cost-visit {
       -webkit-box-orient: vertical;
