@@ -1,20 +1,28 @@
 .about-park {
-  padding-bottom: 90px;
-  position: relative;
+  margin-bottom: 90px;
   height: min-content;
   padding-top: 140px;
-
-  @include breakpoint(tablet) {
-    padding-top: 100px;
-  }
 
   @include breakpoint(laptop) {
     padding-top: 80px;
   }
 
+  @include breakpoint(tablet) {
+    padding-top: 100px;
+    margin-bottom: 160px;
+  }
+
+  @include breakpoint(small-tablet) {
+    margin-bottom: 80px;
+  }
+
   @include breakpoint(small-mobile) {
     padding-top: 60px;
   }
+}
+
+.about-park__wrapper {
+  position: relative;
 }
 
 .about-park__no-container {
@@ -25,21 +33,13 @@
 
 .about-park__blob {
   position: absolute;
-  top: 190px;
   object-fit: cover;
-  height: 90%;
+  height: 100%;
   width: 100vw;
+  top: 10%;
 
-  @include breakpoint(laptop) {
-    top: 158px;
-  }
-
-  @include breakpoint(xx-mobile) {
-    top: 126px;
-  }
-
-  @include breakpoint(supersmall-mobile) {
-    top: 126px;
+  @include breakpoint(tablet) {
+    height: 94%;
   }
 }
 
