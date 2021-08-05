@@ -120,22 +120,3 @@
   overflow: hidden;
   border-radius: 16px;
 }
-
-.gl-video-close-btn {
-  position: absolute;
-  content: '';
-  top: 30px;
-  right: 30px;
-  z-index: 2;
-
-  &:hover {
-    .gl-video-close-icon {
-      fill: #000;
-    }
-  }
-}
-
-.gl-video-close-icon {
-  fill: #fff;
-  transition: 300ms fill;
-}
