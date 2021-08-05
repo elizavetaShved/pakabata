@@ -1,4 +1,6 @@
 export default function componentCostVisit() {
+  const TRANSLATE_X_STEP = 180;
+
   const hostElem = document.querySelector('#cost-visit-host');
   const toggleBtns = hostElem.querySelectorAll('.cost-visit__toggle-item');
   const toggleBackground = hostElem.querySelector('.cost-visit__toggle-background');
@@ -36,7 +38,7 @@ export default function componentCostVisit() {
       toggleBtns[1].classList.add('mod-active');
       toggleBackground.classList.add('mod-right');
       valuesSliderWrapper.forEach(valuesSliderWrapperItem => {
-        valuesSliderWrapperItem.style.transform = `translateX(-50%)`;
+        valuesSliderWrapperItem.style.transform = `translateX(-${ TRANSLATE_X_STEP }px`;
       })
       valuesSmallArr.forEach(valueSmallItem => {
         valueSmallItem.classList.remove('mod-active');
