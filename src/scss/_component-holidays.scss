@@ -177,6 +177,39 @@ $main-block-width: 60%;
   }
 }
 
+.holidays__swiper-slide {
+  position: relative;
+}
+
+.holidays__swiper-slide-caption {
+  position: absolute;
+  bottom: 28px;
+  left: 40px;
+  padding: 10px 18px;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  background-color: var(--dark-secondary-color);
+  border-radius: 20px;
+  z-index: 2;
+
+  @include breakpoint(tablet) {
+    font-size: 12px;
+    line-height: 16px;
+    padding: 10px 16px;
+    bottom: 12px;
+    left: 24px;
+  }
+
+  @include breakpoint(small-mobile) {
+    font-size: 10px;
+    line-height: 12px;
+    padding: 8px 12px;
+    bottom: 8px;
+    left: 8px;
+  }
+}
+
 .holidays__main-link-list {
   @include breakpoint(tablet) {
     padding-left: var(--padding-page-content-tablet);

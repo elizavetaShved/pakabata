@@ -11,4 +11,6 @@ export default function componentHolidays() {
   commonMainSlider(swiperContainer, '.holidays__btn-next', '.holidays__btn-prev');
 
   commonMainLinks(mainLinkContainer);
+
+
 }

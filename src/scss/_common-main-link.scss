@@ -16,15 +16,15 @@
 .gl-main-link-container {
   position: relative;
 
-  @include breakpoint(small-tablet) {
-    // todo отменить поведение hover-а
-  }
-
   &:hover {
     text-decoration: none;
     .gl-main-link-content {
       &:before {
         opacity: 1;
+
+        @include breakpoint(small-tablet) {
+          opacity: 0;
+        }
       }
     }
 
@@ -76,6 +76,14 @@
     background: linear-gradient(102.1deg, #FFFEDE -28.56%, #F4D1D1 141.58%), linear-gradient(0deg, #F3EBEA, #F3EBEA), #FAF1CC;
     transition: opacity 500ms;
     opacity: 0;
+  }
+
+  @include breakpoint(tablet) {
+    padding: 34px 30px;
+  }
+
+  @include breakpoint(small-mobile) {
+    padding: 32px 20px;
   }
 }
 
