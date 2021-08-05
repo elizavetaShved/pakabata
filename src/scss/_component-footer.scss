@@ -8,6 +8,12 @@
   color: #fff;
 }
 
+.footer__container {
+  @include breakpoint(small-tablet) {
+    padding-top: 292px;
+  }
+}
+
 .footer__logo-block {
   height: 137px;
   display: flex;

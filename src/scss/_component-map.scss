@@ -71,6 +71,10 @@
   color: black;
   z-index: 2;
 
+  @include breakpoint(desktop) {
+    top: 70px;
+  }
+
   @include breakpoint(small-tablet) {
     top: 26px;
     width: 100%;

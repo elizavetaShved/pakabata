@@ -3813,6 +3813,9 @@ select:-webkit-autofill:focus {
   height: min-content;
   color: black;
   z-index: 2; }
+  @media only screen and (max-width: 1400px) {
+    .map__hint-wrapper {
+      top: 70px; } }
   @media only screen and (max-width: 768px) {
     .map__hint-wrapper {
       top: 26px;
@@ -3869,6 +3872,10 @@ select:-webkit-autofill:focus {
           clip-path: ellipse(94% 60% at 50% 60%);
   margin-top: -30px;
   color: #fff; }
+
+@media only screen and (max-width: 768px) {
+  .footer__container {
+    padding-top: 292px; } }
 
 .footer__logo-block {
   height: 137px;
