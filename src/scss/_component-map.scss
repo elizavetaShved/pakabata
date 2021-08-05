@@ -16,6 +16,7 @@
     height: 536px;
     top: -420px;
     left: -130px;
+    z-index: -1;
 
     @include breakpoint(desktop) {
       content: none;
@@ -31,6 +32,11 @@
   clip-path: ellipse(94% 60% at 50% 60%);
   overflow: hidden;
   height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
 
   @include breakpoint(small-tablet) {
     clip-path: none;
@@ -63,26 +69,37 @@
 }
 
 .map__hint-wrapper {
+  position: relative;
+}
+
+.map__hint {
   position: absolute;
-  top: 116px;
-  left: 0;
+  top: 0;
   width: 714px;
-  height: min-content;
   color: black;
   z-index: 2;
+  padding-top: 116px;
 
   @include breakpoint(desktop) {
-    top: 70px;
+    padding-top: 70px;
+  }
+
+  @include breakpoint(desktop) {
+    padding-top: 50px;
   }
 
   @include breakpoint(small-tablet) {
-    top: 26px;
+    padding-top: 26px;
     width: 100%;
   }
 }
 
 .map__hint-subtitle {
   margin-bottom: 48px;
+
+  @include breakpoint(desktop) {
+    margin-bottom: 26px;
+  }
 
   @include breakpoint(small-tablet) {
     margin-bottom: 0;
@@ -101,8 +118,15 @@
   grid-gap: 30px;
   color: var(--secondary-color);
 
+  @include breakpoint(tablet) {
+    grid-template-columns: 1fr;
+    width: 470px;
+  }
+
   @include breakpoint(small-tablet) {
+    grid-template-columns: repeat(2, 1fr);
     margin-top: 218px;
+    width: 100%;
   }
 
   @include breakpoint(small-mobile) {

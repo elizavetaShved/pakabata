@@ -29,6 +29,10 @@ $padding-content-price-extension: 40px;
   flex: 0 0 840px;
   height: min-content;
 
+  @include breakpoint(desktop) {
+    flex: initial;
+  }
+
   @include breakpoint(tablet) {
     width: 100%;
     flex: none;
