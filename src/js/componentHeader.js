@@ -1,6 +1,5 @@
 import { lockScroll } from './scrollBlocker';
 import { checkExistParent } from './checkExistParent';
-import scrollByAnchor from './scrollByAnchor';
 
 export default function componentHeader() {
   const hostElem = document.querySelector('#header-host');
@@ -24,6 +23,4 @@ export default function componentHeader() {
     sidebarContainerElem.classList.add('mod-open');
     lockScroll(sidebarWrapperElem);
   }
-
-  scrollByAnchor();
 }

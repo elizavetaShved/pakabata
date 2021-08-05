@@ -17,6 +17,7 @@ import componentAboutFamilyPakaf from './componentAboutFamilyPakaf';
 import componentCostVisit from './componentCostVisit';
 import componentMap from './componentMap';
 import componentHeader from './componentHeader';
+import scrollByAnchor from './scrollByAnchor';
 
 document.addEventListener('DOMContentLoaded', function() {
     polyfills();
@@ -27,6 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
     phoneMask();
     onlyNumeric();
     fileUpload();
+    scrollByAnchor();
 
     componentHeader();
     componentBanner();
