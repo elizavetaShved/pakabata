@@ -15,8 +15,6 @@ export default function componentBanner() {
     pagination: {
       el: '.swiper-pagination'
     },
-    effect: 'fade',
-    speed: 0.000000001,
     grabCursor: true,
     slidesPerView: 1.12,
     spaceBetween: 8,
@@ -30,6 +28,8 @@ export default function componentBanner() {
         spaceBetween: 16,
       },
       1024: {
+        effect: 'fade',
+        speed: 0.000000001,
         slidesPerView: 1,
         navigation: {
           nextEl: '.swiper-button-next',
