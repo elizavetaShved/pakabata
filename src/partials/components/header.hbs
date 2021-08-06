@@ -3,34 +3,47 @@
     <img src="img/common/logo.png" alt="logo" class="header__logo" data-sizes="auto">
   </div>
 
-  <div class="header__content-contacts-wrapper gl-lg-desk-hide">
+  <div class="header__content-contacts-wrapper gl-tablet-hide">
     {{> header-contacts }}
   </div>
 
-  <div class="header__navigate-menu-wrapper gl-desk-hide">
+  <div class="header__navigate-menu-wrapper gl-tablet-hide">
     {{> header-navigate-menu }}
   </div>
 
-  <div class="header__content-navigate-btns gl-desk-hide">
-    <button type="button" class="gl-transparent-btn header__navigate-btn">
+  <div class="gl-desk-hide">
+    <div class="header__content-navigate-btns gl-sm-tablet-hide">
+      <a href="#" class="gl-transparent-btn header__navigate-btn">
       <span class="gl-btn-container">
         <span class="gl-btn-wrapper">
           <span class="gl-btn-content-item">Написать письмо</span>
           <span class="gl-btn-content-item">Написать письмо</span>
         </span>
       </span>
-    </button>
-    <button type="button" class="gl-main-btn header__navigate-btn">
+      </a>
+      <a href="#" class="gl-main-btn header__navigate-btn">
       <span class="gl-btn-container">
         <span class="gl-btn-wrapper">
           <span class="gl-btn-content-item">Заказать праздник</span>
           <span class="gl-btn-content-item">Заказать праздник</span>
         </span>
       </span>
-    </button>
+      </a>
+    </div>
   </div>
 
-  <div class="header__mobile-block-wrapper gl-desk-show">
+  <div class="gl-desk-show gl-tablet-hide">
+    <div class="header__content-navigate-btns gl-sm-tablet-hide">
+      <a href="#" class="gl-transparent-btn header__navigate-btn">
+        <img src="img/header/write.svg" alt="write" class="header__navigate-btn-icon">
+      </a>
+      <a href="#" class="gl-main-btn header__navigate-btn">
+        <img src="img/header/holidays.svg" alt="write" class="header__navigate-btn-icon">
+      </a>
+    </div>
+  </div>
+
+  <div class="header__mobile-block-wrapper gl-tablet-show">
     <a href="tel:+78005555555" class="header__phone gl-font-calibri gl-small-mobile-hide">
       8 800 555-55-55
     </a>
@@ -39,7 +52,7 @@
     </button>
   </div>
 
-  <div class="header__sidebar-container gl-desk-show">
+  <div class="header__sidebar-container gl-tablet-show">
     <div class="header__sidebar-wrapper">
       <div class="header__sidebar-header-wrapper">
         <img src="img/common/logo.png" alt="logo" class="header__sidebar-logo" data-sizes="auto">

@@ -1,10 +1,3 @@
-.gl-lg-desk-show {
-  display: none !important;
-  @include breakpoint(large-desktop) {
-    display: block !important;
-  }
-}
-
 .gl-lg-desk-hide {
   @include breakpoint(large-desktop) {
     display: none !important;
@@ -12,9 +5,8 @@
 }
 
 .gl-desk-show {
-  display: none !important;
-  @include breakpoint(desktop) {
-    display: block !important;
+  @include breakpointMF(large-desktop) {
+    display: none !important;
   }
 }
 
@@ -25,9 +17,8 @@
 }
 
 .gl-laptop-show {
-  display: none !important;
-  @include breakpoint(laptop) {
-    display: block !important;
+  @include breakpointMF(desktop) {
+    display: none !important;
   }
 }
 
@@ -38,9 +29,8 @@
 }
 
 .gl-tablet-show {
-  display: none !important;
-  @include breakpoint(tablet) {
-    display: block !important;
+  @include breakpointMF(laptop) {
+    display: none !important;
   }
 }
 
@@ -51,9 +41,8 @@
 }
 
 .gl-sm-tablet-show {
-  display: none !important;
-  @include breakpoint(small-tablet) {
-    display: block !important;
+  @include breakpointMF(tablet) {
+    display: none !important;
   }
 }
 
@@ -64,9 +53,8 @@
 }
 
 .gl-mobile-show {
-  display: none !important;
-  @include breakpoint(mobile) {
-    display: block !important;
+  @include breakpointMF(small-tablet) {
+    display: none !important;
   }
 }
 
@@ -77,9 +65,8 @@
 }
 
 .gl-small-mobile-show {
-  display: none !important;
-  @include breakpoint(small-mobile) {
-    display: block !important;
+  @include breakpointMF(mobile) {
+    display: none !important;
   }
 }
 
@@ -89,10 +76,21 @@
   }
 }
 
+.gl-xx-mobile-show {
+  @include breakpointMF(small-mobile) {
+    display: none !important;
+  }
+}
+
+.gl-xx-mobile-hide {
+  @include breakpoint(xx-mobile) {
+    display: none !important;
+  }
+}
+
 .gl-supersmall-mobile-show {
-  display: none !important;
-  @include breakpoint(supersmall-mobile) {
-    display: block !important;
+  @include breakpointMF(xx-mobile) {
+    display: none !important;
   }
 }
 

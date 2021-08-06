@@ -43,7 +43,8 @@ $transparent-btn-border: 2px;
 .gl-main-btn {
   background: linear-gradient(300.27deg, #FFE98B 9.78%, #D74479 88.27%);
 
-  &:hover {
+  .no-touch &:hover,
+  .touch &:active {
     .gl-btn-wrapper {
       transform: translateY(-$main-btn-height-dest);
 
@@ -84,7 +85,8 @@ $transparent-btn-border: 2px;
   background: transparent;
   border: $transparent-btn-border solid #9267C2;
 
-  &:hover {
+  .no-touch &:hover,
+  .touch &:active {
     .gl-btn-wrapper {
       transform: translateY(-$transparent-btn-height-dest);
 
@@ -330,7 +332,8 @@ $transparent-btn-border: 2px;
   right: 30px;
   z-index: 2;
 
-  &:hover {
+  .no-touch &:hover,
+  .touch &:active {
     .gl-video-close-icon {
       fill: #000;
     }
