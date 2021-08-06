@@ -1,6 +1,7 @@
-import { Navigation, Swiper, Mousewheel } from 'swiper';
+import { Mousewheel, Navigation, Swiper } from 'swiper';
 import commonMainSlider from './commonMainSlider';
 
+import commonAnimationCrawling from './commonAnimationCrawling';
 Swiper.use([Navigation]);
 Swiper.use([Mousewheel]);
 
@@ -13,6 +14,8 @@ export default function componentAboutPark() {
   const videoContainerElem = hostElem.querySelector('.about-park__modal-container');
 
   const swiperContainer = hostElem.querySelector('.about-park__swiper-container');
+
+  const dudeImage = hostElem.querySelector('.about-park__dude-image');
 
   commonMainSlider(swiperContainer, '.about-park__btn-next', '.about-park__btn-prev');
 
@@ -40,4 +43,6 @@ export default function componentAboutPark() {
   window.addEventListener('resize', setHeightInfoBlocks);
 
   // < вычисление высоты блока
+
+  commonAnimationCrawling(dudeImage);
 }

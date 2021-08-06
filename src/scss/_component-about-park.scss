@@ -140,14 +140,10 @@
 .about-park__dude-image {
   position: absolute;
   content: '';
-  top: -110px; // 134 в полый рост // todo выползацие чувака - либа "https://greensock.com/scrolltrigger/"
+  top: -134px;
   right: 80px;
-  width: 366px;
   height: 238px;
-  background-image: url('../img/about-park/dude.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+  object-fit: contain;
   z-index: -1;
 
   @include breakpoint(large-desktop) {
