@@ -25,7 +25,6 @@
 
 .banner__slide {
   font-size: 18px;
-  //background-image: url('../img/banner/banner-image-1.jpg'); // В html
   border-radius: 20px;
   padding: 63px 108px;
   position: relative;
@@ -33,6 +32,45 @@
   align-items: flex-end;
   background-size: cover;
   background-repeat: no-repeat;
+
+  &.mod-next-slide {
+    animation: next-anim 250ms ease-in 1 normal forwards;
+  }
+
+  &.mod-prev-slide {
+    animation: prev-anim 250ms ease-in 1 normal forwards;
+  }
+
+  //&.mod-up {
+  //  z-index: 100;
+  //  animation: up 2500ms 2500ms;
+  //}
+  //
+  //@keyframes up {
+  //  100% {
+  //    z-index: -1;
+  //  }
+  //}
+
+  @keyframes next-anim {
+    0% {
+      clip-path: circle(2.5% at 95% 46%);
+    }
+
+    100% {
+      clip-path: circle(100% at 50% 50%);
+    }
+  }
+
+  @keyframes prev-anim {
+    0% {
+      clip-path: circle(2.5% at 5% 46%);
+    }
+
+    100% {
+      clip-path: circle(100% at 50% 50%);
+    }
+  }
 
   @include breakpoint(tablet) {
     padding: 42px 62px;
