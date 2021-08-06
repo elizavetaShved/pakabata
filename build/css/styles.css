@@ -2027,16 +2027,34 @@ select:-webkit-autofill:focus {
       height: 24px; } }
 
 .gl-datepicker {
-  padding-left: 30px;
+  cursor: pointer;
+  height: 100%;
+  position: relative; }
+
+.gl-input-date-placeholder, .gl-input-date-placeholder-icon {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
+
+.gl-input-date-placeholder {
+  left: 44px; }
+
+.gl-input-date-placeholder-icon {
+  content: '';
+  width: 20px;
+  height: 20px;
   background-image: url("../img/common/calendar.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: left top 50%;
-  cursor: pointer; }
+  background-position: center;
+  left: 14px; }
 
 .gl-datepicker-container {
   position: relative;
-  cursor: pointer; }
+  cursor: pointer;
+  padding: 0;
+  height: 52px; }
   .gl-datepicker-container .datepicker {
     position: absolute;
     background-color: #fff;
