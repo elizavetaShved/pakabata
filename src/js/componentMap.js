@@ -40,7 +40,7 @@ export default function componentMap() {
     mapInstance.controls.add('zoomControl', {
       position: {
         right: 10,
-        top: 70
+        bottom: 60
       }
     })
 

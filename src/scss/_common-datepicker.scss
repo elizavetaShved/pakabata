@@ -2,19 +2,13 @@
   cursor: pointer;
   height: 100%;
   position: relative;
-}
-
-.gl-input-date-placeholder, .gl-input-date-placeholder-icon {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.gl-input-date-placeholder {
-  left: 44px;
+  padding-left: 44px;
 }
 
 .gl-input-date-placeholder-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   content: '';
   width: 20px;
   height: 20px;

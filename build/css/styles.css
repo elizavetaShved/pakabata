@@ -2029,18 +2029,14 @@ select:-webkit-autofill:focus {
 .gl-datepicker {
   cursor: pointer;
   height: 100%;
-  position: relative; }
+  position: relative;
+  padding-left: 44px; }
 
-.gl-input-date-placeholder, .gl-input-date-placeholder-icon {
+.gl-input-date-placeholder-icon {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%); }
-
-.gl-input-date-placeholder {
-  left: 44px; }
-
-.gl-input-date-placeholder-icon {
+          transform: translateY(-50%);
   content: '';
   width: 20px;
   height: 20px;
@@ -3845,8 +3841,7 @@ select:-webkit-autofill:focus {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  z-index: -1; }
+  width: 100%; }
   @media only screen and (max-width: 768px) {
     .map__container {
       -webkit-clip-path: none;
