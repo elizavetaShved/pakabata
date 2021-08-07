@@ -2476,7 +2476,9 @@ select:-webkit-autofill:focus {
       -ms-flex-align: end;
           align-items: flex-end;
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  -webkit-transition: opacity 1ms;
+  transition: opacity 1ms; }
   .banner__slide.mod-next-slide {
     -webkit-animation: next-anim 400ms ease-in 1 normal forwards;
             animation: next-anim 400ms ease-in 1 normal forwards;
