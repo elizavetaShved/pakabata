@@ -1,8 +1,4 @@
 <section class="banner container" id="banner-host">
-  <div class="gl-tablet-hide">
-    {{> component-banner-swiper id="banner-swiper-component-desk" }}
-  </div>
-  <div class="gl-tablet-show">
-    {{> component-banner-swiper id="banner-swiper-component-mobile" }}
-  </div>
+  {{> component-banner-swiper class="gl-tablet-hide" id="banner-swiper-component-desk" }}
+  {{> component-banner-swiper class="gl-tablet-show" id="banner-swiper-component-mobile" }}
 </section>

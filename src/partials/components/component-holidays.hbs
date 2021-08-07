@@ -83,12 +83,8 @@
         </div>
       </div>
 
-      <div class="gl-tablet-hide">
-        {{> component-holidays-swiper id="holidays-swiper-component-desk" }}
-      </div>
-      <div class="gl-tablet-show">
-        {{> component-holidays-swiper id="holidays-swiper-component-mobile" }}
-      </div>
+      {{> component-holidays-swiper class='gl-tablet-hide' id="holidays-swiper-component-desk" }}
+      {{> component-holidays-swiper class='gl-tablet-show' id="holidays-swiper-component-mobile" }}
 
       <div class="holidays__main-link-list gl-main-links-list">
         <a href="#" class="gl-main-link-container holidays__main-link-container">

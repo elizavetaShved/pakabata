@@ -72,33 +72,9 @@
     </div>
 
     <div class="about-park__no-container gl-slider-block-wrapper container">
-      <div class="gl-slider">
-        <div class="gl-swiper-container about-park__swiper-container swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="gl-swiper-slide-card">
-                <img src="img/about-park/slide-1.jpg" alt="slide" class="gl-swiper-slide-image"
-                     data-sizes="auto">
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="gl-swiper-slide-card">
-                <img src="img/about-park/slide-1.jpg" alt="slide" class="gl-swiper-slide-image"
-                     data-sizes="auto">
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="gl-swiper-slide-card">
-                <img src="img/about-park/slide-1.jpg" alt="slide" class="gl-swiper-slide-image"
-                     data-sizes="auto">
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <button type="button" class="about-park__btn-prev gl-btn-prev"></button>
-        <button type="button" class="about-park__btn-next gl-btn-next"></button>
-      </div>
+      {{> component-about-park-swiper class="gl-tablet-hide" id="about-park-swiper-component-desk" }}
+      {{> component-about-park-swiper class="gl-tablet-show" id="about-park-swiper-component-mobile" }}
 
       <div class="about-park__navigation-wrapper">
         <div class="about-park__navigation-caption">

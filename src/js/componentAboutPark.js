@@ -13,11 +13,17 @@ export default function componentAboutPark() {
   const closeVideoBtn = hostElem.querySelector('.about-park__close-btn');
   const videoContainerElem = hostElem.querySelector('.about-park__modal-container');
 
-  const swiperContainer = hostElem.querySelector('.about-park__swiper-container');
+  const sliderComponentDeskElem = hostElem.querySelector('#about-park-swiper-component-desk');
+  const sliderComponentMobileElem = hostElem.querySelector('#about-park-swiper-component-mobile');
 
   const dudeImage = hostElem.querySelector('.about-park__dude-image');
 
-  // commonMainSlider(swiperContainer, '.about-park__btn-next', '.about-park__btn-prev');
+  const additionally = {
+    classCustomBtnPrev: '.about-park__btn-prev',
+    classCustomBtnNext: '.about-park__btn-next'
+  }
+
+  commonMainSlider(sliderComponentDeskElem, sliderComponentMobileElem, additionally);
 
   // вычисление высоты блока
   openVideoBtn.onclick = () => {
