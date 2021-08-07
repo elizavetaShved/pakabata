@@ -107,24 +107,12 @@
     </div>
 
     <div class="container about-park__btn-video-container">
-      <button type="button" class="about-park__btn-video-wrapper">
+      <button type="button" class="about-park__btn-video-wrapper gl-video-open">
         <span class="about-park__btn-video-top-caption gl-font-calibri">Посмотрите</span>
         <span class="about-park__btn-video-bottom-caption">3Д-тур</span>
       </button>
     </div>
 
-    <div class="container gl-video-modal-container about-park__modal-container">
-      <div class="gl-video-modal-wrapper">
-        <video autoplay muted loop class="gl-video-modal-video-wrapper">
-          <source src="assets/mp4/video.mp4" type="video/mp4">
-        </video>
-      </div>
-
-      <button type="button" class="gl-video-close-btn about-park__close-btn">
-        <svg width="24" height="24" aria-hidden="true" class="gl-video-close-icon">
-          <use xlink:href="#close"></use>
-        </svg>
-      </button>
-    </div>
+    {{> common-video-modal link="https://www.youtube.com/embed/8FU_1ei6k8M" }}
   </div>
 </section>

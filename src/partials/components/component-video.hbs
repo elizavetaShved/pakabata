@@ -1,21 +1,9 @@
 <section class="video container" id="video-host">
-  <button type="button" class="video__btn">
+  <button type="button" class="gl-video-open video__btn">
     <span class="video__btn-text-wrapper">
       <span class="video__btn-text">видео о парке</span>
     </span>
   </button>
 
-  <div class="gl-video-modal-container video__modal-container">
-    <div class="gl-video-modal-wrapper">
-      <video autoplay muted loop class="gl-video-modal-video-wrapper">
-        <source src="assets/mp4/video.mp4" type="video/mp4">
-      </video>
-    </div>
-
-    <button type="button" class="gl-close-btn-wrapper video__close-btn">
-      <svg width="24" height="24" aria-hidden="true" class="gl-close-btn-icon">
-        <use xlink:href="#close"></use>
-      </svg>
-    </button>
-  </div>
+  {{> common-video-modal link="https://www.youtube.com/embed/pAIUxGn9lCI" }}
 </section>

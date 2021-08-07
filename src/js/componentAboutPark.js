@@ -2,6 +2,7 @@ import { Mousewheel, Navigation, Swiper } from 'swiper';
 import commonMainSlider from './commonMainSlider';
 
 import commonAnimationCrawling from './commonAnimationCrawling';
+import commonVideoModal from './commonVideoModal';
 Swiper.use([Navigation]);
 Swiper.use([Mousewheel]);
 
@@ -25,15 +26,9 @@ export default function componentAboutPark() {
 
   commonMainSlider(sliderComponentDeskElem, sliderComponentMobileElem, additionally);
 
+  commonVideoModal(hostElem);
+
   // вычисление высоты блока
-  openVideoBtn.onclick = () => {
-    videoContainerElem.classList.add('mod-show');
-  }
-
-  closeVideoBtn.onclick = () => {
-    videoContainerElem.classList.remove('mod-show');
-  }
-
   const setHeightInfoBlocks = () => {
     let heightCaptionText = 0;
 
@@ -47,7 +42,6 @@ export default function componentAboutPark() {
   setHeightInfoBlocks();
 
   window.addEventListener('resize', setHeightInfoBlocks);
-
   // < вычисление высоты блока
 
   commonAnimationCrawling(dudeImage);
