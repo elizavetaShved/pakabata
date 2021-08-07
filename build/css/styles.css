@@ -2130,6 +2130,51 @@ select:-webkit-autofill:focus {
   cursor: pointer;
   border-radius: 4px; }
 
+.swiper-slide.mod-next-slide {
+  -webkit-animation: next-anim 400ms ease-in 1 normal forwards;
+          animation: next-anim 400ms ease-in 1 normal forwards;
+  z-index: 100 !important; }
+
+.swiper-slide.mod-prev-slide {
+  -webkit-animation: prev-anim 400ms ease-in 1 normal forwards;
+          animation: prev-anim 400ms ease-in 1 normal forwards;
+  z-index: 100 !important; }
+
+.swiper-slide.mod-prev-slide-up {
+  opacity: 0.99 !important; }
+
+@-webkit-keyframes next-anim {
+  0% {
+    -webkit-clip-path: circle(2.5% at 95% 46%);
+            clip-path: circle(2.5% at 95% 46%); }
+  100% {
+    -webkit-clip-path: circle(100% at 50% 50%);
+            clip-path: circle(100% at 50% 50%); } }
+
+@keyframes next-anim {
+  0% {
+    -webkit-clip-path: circle(2.5% at 95% 46%);
+            clip-path: circle(2.5% at 95% 46%); }
+  100% {
+    -webkit-clip-path: circle(100% at 50% 50%);
+            clip-path: circle(100% at 50% 50%); } }
+
+@-webkit-keyframes prev-anim {
+  0% {
+    -webkit-clip-path: circle(2.5% at 5% 46%);
+            clip-path: circle(2.5% at 5% 46%); }
+  100% {
+    -webkit-clip-path: circle(100% at 50% 50%);
+            clip-path: circle(100% at 50% 50%); } }
+
+@keyframes prev-anim {
+  0% {
+    -webkit-clip-path: circle(2.5% at 5% 46%);
+            clip-path: circle(2.5% at 5% 46%); }
+  100% {
+    -webkit-clip-path: circle(100% at 50% 50%);
+            clip-path: circle(100% at 50% 50%); } }
+
 .header__container {
   margin-top: 20px;
   margin-bottom: 40px;
@@ -2479,48 +2524,6 @@ select:-webkit-autofill:focus {
   background-repeat: no-repeat;
   -webkit-transition: opacity 1ms;
   transition: opacity 1ms; }
-  .banner__slide.mod-next-slide {
-    -webkit-animation: next-anim 400ms ease-in 1 normal forwards;
-            animation: next-anim 400ms ease-in 1 normal forwards;
-    z-index: 100 !important; }
-  .banner__slide.mod-prev-slide {
-    -webkit-animation: prev-anim 400ms ease-in 1 normal forwards;
-            animation: prev-anim 400ms ease-in 1 normal forwards;
-    z-index: 100 !important; }
-  .banner__slide.mod-prev-slide-up {
-    opacity: 0.99 !important; }
-
-@-webkit-keyframes next-anim {
-  0% {
-    -webkit-clip-path: circle(2.5% at 95% 46%);
-            clip-path: circle(2.5% at 95% 46%); }
-  100% {
-    -webkit-clip-path: circle(100% at 50% 50%);
-            clip-path: circle(100% at 50% 50%); } }
-
-@keyframes next-anim {
-  0% {
-    -webkit-clip-path: circle(2.5% at 95% 46%);
-            clip-path: circle(2.5% at 95% 46%); }
-  100% {
-    -webkit-clip-path: circle(100% at 50% 50%);
-            clip-path: circle(100% at 50% 50%); } }
-
-@-webkit-keyframes prev-anim {
-  0% {
-    -webkit-clip-path: circle(2.5% at 5% 46%);
-            clip-path: circle(2.5% at 5% 46%); }
-  100% {
-    -webkit-clip-path: circle(100% at 50% 50%);
-            clip-path: circle(100% at 50% 50%); } }
-
-@keyframes prev-anim {
-  0% {
-    -webkit-clip-path: circle(2.5% at 5% 46%);
-            clip-path: circle(2.5% at 5% 46%); }
-  100% {
-    -webkit-clip-path: circle(100% at 50% 50%);
-            clip-path: circle(100% at 50% 50%); } }
   @media only screen and (max-width: 1024px) {
     .banner__slide {
       padding: 42px 62px; } }

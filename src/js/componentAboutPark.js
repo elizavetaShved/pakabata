@@ -17,7 +17,7 @@ export default function componentAboutPark() {
 
   const dudeImage = hostElem.querySelector('.about-park__dude-image');
 
-  commonMainSlider(swiperContainer, '.about-park__btn-next', '.about-park__btn-prev');
+  // commonMainSlider(swiperContainer, '.about-park__btn-next', '.about-park__btn-prev');
 
   // вычисление высоты блока
   openVideoBtn.onclick = () => {

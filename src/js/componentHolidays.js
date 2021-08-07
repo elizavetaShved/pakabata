@@ -6,9 +6,15 @@ import 'bootstrap-datepicker/js/locales/bootstrap-datepicker.ru';
 export default function componentHolidays() {
   const hostElem = document.querySelector('#holidays-host');
   const mainLinkContainer = hostElem.querySelectorAll('.gl-main-link-container');
-  const swiperContainer = hostElem.querySelector('.holidays__swiper-container');
+  const sliderComponentDeskElem = hostElem.querySelector('#holidays-swiper-component-desk');
+  const sliderComponentMobileElem = hostElem.querySelector('#holidays-swiper-component-mobile');
 
-  commonMainSlider(swiperContainer, '.holidays__btn-next', '.holidays__btn-prev');
+  const additionally = {
+    classCustomBtnPrev: '.holidays__btn-prev',
+    classCustomBtnNext: '.holidays__btn-next'
+  }
+
+  commonMainSlider(sliderComponentDeskElem, sliderComponentMobileElem, additionally);
 
   commonMainLinks(mainLinkContainer);
 }

@@ -83,44 +83,11 @@
         </div>
       </div>
 
-      <div class="holidays__slider gl-slider">
-        <div class="holidays__slider-title">
-          Домики у моря атракционов
-        </div>
-        <div class="gl-swiper-container holidays__swiper-container swiper-container">
-          <div class="swiper-wrapper">
-            <div class="holidays__swiper-slide swiper-slide">
-              <div class="holidays__swiper-slide-caption">
-                Домик 1
-              </div>
-              <div class="gl-swiper-slide-card">
-                <img src="img/holidays/slide-1.jpg" alt="slide" class="gl-swiper-slide-image"
-                     data-sizes="auto">
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="holidays__swiper-slide-caption">
-                Домик 2
-              </div>
-              <div class="gl-swiper-slide-card">
-                <img src="img/holidays/slide-1.jpg" alt="slide" class="gl-swiper-slide-image"
-                     data-sizes="auto">
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="holidays__swiper-slide-caption">
-                Домик 3
-              </div>
-              <div class="gl-swiper-slide-card">
-                <img src="img/holidays/slide-1.jpg" alt="slide" class="gl-swiper-slide-image"
-                     data-sizes="auto">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <button type="button" class="holidays__btn-prev mod-light-background gl-btn-prev"></button>
-        <button type="button" class="holidays__btn-next mod-light-background gl-btn-next"></button>
+      <div class="gl-tablet-hide">
+        {{> component-holidays-swiper id="holidays-swiper-component-desk" }}
+      </div>
+      <div class="gl-tablet-show">
+        {{> component-holidays-swiper id="holidays-swiper-component-mobile" }}
       </div>
 
       <div class="holidays__main-link-list gl-main-links-list">
