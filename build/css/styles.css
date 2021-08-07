@@ -2478,11 +2478,15 @@ select:-webkit-autofill:focus {
   background-size: cover;
   background-repeat: no-repeat; }
   .banner__slide.mod-next-slide {
-    -webkit-animation: next-anim 250ms ease-in 1 normal forwards;
-            animation: next-anim 250ms ease-in 1 normal forwards; }
+    -webkit-animation: next-anim 400ms ease-in 1 normal forwards;
+            animation: next-anim 400ms ease-in 1 normal forwards;
+    z-index: 100 !important; }
   .banner__slide.mod-prev-slide {
-    -webkit-animation: prev-anim 250ms ease-in 1 normal forwards;
-            animation: prev-anim 250ms ease-in 1 normal forwards; }
+    -webkit-animation: prev-anim 400ms ease-in 1 normal forwards;
+            animation: prev-anim 400ms ease-in 1 normal forwards;
+    z-index: 100 !important; }
+  .banner__slide.mod-prev-slide-up {
+    opacity: 0.99 !important; }
 
 @-webkit-keyframes next-anim {
   0% {

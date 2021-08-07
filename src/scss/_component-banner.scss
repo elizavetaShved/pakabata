@@ -1,3 +1,5 @@
+$animation-duration: 400ms;
+
 .banner {
   margin-bottom: 48px;
 
@@ -32,25 +34,21 @@
   align-items: flex-end;
   background-size: cover;
   background-repeat: no-repeat;
+  transition: opacity 1ms;
 
   &.mod-next-slide {
-    animation: next-anim 250ms ease-in 1 normal forwards;
+    animation: next-anim $animation-duration ease-in 1 normal forwards;
+    z-index: 100 !important;
   }
 
   &.mod-prev-slide {
-    animation: prev-anim 250ms ease-in 1 normal forwards;
+    animation: prev-anim $animation-duration ease-in 1 normal forwards;
+    z-index: 100 !important;
   }
 
-  //&.mod-up {
-  //  z-index: 100;
-  //  animation: up 2500ms 2500ms;
-  //}
-  //
-  //@keyframes up {
-  //  100% {
-  //    z-index: -1;
-  //  }
-  //}
+  &.mod-prev-slide-up {
+    opacity: 0.99 !important;
+  }
 
   @keyframes next-anim {
     0% {
