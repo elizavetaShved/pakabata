@@ -15,6 +15,11 @@ $transparent-btn-border: 2px;
   text-transform: uppercase;
   letter-spacing: 2px;
 
+  &:hover {
+    text-decoration: none;
+    color: #fff !important;
+  }
+
   @include breakpoint(large-desktop) {
     padding: 0 18px;
     height: $main-btn-height-laptop;

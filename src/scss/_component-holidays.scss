@@ -220,9 +220,6 @@ $main-block-width: 60%;
 }
 
 .holidays__main-link-list {
-  @include breakpoint(desktop) {
-    margin-bottom: 75px;
-  }
 
   @include breakpoint(tablet) {
     padding-left: var(--padding-page-content-tablet);

@@ -6,6 +6,11 @@
   position: relative;
   box-sizing: content-box;
 
+  @include breakpoint(desktop) {
+    padding-top: 75px;
+    margin-left: 0;
+  }
+
   @include breakpoint(tablet) {
     margin-left: 0;
     padding-left: var(--padding-page-content-tablet);

@@ -1470,6 +1470,9 @@ select:-webkit-autofill:focus {
   white-space: nowrap;
   text-transform: uppercase;
   letter-spacing: 2px; }
+  .gl-main-btn:hover, .gl-transparent-btn:hover {
+    text-decoration: none;
+    color: #fff !important; }
   @media only screen and (max-width: 1600px) {
     .gl-main-btn, .gl-transparent-btn {
       padding: 0 18px;
@@ -2186,6 +2189,11 @@ select:-webkit-autofill:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media only screen and (max-width: 1024px) {
+    .header__content-contacts {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 12px; } }
   @media only screen and (max-width: 768px) {
     .header__content-contacts {
       -webkit-box-orient: vertical;
@@ -2202,26 +2210,18 @@ select:-webkit-autofill:focus {
 .header__content-social-wrapper {
   margin-right: 56px;
   margin-left: -8px; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1024px) {
     .header__content-social-wrapper {
-      margin-bottom: 10px;
-      margin-right: 0; } }
+      margin: -8px; } }
 
 .header__working-time, .header__geolocation, .header__phone {
   font-size: 18px; }
-  @media only screen and (max-width: 768px) {
-    .header__working-time, .header__geolocation, .header__phone {
-      margin-bottom: 10px; } }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .header__phone {
-    font-size: 20px;
+    font-size: 16px;
     padding: 10px;
-    margin-bottom: 0; } }
-
-@media only screen and (max-width: 768px) {
-  .header__phone {
-    font-size: 16px; } }
+    margin: -10px; } }
 
 .header__working-time, .header__geolocation {
   position: relative;
@@ -2236,11 +2236,14 @@ select:-webkit-autofill:focus {
     background-position: center; }
 
 .header__working-time {
-  padding-left: 26px; }
-  .header__working-time:before {
-    width: 20px;
-    height: 20px;
-    background-image: url("../img/header/clock.svg"); }
+  padding-left: 26px;
+  background-image: url("../img/header/clock.svg");
+  background-size: 20px;
+  background-position: left top 50%;
+  background-repeat: no-repeat; }
+  @media only screen and (max-width: 1024px) {
+    .header__working-time {
+      margin-left: -4px; } }
 
 .header__geolocation {
   display: inline-block;
@@ -2249,9 +2252,10 @@ select:-webkit-autofill:focus {
     width: 16px;
     height: 16px;
     background-image: url("../img/header/geolokation.svg"); }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1024px) {
     .header__geolocation {
-      margin-bottom: 10px; } }
+      display: block !important;
+      margin-right: 0; } }
 
 .header__navigate-menu-wrapper {
   margin-left: -10px;
@@ -2303,17 +2307,17 @@ select:-webkit-autofill:focus {
           -ms-flex-align: end;
               align-items: flex-end; } }
 
-.header__navigate-btn + .header__navigate-btn {
+.header__navigate-link + .header__navigate-link {
   margin-left: 20px; }
 
 @media only screen and (max-width: 1400px) {
-  .header__navigate-btn {
+  .header__navigate-link {
     width: 50px;
     height: 50px;
     padding: 0; } }
 
 @media only screen and (max-width: 1400px) {
-  .header__navigate-btn {
+  .header__navigate-link {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
@@ -2324,7 +2328,7 @@ select:-webkit-autofill:focus {
         -ms-flex-pack: center;
             justify-content: center; } }
 
-.header__navigate-btn-icon {
+.header__navigate-link-icon {
   height: 50%; }
 
 .header__burger-wrapper {
@@ -3110,10 +3114,6 @@ select:-webkit-autofill:focus {
       bottom: 8px;
       left: 8px; } }
 
-@media only screen and (max-width: 1400px) {
-  .holidays__main-link-list {
-    margin-bottom: 75px; } }
-
 @media only screen and (max-width: 1024px) {
   .holidays__main-link-list {
     padding-left: var(--padding-page-content-tablet);
@@ -3231,6 +3231,10 @@ select:-webkit-autofill:focus {
   position: relative;
   -webkit-box-sizing: content-box;
           box-sizing: content-box; }
+  @media only screen and (max-width: 1400px) {
+    .order-form {
+      padding-top: 75px;
+      margin-left: 0; } }
   @media only screen and (max-width: 1024px) {
     .order-form {
       margin-left: 0;
