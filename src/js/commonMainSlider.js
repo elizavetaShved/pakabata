@@ -32,7 +32,7 @@ export default function commonMainSlider(sliderComponentDeskElem, sliderComponen
     ...commonSwiperParams,
     slidesPerView: 1,
     navigation: {
-      nextEl: additionally.classCustomBtnNext ||  '.swiper-button-next',
+      nextEl: additionally.classCustomBtnNext || '.swiper-button-next',
       prevEl: additionally.classCustomBtnPrev || '.swiper-button-prev',
     },
     spaceBetween: 8,
@@ -41,6 +41,7 @@ export default function commonMainSlider(sliderComponentDeskElem, sliderComponen
 
   swiperDesk.on('slideNextTransitionStart', () => {
     slidesDeskListElems[swiperDesk.activeIndex].classList.add('mod-next-slide');
+    checkForDisabledBtns()
   });
 
   swiperDesk.on('slideNextTransitionEnd', () => {
@@ -50,11 +51,28 @@ export default function commonMainSlider(sliderComponentDeskElem, sliderComponen
   swiperDesk.on('slidePrevTransitionStart', () => {
     slidesDeskListElems[swiperDesk.activeIndex].classList.add('mod-prev-slide');
     slidesDeskListElems[swiperDesk.activeIndex + 1].classList.add('mod-prev-slide-up');
+    checkForDisabledBtns()
   });
 
   swiperDesk.on('slidePrevTransitionEnd', () => {
     clear();
   });
+
+  const checkForDisabledBtns = () => {
+    if (swiperDesk.activeIndex === slidesDeskListElems.length - 1) {
+      sliderComponentDeskElem.classList.add('gl-slider-end');
+    } else {
+      sliderComponentDeskElem.classList.remove('gl-slider-end');
+    }
+
+    if (swiperDesk.activeIndex === 0) {
+      sliderComponentDeskElem.classList.add('gl-slider-start');
+    } else {
+      sliderComponentDeskElem.classList.remove('gl-slider-start');
+    }
+  }
+
+  checkForDisabledBtns();
 
   const clear = () =>
     slidesDeskListElems.forEach(elem =>
