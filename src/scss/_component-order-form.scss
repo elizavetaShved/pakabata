@@ -3,10 +3,12 @@
   height: min-content;
   width: 454px;
   flex: 0 0 454px;
-  position: relative;
   box-sizing: content-box;
+  position: sticky;
+  top: 0;
 
   @include breakpoint(desktop) {
+    position: initial;
     padding-top: 75px;
     margin-left: 0;
   }

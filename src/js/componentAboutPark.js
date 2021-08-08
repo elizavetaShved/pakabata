@@ -3,16 +3,13 @@ import commonMainSlider from './commonMainSlider';
 
 import commonAnimationCrawling from './commonAnimationCrawling';
 import commonVideoModal from './commonVideoModal';
+
 Swiper.use([Navigation]);
 Swiper.use([Mousewheel]);
 
 export default function componentAboutPark() {
   const hostElem = document.querySelector('#about-park-host');
   const infoCaptionTextElem = hostElem.querySelectorAll('.about-park__info-caption-text');
-
-  const openVideoBtn = hostElem.querySelector('.about-park__btn-video-wrapper');
-  const closeVideoBtn = hostElem.querySelector('.about-park__close-btn');
-  const videoContainerElem = hostElem.querySelector('.about-park__modal-container');
 
   const sliderComponentDeskElem = hostElem.querySelector('#about-park-swiper-component-desk');
   const sliderComponentMobileElem = hostElem.querySelector('#about-park-swiper-component-mobile');

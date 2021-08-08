@@ -998,7 +998,8 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   color: var(--main-color);
-  font-family: var(--riffic); }
+  font-family: var(--riffic);
+  overflow-x: hidden; }
 
 main {
   display: block; }
@@ -1308,7 +1309,6 @@ select:-webkit-autofill:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  overflow: hidden;
   position: relative; }
   .layout-wrapper:after {
     position: absolute;
@@ -2972,7 +2972,8 @@ select:-webkit-autofill:focus {
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  position: relative; }
   @media only screen and (max-width: 1400px) {
     .holidays__content-wrapper {
       display: block; } }
@@ -3218,8 +3219,8 @@ select:-webkit-autofill:focus {
 
 .holidays__dude-comment {
   position: absolute;
-  top: -140px;
-  left: 38px;
+  bottom: 44px;
+  left: 14px;
   width: 262px;
   height: -webkit-min-content;
   height: -moz-min-content;
@@ -3247,11 +3248,13 @@ select:-webkit-autofill:focus {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 454px;
           flex: 0 0 454px;
-  position: relative;
   -webkit-box-sizing: content-box;
-          box-sizing: content-box; }
+          box-sizing: content-box;
+  position: sticky;
+  top: 0; }
   @media only screen and (max-width: 1400px) {
     .order-form {
+      position: initial;
       padding-top: 75px;
       margin-left: 0; } }
   @media only screen and (max-width: 1024px) {
