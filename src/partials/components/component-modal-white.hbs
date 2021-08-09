@@ -1,3 +1,34 @@
-<div class="modal-white mod-show" id="modal-white-host">
+<div class="gl-modal-container" id="modal-white-host">
+  <div class="modal-white__content-wrapper">
+    <div class="modal-white__content">
+      <div class="modal-white__info mod-show">
+        {{> component-order-form border-right=true }}
+      </div>
+      <div class="modal-white__info">
+        <div class="modal-white__sent-wrapper">
+          <div class="modal-white__sent">
+            <button type="button" class="modal-white__close-btn">
+              <svg width="24" height="24" aria-hidden="true" class="modal-white__close-icon">
+                <use xlink:href="#close"></use>
+              </svg>
+            </button>
 
+            <div class="modal-white__sent-title">
+              Спасибо за заявку!
+            </div>
+            <div class="modal-white__sent-caption gl-font-calibri">
+              скоро с Вами свяжется наш менеджер, чтобы обсудить детали заявки
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-white__back-background-wrapper gl-sm-tablet-hide">
+      <span class="gl-main-link-back-item"></span>
+      <span class="gl-main-link-back-item"></span>
+      <span class="gl-main-link-back-item"></span>
+      <span class="gl-main-link-back-item"></span>
+      <span class="gl-main-link-back-item"></span>
+    </div>
+  </div>
 </div>

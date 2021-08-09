@@ -11,6 +11,9 @@ export default function componentHeader() {
   const menuItemsArr = hostElem.querySelectorAll('.header__menu-item');
   const writeBtns = hostElem.querySelectorAll('.header__write-btn');
 
+  const modalWhiteElem = document.querySelector('#modal-white-host');
+  const modalWrapperElem = hostElem.querySelector('.modal-white__content-wrapper');
+
   burgerBtn.onclick = () => {
     openSidebar();
   }
@@ -37,7 +40,8 @@ export default function componentHeader() {
 
   writeBtns.forEach(writeBtn => {
     writeBtn.onclick = () => {
-
+      modalWhiteElem.classList.add('mod-show');
+      lockScroll(modalWrapperElem);
     }
   })
 

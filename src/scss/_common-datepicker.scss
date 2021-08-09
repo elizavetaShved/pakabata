@@ -17,12 +17,13 @@
     position: absolute;
     background-color: #fff;
     border-radius: 10px;
-    top: -26px !important;
     left: auto !important;
     right: -22px !important;
     padding: 26px 16px !important;
     box-shadow: 0 0 82px rgba(93, 16, 182, 0.1049);
     width: 303px;
+    z-index: 30000;
+    top: 6px !important;
 
     .datepicker-switch {
       font-size: 14px;

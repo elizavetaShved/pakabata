@@ -19,6 +19,7 @@ import componentMap from './componentMap';
 import componentHeader from './componentHeader';
 import scrollByAnchor from './scrollByAnchor';
 import componentPopap from './componentPopap';
+import componentModalWhite from './componentModalWhite';
 
 document.addEventListener('DOMContentLoaded', function() {
     polyfills();
@@ -42,6 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
     componentCostVisit();
     componentMap();
     componentPopap();
+    componentModalWhite();
 });
 
 window.addEventListener('load', function() {

@@ -4,10 +4,9 @@ import phoneMask from './phoneMask';
 
 export default function componentOrderForm() {
   let INPUT_WIDTH;
-
   const hostElem = document.querySelector('#order-form-host');
-  const formWrapper = hostElem.querySelector('.order-form__form-wrapper');
-  const datepickerElem = hostElem.querySelector('.gl-datepicker');
+
+  const datepickerElems = hostElem.querySelectorAll('.gl-datepicker');
   const childrenMinusBtn = hostElem.querySelector('#children-btn-minus');
   const childrenPlusBtn = hostElem.querySelector('#children-btn-plus');
   const childrenInput = hostElem.querySelector('#children-input');
@@ -39,7 +38,9 @@ export default function componentOrderForm() {
   }
 
   checkSizeMobile();
-  commonDatepicker(datepickerElem);
+  datepickerElems.forEach(elem => {
+    commonDatepicker(elem);
+  })
   phoneMask();
 
   window.addEventListener('resize', () => {
@@ -92,12 +93,12 @@ export default function componentOrderForm() {
     openOtherFields();
   }
 
-  formWrapper.onsubmit = event => {
+  hostElem.onsubmit = event => {
     event.preventDefault();
 
-    if ($(formWrapper).parsley().isValid()) {
-      formWrapper.reset();
-      $(formWrapper).parsley().reset();
+    if ($(hostElem).parsley().isValid()) {
+      hostElem.reset();
+      $(hostElem).parsley().reset();
     }
   }
 }

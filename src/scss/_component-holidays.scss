@@ -283,6 +283,63 @@ $main-block-width: 60%;
   }
 }
 
+.holidays__order-form-wrapper {
+  margin-left: 30px;
+  height: min-content;
+  width: 454px;
+  flex: 0 0 454px;
+  box-sizing: content-box;
+  position: sticky;
+  top: 0;
+
+  @include breakpoint(desktop) {
+    position: initial;
+    padding-top: 75px;
+    margin-left: 0;
+  }
+
+  @include breakpoint(tablet) {
+    margin-left: 0;
+    padding-left: var(--padding-page-content-tablet);
+    padding-right: var(--padding-page-content-tablet);
+  }
+
+  @include breakpoint(mobile) {
+    padding-left: var(--padding-page-content-mobile);
+    padding-right: var(--padding-page-content-mobile);
+  }
+
+  @include breakpoint(small-mobile) {
+    width: 100%;
+    flex: auto;
+    box-sizing: border-box;
+  }
+}
+
+.holidays__contacts-wrapper {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: var(--secondary-color);
+
+  @include breakpoint(xx-mobile) {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 26px;
+    margin-bottom: 12px;
+  }
+}
+
+.holidays__contacts-caption {
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 14px;
+}
+
+.holidays__contacts-phone {
+  font-weight: bold;
+  font-size: 22px;
+}
+
 .holidays__dude-wrapper {
   position: absolute;
   top: 0;
