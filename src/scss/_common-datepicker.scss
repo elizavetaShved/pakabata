@@ -1,29 +1,17 @@
 .gl-datepicker {
   cursor: pointer;
-  height: 100%;
   position: relative;
   padding-left: 44px;
-}
-
-.gl-input-date-placeholder-icon {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  content: '';
-  width: 20px;
-  height: 20px;
   background-image: url('../img/common/calendar.svg');
+  background-position: top 50% left 14px;
+  background-size: 20px;
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  left: 14px;
 }
 
 .gl-datepicker-container {
   position: relative;
   cursor: pointer;
   padding: 0;
-  height: 52px;
 
   .datepicker {
     position: absolute;

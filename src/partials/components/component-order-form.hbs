@@ -9,30 +9,28 @@
     </div>
 
     <div class="order-form__place-wrapper">
-      <div class="gl-input-container">
-        <div class="order-form__order-subtitle gl-font-calibri">
-          Выберите место проведения
-        </div>
-        <div class="order-form__radio-btns-list">
-          <label class="gl-radio-btn-wrapper">
-            <input type="radio" class="gl-radio-btn order-form__control" name="place-holiday" checked
-                   value="банкетный домик" required>
-            <span class="gl-radio-btn-content-wrapper gl-font-calibri">
+      <div class="order-form__order-subtitle gl-font-calibri">
+        Выберите место проведения
+      </div>
+      <div class="order-form__radio-btns-list">
+        <label class="gl-radio-btn-wrapper">
+          <input type="radio" class="gl-radio-btn order-form__control" name="place-holiday" checked
+                 value="банкетный домик" required>
+          <span class="gl-radio-btn-content-wrapper gl-font-calibri">
           <span class="gl-radio-btn-content">Банкетный домик</span>
         </span>
-          </label>
-          <label class="gl-radio-btn-wrapper">
-            <input type="radio" class="gl-radio-btn order-form__control" name="place-holiday" value="кафе" required>
-            <span class="gl-radio-btn-content-wrapper gl-font-calibri">
+        </label>
+        <label class="gl-radio-btn-wrapper">
+          <input type="radio" class="gl-radio-btn order-form__control" name="place-holiday" value="кафе" required>
+          <span class="gl-radio-btn-content-wrapper gl-font-calibri">
           <span class="gl-radio-btn-content">Кафе</span>
         </span>
-          </label>
-        </div>
+        </label>
       </div>
 
       <div class="order-form__inputs-text-list">
-        <div class="gl-input-container">
-          <div class="gl-input-wrapper gl-input-number-wrapper gl-font-calibri order-form__input-children-wrapper">
+        <div class="gl-input-wrapper">
+          <div class="gl-input gl-input-number-wrapper gl-font-calibri order-form__input-children-wrapper">
             <div class="gl-input-number-text">Детей</div>
             <div class="gl-input-number-panel">
               <button type="button" class="gl-input-number-btn" id="children-btn-minus">
@@ -51,40 +49,33 @@
           </div>
         </div>
 
-        <div class="gl-input-container">
-          <div
-            class="order-form__input-hide-mobile gl-input-wrapper gl-datepicker-container gl-font-calibri order-form__input-date-wrapper">
-            <input type="text" class="gl-input gl-datepicker order-form__control" placeholder="Дата мероприятия"
-                   readonly name="date" required id="date-input">
-            <img src="img/common/calendar.svg" alt="calendar" class="gl-input-date-placeholder-icon">
-          </div>
-          <span class="gl-input-error gl-font-calibri">Выберете дату</span>
+        <div
+          class="order-form__input-hide-mobile gl-input-wrapper gl-datepicker-container gl-font-calibri order-form__input-date-wrapper">
+          <input type="text" class="gl-input gl-datepicker order-form__control" placeholder="Дата мероприятия"
+                 readonly name="date" required id="date-input">
         </div>
 
-        <div class="gl-input-container">
-          <label class="gl-input-wrapper gl-font-calibri order-form__input-name-wrapper">
-            <input type="text" class="gl-input order-form__control" placeholder="Ваше ФИО" name="user-name" required id="name-input">
-          </label>
-          <span class="gl-input-error gl-font-calibri">Введите ФИО</span>
-        </div>
+        <label class="gl-input-wrapper gl-font-calibri order-form__input-name-wrapper">
+          <input type="text" class="gl-input order-form__control"
+                 data-parsley-required=""
+                 data-parsley-minlength="2"
+                 placeholder="Ваше ФИО" name="user-name" id="name-input">
+        </label>
 
-        <div class="gl-input-container">
-          <label class="order-form__input-hide-mobile gl-input-wrapper gl-font-calibri">
-            <input type="text" class="gl-input order-form__control" placeholder="Телефон" name="phone" required id="phone-input">
-          </label>
-          <span class="gl-input-error gl-font-calibri">Введите телефон</span>
-        </div>
+        <label class="order-form__input-hide-mobile gl-input-wrapper gl-font-calibri">
+          <input type="text" class="gl-input order-form__control" placeholder="Телефон" name="phone" required
+                 id="phone-input">
+        </label>
 
-        <div class="gl-input-container">
-          <label class="order-form__input-hide-mobile gl-input-wrapper gl-font-calibri">
+        <label class="order-form__input-hide-mobile gl-input-wrapper gl-font-calibri">
             <textarea class="gl-input gl-input-textarea order-form__control" placeholder="Комментарий"
                       name="comment"></textarea>
-          </label>
-        </div>
+        </label>
       </div>
 
       <label class="order-form__checkbox-wrapper">
-        <input type="checkbox" class="order-form__checkbox">
+        <input type="checkbox" class="order-form__checkbox"
+               name="checkbox">
         <span class="order-form__checkbox-content gl-font-calibri">
          <span class="order-form__checkbox-content-icon"></span>
         <span class="order-form__checkbox-content-text">
@@ -94,7 +85,7 @@
       </label>
 
       <div class="order-form__btn-submit-wrapper">
-        <button type="button" class="gl-main-btn order-form__btn-submit">
+        <button type="submit" class="gl-main-btn order-form__btn-submit">
           <span class="gl-btn-container">
             <span class="gl-btn-wrapper">
               <span class="gl-btn-content-item">Отправить</span>

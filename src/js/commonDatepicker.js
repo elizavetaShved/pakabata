@@ -7,7 +7,7 @@ export default function commonDatepicker(datepicker) {
       format: 'dd.mm.yyyy',
       container: '.gl-datepicker-container',
       language: 'ru',
-      autoclose: true,
+      autoclose: true
     })
     // .on('show', () => {
     //   datepicker.classList.add('commonDatepicker-shown')

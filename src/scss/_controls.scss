@@ -188,25 +188,8 @@ $transparent-btn-border: 2px;
   }
 }
 
-.gl-input-container {
-  &.mod-error {
-    .gl-input-wrapper {
-      background: rgba(255, 84, 108, 0.05);
-      border-color: rgba(255, 84, 108, 0.3);
-    }
-
-    .gl-input-error {
-      max-height: 22px;
-    }
-  }
-}
-
 .gl-input-wrapper {
   display: block;
-  background: #F7F7F7;
-  border-radius: 10px;
-  padding: 14px;
-  font-size: 16px;
   line-height: 22px;
   color: var(--secondary-color);
   transition: 300ms background, 300ms border-color;
@@ -227,26 +210,14 @@ $transparent-btn-border: 2px;
   }
 }
 
-.gl-input-error {
-  font-size: 12px;
-  line-height: 22px;
-  color: #FF546C;
-  padding-left: 20px;
-  background-image: url('../img/common/error-validation.svg');
-  background-repeat: no-repeat;
-  background-position: top 50% left;
-  background-size: 16px;
-  display: flex;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 300ms;
-  align-items: center;
-}
-
 .gl-input {
+  background: #F7F7F7;
+  border-radius: 10px;
+  padding: 14px;
   font-size: 16px;
   line-height: 22px;
   color: var(--secondary-color);
+  box-sizing: border-box;
 
   &::placeholder {
     font-size: 16px;

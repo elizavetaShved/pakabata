@@ -1573,19 +1573,8 @@ select:-webkit-autofill:focus {
       .gl-radio-btn-wrapper .gl-radio-btn:checked + .gl-radio-btn-content-wrapper .gl-radio-btn-content:before {
         opacity: 1; }
 
-.gl-input-container.mod-error .gl-input-wrapper {
-  background: rgba(255, 84, 108, 0.05);
-  border-color: rgba(255, 84, 108, 0.3); }
-
-.gl-input-container.mod-error .gl-input-error {
-  max-height: 22px; }
-
 .gl-input-wrapper {
   display: block;
-  background: #F7F7F7;
-  border-radius: 10px;
-  padding: 14px;
-  font-size: 16px;
   line-height: 22px;
   color: var(--secondary-color);
   -webkit-transition: 300ms background, 300ms border-color;
@@ -1602,30 +1591,15 @@ select:-webkit-autofill:focus {
         padding: 14px;
         max-height: 52px; } }
 
-.gl-input-error {
-  font-size: 12px;
-  line-height: 22px;
-  color: #FF546C;
-  padding-left: 20px;
-  background-image: url("../img/common/error-validation.svg");
-  background-repeat: no-repeat;
-  background-position: top 50% left;
-  background-size: 16px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  max-height: 0;
-  overflow: hidden;
-  -webkit-transition: max-height 300ms;
-  transition: max-height 300ms;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-
 .gl-input {
+  background: #F7F7F7;
+  border-radius: 10px;
+  padding: 14px;
   font-size: 16px;
   line-height: 22px;
-  color: var(--secondary-color); }
+  color: var(--secondary-color);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
   .gl-input::-webkit-input-placeholder {
     font-size: 16px;
     line-height: 22px;
@@ -2054,29 +2028,17 @@ select:-webkit-autofill:focus {
 
 .gl-datepicker {
   cursor: pointer;
-  height: 100%;
   position: relative;
-  padding-left: 44px; }
-
-.gl-input-date-placeholder-icon {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  content: '';
-  width: 20px;
-  height: 20px;
+  padding-left: 44px;
   background-image: url("../img/common/calendar.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  left: 14px; }
+  background-position: top 50% left 14px;
+  background-size: 20px;
+  background-repeat: no-repeat; }
 
 .gl-datepicker-container {
   position: relative;
   cursor: pointer;
-  padding: 0;
-  height: 52px; }
+  padding: 0; }
   .gl-datepicker-container .datepicker {
     position: absolute;
     background-color: #fff;
@@ -3306,6 +3268,28 @@ select:-webkit-autofill:focus {
               flex: auto;
       -webkit-box-sizing: border-box;
               box-sizing: border-box; } }
+  .order-form .parsley-errors-list.filled {
+    margin-top: 4px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #FF546C;
+    padding-left: 28px;
+    background-image: url("../img/common/error-validation.svg");
+    background-repeat: no-repeat;
+    background-position: top 50% left 8px;
+    background-size: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    -webkit-transition: max-height 300ms;
+    transition: max-height 300ms;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .order-form .parsley-errors-list ~ .gl-input {
+    background: rgba(255, 84, 108, 0.05);
+    border-color: rgba(255, 84, 108, 0.3); }
 
 .order-form__form-wrapper {
   padding-top: 46px;
@@ -3447,7 +3431,7 @@ select:-webkit-autofill:focus {
       height: -moz-min-content;
       height: min-content; } }
 
-.about-family-pakaf__blob {
+.about-family-pakaf__blob, .about-family-pakaf__mask {
   position: absolute;
   top: -44px;
   -o-object-fit: cover;
@@ -3455,7 +3439,7 @@ select:-webkit-autofill:focus {
   height: 110%;
   width: 100vw; }
   @media only screen and (max-width: 1024px) {
-    .about-family-pakaf__blob {
+    .about-family-pakaf__blob, .about-family-pakaf__mask {
       top: 0;
       height: 100%; } }
 

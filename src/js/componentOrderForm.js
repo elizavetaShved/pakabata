@@ -9,25 +9,10 @@ export default function componentOrderForm() {
   const childrenMinusBtn = hostElem.querySelector('#children-btn-minus');
   const childrenPlusBtn = hostElem.querySelector('#children-btn-plus');
   const childrenInput = hostElem.querySelector('#children-input');
-  // const dateInput = hostElem.querySelector('#date-input');
-  // const nameInput = hostElem.querySelector('#name-input');
-  // const phoneInput = hostElem.querySelector('#phone-input');
-  const inputs = hostElem.querySelectorAll('.order-form__control');
 
   const inputNameWrapper = hostElem.querySelector('.order-form__input-name-wrapper');
   const inputChildrenWrapper = hostElem.querySelector('.order-form__input-children-wrapper');
   const inputsHideMobileArr = hostElem.querySelectorAll('.order-form__input-hide-mobile');
-  // const btnSubmit = hostElem.querySelector('.order-form__btn-submit');
-  // const controlContainers = hostElem.querySelectorAll('.gl-input-container');
-  //
-  // const form = {
-  //   placeHoliday: document.getElementsByName('place-holiday'),
-  //   children: document.getElementsByName('children'),
-  //   date: document.getElementsByName('date'),
-  //   userName: document.getElementsByName('user-name'),
-  //   phone: document.getElementsByName('phone'),
-  //   comment: document.getElementsByName('comment'),
-  // }
 
   const checkSizeMobile = () => {
     if (window.innerWidth <= 768) {
@@ -38,7 +23,26 @@ export default function componentOrderForm() {
     childrenInput.style.width = `${ INPUT_WIDTH }px`;
   }
 
+  const setWidthInputChildren = () => {
+    const additionalWidth = (String(childrenInput.value).length - 1) * 8;
+    childrenInput.style.width = `${ INPUT_WIDTH + additionalWidth }px`;
+  }
+
+  const openOtherFields = () => {
+    if (window.innerWidth <= 1400) {
+      inputsHideMobileArr.forEach(inputHideMobileItem => {
+        inputHideMobileItem.classList.add('mod-show');
+      })
+    }
+  }
+
   checkSizeMobile();
+  commonDatepicker(datepickerElem);
+
+  window.addEventListener('resize', () => {
+    checkSizeMobile();
+    setWidthInputChildren();
+  });
 
   childrenMinusBtn.onclick = () => {
     if (childrenInput.value > MIN_LENGTH_CHILDREN) {
@@ -76,58 +80,6 @@ export default function componentOrderForm() {
       setWidthInputChildren();
     }
   }
-  //
-  // Object.keys(form).forEach((key, index) => {
-  //   const currentInput = form[key][0];
-  //   currentInput.oninput = () => {
-  //     switch (currentInput.getAttribute('name')) {
-  //       case 'place-holiday':
-  //       case 'date':
-  //         break;
-  //
-  //       default:
-  //         if (currentInput.value) {
-  //           controlContainers[index].classList.remove('mod-error');
-  //         }
-  //     }
-  //   }
-  //
-  //   currentInput.onblur = () => {
-  //     validation(currentInput);
-  //   }
-  // })
-  //
-  // const validation = (currentInput) => {
-  //   let isValid = true;
-  //   if (currentInput.hasAttribute('required')) {
-  //     switch (currentInput.getAttribute('name')) {
-  //       case 'place-holiday':
-  //         break;
-  //
-  //       case 'date':
-  //         // todo датапикер не отобрадает, что value есть
-  //         if (!$(currentInput).data().datepicker.viewDate) {
-  //           controlContainers[index].classList.add('mod-error');
-  //           isValid = true;
-  //         }
-  //         break;
-  //
-  //       default:
-  //         if (!currentInput.value) {
-  //           controlContainers[index].classList.add('mod-error');
-  //           isValid = true;
-  //         }
-  //     }
-  //   }
-  //   return isValid;
-  // }
-
-  const setWidthInputChildren = () => {
-    const additionalWidth = (String(childrenInput.value).length - 1) * 8;
-    childrenInput.style.width = `${ INPUT_WIDTH + additionalWidth }px`;
-  }
-
-  commonDatepicker(datepickerElem);
 
   inputNameWrapper.onclick = () => {
     openOtherFields();
@@ -137,38 +89,12 @@ export default function componentOrderForm() {
     openOtherFields();
   }
 
-  // document.onclick = (e) => {
-  //   closeOtherFields(e);
-  // }
+  hostElem.onsubmit = event => {
+    event.preventDefault();
 
-  window.addEventListener('resize', () => {
-    checkSizeMobile();
-    setWidthInputChildren();
-  })
-
-  // btnSubmit.onclick = () => {
-  //   Object.keys(form).forEach((key, index) => {
-  //     if (validation(form[key][0])) {
-  //       console.log('ok')
-  //     }
-  //   })
-  // }
-
-  const openOtherFields = () => {
-    if (window.innerWidth <= 1400) {
-      inputsHideMobileArr.forEach(inputHideMobileItem => {
-        inputHideMobileItem.classList.add('mod-show');
-      })
+    if ($(hostElem).parsley().isValid()) {
+      hostElem.reset();
+      $(hostElem).parsley().reset();
     }
   }
-
-  // const closeOtherFields = (e) => {
-  //   if (window.innerWidth <= 1400) {
-  //     if (!checkExistParent(e.target, hostElem)) {
-  //       inputsHideMobileArr.forEach(inputHideMobileItem => {
-  //         inputHideMobileItem.classList.remove('mod-show');
-  //       })
-  //     }
-  //   }
-  // }
 }
