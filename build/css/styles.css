@@ -2578,8 +2578,11 @@ select:-webkit-autofill:focus {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  width: 42px;
-  height: 38px; }
+  width: 62px;
+  height: 58px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 42px 38px; }
   .banner__btn-prev:after, .banner__btn-next:after {
     content: ''; }
 
@@ -3287,8 +3290,9 @@ select:-webkit-autofill:focus {
     transition: max-height 300ms;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
-  .order-form .parsley-errors-list ~ .gl-input {
+            align-items: center;
+    cursor: initial; }
+  .order-form .parsley-errors-list .gl-input {
     background: rgba(255, 84, 108, 0.05);
     border-color: rgba(255, 84, 108, 0.3); }
 

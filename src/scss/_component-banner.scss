@@ -97,8 +97,11 @@
   content: '';
   top: 50%;
   transform: translateY(-50%);
-  width: 42px;
-  height: 38px;
+  width: 62px;
+  height: 58px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 42px 38px;
 
   &:after {
     content: '';

@@ -45,26 +45,15 @@
       overflow: hidden;
       transition: max-height 300ms;
       align-items: center;
+      cursor: initial;
     }
 
-    ~.gl-input {
+    // todo повесить как-то на инпут (верхний братский элемент)
+    .gl-input {
       background: rgba(255, 84, 108, 0.05);
       border-color: rgba(255, 84, 108, 0.3);
     }
   }
-
-  //.gl-input-container {
-  //  &.mod-error {
-  //    .gl-input-wrapper {
-  //      background: rgba(255, 84, 108, 0.05);
-  //      border-color: rgba(255, 84, 108, 0.3);
-  //    }
-  //
-  //    .gl-input-error {
-  //      max-height: 22px;
-  //    }
-  //  }
-  //}
 }
 
 .order-form__form-wrapper {
