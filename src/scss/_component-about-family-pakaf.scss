@@ -1,6 +1,7 @@
 .about-family-pakaf {
   position: relative;
   height: 820px;
+  overflow: hidden;
 
   @include breakpoint(laptop) {
     height: 700px;

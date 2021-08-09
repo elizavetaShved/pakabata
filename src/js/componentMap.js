@@ -40,8 +40,9 @@ export default function componentMap() {
     mapInstance.controls.add('zoomControl', {
       position: {
         right: 10,
-        bottom: 60
-      }
+        top: 150
+      },
+      size: "small",
     })
 
     const objectManager = new ymaps.ObjectManager({

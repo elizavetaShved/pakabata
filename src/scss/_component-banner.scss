@@ -1,5 +1,6 @@
 .banner {
   margin-bottom: 48px;
+  cursor: pointer;
 
   @include breakpoint(tablet) {
     padding: 0;

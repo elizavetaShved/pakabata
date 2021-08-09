@@ -14,7 +14,6 @@ export default function commonVideoModal(hostElem) {
 
   closeVideoBtn.onclick = () => {
     onUnlockScroll();
-    videoIframeElem.stopVideo()
   }
 
   videoContainerElem.onclick = (e) => {

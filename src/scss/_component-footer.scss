@@ -6,6 +6,7 @@
   clip-path: ellipse(94% 60% at 50% 60%);
   margin-top: -30px;
   color: #fff;
+  overflow: hidden;
 
   @include breakpoint(small-tablet) {
     clip-path: none
