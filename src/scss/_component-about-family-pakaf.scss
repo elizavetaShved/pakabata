@@ -1,7 +1,5 @@
 .about-family-pakaf {
   position: relative;
-  height: 820px;
-  overflow: hidden;
 
   @include breakpoint(laptop) {
     height: 700px;
@@ -12,16 +10,25 @@
   }
 }
 
+.about-family-pakaf__mask {
+  z-index: 3;
+}
+
 .about-family-pakaf__blob, .about-family-pakaf__mask {
   position: absolute;
   top: -44px;
   object-fit: cover;
-  height: 110%;
-  width: 100vw;
+  height: 130%;
+
+  @include breakpoint(desktop) {
+    height: 110%;
+  }
+
+  @include breakpoint(laptop) {
+  }
 
   @include breakpoint(tablet) {
     top: 0;
-    height: 100%;
   }
 }
 

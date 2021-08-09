@@ -3424,9 +3424,7 @@ select:-webkit-autofill:focus {
         top: 30%; } }
 
 .about-family-pakaf {
-  position: relative;
-  height: 820px;
-  overflow: hidden; }
+  position: relative; }
   @media only screen and (max-width: 1200px) {
     .about-family-pakaf {
       height: 700px; } }
@@ -3436,17 +3434,21 @@ select:-webkit-autofill:focus {
       height: -moz-min-content;
       height: min-content; } }
 
+.about-family-pakaf__mask {
+  z-index: 3; }
+
 .about-family-pakaf__blob, .about-family-pakaf__mask {
   position: absolute;
   top: -44px;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 110%;
-  width: 100vw; }
+  height: 130%; }
+  @media only screen and (max-width: 1400px) {
+    .about-family-pakaf__blob, .about-family-pakaf__mask {
+      height: 110%; } }
   @media only screen and (max-width: 1024px) {
     .about-family-pakaf__blob, .about-family-pakaf__mask {
-      top: 0;
-      height: 100%; } }
+      top: 0; } }
 
 .about-family-pakaf__info-wrapper {
   z-index: 2;
