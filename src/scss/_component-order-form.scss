@@ -30,6 +30,11 @@
     box-sizing: border-box;
   }
 
+  .parsley-error {
+    background: rgba(255, 84, 108, 0.05);
+    border-color: rgba(255, 84, 108, 0.3);
+  }
+
   .parsley-errors-list {
     &.filled {
       margin-top: 4px;
@@ -46,12 +51,7 @@
       transition: max-height 300ms;
       align-items: center;
       cursor: initial;
-    }
-
-    // todo повесить как-то на инпут (верхний братский элемент)
-    .gl-input {
-      background: rgba(255, 84, 108, 0.05);
-      border-color: rgba(255, 84, 108, 0.3);
+      font-family: var(--calibri);
     }
   }
 }

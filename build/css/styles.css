@@ -3278,6 +3278,9 @@ select:-webkit-autofill:focus {
               flex: auto;
       -webkit-box-sizing: border-box;
               box-sizing: border-box; } }
+  .order-form .parsley-error {
+    background: rgba(255, 84, 108, 0.05);
+    border-color: rgba(255, 84, 108, 0.3); }
   .order-form .parsley-errors-list.filled {
     margin-top: 4px;
     font-size: 12px;
@@ -3297,10 +3300,8 @@ select:-webkit-autofill:focus {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    cursor: initial; }
-  .order-form .parsley-errors-list .gl-input {
-    background: rgba(255, 84, 108, 0.05);
-    border-color: rgba(255, 84, 108, 0.3); }
+    cursor: initial;
+    font-family: var(--calibri); }
 
 .order-form__form-wrapper {
   padding-top: 46px;
