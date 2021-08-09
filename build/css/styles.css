@@ -1573,6 +1573,13 @@ select:-webkit-autofill:focus {
       .gl-radio-btn-wrapper .gl-radio-btn:checked + .gl-radio-btn-content-wrapper .gl-radio-btn-content:before {
         opacity: 1; }
 
+.gl-input-container.mod-error .gl-input-wrapper {
+  background: rgba(255, 84, 108, 0.05);
+  border-color: rgba(255, 84, 108, 0.3); }
+
+.gl-input-container.mod-error .gl-input-error {
+  max-height: 22px; }
+
 .gl-input-wrapper {
   display: block;
   background: #F7F7F7;
@@ -1580,7 +1587,9 @@ select:-webkit-autofill:focus {
   padding: 14px;
   font-size: 16px;
   line-height: 22px;
-  color: var(--secondary-color); }
+  color: var(--secondary-color);
+  -webkit-transition: 300ms background, 300ms border-color;
+  transition: 300ms background, 300ms border-color; }
   @media only screen and (max-width: 1400px) {
     .gl-input-wrapper.order-form__input-hide-mobile {
       max-height: 0;
@@ -1592,6 +1601,26 @@ select:-webkit-autofill:focus {
       .gl-input-wrapper.order-form__input-hide-mobile.mod-show {
         padding: 14px;
         max-height: 52px; } }
+
+.gl-input-error {
+  font-size: 12px;
+  line-height: 22px;
+  color: #FF546C;
+  padding-left: 20px;
+  background-image: url("../img/common/error-validation.svg");
+  background-repeat: no-repeat;
+  background-position: top 50% left;
+  background-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 300ms;
+  transition: max-height 300ms;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .gl-input {
   font-size: 16px;
