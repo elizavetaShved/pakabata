@@ -137,22 +137,22 @@ export default function componentOrderForm() {
     openOtherFields();
   }
 
-  document.onclick = (e) => {
-    closeOtherFields(e);
-  }
+  // document.onclick = (e) => {
+  //   closeOtherFields(e);
+  // }
 
   window.addEventListener('resize', () => {
     checkSizeMobile();
     setWidthInputChildren();
   })
 
-  btnSubmit.onclick = () => {
-    Object.keys(form).forEach((key, index) => {
-      if (validation(form[key][0])) {
-        console.log('ok')
-      }
-    })
-  }
+  // btnSubmit.onclick = () => {
+  //   Object.keys(form).forEach((key, index) => {
+  //     if (validation(form[key][0])) {
+  //       console.log('ok')
+  //     }
+  //   })
+  // }
 
   const openOtherFields = () => {
     if (window.innerWidth <= 1400) {
@@ -162,13 +162,13 @@ export default function componentOrderForm() {
     }
   }
 
-  const closeOtherFields = (e) => {
-    if (window.innerWidth <= 1400) {
-      if (!checkExistParent(e.target, hostElem)) {
-        inputsHideMobileArr.forEach(inputHideMobileItem => {
-          inputHideMobileItem.classList.remove('mod-show');
-        })
-      }
-    }
-  }
+  // const closeOtherFields = (e) => {
+  //   if (window.innerWidth <= 1400) {
+  //     if (!checkExistParent(e.target, hostElem)) {
+  //       inputsHideMobileArr.forEach(inputHideMobileItem => {
+  //         inputHideMobileItem.classList.remove('mod-show');
+  //       })
+  //     }
+  //   }
+  // }
 }

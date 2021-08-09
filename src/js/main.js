@@ -18,6 +18,7 @@ import componentCostVisit from './componentCostVisit';
 import componentMap from './componentMap';
 import componentHeader from './componentHeader';
 import scrollByAnchor from './scrollByAnchor';
+import componentPopap from './componentPopap';
 
 document.addEventListener('DOMContentLoaded', function() {
     polyfills();
@@ -40,6 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
     componentAboutFamilyPakaf();
     componentCostVisit();
     componentMap();
+    componentPopap();
 });
 
 window.addEventListener('load', function() {
