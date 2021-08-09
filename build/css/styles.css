@@ -3871,6 +3871,8 @@ select:-webkit-autofill:focus {
   @media only screen and (max-width: 768px) {
     .map {
       height: 400px; } }
+  .map .ymaps-2-1-79-map-copyrights-promo, .map .ymaps-2-1-79-copyright {
+    display: none; }
 
 .map__container {
   -webkit-clip-path: ellipse(94% 60% at 50% 60%);
