@@ -2701,7 +2701,8 @@ select:-webkit-autofill:focus {
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
-  padding-top: 140px; }
+  padding-top: 140px;
+  overflow: hidden; }
   @media only screen and (max-width: 1200px) {
     .about-park {
       padding-top: 80px; } }
@@ -2939,7 +2940,8 @@ select:-webkit-autofill:focus {
 
 .holidays {
   margin-bottom: 160px;
-  padding-top: 120px; }
+  padding-top: 120px;
+  overflow: hidden; }
   @media only screen and (max-width: 1400px) {
     .holidays {
       margin-bottom: 40px; } }
@@ -3404,7 +3406,8 @@ select:-webkit-autofill:focus {
 
 .about-family-pakaf {
   position: relative;
-  height: 820px; }
+  height: 820px;
+  overflow: hidden; }
   @media only screen and (max-width: 1200px) {
     .about-family-pakaf {
       height: 700px; } }
@@ -3526,7 +3529,8 @@ select:-webkit-autofill:focus {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 112px;
-  padding-top: 100px; }
+  padding-top: 100px;
+  overflow: hidden; }
   @media only screen and (max-width: 1400px) {
     .cost-visit {
       -webkit-box-orient: vertical;
@@ -3982,7 +3986,8 @@ select:-webkit-autofill:focus {
   -webkit-clip-path: ellipse(94% 60% at 50% 60%);
           clip-path: ellipse(94% 60% at 50% 60%);
   margin-top: -30px;
-  color: #fff; }
+  color: #fff;
+  overflow: hidden; }
   @media only screen and (max-width: 768px) {
     .footer {
       -webkit-clip-path: none;

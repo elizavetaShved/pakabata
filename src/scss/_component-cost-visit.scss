@@ -6,6 +6,7 @@ $padding-content-price-extension: 40px;
   justify-content: space-between;
   margin-bottom: 112px;
   padding-top: 100px;
+  overflow: hidden;
 
   @include breakpoint(desktop) {
     flex-direction: column;

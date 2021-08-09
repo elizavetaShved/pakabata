@@ -2,6 +2,7 @@
   margin-bottom: 90px;
   height: min-content;
   padding-top: 140px;
+  overflow: hidden;
 
   @include breakpoint(laptop) {
     padding-top: 80px;
