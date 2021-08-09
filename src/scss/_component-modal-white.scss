@@ -1,0 +1,16 @@
+.modal-white {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--back-background-modal);
+  z-index: -1;
+  opacity: 0;
+  transition: 600ms opacity;
+  width: 100%;
+  height: 100%;
+
+  &.mod-show {
+    opacity: 1;
+    z-index: 3;
+  }
+}

@@ -9,6 +9,7 @@ export default function componentHeader() {
   const closeBtn = hostElem.querySelector('.header__sidebar-close-btn-wrapper');
   const geolocationLinkSidebar = sidebarContainerElem.querySelector('.header__geolocation');
   const menuItemsArr = hostElem.querySelectorAll('.header__menu-item');
+  const writeBtns = hostElem.querySelectorAll('.header__write-btn');
 
   burgerBtn.onclick = () => {
     openSidebar();
@@ -31,6 +32,12 @@ export default function componentHeader() {
   menuItemsArr.forEach(menuItem => {
     menuItem.onclick = () => {
       closeSidebar();
+    }
+  })
+
+  writeBtns.forEach(writeBtn => {
+    writeBtn.onclick = () => {
+
     }
   })
 
