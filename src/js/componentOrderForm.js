@@ -1,7 +1,6 @@
 import commonDatepicker from './commonDatepicker';
 import { MAX_LENGTH_CHILDREN, MIN_LENGTH_CHILDREN } from './consts';
 import { checkExistParent } from './checkExistParent';
-import commonFixedBlockInContainer from './commonFixedBlockInContainer';
 
 export default function componentOrderForm() {
   let INPUT_WIDTH;
