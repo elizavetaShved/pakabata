@@ -1830,12 +1830,18 @@ select:-webkit-autofill:focus {
   background-image: url("../img/common/arrows/arrow-left.svg"); }
   .gl-btn-prev.mod-light-background {
     background-image: url("../img/common/arrows/arrow-left-dark.svg"); }
+  @media only screen and (max-width: 1200px) {
+    .gl-btn-prev {
+      left: -10px; } }
 
 .gl-btn-next {
   right: -46px;
   background-image: url("../img/common/arrows/arrow-right.svg"); }
   .gl-btn-next.mod-light-background {
     background-image: url("../img/common/arrows/arrow-right-dark.svg"); }
+  @media only screen and (max-width: 1200px) {
+    .gl-btn-next {
+      right: -10px; } }
 
 .gl-slider-start .gl-btn-prev {
   pointer-events: none;
@@ -3388,10 +3394,11 @@ select:-webkit-autofill:focus {
         top: -62px;
         left: -32px; } }
   .order-form__back-background-item:nth-child(2) {
-    width: 538px;
+    width: 492px;
     height: 456px;
     bottom: -30px;
-    right: -70px;
+    right: -40px;
+    background-position: left;
     background-image: url("../img/order-form/silhouettes/back-background-2.svg"); }
     @media only screen and (max-width: 576px) {
       .order-form__back-background-item:nth-child(2) {
@@ -3424,7 +3431,10 @@ select:-webkit-autofill:focus {
         top: 30%; } }
 
 .about-family-pakaf {
-  position: relative; }
+  position: relative;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content; }
   @media only screen and (max-width: 1200px) {
     .about-family-pakaf {
       height: 700px; } }
@@ -3442,13 +3452,11 @@ select:-webkit-autofill:focus {
   top: -44px;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 130%; }
-  @media only screen and (max-width: 1400px) {
-    .about-family-pakaf__blob, .about-family-pakaf__mask {
-      height: 110%; } }
+  height: calc(100% + 44px + 100px); }
   @media only screen and (max-width: 1024px) {
     .about-family-pakaf__blob, .about-family-pakaf__mask {
-      top: 0; } }
+      top: 0;
+      height: 100%; } }
 
 .about-family-pakaf__info-wrapper {
   z-index: 2;
@@ -3551,6 +3559,7 @@ select:-webkit-autofill:focus {
           justify-content: space-between;
   margin-bottom: 112px;
   padding-top: 100px;
+  margin-top: 100px;
   overflow: hidden; }
   @media only screen and (max-width: 1400px) {
     .cost-visit {
@@ -4177,6 +4186,9 @@ select:-webkit-autofill:focus {
   .popap.mod-show {
     opacity: 1;
     z-index: 3; }
+    .popap.mod-show .popap__container {
+      margin-right: 10px -20px 10px 10px;
+      padding-right: 20px; }
 
 .popap__padding-content {
   padding-right: 80px;
@@ -4197,9 +4209,7 @@ select:-webkit-autofill:focus {
 
 .popap__container {
   overflow: auto;
-  max-height: 100vh;
-  margin-right: 10px -20px 10px 10px;
-  padding-right: 20px; }
+  max-height: 100vh; }
 
 .popap__wrapper {
   display: -webkit-box;

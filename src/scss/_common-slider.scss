@@ -81,6 +81,11 @@ $animation-duration: 400ms;
   &.mod-light-background {
     background-image: url('../img/common/arrows/arrow-left-dark.svg');
   }
+
+
+  @include breakpoint(laptop) {
+    left: -10px;
+  }
 }
 
 .gl-btn-next {
@@ -89,6 +94,11 @@ $animation-duration: 400ms;
 
   &.mod-light-background {
     background-image: url('../img/common/arrows/arrow-right-dark.svg');
+  }
+
+
+  @include breakpoint(laptop) {
+    right: -10px;
   }
 }
 

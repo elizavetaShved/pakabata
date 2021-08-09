@@ -1,5 +1,6 @@
 .about-family-pakaf {
   position: relative;
+  height: min-content;
 
   @include breakpoint(laptop) {
     height: 700px;
@@ -18,17 +19,11 @@
   position: absolute;
   top: -44px;
   object-fit: cover;
-  height: 130%;
-
-  @include breakpoint(desktop) {
-    height: 110%;
-  }
-
-  @include breakpoint(laptop) {
-  }
+  height: calc(100% + 44px + 100px); // 44px - его top // 100px = margin след-го блока
 
   @include breakpoint(tablet) {
     top: 0;
+    height: 100%;
   }
 }
 
