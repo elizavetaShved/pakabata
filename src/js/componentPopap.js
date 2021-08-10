@@ -7,7 +7,7 @@ export default function componentPopap() {
   const sliderComponentDeskElem = hostElem.querySelector('#popap-swiper-component-desk');
   const sliderComponentMobileElem = hostElem.querySelector('#popap-swiper-component-mobile');
   const closeBtn = hostElem.querySelector('.gl-close-btn-wrapper');
-  const modalWrapperElem = hostElem.querySelector('.gl-close-btn-wrapper');
+  const popapContentElem = hostElem.querySelector('.popap__content');
 
   const tagH3 = hostElem.querySelectorAll('h3');
   const tagP = hostElem.querySelectorAll('p');
@@ -50,16 +50,16 @@ export default function componentPopap() {
   wrapInClassPaddingContent(swiperComponentDesk);
 
   closeBtn.onclick = () => {
-    onUnlockScroll();
+    closeModal();
   }
 
   hostElem.onclick = (e) => {
-    if (!(checkExistParent(e.target, modalWrapperElem))) {
-      onUnlockScroll();
+    if (!(checkExistParent(e.target, popapContentElem))) {
+      closeModal();
     }
   }
 
-  const onUnlockScroll = () => {
+  const closeModal = () => {
     hostElem.classList.remove('mod-show');
     unlockScroll(hostElem);
   }

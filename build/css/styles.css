@@ -1198,32 +1198,6 @@ select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
   background-color: transparent; }
 
-.parsley-error {
-  background: rgba(255, 84, 108, 0.05);
-  border-color: rgba(255, 84, 108, 0.3); }
-
-.parsley-errors-list.filled {
-  margin-top: 4px;
-  font-size: 12px;
-  line-height: 22px;
-  color: #FF546C;
-  padding-left: 28px;
-  background-image: url("../img/common/error-validation.svg");
-  background-repeat: no-repeat;
-  background-position: top 50% left 8px;
-  background-size: 16px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  overflow: hidden;
-  -webkit-transition: max-height 300ms;
-  transition: max-height 300ms;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  cursor: initial;
-  font-family: var(--calibri); }
-
 .gl-font-riffic {
   font-family: var(--riffic); }
 
@@ -1341,12 +1315,16 @@ select:-webkit-autofill:focus {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 16px;
-  max-height: 86vh;
-  max-width: 80vw;
+  max-height: 66vh;
+  max-width: 60vw;
   overflow: hidden;
   z-index: 100;
   width: 100%;
   height: 100%; }
+  @media only screen and (max-width: 576px) {
+    .gl-modal-wrapper {
+      max-height: 86vh;
+      max-width: 80vw; } }
 
 .gl-video-iframe {
   width: 100%;
@@ -1773,7 +1751,13 @@ select:-webkit-autofill:focus {
 .gl-checkbox-content-text {
   font-size: 12px;
   line-height: 14px;
-  color: #150533; }
+  color: #150533;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .gl-checkbox-content-icon {
   width: 18px;
@@ -2137,7 +2121,8 @@ select:-webkit-autofill:focus {
       font-family: var(--riffic);
       text-align: center;
       margin-bottom: 20px;
-      cursor: pointer !important; }
+      cursor: pointer !important;
+      padding-top: 0; }
     .gl-datepicker-container .datepicker .datepicker-switch, .gl-datepicker-container .datepicker .prev, .gl-datepicker-container .datepicker .next {
       padding-bottom: 20px; }
   .gl-datepicker-container .prev, .gl-datepicker-container .next {
@@ -2725,7 +2710,6 @@ select:-webkit-autofill:focus {
       grid-template-columns: 1fr; } }
 
 .about-park {
-  margin-bottom: 90px;
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
@@ -2746,7 +2730,11 @@ select:-webkit-autofill:focus {
       padding-top: 60px; } }
 
 .about-park__wrapper {
-  position: relative; }
+  position: relative;
+  padding-bottom: 50px; }
+  @media only screen and (max-width: 576px) {
+    .about-park__wrapper {
+      padding-bottom: 20px; } }
 
 @media only screen and (max-width: 1024px) {
   .about-park__no-container {
@@ -2756,12 +2744,9 @@ select:-webkit-autofill:focus {
   position: absolute;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 100%;
+  height: 90%;
   width: 100vw;
   top: 10%; }
-  @media only screen and (max-width: 1024px) {
-    .about-park__blob {
-      height: 94%; } }
 
 .about-park__info-wrapper {
   position: relative;
@@ -2931,13 +2916,15 @@ select:-webkit-autofill:focus {
     transition: 400ms width, 400ms height, 400ms transform, 400ms -webkit-transform; }
 
 .about-park__btn-video-wrapper {
-  height: 80px;
+  height: 100px;
   padding-left: 106px;
   position: relative; }
   .about-park__btn-video-wrapper:before {
     position: absolute;
     content: '';
-    top: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
     left: 0;
     width: 80px;
     height: 80px;
@@ -2945,6 +2932,13 @@ select:-webkit-autofill:focus {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center; }
+  @media only screen and (max-width: 1024px) {
+    .about-park__btn-video-wrapper {
+      height: 80px;
+      padding-left: 86px; }
+      .about-park__btn-video-wrapper:before {
+        width: 60px;
+        height: 60px; } }
 
 @media only screen and (max-width: 1024px) {
   .about-park__btn-video-container {
@@ -2957,14 +2951,21 @@ select:-webkit-autofill:focus {
 
 .about-park__btn-video-top-caption {
   font-size: 16px;
-  line-height: 28px;
-  margin-bottom: 4px;
+  margin-bottom: 10px;
   display: block; }
+  @media only screen and (max-width: 1024px) {
+    .about-park__btn-video-top-caption {
+      font-size: 14px;
+      margin-bottom: 8px; } }
 
 .about-park__btn-video-bottom-caption {
   font-size: 24px;
   line-height: 28px;
   display: block; }
+  @media only screen and (max-width: 1024px) {
+    .about-park__btn-video-bottom-caption {
+      font-size: 20px;
+      line-height: 24px; } }
 
 .holidays {
   margin-bottom: 160px;
@@ -3055,8 +3056,15 @@ select:-webkit-autofill:focus {
   position: relative;
   -webkit-clip-path: ellipse(63% 82% at 36% 50%);
           clip-path: ellipse(63% 82% at 36% 50%); }
+  @media only screen and (max-width: 426px) {
+    .holidays__services-title-wrapper {
+      -webkit-box-flex: 1;
+          -ms-flex: auto;
+              flex: auto;
+      height: 150px; } }
   @media only screen and (max-width: 768px) {
     .holidays__services-title-wrapper {
+      height: 110px;
       width: 100%;
       -webkit-clip-path: ellipse(82% 83% at 50% 17%);
               clip-path: ellipse(82% 83% at 50% 17%); } }
@@ -3301,8 +3309,9 @@ select:-webkit-autofill:focus {
      object-fit: contain; }
   @media only screen and (max-width: 1400px) {
     .holidays__dude-icon {
-      top: 40px;
-      left: 216px; } }
+      bottom: -62px;
+      left: 196px;
+      top: auto; } }
 
 .holidays__dude-comment {
   position: absolute;
@@ -3332,6 +3341,30 @@ select:-webkit-autofill:focus {
   position: relative; }
   .order-form.mod-border-right {
     border-radius: 0 20px 20px 0 !important; }
+  .order-form .gl-input.parsley-error {
+    background: rgba(255, 84, 108, 0.05);
+    border: 1px solid rgba(255, 84, 108, 0.3); }
+  .order-form .parsley-errors-list.filled {
+    margin-top: 4px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #FF546C;
+    padding-left: 28px;
+    background-image: url("../img/common/error-validation.svg");
+    background-repeat: no-repeat;
+    background-position: top 50% left 8px;
+    background-size: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    -webkit-transition: max-height 300ms;
+    transition: max-height 300ms;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: initial;
+    font-family: var(--calibri); }
 
 .order-form__padding-content {
   padding-left: 42px;
@@ -4193,7 +4226,7 @@ select:-webkit-autofill:focus {
     opacity: 1;
     z-index: 3; }
     .popap.mod-show .popap__container {
-      margin-right: 10px -20px 10px 10px;
+      margin: 10px -20px 10px 10px;
       padding-right: 20px; }
 
 .popap__padding-content {

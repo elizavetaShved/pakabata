@@ -95,7 +95,13 @@ $main-block-width: 60%;
   position: relative;
   clip-path: ellipse(63% 82% at 36% 50%);
 
+  @include breakpoint(xx-mobile) {
+    flex: auto;
+    height: 150px;
+  }
+
   @include breakpoint(small-tablet) {
+    height: 110px;
     width: 100%;
     clip-path: ellipse(82% 83% at 50% 17%);
   }
@@ -376,8 +382,9 @@ $main-block-width: 60%;
   object-fit: contain;
 
   @include breakpoint(desktop) {
-    top: 40px;
-    left: 216px;
+    bottom: -62px;
+    left: 196px;
+    top: auto;
   }
 }
 
