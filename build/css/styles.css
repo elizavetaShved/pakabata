@@ -3370,6 +3370,14 @@ select:-webkit-autofill:focus {
 .order-form__padding-content {
   padding-left: 42px;
   padding-right: 42px; }
+  @media only screen and (max-width: 1024px) {
+    .order-form__padding-content {
+      padding-left: 30px;
+      padding-right: 30px; } }
+  @media only screen and (max-width: 576px) {
+    .order-form__padding-content {
+      padding-left: 20px;
+      padding-right: 20px; } }
 
 .order-form__order-title {
   font-weight: bold;
@@ -3485,7 +3493,19 @@ select:-webkit-autofill:focus {
       height: min-content; } }
 
 .about-family-pakaf__mask {
-  z-index: 3; }
+  z-index: 3;
+  background-image: url("../img/about-family-pakaf/mask.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%; }
+  @media only screen and (max-width: 1024px) {
+    .about-family-pakaf__mask {
+      background-image: url("../img/about-family-pakaf/mask-mobile.svg");
+      background-size: 12%;
+      background-position: top right; } }
+  @media only screen and (max-width: 640px) {
+    .about-family-pakaf__mask {
+      background-size: 40%; } }
 
 .about-family-pakaf__blob, .about-family-pakaf__mask {
   position: absolute;
@@ -3589,6 +3609,15 @@ select:-webkit-autofill:focus {
 @media only screen and (max-width: 1024px) {
   .about-family-pakaf__btn-menu-wrapper {
     margin-bottom: 52px; } }
+
+@media only screen and (max-width: 1024px) {
+  .about-family-pakaf__btn-menu-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
 
 .cost-visit {
   display: -webkit-box;

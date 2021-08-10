@@ -38,6 +38,18 @@
 .order-form__padding-content {
   padding-left: 42px;
   padding-right: 42px;
+
+  @include breakpoint(tablet) {
+    padding-left: 30px;
+    padding-right: 30px;
+
+  }
+
+  @include breakpoint(small-mobile) {
+    padding-left: 20px;
+    padding-right: 20px;
+
+  }
 }
 
 .order-form__order-title {
