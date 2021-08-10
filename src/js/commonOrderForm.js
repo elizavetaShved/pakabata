@@ -91,8 +91,8 @@ export default function commonOrderForm(container, datepickerId, modalInfoElems)
     openOtherFields();
   }
 
-  hostElem.onsubmit = event => {
-    event.preventDefault();
+  hostElem.onsubmit = () => {
+    // event.preventDefault();
 
     if (modalInfoElems) {
       modalInfoElems[0].classList.remove('mod-show');

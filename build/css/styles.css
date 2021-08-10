@@ -3343,7 +3343,7 @@ select:-webkit-autofill:focus {
       .order-form.mod-border-right {
         border-radius: 20px !important; } }
   .order-form .gl-input.parsley-error {
-    background: rgba(255, 84, 108, 0.05);
+    background-color: rgba(255, 84, 108, 0.05);
     border: 1px solid rgba(255, 84, 108, 0.3); }
   .order-form .parsley-errors-list.filled {
     margin-top: 4px;
