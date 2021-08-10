@@ -5,7 +5,8 @@ export default function componentBanner() {
   const hostElem = document.querySelector('#banner-host');
   const sliderComponentDeskElem = hostElem.querySelector('#banner-swiper-component-desk');
   const sliderComponentMobileElem = hostElem.querySelector('#banner-swiper-component-mobile');
-  const popapComponent = document.querySelector('#popap');
+  const popapComponent = document.querySelectorAll('.popap');
+  const slidesList = hostElem.querySelectorAll('.banner__slide');
 
   const btnNext = hostElem.querySelector('.banner__btn-next');
   const btnPrev = hostElem.querySelector('.banner__btn-prev');
@@ -14,12 +15,14 @@ export default function componentBanner() {
     classPagination: '.swiper-pagination'
   }
 
-  hostElem.onclick = (e) => {
-    if (e.target !== btnNext && e.target !== btnPrev) {
-      popapComponent.classList.add('mod-show');
-      lockScroll(hostElem);
+  slidesList.forEach((slideElem, index) => {
+    slideElem.onclick = (e) => {
+      if (e.target !== btnNext && e.target !== btnPrev) {
+        popapComponent[index].classList.add('mod-show');
+        lockScroll(hostElem);
+      }
     }
-  }
+  })
 
   commonMainSlider(sliderComponentDeskElem, sliderComponentMobileElem, additionally);
 }

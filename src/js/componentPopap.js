@@ -2,10 +2,10 @@ import commonMainSlider from './commonMainSlider';
 import { checkExistParent } from './checkExistParent';
 import { unlockScroll } from './scrollBlocker';
 
-export default function componentPopap() {
-  const hostElem = document.querySelector('#popap');
-  const sliderComponentDeskElem = hostElem.querySelector('#popap-swiper-component-desk');
-  const sliderComponentMobileElem = hostElem.querySelector('#popap-swiper-component-mobile');
+export default function componentPopap(popapElem) {
+  const hostElem = popapElem;
+  const sliderComponentDeskElem = hostElem.querySelector('.popap-swiper-component-desk');
+  const sliderComponentMobileElem = hostElem.querySelector('.popap-swiper-component-mobile');
   const closeBtn = hostElem.querySelector('.gl-close-btn-wrapper');
   const popapContentElem = hostElem.querySelector('.popap__content');
 
@@ -15,7 +15,6 @@ export default function componentPopap() {
   const tagOl = hostElem.querySelectorAll('ol');
   const tagTable = hostElem.querySelectorAll('table');
   const tagButton = hostElem.querySelectorAll('button');
-  const swiperComponentDesk = hostElem.querySelector('#popap-swiper-component-desk');
 
   const addClassPaddingContent = (elem) => {
     elem.classList.add('popap__padding-content');
@@ -53,7 +52,7 @@ export default function componentPopap() {
     wrapInClassPaddingContent(elem);
   })
 
-  wrapInClassPaddingContent(swiperComponentDesk);
+  wrapInClassPaddingContent(sliderComponentDeskElem);
 
   closeBtn.onclick = () => {
     closeModal();
