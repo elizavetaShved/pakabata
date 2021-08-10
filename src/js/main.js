@@ -17,9 +17,9 @@ import componentCostVisit from './componentCostVisit';
 import componentMap from './componentMap';
 import componentHeader from './componentHeader';
 import scrollByAnchor from './scrollByAnchor';
-import componentPopap from './componentPopap';
 import componentModalWhite from './componentModalWhite';
 import componentModalOrderHolidays from './componentModalOrderHolidays';
+import componentPopapsList from './componentPopapsList';
 
 document.addEventListener('DOMContentLoaded', function() {
     polyfills();
@@ -41,9 +41,9 @@ document.addEventListener('DOMContentLoaded', function() {
     componentAboutFamilyPakaf();
     componentCostVisit();
     componentMap();
-    componentPopap();
     componentModalWhite();
     componentModalOrderHolidays();
+    componentPopapsList();
 });
 
 window.addEventListener('load', function() {
