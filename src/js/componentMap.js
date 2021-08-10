@@ -37,12 +37,14 @@ export default function componentMap() {
       controls: []
     });
 
+    mapInstance.behaviors.disable('scrollZoom');
+
     mapInstance.controls.add('zoomControl', {
       position: {
         right: 10,
         top: 150
       },
-      size: "small",
+      size: 'small',
     })
 
     const objectManager = new ymaps.ObjectManager({

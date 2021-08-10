@@ -84,11 +84,11 @@
   padding-top: 116px;
 
   @include breakpoint(desktop) {
-    padding-top: 70px;
+    padding-top: 50px;
   }
 
-  @include breakpoint(desktop) {
-    padding-top: 50px;
+  @include breakpoint(tablet) {
+    width: 470px;
   }
 
   @include breakpoint(small-tablet) {
@@ -123,7 +123,6 @@
 
   @include breakpoint(tablet) {
     grid-template-columns: 1fr;
-    width: 470px;
   }
 
   @include breakpoint(small-tablet) {

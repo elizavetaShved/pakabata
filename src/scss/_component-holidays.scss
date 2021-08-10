@@ -209,6 +209,7 @@ $main-block-width: 60%;
   background-color: var(--dark-secondary-color);
   border-radius: 20px;
   z-index: 2;
+  text-transform: uppercase;
 
   @include breakpoint(tablet) {
     font-size: 12px;

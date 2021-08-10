@@ -41,6 +41,24 @@
   }
 }
 
+.popap__margin-content {
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  @include breakpoint(small-mobile) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .popap__container {
   overflow: auto;
   max-height: 100vh;
@@ -107,8 +125,12 @@
     margin-top: 16px;
     margin-bottom: 16px;
 
-    &:first-child, &:last-child {
+    &:first-child {
       margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
     }
 
     @include breakpoint(desktop) {
@@ -143,8 +165,12 @@
       }
     }
 
-    &:first-child, &:last-child {
+    &:first-child {
       margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 
@@ -170,8 +196,12 @@
       line-height: 22px;
     }
 
-    &:first-child, &:last-child {
+    &:first-child {
       margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 
@@ -184,8 +214,12 @@
       margin-bottom: 40px;
     }
 
-    &:first-child, &:last-child {
+    &:first-child {
       margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
     }
 
     li {
@@ -252,8 +286,12 @@
       margin-bottom: 20px;
     }
 
-    &:first-child, &:last-child {
+    &:first-child {
       margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 
@@ -292,17 +330,26 @@
       }
     }
   }
+
+  button {
+    font-size: 22px;
+    line-height: 26px;
+    font-family: var(--riffic);
+    color: #000;
+    padding-top: 8px;
+    padding-bottom: 4px;
+    border-bottom: 4px solid transparent;
+    transition: border-bottom-color 300ms;
+
+    &:hover {
+      border-bottom-color: var(--third-color);
+    }
+  }
 }
 
 .popap__swiper-component-desk {
   width: 100%;
   flex: 0 0 100%;
-  margin-top: 40px;
-  margin-bottom: 40px;
-
-  &:first-child, &:last-child {
-    margin-top: 0;
-  }
 }
 
 .popap__swiper-container {
@@ -345,7 +392,11 @@
     margin-bottom: 26px;
   }
 
-  &:first-child, &:last-child {
+  &:first-child {
     margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }

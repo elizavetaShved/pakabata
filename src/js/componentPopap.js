@@ -14,6 +14,7 @@ export default function componentPopap() {
   const tagUl = hostElem.querySelectorAll('ul');
   const tagOl = hostElem.querySelectorAll('ol');
   const tagTable = hostElem.querySelectorAll('table');
+  const tagButton = hostElem.querySelectorAll('button');
   const swiperComponentDesk = hostElem.querySelector('#popap-swiper-component-desk');
 
   const addClassPaddingContent = (elem) => {
@@ -23,6 +24,7 @@ export default function componentPopap() {
   const wrapInClassPaddingContent = (elem) => {
     const newWrapper = document.createElement('div');
     newWrapper.classList.add('popap__padding-content');
+    newWrapper.classList.add('popap__margin-content');
     elem.parentNode.insertBefore(newWrapper, elem);
     newWrapper.appendChild(elem);
   }
@@ -44,6 +46,10 @@ export default function componentPopap() {
   })
 
   tagTable.forEach(elem => {
+    wrapInClassPaddingContent(elem);
+  })
+
+  tagButton.forEach(elem => {
     wrapInClassPaddingContent(elem);
   })
 
