@@ -18,7 +18,12 @@ export default function componentBanner() {
   slidesList.forEach((slideElem, index) => {
     slideElem.onclick = (e) => {
       if (e.target !== btnNext && e.target !== btnPrev) {
-        popapComponent[index].classList.add('mod-show');
+        let actualIndexSlide = index;
+        if (window.innerWidth <= 1024) {
+          actualIndexSlide = index - (slidesList.length / 2);
+        }
+        console.log(actualIndexSlide)
+        popapComponent[actualIndexSlide].classList.add('mod-show');
         lockScroll(hostElem);
       }
     }

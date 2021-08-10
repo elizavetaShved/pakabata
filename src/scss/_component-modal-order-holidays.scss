@@ -33,12 +33,18 @@
   width: 634px;
   display: none;
 
-  &.mod-show {
-    display: block;
+  @include breakpoint(small-tablet) {
+    padding: 30px 20px;
+    width: 100%;
   }
 
-  @include breakpoint(small-tablet) {
+  @include breakpoint(small-mobile) {
+    padding: 20px 10px;
     width: 100%;
+  }
+
+  &.mod-show {
+    display: block;
   }
 }
 
@@ -47,6 +53,16 @@
   line-height: 28px;
   color: var(--secondary-color);
   margin-bottom: 30px;
+
+  @include breakpoint(tablet) {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  @include breakpoint(small-mobile) {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
 }
 
 .modal-order-holidays__form-wrapper {
@@ -59,6 +75,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include breakpoint(small-tablet) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .modal-order-holidays__input-textarea {
@@ -73,7 +94,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  color: var(--secondary-color );
+  color: var(--secondary-color);
 }
 
 .modal-order-holidays__close-btn {

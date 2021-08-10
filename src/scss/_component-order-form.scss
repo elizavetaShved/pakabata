@@ -5,6 +5,10 @@
 
   &.mod-border-right {
     border-radius: 0 20px 20px 0 !important;
+
+    @include breakpoint(tablet) {
+      border-radius: 20px !important;
+    }
   }
 
   .gl-input {

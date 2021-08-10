@@ -37,10 +37,17 @@
 
     &:nth-child(1) {
       width: 870px;
-      height: 725px;
+      height: 436px;
       top: -120px;
       left: 20px;
       background-image: url('../img/modal-white/back-background-1.svg');
+
+      @include breakpoint(tablet) {
+        width: 540px;
+        height: 447px;
+        top: -60px;
+        left: 10px;
+      }
     }
 
     &:nth-child(2) {
@@ -49,6 +56,11 @@
       top: 20px;
       right: -70px;
       background-image: url('../img/modal-white/back-background-2.svg');
+
+      @include breakpoint(tablet) {
+        top: 40px;
+        right: -20px;
+      }
     }
 
     &:nth-child(3) {
@@ -57,6 +69,13 @@
       bottom: -50px;
       right: -70px;
       background-image: url('../img/modal-white/back-background-3.svg');
+
+      @include breakpoint(tablet) {
+        width: 374px;
+        height: 250px;
+        bottom: 0;
+        right: -30px;
+      }
     }
 
     &:nth-child(4) {
@@ -65,6 +84,13 @@
       bottom: -50px;
       left: 10px;
       background-image: url('../img/modal-white/back-background-4.svg');
+
+      @include breakpoint(tablet) {
+        width: 248px;
+        height: 220px;
+        bottom: 0;
+        left: -10px;
+      }
     }
 
     &:nth-child(5) {
@@ -73,6 +99,13 @@
       top: 30px;
       left: -90px;
       background-image: url('../img/modal-white/back-background-5.svg');
+
+      @include breakpoint(tablet) {
+        width: 164px;
+        height: 244px;
+        top: 30px;
+        left: -30px;
+      }
     }
   }
 }
@@ -83,6 +116,14 @@
   position: relative;
   overflow: auto;
 
+  @include breakpoint(tablet) {
+    margin: 30px;
+  }
+
+  @include breakpoint(small-tablet) {
+    margin: 0;
+  }
+
   &.mod-hide {
     display: none;
   }
@@ -92,6 +133,13 @@
   display: none;
   position: relative;
   padding-left: 428px;
+
+  @include breakpoint(tablet) {
+    padding-left: 0;
+    &:before {
+      content: initial !important;
+    }
+  }
 
   &:before {
     position: absolute;
