@@ -6,6 +6,7 @@ import commonOrderForm from './commonOrderForm';
 
 export default function componentHolidays() {
   const hostElem = document.querySelector('#holidays-host');
+  const orderFormElem = document.querySelector('#order-form-holidays-host');
   const mainLinkContainer = hostElem.querySelectorAll('.gl-main-link-container');
   const sliderComponentDeskElem = hostElem.querySelector('#holidays-swiper-component-desk');
   const sliderComponentMobileElem = hostElem.querySelector('#holidays-swiper-component-mobile');
@@ -19,5 +20,5 @@ export default function componentHolidays() {
 
   commonMainLinks(mainLinkContainer);
 
-  commonOrderForm(document.querySelector('#order-form-holidays-host'));
+  commonOrderForm(orderFormElem, '#datepicker-holidays');
 }

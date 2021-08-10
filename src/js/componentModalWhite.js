@@ -20,7 +20,7 @@ export default function componentModalWhite() {
     onUnlockScroll();
   }
 
-  commonOrderForm(orderFormElem, modalInfoElems)
+  commonOrderForm(orderFormElem, '#datepicker-modal-white', modalInfoElems)
 
   hostElem.onclick = (e) => {
     if (!(checkExistParent(e.target, modalWrapperElem))) {

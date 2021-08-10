@@ -2,7 +2,7 @@ import commonDatepicker from './commonDatepicker';
 import { MAX_LENGTH_CHILDREN, MIN_LENGTH_CHILDREN } from './consts';
 import phoneMask from './phoneMask';
 
-export default function commonOrderForm(container, modalInfoElems) {
+export default function commonOrderForm(container, datepickerId, modalInfoElems) {
   let INPUT_WIDTH;
   const hostElem = container;
 
@@ -38,7 +38,7 @@ export default function commonOrderForm(container, modalInfoElems) {
   }
 
   checkSizeMobile();
-  commonDatepicker(datepickerElem);
+  commonDatepicker(datepickerElem, datepickerId);
   phoneMask();
 
   window.addEventListener('resize', () => {
@@ -94,8 +94,10 @@ export default function commonOrderForm(container, modalInfoElems) {
   hostElem.onsubmit = event => {
     event.preventDefault();
 
-    modalInfoElems[0].classList.remove('mod-show');
-    modalInfoElems[1].classList.add('mod-show');
+    if (modalInfoElems) {
+      modalInfoElems[0].classList.remove('mod-show');
+      modalInfoElems[1].classList.add('mod-show');
+    }
 
     if ($(hostElem).parsley().isValid()) {
       hostElem.reset();
