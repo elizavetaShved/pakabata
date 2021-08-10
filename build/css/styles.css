@@ -1198,6 +1198,32 @@ select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
   background-color: transparent; }
 
+.parsley-error {
+  background: rgba(255, 84, 108, 0.05);
+  border-color: rgba(255, 84, 108, 0.3); }
+
+.parsley-errors-list.filled {
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #FF546C;
+  padding-left: 28px;
+  background-image: url("../img/common/error-validation.svg");
+  background-repeat: no-repeat;
+  background-position: top 50% left 8px;
+  background-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-transition: max-height 300ms;
+  transition: max-height 300ms;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: initial;
+  font-family: var(--calibri); }
+
 .gl-font-riffic {
   font-family: var(--riffic); }
 
@@ -1726,14 +1752,14 @@ select:-webkit-autofill:focus {
   .gl-input-number-btn svg {
     fill: var(--secondary-color); }
 
-.order-form__checkbox-wrapper {
+.gl-checkbox-wrapper {
   cursor: pointer; }
-  .order-form__checkbox-wrapper .order-form__checkbox {
+  .gl-checkbox-wrapper .gl-checkbox {
     display: none; }
-    .order-form__checkbox-wrapper .order-form__checkbox:checked + .order-form__checkbox-content .order-form__checkbox-content-icon {
+    .gl-checkbox-wrapper .gl-checkbox:checked + .gl-checkbox-content .gl-checkbox-content-icon {
       background-image: url("../img/common/checked-checkbox.svg"); }
 
-.order-form__checkbox-content {
+.gl-checkbox-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1744,12 +1770,12 @@ select:-webkit-autofill:focus {
       -ms-user-select: none;
           user-select: none; }
 
-.order-form__checkbox-content-text {
+.gl-checkbox-content-text {
   font-size: 12px;
   line-height: 14px;
   color: #150533; }
 
-.order-form__checkbox-content-icon {
+.gl-checkbox-content-icon {
   width: 18px;
   height: 18px;
   border: 1px solid #240956;
@@ -2360,17 +2386,17 @@ select:-webkit-autofill:focus {
           -ms-flex-align: end;
               align-items: flex-end; } }
 
-.header__navigate-link + .header__navigate-link {
+.header__navigate-btn + .header__navigate-btn {
   margin-left: 20px; }
 
 @media only screen and (max-width: 1400px) {
-  .header__navigate-link {
+  .header__navigate-btn {
     width: 50px;
     height: 50px;
     padding: 0; } }
 
 @media only screen and (max-width: 1400px) {
-  .header__navigate-link {
+  .header__navigate-btn {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
@@ -3299,32 +3325,6 @@ select:-webkit-autofill:focus {
       top: auto;
       left: auto;
       margin-right: 60px; } }
-
-.order-form .parsley-error {
-  background: rgba(255, 84, 108, 0.05);
-  border-color: rgba(255, 84, 108, 0.3); }
-
-.order-form .parsley-errors-list.filled {
-  margin-top: 4px;
-  font-size: 12px;
-  line-height: 22px;
-  color: #FF546C;
-  padding-left: 28px;
-  background-image: url("../img/common/error-validation.svg");
-  background-repeat: no-repeat;
-  background-position: top 50% left 8px;
-  background-size: 16px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  overflow: hidden;
-  -webkit-transition: max-height 300ms;
-  transition: max-height 300ms;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  cursor: initial;
-  font-family: var(--calibri); }
 
 .order-form {
   padding-top: 46px;
@@ -4603,4 +4603,122 @@ select:-webkit-autofill:focus {
 .modal-white__sent-caption {
   font-size: 16px;
   line-height: 22px;
+  text-align: center; }
+
+.modal-order-holidays {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+  @media only screen and (max-width: 768px) {
+    .modal-order-holidays {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; } }
+
+.modal-order-holidays__content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-height: 100vh; }
+  @media only screen and (max-width: 1024px) {
+    .modal-order-holidays__content-wrapper {
+      padding-top: 150px;
+      padding-right: 50px; } }
+  @media only screen and (max-width: 768px) {
+    .modal-order-holidays__content-wrapper {
+      padding: 30px 20px !important; } }
+
+.modal-order-holidays__content {
+  height: 100%;
+  overflow: auto;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 50px 50px;
+  width: 634px;
+  display: none; }
+  .modal-order-holidays__content.mod-show {
+    display: block; }
+  @media only screen and (max-width: 768px) {
+    .modal-order-holidays__content {
+      width: 100%; } }
+
+.modal-order-holidays__title {
+  font-size: 32px;
+  line-height: 28px;
+  color: var(--secondary-color);
+  margin-bottom: 30px; }
+
+.modal-order-holidays__form-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 8px; }
+
+.modal-order-holidays__btns-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.modal-order-holidays__input-textarea {
+  height: 162px; }
+
+.modal-order-holidays__sent {
+  min-height: 458px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  color: var(--secondary-color); }
+
+.modal-order-holidays__close-btn {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.modal-order-holidays__close-icon {
+  fill: var(--secondary-color); }
+
+.modal-order-holidays__sent-title {
+  font-size: 32px;
+  line-height: 28px;
+  margin-bottom: 26px;
   text-align: center; }

@@ -1,0 +1,98 @@
+.modal-order-holidays {
+  justify-content: flex-end;
+  align-items: flex-start;
+
+  @include breakpoint(small-tablet) {
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+
+.modal-order-holidays__content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-height: 100vh;
+
+  @include breakpoint(tablet) {
+    padding-top: 150px;
+    padding-right: 50px;
+  }
+
+  @include breakpoint(small-tablet) {
+    padding: 30px 20px !important;
+  }
+}
+
+.modal-order-holidays__content {
+  height: 100%;
+  overflow: auto;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 50px 50px;
+  width: 634px;
+  display: none;
+
+  &.mod-show {
+    display: block;
+  }
+
+  @include breakpoint(small-tablet) {
+    width: 100%;
+  }
+}
+
+.modal-order-holidays__title {
+  font-size: 32px;
+  line-height: 28px;
+  color: var(--secondary-color);
+  margin-bottom: 30px;
+}
+
+.modal-order-holidays__form-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 8px;
+}
+
+.modal-order-holidays__btns-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-order-holidays__input-textarea {
+  height: 162px;
+}
+
+.modal-order-holidays__sent {
+  min-height: 458px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: var(--secondary-color );
+}
+
+.modal-order-holidays__close-btn {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-order-holidays__close-icon {
+  fill: var(--secondary-color);
+}
+
+.modal-order-holidays__sent-title {
+  font-size: 32px;
+  line-height: 28px;
+  margin-bottom: 26px;
+  text-align: center;
+}

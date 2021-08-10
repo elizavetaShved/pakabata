@@ -19,6 +19,7 @@ import componentHeader from './componentHeader';
 import scrollByAnchor from './scrollByAnchor';
 import componentPopap from './componentPopap';
 import componentModalWhite from './componentModalWhite';
+import componentModalOrderHolidays from './componentModalOrderHolidays';
 
 document.addEventListener('DOMContentLoaded', function() {
     polyfills();
@@ -42,6 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
     componentMap();
     componentPopap();
     componentModalWhite();
+    componentModalOrderHolidays();
 });
 
 window.addEventListener('load', function() {

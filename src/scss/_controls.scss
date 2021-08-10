@@ -272,15 +272,15 @@ $transparent-btn-border: 2px;
   }
 }
 
-.order-form__checkbox-wrapper {
+.gl-checkbox-wrapper {
   cursor: pointer;
 
-  .order-form__checkbox {
+  .gl-checkbox {
     display: none;
 
     &:checked {
-      + .order-form__checkbox-content {
-        .order-form__checkbox-content-icon {
+      + .gl-checkbox-content {
+        .gl-checkbox-content-icon {
           background-image: url('../img/common/checked-checkbox.svg');
         }
       }
@@ -288,20 +288,20 @@ $transparent-btn-border: 2px;
   }
 }
 
-.order-form__checkbox-content {
+.gl-checkbox-content {
   display: flex;
   margin-top: 12px;
   opacity: 0.3;
   user-select: none;
 }
 
-.order-form__checkbox-content-text {
+.gl-checkbox-content-text {
   font-size: 12px;
   line-height: 14px;
   color: #150533;
 }
 
-.order-form__checkbox-content-icon {
+.gl-checkbox-content-icon {
   width: 18px;
   height: 18px;
   border: 1px solid #240956;

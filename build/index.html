@@ -79,7 +79,7 @@
   
     <div class="gl-desk-hide">
       <div class="header__content-navigate-btns gl-sm-tablet-hide">
-        <button type="button" class="gl-transparent-btn header__navigate-link header__write-btn">
+        <button type="button" class="gl-transparent-btn header__navigate-btn header__write-btn">
         <span class="gl-btn-container">
           <span class="gl-btn-wrapper">
             <span class="gl-btn-content-item">Написать письмо</span>
@@ -87,7 +87,7 @@
           </span>
         </span>
         </button>
-        <button type="button" class="gl-main-btn header__navigate-link header__order-holidays-btn">
+        <button type="button" class="gl-main-btn header__navigate-btn header__order-holidays-btn">
         <span class="gl-btn-container">
           <span class="gl-btn-wrapper">
             <span class="gl-btn-content-item">Заказать праздник</span>
@@ -100,10 +100,10 @@
   
     <div class="gl-desk-show gl-tablet-hide">
       <div class="header__content-navigate-btns gl-sm-tablet-hide">
-        <button type="button" class="gl-transparent-btn header__navigate-link header__write-btn">
+        <button type="button" class="gl-transparent-btn header__navigate-btn header__write-btn">
           <img src="img/header/write.svg" alt="write" class="header__navigate-link-icon">
         </button>
-        <button type="button" class="gl-main-btn header__navigate-link header__order-holidays-btn">
+        <button type="button" class="gl-main-btn header__navigate-btn header__order-holidays-btn">
           <img src="img/header/holidays.svg" alt="write" class="header__navigate-link-icon">
         </button>
       </div>
@@ -892,12 +892,12 @@
                   </label>
                 </div>
             
-                <label class="order-form__checkbox-wrapper">
-                  <input type="checkbox" class="order-form__checkbox" required
+                <label class="gl-checkbox-wrapper">
+                  <input type="checkbox" class="gl-checkbox" required
                          name="checkbox">
-                  <span class="order-form__checkbox-content gl-font-calibri">
-                     <span class="order-form__checkbox-content-icon"></span>
-                    <span class="order-form__checkbox-content-text">
+                  <span class="gl-checkbox-content gl-font-calibri">
+                     <span class="gl-checkbox-content-icon"></span>
+                    <span class="gl-checkbox-content-text">
                       Нажимая эту кнопку вы соглашаетесь на обработку персональных данных
                     </span>
                   </span>
@@ -1469,12 +1469,12 @@
                     </label>
                   </div>
               
-                  <label class="order-form__checkbox-wrapper">
-                    <input type="checkbox" class="order-form__checkbox" required
+                  <label class="gl-checkbox-wrapper">
+                    <input type="checkbox" class="gl-checkbox" required
                            name="checkbox">
-                    <span class="order-form__checkbox-content gl-font-calibri">
-                       <span class="order-form__checkbox-content-icon"></span>
-                      <span class="order-form__checkbox-content-text">
+                    <span class="gl-checkbox-content gl-font-calibri">
+                       <span class="gl-checkbox-content-icon"></span>
+                      <span class="gl-checkbox-content-text">
                         Нажимая эту кнопку вы соглашаетесь на обработку персональных данных
                       </span>
                     </span>
@@ -1525,6 +1525,64 @@
             <span class="gl-main-link-back-item"></span>
             <span class="gl-main-link-back-item"></span>
             <span class="gl-main-link-back-item"></span>
+          </div>
+        </div>
+      </div>
+      <div class="gl-modal-container modal-order-holidays" id="modal-order-holidays-host">
+        <div class="modal-order-holidays__content-wrapper">
+          <div class="modal-order-holidays__content mod-show">
+            <div class="modal-order-holidays__title">
+              Написать письмо
+            </div>
+            <form class="modal-order-holidays__form-wrapper" data-need-validation>
+              <label class="gl-input-wrapper">
+                <input type="email" class="gl-input gl-font-calibri" placeholder="Ваша почта" name="email" required>
+              </label>
+              <label class="gl-input-wrapper">
+              <textarea class="gl-input gl-input-textarea gl-font-calibri modal-order-holidays__input-textarea"
+                        placeholder="Ваше сообщение"
+                        name="message" required></textarea>
+              </label>
+      
+              <div class="modal-order-holidays__btns-wrapper">
+                <div>
+                  <label class="gl-checkbox-wrapper">
+                    <input type="checkbox" class="gl-checkbox" required
+                           name="checkbox">
+                    <span class="gl-checkbox-content gl-font-calibri">
+                  <span class="gl-checkbox-content-icon"></span>
+                  <span class="gl-checkbox-content-text">
+                    Нажимая эту кнопку вы соглашаетесь на обработку персональных данных
+                  </span>
+                </span>
+                  </label>
+                </div>
+      
+                <div class="order-form__btn-submit-wrapper">
+                  <button type="submit" class="gl-main-btn order-form__btn-submit">
+                <span class="gl-btn-container">
+                  <span class="gl-btn-wrapper">
+                    <span class="gl-btn-content-item">Отправить</span>
+                    <span class="gl-btn-content-item">Отправить</span>
+                    </span>
+                 </span>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+      
+          <div class="modal-order-holidays__content">
+            <div class="modal-order-holidays__sent">
+              <button type="button" class="modal-order-holidays__close-btn">
+                <svg width="24" height="24" aria-hidden="true" class="modal-order-holidays__close-icon">
+                  <use xlink:href="#close"></use>
+                </svg>
+              </button>
+              <div class="modal-order-holidays__sent-title">
+                Сообщение отправлено
+              </div>
+            </div>
           </div>
         </div>
       </div>

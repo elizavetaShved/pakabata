@@ -177,7 +177,7 @@
   }
 }
 
-.header__navigate-link {
+.header__navigate-btn {
   & + & {
     margin-left: 20px;
   }
@@ -189,7 +189,7 @@
   }
 }
 
-.header__navigate-link {
+.header__navigate-btn {
   @include breakpoint(desktop) {
     display: flex !important;
     align-items: center;

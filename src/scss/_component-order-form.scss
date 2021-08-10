@@ -1,31 +1,4 @@
 .order-form {
-  .parsley-error {
-    background: rgba(255, 84, 108, 0.05);
-    border-color: rgba(255, 84, 108, 0.3);
-  }
-
-  .parsley-errors-list {
-    &.filled {
-      margin-top: 4px;
-      font-size: 12px;
-      line-height: 22px;
-      color: #FF546C;
-      padding-left: 28px;
-      background-image: url('../img/common/error-validation.svg');
-      background-repeat: no-repeat;
-      background-position: top 50% left 8px;
-      background-size: 16px;
-      display: flex;
-      overflow: hidden;
-      transition: max-height 300ms;
-      align-items: center;
-      cursor: initial;
-      font-family: var(--calibri);
-    }
-  }
-}
-
-.order-form {
   padding-top: 46px;
   padding-bottom: 46px;
   position: relative;
