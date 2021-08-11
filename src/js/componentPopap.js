@@ -23,8 +23,10 @@ export default function componentPopap(popapElem) {
 
   const wrapInClassPaddingContent = (elem) => {
     const newWrapper = document.createElement('div');
-    newWrapper.classList.add('popap__padding-content');
-    if (elem.className !== 'gl-close-btn-wrapper') {
+    if (elem.className !== 'gl-close-btn-wrapper' && elem.className !== 'gl-transparent-btn popap__btn gl-tablet-hide') {
+      newWrapper.classList.add('popap__padding-content');
+    }
+    if (elem.className !== 'gl-close-btn-wrapper' && elem.className !== 'gl-transparent-btn popap__btn gl-tablet-hide') {
       newWrapper.classList.add('popap__margin-content');
     }
     elem.parentNode.insertBefore(newWrapper, elem);

@@ -172,7 +172,7 @@ $transparent-btn-border: 2px;
     &:checked {
       // активная кнопка
       + .gl-radio-btn-content-wrapper {
-        border: none;
+        border: 1px solid transparent;
         background-color: var(--third-color);
 
         .gl-radio-btn-content {
