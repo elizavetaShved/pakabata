@@ -3550,8 +3550,8 @@ select:-webkit-autofill:focus {
       height: 100%; } }
 
 .about-family-pakaf__info-wrapper {
-  z-index: 2;
-  margin-right: 74px; }
+  margin-right: 74px;
+  z-index: 4; }
   @media only screen and (max-width: 1400px) {
     .about-family-pakaf__info-wrapper {
       margin-right: 54px; } }
@@ -3574,8 +3574,7 @@ select:-webkit-autofill:focus {
   @media only screen and (max-width: 1024px) {
     .about-family-pakaf__slider-block-wrapper {
       padding-left: 0;
-      padding-right: 0;
-      z-index: 999; } }
+      padding-right: 0; } }
 
 .about-family-pakaf__subtitle {
   color: var(--main-color); }
@@ -3604,7 +3603,8 @@ select:-webkit-autofill:focus {
 
 .about-family-pakaf__main-btn {
   min-width: 284px;
-  z-index: 999; }
+  z-index: 999;
+  display: block; }
 
 .about-family-pakaf__main-btn-content-text {
   padding-right: 48px;
