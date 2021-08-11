@@ -182,6 +182,7 @@
   }
 
   @include breakpoint(small-mobile) {
+    margin-bottom: 10px;
     font-size: 12px;
     line-height: 18px;
   }
@@ -189,6 +190,11 @@
 
 .popap__btn {
   border-color: #fff;
+  display: inline-block;
+
+  @include breakpoint(small-mobile) {
+    font-size: 12px;
+  }
 }
 
 .popap__body-wrapper {

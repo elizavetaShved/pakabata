@@ -4448,11 +4448,16 @@ select:-webkit-autofill:focus {
       line-height: 26px; } }
   @media only screen and (max-width: 576px) {
     .popap__header-info-caption {
+      margin-bottom: 10px;
       font-size: 12px;
       line-height: 18px; } }
 
 .popap__btn {
-  border-color: #fff; }
+  border-color: #fff;
+  display: inline-block; }
+  @media only screen and (max-width: 576px) {
+    .popap__btn {
+      font-size: 12px; } }
 
 .popap__body-wrapper {
   padding-bottom: 54px;

@@ -8,6 +8,7 @@ export default function componentPopap(popapElem) {
   const sliderComponentMobileElem = hostElem.querySelector('.popap-swiper-component-mobile');
   const closeBtn = hostElem.querySelector('.gl-close-btn-wrapper');
   const popapContentElem = hostElem.querySelector('.popap__content');
+  const btnOpenForm = hostElem.querySelector('.popap__btn');
 
   const tagH3 = hostElem.querySelectorAll('h3');
   const tagP = hostElem.querySelectorAll('p');
@@ -31,6 +32,11 @@ export default function componentPopap(popapElem) {
     }
     elem.parentNode.insertBefore(newWrapper, elem);
     newWrapper.appendChild(elem);
+  }
+
+  const closeModal = () => {
+    hostElem.classList.remove('mod-show');
+    unlockScroll(hostElem);
   }
 
   tagH3.forEach(elem => {
@@ -73,9 +79,8 @@ export default function componentPopap(popapElem) {
     }
   }
 
-  const closeModal = () => {
-    hostElem.classList.remove('mod-show');
-    unlockScroll(hostElem);
+  btnOpenForm.onclick = () => {
+    closeModal();
   }
 
   const additionally = {
