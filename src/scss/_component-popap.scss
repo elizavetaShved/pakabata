@@ -143,34 +143,35 @@
       line-height: 20px;
     }
 
-    & b {
-      font-size: 32px;
-      line-height: 44px;
-      margin-top: 54px;
-      margin-bottom: 58px;
-
-      @include breakpoint(desktop) {
-        font-size: 26px;
-        line-height: initial;
-      }
-
-      @include breakpoint(small-tablet) {
-        font-size: 20px;
-        margin-top: 44px;
-        margin-bottom: 48px;
-      }
-
-      @include breakpoint(small-mobile) {
-        font-size: 16px;
-      }
-    }
-
     &:first-child {
       margin-top: 0;
     }
 
     &:last-child {
       margin-bottom: 0;
+    }
+  }
+
+  b {
+    font-size: 32px;
+    line-height: 44px;
+    margin-top: 54px;
+    margin-bottom: 58px;
+    display: block;
+
+    @include breakpoint(desktop) {
+      font-size: 26px;
+      line-height: initial;
+    }
+
+    @include breakpoint(small-tablet) {
+      font-size: 20px;
+      margin-top: 44px;
+      margin-bottom: 48px;
+    }
+
+    @include breakpoint(small-mobile) {
+      font-size: 16px;
     }
   }
 
@@ -340,6 +341,10 @@
     padding-bottom: 4px;
     border-bottom: 4px solid transparent;
     transition: border-bottom-color 300ms;
+
+    &.gl-btn-next {
+      border-bottom: none;
+    }
 
     &:hover {
       border-bottom-color: var(--third-color);
