@@ -406,3 +406,46 @@ $main-block-width: 60%;
     margin-right: 60px;
   }
 }
+
+.holidays__form-content {
+  display: none;
+
+  &.mod-show {
+    display: block;
+  }
+}
+
+.holidays__sent {
+  color: var(--secondary-color);
+
+  .order-form__back-background-item {
+    &:nth-child(2) {
+      @include breakpointMF(desktop) {
+        bottom: 80px;
+      }
+    }
+  }
+}
+
+.holidays__sent {
+  padding: 30px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.holidays__sent-title {
+  font-size: 32px;
+  line-height: 28px;
+  margin-bottom: 26px;
+  text-align: center;
+}
+
+.holidays__sent-caption {
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}

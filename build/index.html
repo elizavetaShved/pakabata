@@ -542,7 +542,8 @@
           <div class="holidays__main-block">
             <div class="holidays__services-container-block">
               <div class="holidays__services-container gl-main-block">
-                <div class="holidays__services-title-wrapper" style="background-image: url('../img/holidays/hollidays-photo.jpg');">
+                <div class="holidays__services-title-wrapper"
+                     style="background-image: url('../img/holidays/hollidays-photo.jpg');">
                   Услуги
                 </div>
                 <ul class="holidays__services-wrapper">
@@ -761,109 +762,129 @@
               </div>
             </div>
       
-            <form class="order-form gl-main-block order-form__padding-content "
-                  id="order-form-holidays-host" data-need-validation data-parsley-focus="none">
-              <div class="order-form__order-title">
-                Закажите праздник
-              </div>
-            
-              <div class="order-form__place-wrapper">
-                <div class="order-form__order-subtitle gl-font-calibri">
-                  Выберите место проведения
+            <div class="holidays__form-content mod-show">
+              <form class="order-form gl-main-block order-form__padding-content "
+                    id="order-form-holidays-host" data-need-validation data-parsley-focus="none">
+                <div class="order-form__order-title">
+                  Закажите праздник
                 </div>
-                <div class="order-form__radio-btns-list">
-                  <label class="gl-radio-btn-wrapper">
-                    <input type="radio" class="gl-radio-btn order-form__control" name="place-holiday" checked
-                           value="банкетный домик" required>
-                    <span class="gl-radio-btn-content-wrapper gl-font-calibri">
-                      <span class="gl-radio-btn-content">Банкетный домик</span>
-                    </span>
-                  </label>
-                  <label class="gl-radio-btn-wrapper">
-                    <input type="radio" class="gl-radio-btn order-form__control" name="place-holiday" value="кафе" required>
-                    <span class="gl-radio-btn-content-wrapper gl-font-calibri">
-                      <span class="gl-radio-btn-content">Кафе</span>
-                    </span>
-                  </label>
-                </div>
-            
-                <div class="order-form__inputs-text-list">
-                  <div class="gl-input-wrapper">
-                    <div class="gl-input gl-input-number-wrapper gl-font-calibri order-form__input-children-wrapper">
-                      <div class="gl-input-number-text">Детей</div>
-                      <div class="gl-input-number-panel">
-                        <button type="button" class="gl-input-number-btn children-btn-minus">
-                          <svg width="20" height="20" aria-hidden="true">
-                            <use xlink:href="#minus"></use>
-                          </svg>
-                        </button>
-                        <input type="number" class="gl-input-number-value order-form__control children-input" value="1"
-                               name="children" required>
-                        <button type="button" class="gl-input-number-btn children-btn-plus">
-                          <svg width="20" height="20" aria-hidden="true">
-                            <use xlink:href="#plus"></use>
-                          </svg>
-                        </button>
+              
+                <div class="order-form__place-wrapper">
+                  <div class="order-form__order-subtitle gl-font-calibri">
+                    Выберите место проведения
+                  </div>
+                  <div class="order-form__radio-btns-list">
+                    <label class="gl-radio-btn-wrapper">
+                      <input type="radio" class="gl-radio-btn order-form__control" name="place-holiday" checked
+                             value="банкетный домик" required>
+                      <span class="gl-radio-btn-content-wrapper gl-font-calibri">
+                        <span class="gl-radio-btn-content">Банкетный домик</span>
+                      </span>
+                    </label>
+                    <label class="gl-radio-btn-wrapper">
+                      <input type="radio" class="gl-radio-btn order-form__control" name="place-holiday" value="кафе" required>
+                      <span class="gl-radio-btn-content-wrapper gl-font-calibri">
+                        <span class="gl-radio-btn-content">Кафе</span>
+                      </span>
+                    </label>
+                  </div>
+              
+                  <div class="order-form__inputs-text-list">
+                    <div class="gl-input-wrapper">
+                      <div class="gl-input gl-input-number-wrapper gl-font-calibri order-form__input-children-wrapper">
+                        <div class="gl-input-number-text">Детей</div>
+                        <div class="gl-input-number-panel">
+                          <button type="button" class="gl-input-number-btn children-btn-minus">
+                            <svg width="20" height="20" aria-hidden="true">
+                              <use xlink:href="#minus"></use>
+                            </svg>
+                          </button>
+                          <input type="number" class="gl-input-number-value order-form__control children-input" value="1"
+                                 name="children" required>
+                          <button type="button" class="gl-input-number-btn children-btn-plus">
+                            <svg width="20" height="20" aria-hidden="true">
+                              <use xlink:href="#plus"></use>
+                            </svg>
+                          </button>
+                        </div>
                       </div>
                     </div>
+              
+                    <div
+                      class="order-form__input-hide-mobile gl-input-wrapper gl-datepicker-container gl-font-calibri order-form__input-date-wrapper"
+                      id="datepicker-holidays">
+                      <input type="text" class="gl-input gl-datepicker order-form__control" placeholder="Дата мероприятия"
+                             readonly name="date" required id="date-input">
+                    </div>
+              
+                    <label class="gl-input-wrapper gl-font-calibri order-form__input-name-wrapper">
+                      <input type="text" class="gl-input order-form__control"
+                             data-parsley-required=""
+                             data-parsley-minlength="2"
+                             placeholder="Ваше ФИО" name="user-name" id="name-input">
+                    </label>
+              
+                    <label class="order-form__input-hide-mobile gl-input-wrapper gl-font-calibri">
+                      <input type="text" class="gl-input order-form__control js-phone-input" placeholder="Телефон" name="phone"
+                             required
+                             id="phone-input">
+                    </label>
+              
+                    <label class="order-form__input-hide-mobile gl-input-wrapper gl-font-calibri">
+                          <textarea class="gl-input gl-input-textarea order-form__control" placeholder="Комментарий"
+                                    name="comment"></textarea>
+                    </label>
                   </div>
-            
-                  <div
-                    class="order-form__input-hide-mobile gl-input-wrapper gl-datepicker-container gl-font-calibri order-form__input-date-wrapper"
-                    id="datepicker-holidays">
-                    <input type="text" class="gl-input gl-datepicker order-form__control" placeholder="Дата мероприятия"
-                           readonly name="date" required id="date-input">
-                  </div>
-            
-                  <label class="gl-input-wrapper gl-font-calibri order-form__input-name-wrapper">
-                    <input type="text" class="gl-input order-form__control"
-                           data-parsley-required=""
-                           data-parsley-minlength="2"
-                           placeholder="Ваше ФИО" name="user-name" id="name-input">
-                  </label>
-            
-                  <label class="order-form__input-hide-mobile gl-input-wrapper gl-font-calibri">
-                    <input type="text" class="gl-input order-form__control js-phone-input" placeholder="Телефон" name="phone"
-                           required
-                           id="phone-input">
-                  </label>
-            
-                  <label class="order-form__input-hide-mobile gl-input-wrapper gl-font-calibri">
-                        <textarea class="gl-input gl-input-textarea order-form__control" placeholder="Комментарий"
-                                  name="comment"></textarea>
-                  </label>
-                </div>
-            
-                <label class="gl-checkbox-wrapper">
-                  <input type="checkbox" class="gl-checkbox" required
-                         name="checkbox">
-                  <span class="gl-checkbox-content gl-font-calibri">
-                     <span class="gl-checkbox-content-icon"></span>
-                    <span class="gl-checkbox-content-text">
-                      Нажимая эту кнопку вы соглашаетесь на обработку персональных данных
+              
+                  <label class="gl-checkbox-wrapper">
+                    <input type="checkbox" class="gl-checkbox" required
+                           name="checkbox">
+                    <span class="gl-checkbox-content gl-font-calibri">
+                       <span class="gl-checkbox-content-icon"></span>
+                      <span class="gl-checkbox-content-text">
+                        Нажимая эту кнопку вы соглашаетесь на обработку персональных данных
+                      </span>
                     </span>
-                  </span>
-                </label>
-            
-                <div class="order-form__btn-submit-wrapper">
-                  <button type="submit" class="gl-main-btn order-form__btn-submit">
-                      <span class="gl-btn-container">
-                        <span class="gl-btn-wrapper">
-                          <span class="gl-btn-content-item">Отправить</span>
-                          <span class="gl-btn-content-item">Отправить</span>
-                          </span>
-                       </span>
-                  </button>
+                  </label>
+              
+                  <div class="order-form__btn-submit-wrapper">
+                    <button type="submit" class="gl-main-btn order-form__btn-submit">
+                        <span class="gl-btn-container">
+                          <span class="gl-btn-wrapper">
+                            <span class="gl-btn-content-item">Отправить</span>
+                            <span class="gl-btn-content-item">Отправить</span>
+                            </span>
+                         </span>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="order-form__back-background-wrapper">
+                  <span class="order-form__back-background-item"></span>
+                  <span class="order-form__back-background-item"></span>
+                  <span class="order-form__back-background-item"></span>
+                  <span class="order-form__back-background-item"></span>
+                </div>
+              </form>
+            </div>
+      
+            <div class="holidays__form-content gl-main-block">
+              <div class="holidays__sent">
+                <div class="holidays__sent-title">
+                  Спасибо за заявку!
+                </div>
+                <div class="holidays__sent-caption gl-font-calibri">
+                  скоро с Вами свяжется наш менеджер, чтобы обсудить детали заявки
+                </div>
+      
+                <div class="order-form__back-background-wrapper">
+                  <span class="order-form__back-background-item"></span>
+                  <span class="order-form__back-background-item"></span>
+                  <span class="order-form__back-background-item"></span>
+                  <span class="order-form__back-background-item"></span>
                 </div>
               </div>
-            
-              <div class="order-form__back-background-wrapper">
-                <span class="order-form__back-background-item"></span>
-                <span class="order-form__back-background-item"></span>
-                <span class="order-form__back-background-item"></span>
-                <span class="order-form__back-background-item"></span>
-              </div>
-            </form>
+            </div>
       
             <div class="holidays__contacts-wrapper order-form__padding-content">
               <div class="holidays__contacts-caption gl-font-calibri">

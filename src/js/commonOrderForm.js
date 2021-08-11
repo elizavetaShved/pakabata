@@ -93,15 +93,15 @@ export default function commonOrderForm(container, datepickerId, modalInfoElems)
 
   hostElem.onsubmit = () => {
     // event.preventDefault();
-
-    if (modalInfoElems) {
-      modalInfoElems[0].classList.remove('mod-show');
-      modalInfoElems[1].classList.add('mod-show');
-    }
-
-    if ($(hostElem).parsley().isValid()) {
-      hostElem.reset();
-      $(hostElem).parsley().reset();
-    }
+    //
+    // if (modalInfoElems) {
+    //   modalInfoElems[0].classList.remove('mod-show');
+    //   modalInfoElems[1].classList.add('mod-show');
+    // }
+    //
+    // if ($(hostElem).parsley().isValid()) {
+    //   hostElem.reset();
+    //   $(hostElem).parsley().reset();
+    // }
   }
 }
