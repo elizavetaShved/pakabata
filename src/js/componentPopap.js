@@ -11,6 +11,7 @@ export default function componentPopap(popapElem) {
 
   const tagH3 = hostElem.querySelectorAll('h3');
   const tagP = hostElem.querySelectorAll('p');
+  const tagB = hostElem.querySelectorAll('b');
   const tagUl = hostElem.querySelectorAll('ul');
   const tagOl = hostElem.querySelectorAll('ol');
   const tagTable = hostElem.querySelectorAll('table');
@@ -33,6 +34,10 @@ export default function componentPopap(popapElem) {
   })
 
   tagP.forEach(elem => {
+    addClassPaddingContent(elem);
+  })
+
+  tagB.forEach(elem => {
     addClassPaddingContent(elem);
   })
 
