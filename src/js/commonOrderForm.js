@@ -7,9 +7,9 @@ export default function commonOrderForm(container, datepickerId, modalInfoElems)
   const hostElem = container;
 
   const datepickerElem = hostElem.querySelector('.gl-datepicker');
-  const childrenMinusBtn = hostElem.querySelector('#children-btn-minus');
-  const childrenPlusBtn = hostElem.querySelector('#children-btn-plus');
-  const childrenInput = hostElem.querySelector('#children-input');
+  const childrenMinusBtn = hostElem.querySelector('.children-btn-minus');
+  const childrenPlusBtn = hostElem.querySelector('.children-btn-plus');
+  const childrenInput = hostElem.querySelector('.children-input');
 
   const inputNameWrapper = hostElem.querySelector('.order-form__input-name-wrapper');
   const inputChildrenWrapper = hostElem.querySelector('.order-form__input-children-wrapper');
