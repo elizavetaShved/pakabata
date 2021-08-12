@@ -21,7 +21,7 @@ export default function componentAboutPark() {
     classCustomBtnNext: '.about-park__btn-next'
   }
 
-  commonMainSlider(sliderComponentDeskElem, sliderComponentMobileElem, additionally);
+  commonMainSlider(sliderComponentDeskElem, sliderComponentMobileElem, additionally, true);
 
   commonVideoModal(hostElem);
 
