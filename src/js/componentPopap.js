@@ -6,7 +6,7 @@ export default function componentPopap(popapElem) {
   const hostElem = popapElem;
   const sliderComponentDeskElem = hostElem.querySelectorAll('.popap-swiper-component-desk');
   const sliderComponentMobileElem = hostElem.querySelectorAll('.popap-swiper-component-mobile');
-  const closeBtn = hostElem.querySelector('.gl-close-btn-wrapper');
+  const closeBtn = hostElem.querySelectorAll('.gl-close-btn-wrapper');
   const popapContentElem = hostElem.querySelectorAll('.popap__content');
   const btnPopapItemNext = hostElem.querySelector('.popap-item__btn-next');
   const btnPopapItemPrev = hostElem.querySelector('.popap-item__btn-prev');
@@ -78,9 +78,11 @@ export default function componentPopap(popapElem) {
     wrapInClassPaddingContent(elem);
   })
 
-  closeBtn.onclick = () => {
-    closeModal();
-  }
+  closeBtn.forEach(elem => {
+    elem.onclick = () => {
+      closeModal();
+    }
+  })
 
   hostElem.onclick = (e) => {
     let clickPopapContent = false;

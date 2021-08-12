@@ -1,6 +1,5 @@
 import componentPopap from './componentPopap';
 import { EffectFade, Mousewheel, Navigation, Swiper } from 'swiper';
-import { primaryInput } from 'detect-it';
 
 Swiper.use([Navigation]);
 Swiper.use([Mousewheel]);
@@ -23,6 +22,9 @@ export default function componentPopapList() {
     preventInteractionOnTransition: true,
     keyboard: true,
     effect: 'fade',
+    fadeEffect: {
+      crossFade: true
+    },
     navigation: {
       nextEl: '.popap-item__btn-next',
       prevEl: '.popap-item__btn-prev',
