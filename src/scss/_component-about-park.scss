@@ -30,9 +30,14 @@
   }
 }
 
+.about-park__swiper-container {
+  overflow: visible;
+}
+
 .about-park__no-container {
-  @include breakpoint(tablet) {
-    padding: 0;
+  @include breakpoint(mobile) {
+    padding-left: var(--padding-page-content-mobile);
+    padding-right: var(--padding-page-content-mobile);
   }
 }
 

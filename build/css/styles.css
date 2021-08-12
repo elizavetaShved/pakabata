@@ -2745,9 +2745,13 @@ select:-webkit-autofill:focus {
     .about-park__wrapper {
       padding-bottom: 20px; } }
 
-@media only screen and (max-width: 1024px) {
+.about-park__swiper-container {
+  overflow: visible; }
+
+@media only screen and (max-width: 640px) {
   .about-park__no-container {
-    padding: 0; } }
+    padding-left: var(--padding-page-content-mobile);
+    padding-right: var(--padding-page-content-mobile); } }
 
 .about-park__blob {
   position: absolute;
