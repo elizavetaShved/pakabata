@@ -145,4 +145,14 @@
 
 #about-family-pakaf-swiper-component-mobile {
   z-index: 999;
+
+  @include breakpoint(tablet) {
+    padding-left: var(--padding-page-content-mobile);
+    padding-right: var(--padding-page-content-mobile);
+    overflow: hidden;
+  }
+}
+
+.about-family-pakaf__swiper-container {
+  overflow: visible;
 }

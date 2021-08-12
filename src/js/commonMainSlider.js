@@ -12,7 +12,7 @@ Swiper.use([Mousewheel]);
 //    classPagination: string
 //  }
 
-export default function commonMainSlider(sliderComponentDeskElem, sliderComponentMobileElem, additionally, modSlidesPerView) {
+export default function commonMainSlider(sliderComponentDeskElem, sliderComponentMobileElem, additionally) {
   const sliderContainerDeskElem = sliderComponentDeskElem.querySelector('.swiper-container');
   const sliderContainerMobileElem = sliderComponentMobileElem.querySelector('.swiper-container');
   const slidesDeskListElems = sliderComponentDeskElem.querySelectorAll('.swiper-slide');
@@ -86,7 +86,7 @@ export default function commonMainSlider(sliderComponentDeskElem, sliderComponen
     mousewheel: true,
     breakpoints: {
       640: {
-        slidesPerView: modSlidesPerView ? 1 : 1.08,
+        slidesPerView: 1,
         spaceBetween: 16,
       },
     }

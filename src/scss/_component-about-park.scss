@@ -31,7 +31,9 @@
 }
 
 .about-park__swiper-container {
-  overflow: visible;
+  @include breakpoint(tablet) {
+    overflow: visible;
+  }
 }
 
 .about-park__no-container {

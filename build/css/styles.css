@@ -2523,7 +2523,9 @@ select:-webkit-autofill:focus {
   cursor: pointer; }
   @media only screen and (max-width: 1024px) {
     .banner {
-      padding: 0; } }
+      overflow: hidden;
+      padding-left: var(--padding-page-content-mobile);
+      padding-right: var(--padding-page-content-mobile); } }
   @media only screen and (max-width: 576px) {
     .banner {
       margin-bottom: 40px; } }
@@ -2533,7 +2535,8 @@ select:-webkit-autofill:focus {
   height: 526px; }
   @media only screen and (max-width: 1024px) {
     .banner__container {
-      height: 392px; } }
+      height: 392px;
+      overflow: visible; } }
   @media only screen and (max-width: 576px) {
     .banner__container {
       height: 260px; } }
@@ -2745,8 +2748,9 @@ select:-webkit-autofill:focus {
     .about-park__wrapper {
       padding-bottom: 20px; } }
 
-.about-park__swiper-container {
-  overflow: visible; }
+@media only screen and (max-width: 1024px) {
+  .about-park__swiper-container {
+    overflow: visible; } }
 
 @media only screen and (max-width: 640px) {
   .about-park__no-container {
@@ -2986,9 +2990,6 @@ select:-webkit-autofill:focus {
     .holidays {
       margin-bottom: 40px;
       overflow: hidden; } }
-  @media only screen and (max-width: 1024px) {
-    .holidays {
-      padding: 0; } }
   @media only screen and (max-width: 576px) {
     .holidays {
       padding-top: 40px; } }
@@ -3000,14 +3001,10 @@ select:-webkit-autofill:focus {
     .holidays__title-wrapper {
       width: 100%;
       margin-bottom: 40px; } }
-  @media only screen and (max-width: 1024px) {
-    .holidays__title-wrapper {
-      padding-left: var(--padding-page-content-tablet);
-      padding-right: var(--padding-page-content-tablet); } }
-  @media only screen and (max-width: 640px) {
-    .holidays__title-wrapper {
-      padding-left: var(--padding-page-content-mobile);
-      padding-right: var(--padding-page-content-mobile); } }
+
+@media only screen and (max-width: 1024px) {
+  .holidays__swiper-container {
+    overflow: visible; } }
 
 .holidays__content-wrapper {
   display: -webkit-box;
@@ -3026,16 +3023,6 @@ select:-webkit-autofill:focus {
   @media only screen and (max-width: 1400px) {
     .holidays__main-block {
       width: 100%; } }
-
-@media only screen and (max-width: 1024px) {
-  .holidays__services-container-block {
-    padding-left: var(--padding-page-content-tablet);
-    padding-right: var(--padding-page-content-tablet); } }
-
-@media only screen and (max-width: 640px) {
-  .holidays__services-container-block {
-    padding-left: var(--padding-page-content-mobile);
-    padding-right: var(--padding-page-content-mobile); } }
 
 .holidays__services-container {
   display: -webkit-box;
@@ -3182,17 +3169,6 @@ select:-webkit-autofill:focus {
       bottom: 8px;
       left: 8px; } }
 
-@media only screen and (max-width: 1024px) {
-  .holidays__main-link-list {
-    padding-left: var(--padding-page-content-tablet);
-    padding-right: var(--padding-page-content-tablet);
-    grid-template-columns: 1fr; } }
-
-@media only screen and (max-width: 640px) {
-  .holidays__main-link-list {
-    padding-left: var(--padding-page-content-mobile);
-    padding-right: var(--padding-page-content-mobile); } }
-
 .holidays__main-link-container:hover .gl-main-link-back-item:nth-child(1) {
   top: -16px;
   left: -8px; }
@@ -3207,6 +3183,10 @@ select:-webkit-autofill:focus {
 .holidays__main-link-container:hover .gl-main-link-back-item:nth-child(4) {
   bottom: -8px;
   left: -14px; }
+
+@media only screen and (max-width: 1024px) {
+  .holidays__main-link-list {
+    grid-template-columns: 1fr; } }
 
 .holidays__back-background-wrapper .gl-main-link-back-item:nth-child(1) {
   left: 0; }
@@ -3244,13 +3224,7 @@ select:-webkit-autofill:focus {
       margin-left: 0; } }
   @media only screen and (max-width: 1024px) {
     .holidays__order-form-wrapper {
-      margin-left: 0;
-      padding-left: var(--padding-page-content-tablet);
-      padding-right: var(--padding-page-content-tablet); } }
-  @media only screen and (max-width: 640px) {
-    .holidays__order-form-wrapper {
-      padding-left: var(--padding-page-content-mobile);
-      padding-right: var(--padding-page-content-mobile); } }
+      margin-left: 0; } }
   @media only screen and (max-width: 576px) {
     .holidays__order-form-wrapper {
       width: 100%;
@@ -3667,6 +3641,14 @@ select:-webkit-autofill:focus {
 
 #about-family-pakaf-swiper-component-mobile {
   z-index: 999; }
+  @media only screen and (max-width: 1024px) {
+    #about-family-pakaf-swiper-component-mobile {
+      padding-left: var(--padding-page-content-mobile);
+      padding-right: var(--padding-page-content-mobile);
+      overflow: hidden; } }
+
+.about-family-pakaf__swiper-container {
+  overflow: visible; }
 
 .cost-visit {
   display: -webkit-box;

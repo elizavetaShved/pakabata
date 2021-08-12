@@ -3,7 +3,9 @@
   cursor: pointer;
 
   @include breakpoint(tablet) {
-    padding: 0;
+    overflow: hidden;
+    padding-left: var(--padding-page-content-mobile);
+    padding-right: var(--padding-page-content-mobile);
   }
 
   @include breakpoint(small-mobile) {
@@ -17,6 +19,7 @@
 
   @include breakpoint(tablet) {
     height: 392px;
+    overflow: visible;
   }
 
   @include breakpoint(small-mobile) {
