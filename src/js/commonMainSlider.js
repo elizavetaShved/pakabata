@@ -1,4 +1,4 @@
-import { EffectFade, Mousewheel, Navigation, Pagination, Swiper, Controller } from 'swiper';
+import { EffectFade, Mousewheel, Navigation, Pagination, Swiper } from 'swiper';
 
 Swiper.use([Navigation]);
 Swiper.use([Pagination]);
@@ -81,12 +81,12 @@ export default function commonMainSlider(sliderComponentDeskElem, sliderComponen
 
   const swiperMobile = new Swiper(sliderContainerMobileElem, {
     ...commonSwiperParams,
-    slidesPerView: 1.12,
+    slidesPerView: 1,
     spaceBetween: 8,
     mousewheel: true,
     breakpoints: {
       640: {
-        slidesPerView: 1.08,
+        slidesPerView: 1,
         spaceBetween: 16,
       },
     }

@@ -72,9 +72,6 @@
 }
 
 .about-park__info-caption-number-wrapper {
-  background-image: url('../img/about-park/mask-text-1.svg');
-  background-color: var(--dark-secondary-color);
-  background-size: cover;
   margin-bottom: 8px;
 
   @include breakpoint(laptop) {
@@ -87,9 +84,11 @@
 }
 
 .about-park__info-caption-number {
-  color: #000;
-  background: #fff;
-  mix-blend-mode: lighten;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: url('../img/about-park/mask-text-1.svg');
+  background-color: var(--dark-secondary-color);
+  color: white;
   font-weight: bold;
   font-size: 70px;
 

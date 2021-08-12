@@ -48,17 +48,14 @@
   }
 }
 
-.video__btn-text-wrapper {
-  background-image: url('../img/video/font-background.png');
-  background-position: left -10px;
-  background-color: #D394FB;
-  background-size: cover;
-}
-
 .video__btn-text {
-  color: #000;
-  background: #fff;
-  mix-blend-mode: lighten;
+  background-position: left -10px;
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: url('../img/video/font-background.png');
+  background-color: #D394FB;
+  color: white;
   font-weight: bold;
   font-size: 16px;
   letter-spacing: .18em;

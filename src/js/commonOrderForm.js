@@ -2,7 +2,7 @@ import commonDatepicker from './commonDatepicker';
 import { MAX_LENGTH_CHILDREN, MIN_LENGTH_CHILDREN } from './consts';
 import phoneMask from './phoneMask';
 
-export default function commonOrderForm(container, datepickerId, modalInfoElems) {
+export default function commonOrderForm(container, datepickerId) {
   let INPUT_WIDTH;
   const hostElem = container;
 
@@ -89,19 +89,5 @@ export default function commonOrderForm(container, datepickerId, modalInfoElems)
 
   inputChildrenWrapper.onclick = () => {
     openOtherFields();
-  }
-
-  hostElem.onsubmit = () => {
-    // event.preventDefault();
-    //
-    // if (modalInfoElems) {
-    //   modalInfoElems[0].classList.remove('mod-show');
-    //   modalInfoElems[1].classList.add('mod-show');
-    // }
-    //
-    // if ($(hostElem).parsley().isValid()) {
-    //   hostElem.reset();
-    //   $(hostElem).parsley().reset();
-    // }
   }
 }

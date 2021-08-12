@@ -2693,16 +2693,14 @@ select:-webkit-autofill:focus {
       padding-left: 48px;
       height: 32px; } }
 
-.video__btn-text-wrapper {
-  background-image: url("../img/video/font-background.png");
-  background-position: left -10px;
-  background-color: #D394FB;
-  background-size: cover; }
-
 .video__btn-text {
-  color: #000;
-  background: #fff;
-  mix-blend-mode: lighten;
+  background-position: left -10px;
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: url("../img/video/font-background.png");
+  background-color: #D394FB;
+  color: white;
   font-weight: bold;
   font-size: 16px;
   letter-spacing: .18em;
@@ -2782,9 +2780,6 @@ select:-webkit-autofill:focus {
       grid-gap: 40px 30px; } }
 
 .about-park__info-caption-number-wrapper {
-  background-image: url("../img/about-park/mask-text-1.svg");
-  background-color: var(--dark-secondary-color);
-  background-size: cover;
   margin-bottom: 8px; }
   @media only screen and (max-width: 1200px) {
     .about-park__info-caption-number-wrapper {
@@ -2794,9 +2789,11 @@ select:-webkit-autofill:focus {
       margin-bottom: 20px; } }
 
 .about-park__info-caption-number {
-  color: #000;
-  background: #fff;
-  mix-blend-mode: lighten;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: url("../img/about-park/mask-text-1.svg");
+  background-color: var(--dark-secondary-color);
+  color: white;
   font-weight: bold;
   font-size: 70px; }
   @media only screen and (max-width: 1200px) {
@@ -5033,6 +5030,30 @@ select:-webkit-autofill:focus {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 8px; }
+  .modal-order-holidays__form-wrapper .gl-input.parsley-error {
+    background-color: rgba(255, 84, 108, 0.05);
+    border: 1px solid rgba(255, 84, 108, 0.3); }
+  .modal-order-holidays__form-wrapper .parsley-errors-list.filled {
+    margin-top: 4px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #FF546C;
+    padding-left: 28px;
+    background-image: url("../img/common/error-validation.svg");
+    background-repeat: no-repeat;
+    background-position: top 50% left 8px;
+    background-size: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    -webkit-transition: max-height 300ms;
+    transition: max-height 300ms;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: initial;
+    font-family: var(--calibri); }
 
 .modal-order-holidays__btns-wrapper {
   display: -webkit-box;
