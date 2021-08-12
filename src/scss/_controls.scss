@@ -199,11 +199,18 @@ $transparent-btn-border: 2px;
       max-height: 0;
       padding: 0;
       margin: 0;
-      overflow: hidden;
+      opacity: 0;
+      z-index: -1;
       transition: 300ms max-height, 300ms padding, margin-top 300ms;
 
       &.mod-show {
-        max-height: 52px;
+        max-height: 100px;
+        opacity: 1;
+        z-index: 1;
+
+        &.gl-datepicker-container {
+          z-index: 100;
+        }
       }
     }
   }

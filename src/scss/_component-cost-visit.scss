@@ -13,7 +13,12 @@ $padding-content-price-extension: 40px;
     flex-direction: column;
   }
 
+  @include breakpoint(tablet) {
+    margin-top: 0;
+  }
+
   @include breakpoint(small-tablet) {
+    padding-top: 60px;
     margin-bottom: 52px;
   }
 }
@@ -275,8 +280,7 @@ $padding-content-price-extension: 40px;
     background-image: url('../img/cost-visit/silhouettes/back-background-1.svg');
 
     @include breakpoint(small-tablet) {
-      top: -22px;
-      left: -10px;
+      display: none;
     }
   }
 
@@ -288,7 +292,10 @@ $padding-content-price-extension: 40px;
     background-image: url('../img/cost-visit/silhouettes/back-background-2.svg');
 
     @include breakpoint(small-tablet) {
-      display: none;
+      top: -22px;
+      left: 63px;
+      width: 340px;
+      height: 230px;
     }
   }
 

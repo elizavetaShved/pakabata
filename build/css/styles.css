@@ -1635,11 +1635,16 @@ select:-webkit-autofill:focus {
       max-height: 0;
       padding: 0;
       margin: 0;
-      overflow: hidden;
+      opacity: 0;
+      z-index: -1;
       -webkit-transition: 300ms max-height, 300ms padding, margin-top 300ms;
       transition: 300ms max-height, 300ms padding, margin-top 300ms; }
       .gl-input-wrapper.order-form__input-hide-mobile.mod-show {
-        max-height: 52px; } }
+        max-height: 100px;
+        opacity: 1;
+        z-index: 1; }
+        .gl-input-wrapper.order-form__input-hide-mobile.mod-show.gl-datepicker-container {
+          z-index: 100; } }
 
 .gl-input {
   background: #F7F7F7;
@@ -3580,7 +3585,8 @@ select:-webkit-autofill:focus {
   @media only screen and (max-width: 1024px) {
     .about-family-pakaf__slider-block-wrapper {
       padding-left: 0;
-      padding-right: 0; } }
+      padding-right: 0;
+      margin-bottom: 0; } }
 
 .about-family-pakaf__subtitle {
   color: var(--main-color); }
@@ -3678,8 +3684,12 @@ select:-webkit-autofill:focus {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column; } }
+  @media only screen and (max-width: 1024px) {
+    .cost-visit {
+      margin-top: 0; } }
   @media only screen and (max-width: 768px) {
     .cost-visit {
+      padding-top: 60px;
       margin-bottom: 52px; } }
 
 .cost-visit__header-wrapper {
@@ -3947,8 +3957,7 @@ select:-webkit-autofill:focus {
     background-image: url("../img/cost-visit/silhouettes/back-background-1.svg"); }
     @media only screen and (max-width: 768px) {
       .cost-visit__back-background-item:nth-child(1) {
-        top: -22px;
-        left: -10px; } }
+        display: none; } }
   .cost-visit__back-background-item:nth-child(2) {
     width: 607px;
     height: 410px;
@@ -3957,7 +3966,10 @@ select:-webkit-autofill:focus {
     background-image: url("../img/cost-visit/silhouettes/back-background-2.svg"); }
     @media only screen and (max-width: 768px) {
       .cost-visit__back-background-item:nth-child(2) {
-        display: none; } }
+        top: -22px;
+        left: 63px;
+        width: 340px;
+        height: 230px; } }
   .cost-visit__back-background-item:nth-child(3) {
     width: 360px;
     height: 225px;
