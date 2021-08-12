@@ -39,6 +39,17 @@
     .datepicker-switch, .prev, .next {
       padding-bottom: 20px;
     }
+
+    .day {
+      &.disabled {
+        opacity: 0.1;
+
+        &:hover {
+          background: initial;
+          color: initial;
+        }
+      }
+    }
   }
 
   .prev, .next {

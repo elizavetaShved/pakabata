@@ -1639,7 +1639,6 @@ select:-webkit-autofill:focus {
       -webkit-transition: 300ms max-height, 300ms padding, margin-top 300ms;
       transition: 300ms max-height, 300ms padding, margin-top 300ms; }
       .gl-input-wrapper.order-form__input-hide-mobile.mod-show {
-        padding: 14px;
         max-height: 52px; } }
 
 .gl-input {
@@ -2125,6 +2124,11 @@ select:-webkit-autofill:focus {
       padding-top: 0; }
     .gl-datepicker-container .datepicker .datepicker-switch, .gl-datepicker-container .datepicker .prev, .gl-datepicker-container .datepicker .next {
       padding-bottom: 20px; }
+    .gl-datepicker-container .datepicker .day.disabled {
+      opacity: 0.1; }
+      .gl-datepicker-container .datepicker .day.disabled:hover {
+        background: initial;
+        color: initial; }
   .gl-datepicker-container .prev, .gl-datepicker-container .next {
     content: '';
     position: relative;
