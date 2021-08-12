@@ -1,4 +1,4 @@
-import { EffectFade, Mousewheel, Navigation, Pagination, Swiper } from 'swiper';
+import { EffectFade, Mousewheel, Navigation, Pagination, Swiper, Controller } from 'swiper';
 
 Swiper.use([Navigation]);
 Swiper.use([Pagination]);
@@ -24,6 +24,7 @@ export default function commonMainSlider(sliderComponentDeskElem, sliderComponen
     centeredSlides: true,
     virtual: true,
     lazy: true,
+    simulateTouch : true,
     keyboard: true,
     speed: 400,
   }

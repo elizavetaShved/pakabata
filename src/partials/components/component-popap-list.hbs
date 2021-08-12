@@ -1,4 +1,13 @@
 <div class="component-popap-list">
-  {{> component-popap }}
-  {{> component-popap }}
+  <div class="popap">
+    <div class="popap-item__swiper-container swiper-container">
+      <div class="popap-item__swiper-wrapper swiper-wrapper">
+        {{> component-popap }}
+        {{> component-popap }}
+      </div>
+
+      <button type="button" class="popap-item__btn-prev gl-tablet-hide"></button>
+      <button type="button" class="popap-item__btn-next gl-tablet-hide"></button>
+    </div>
+  </div>
 </div>
