@@ -42,14 +42,14 @@ export default function componentHeader() {
     }
   })
 
-  writeBtns.forEach(writeBtn => {
+  orderHolidaysBtns.forEach(writeBtn => {
     writeBtn.onclick = () => {
       modalWhiteElem.classList.add('mod-show');
       lockScroll(modalWhiteWrapperElem);
     }
   })
 
-  orderHolidaysBtns.forEach(writeBtn => {
+  writeBtns.forEach(writeBtn => {
     writeBtn.onclick = () => {
       modalOrderHolidaysElem.classList.add('mod-show');
       lockScroll(modalOrderFormWrapperElem);

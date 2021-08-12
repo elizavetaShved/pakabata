@@ -2605,6 +2605,8 @@ select:-webkit-autofill:focus {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 42px 38px; }
+  .banner__btn-prev.swiper-button-disabled, .banner__btn-next.swiper-button-disabled {
+    pointer-events: initial !important; }
   .banner__btn-prev:after, .banner__btn-next:after {
     content: ''; }
 

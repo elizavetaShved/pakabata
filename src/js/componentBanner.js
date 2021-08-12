@@ -23,6 +23,7 @@ export default function componentBanner() {
         if (window.innerWidth <= 1024) {
           actualIndexSlide = index - (slidesList.length / 2);
         }
+
         popapComponent.classList.add('mod-show');
         window.swiperPopap.slideTo(actualIndexSlide);
         // actualIndexSlide

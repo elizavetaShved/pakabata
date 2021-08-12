@@ -103,6 +103,10 @@
   background-repeat: no-repeat;
   background-size: 42px 38px;
 
+  &.swiper-button-disabled {
+    pointer-events: initial !important;
+  }
+
   &:after {
     content: '';
   }
