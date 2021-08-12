@@ -1,5 +1,6 @@
 import componentPopap from './componentPopap';
 import { EffectFade, Mousewheel, Navigation, Swiper } from 'swiper';
+import { primaryInput } from 'detect-it';
 
 Swiper.use([Navigation]);
 Swiper.use([Mousewheel]);
@@ -13,7 +14,7 @@ export default function componentPopapList() {
   })
 
   window.swiperPopap = new Swiper(document.querySelector('.popap-item__swiper-container'), {
-    simulateTouch : true,
+    simulateTouch: true,
     centeredSlides: true,
     virtual: true,
     lazy: true,
@@ -21,11 +22,11 @@ export default function componentPopapList() {
     slidesPerView: 1,
     preventInteractionOnTransition: true,
     keyboard: true,
-    mousewheel: false,
+    mousewheel: primaryInput === 'touch' ? false : true,
     effect: 'fade',
     navigation: {
       nextEl: '.popap-item__btn-next',
       prevEl: '.popap-item__btn-prev',
-    },
+    }
   })
 }
