@@ -22,7 +22,6 @@ export default function componentPopapList() {
     slidesPerView: 1,
     preventInteractionOnTransition: true,
     keyboard: true,
-    mousewheel: primaryInput === 'touch' ? false : true,
     effect: 'fade',
     navigation: {
       nextEl: '.popap-item__btn-next',

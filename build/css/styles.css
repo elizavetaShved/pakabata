@@ -4300,6 +4300,24 @@ select:-webkit-autofill:focus {
   .popap.mod-show {
     opacity: 1;
     z-index: 3; }
+  @media only screen and (max-width: 1024px) {
+    .popap .gl-close-btn-wrapper {
+      width: 26px;
+      height: 26px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin-top: -8px;
+      margin-right: -8px; }
+      .popap .gl-close-btn-wrapper svg {
+        width: 18px;
+        height: 18px; } }
 
 .popap__padding-content {
   padding-right: 80px;
@@ -4412,7 +4430,7 @@ select:-webkit-autofill:focus {
   @media only screen and (max-width: 1024px) {
     .popap__header-wrapper {
       height: 392px;
-      padding: 42px 62px;
+      padding: 42px 20px;
       background-position: left 20% top; } }
   @media only screen and (max-width: 576px) {
     .popap__header-wrapper {
@@ -4664,6 +4682,13 @@ select:-webkit-autofill:focus {
   font-size: 20px;
   line-height: 24px;
   white-space: nowrap; }
+  @media only screen and (max-width: 1024px) {
+    .popap__body-wrapper th, .popap__body-wrapper td {
+      padding: 10px 14px;
+      font-size: 14px; } }
+  @media only screen and (max-width: 576px) {
+    .popap__body-wrapper th, .popap__body-wrapper td {
+      font-size: 12px; } }
 
 .popap__body-wrapper thead th {
   color: #A3A3A3;

@@ -13,6 +13,22 @@
     opacity: 1;
     z-index: 3;
   }
+
+  .gl-close-btn-wrapper {
+    @include breakpoint(tablet) {
+      width: 26px;
+      height: 26px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: -8px;
+      margin-right: -8px;
+      svg {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
 }
 
 .popap__padding-content {
@@ -112,7 +128,7 @@
 
   @include breakpoint(tablet) {
     height: 392px;
-    padding: 42px 62px;
+    padding: 42px 20px;
     background-position: left 20% top;
   }
 
@@ -448,6 +464,15 @@
     font-size: 20px;
     line-height: 24px;
     white-space: nowrap;
+
+    @include breakpoint(tablet) {
+      padding: 10px 14px;
+      font-size: 14px;
+    }
+
+    @include breakpoint(small-mobile) {
+      font-size: 12px;
+    }
   }
 
   thead {
