@@ -1,11 +1,11 @@
 :root {
-  --padding-page-content-tablet: 30px;
-  --padding-page-content-mobile: 20px;
+  --padding-page-content-tablet: 3.0rem;
+  --padding-page-content-mobile: 2.0rem;
 }
 
 .container {
   width: 100%;
-  max-width: 1640px;
+  max-width: 164.0rem;
   margin: 0 auto;
   padding: 0 var(--content-padding);
 
@@ -36,15 +36,15 @@
     background-position: center;
     background-size: cover;
     width: 100vw;
-    height: 406px;
+    height: 40.6rem;
     z-index: -1;
 
     @include breakpoint(tablet) {
-      height: 284px;
+      height: 28.4rem;
     }
 
     @include breakpoint(small-mobile) {
-      height: 162px;
+      height: 16.2rem;
     }
   }
 }

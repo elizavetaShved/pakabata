@@ -87,8 +87,8 @@ export default function componentPopap(popapElem) {
   hostElem.onclick = (e) => {
     let clickPopapContent = false;
 
-    popapContentElem.forEach(btnPrev => {
-      if (checkExistParent(e.target, btnPrev)) {
+    popapContentElem.forEach(elem => {
+      if (checkExistParent(e.target, elem)) {
         clickPopapContent = true;
       }
     });

@@ -16,50 +16,50 @@
 
   .gl-close-btn-wrapper {
     @include breakpoint(tablet) {
-      width: 26px;
-      height: 26px;
+      width: 2.6rem;
+      height: 2.6rem;
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-top: -8px;
-      margin-right: -8px;
+      margin-top: -.8rem;
+      margin-right: -.8rem;
       svg {
-        width: 18px;
-        height: 18px;
+        width: 1.8rem;
+        height: 1.8rem;
       }
     }
   }
 }
 
 .popap__padding-content {
-  padding-right: 80px;
-  padding-left: 80px;
+  padding-right: 8.0rem;
+  padding-left: 8.0rem;
   overflow-x: auto;
   @include customScrollbarVertical();
 
   @include breakpoint(desktop) {
-    padding-right: 60px;
-    padding-left: 60px;
+    padding-right: 6.0rem;
+    padding-left: 6.0rem;
   }
 
   @include breakpoint(small-tablet) {
-    padding-right: 40px;
-    padding-left: 40px;
+    padding-right: 4.0rem;
+    padding-left: 4.0rem;
   }
 
   @include breakpoint(small-mobile) {
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 2.0rem;
+    padding-left: 2.0rem;
   }
 }
 
 .popap__margin-content {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 4.0rem;
+  margin-bottom: 4.0rem;
 
   @include breakpoint(small-mobile) {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 2.0rem;
+    margin-bottom: 2.0rem;
   }
 
   &:first-child {
@@ -72,23 +72,23 @@
 }
 
 .popap__additional-margin-content {
-  margin-right: 80px;
-  margin-left: 80px;
+  margin-right: 8.0rem;
+  margin-left: 8.0rem;
   padding: 0;
 
   @include breakpoint(desktop) {
-     margin-right: 60px;
-     margin-left: 60px;
+     margin-right: 6.0rem;
+     margin-left: 6.0rem;
   }
 
   @include breakpoint(small-tablet) {
-     margin-right: 40px;
-     margin-left: 40px;
+     margin-right: 4.0rem;
+     margin-left: 4.0rem;
   }
 
   @include breakpoint(small-mobile) {
-     margin-right: 20px;
-     margin-left: 20px;
+     margin-right: 2.0rem;
+     margin-left: 2.0rem;
   }
 }
 
@@ -105,8 +105,8 @@
 }
 
 .popap__content {
-  margin: 30px 0;
-  border-radius: 20px;
+  margin: 3.0rem 0;
+  border-radius: 2.0rem;
   z-index: 100;
   width: 86%;
   background-color: #fff;
@@ -115,10 +115,10 @@
 
 .popap__header-wrapper {
   width: 100%;
-  height: 560px;
+  height: 56.0rem;
   justify-content: flex-end;
-  font-size: 18px;
-  padding: 63px 108px;
+  font-size: 1.8rem;
+  padding: 6.3rem 10.8rem;
   position: relative;
   display: flex;
   align-items: flex-start;
@@ -127,13 +127,13 @@
   transition: opacity 1ms;
 
   @include breakpoint(tablet) {
-    height: 392px;
-    padding: 42px 20px;
+    height: 39.2rem;
+    padding: 4.2rem 2.0rem;
     background-position: left 20% top;
   }
 
   @include breakpoint(small-mobile) {
-    height: 260px;
+    height: 26.0rem;
   }
 }
 
@@ -142,11 +142,11 @@
   content: '';
   top: 50%;
   transform: translateY(-50%);
-  width: 70px !important;
-  height: 70px !important;
+  width: 7.0rem !important;
+  height: 7.0rem !important;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 42px 38px !important;
+  background-size: 4.2rem 3.8rem !important;
 
   &:after {
     content: '';
@@ -162,16 +162,16 @@
 }
 
 .popap__btn-prev {
-  left: 84px;
+  left: 8.4rem;
 }
 
 .popap__btn-next {
-  right: 84px;
+  right: 8.4rem;
 }
 
 .popap-item__btn-prev, .popap-item__btn-next {
-  width: 38px;
-  height: 40px;
+  width: 3.8rem;
+  height: 4.0rem;
   background-size: contain;
   z-index: 1000;
   background-image: url('../img/common/arrows/arrow-right.svg');
@@ -188,8 +188,8 @@
   }
 
   @include breakpoint(small-tablet) {
-    width: 28px;
-    height: 30px;
+    width: 2.8rem;
+    height: 3.0rem;
   }
 }
 
@@ -201,11 +201,11 @@
 }
 
 .popap-item__btn-prev {
-  left: 14px;
+  left: 1.4rem;
 }
 
 .popap-item__btn-next {
-  right: 14px;
+  right: 1.4rem;
 }
 
 .popap__photo-header {
@@ -232,38 +232,38 @@
 
 .popap__header-info-title {
   color: #fff;
-  font-size: 50px;
-  line-height: 62px;
+  font-size: 5.0rem;
+  line-height: 6.2rem;
   font-weight: bold;
-  margin-bottom: 33px;
+  margin-bottom: 3.3rem;
 
   @include breakpoint(tablet) {
-    font-size: 32px;
-    line-height: 40px;
-    margin-bottom: 20px;
+    font-size: 3.2rem;
+    line-height: 4.0rem;
+    margin-bottom: 2.0rem;
   }
 
   @include breakpoint(small-mobile) {
-    font-size: 16px;
-    line-height: 20px;
-    margin-bottom: 10px;
+    font-size: 1.6rem;
+    line-height: 2.0rem;
+    margin-bottom: 1.0rem;
   }
 }
 
 .popap__header-info-caption {
-  font-size: 24px;
-  line-height: 34px;
-  margin-bottom: 40px;
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+  margin-bottom: 4.0rem;
 
   @include breakpoint(tablet) {
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
   }
 
   @include breakpoint(small-mobile) {
-    margin-bottom: 10px;
-    font-size: 12px;
-    line-height: 18px;
+    margin-bottom: 1.0rem;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
   }
 }
 
@@ -272,21 +272,21 @@
   display: inline-block;
 
   @include breakpoint(small-mobile) {
-    font-size: 12px;
+    font-size: 1.2rem;
   }
 }
 
 .popap__body-wrapper {
-  padding-bottom: 54px;
+  padding-bottom: 5.4rem;
   color: black;
 }
 
 .popap__body-wrapper {
   p {
-    font-size: 20px;
-    line-height: 30px;
-    margin-top: 16px;
-    margin-bottom: 16px;
+    font-size: 2.0rem;
+    line-height: 3.0rem;
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;
 
     &:first-child {
       margin-top: 0;
@@ -297,13 +297,13 @@
     }
 
     @include breakpoint(desktop) {
-      font-size: 16px;
-      line-height: 26px;
+      font-size: 1.6rem;
+      line-height: 2.6rem;
     }
 
     @include breakpoint(small-tablet) {
-      font-size: 14px;
-      line-height: 20px;
+      font-size: 1.4rem;
+      line-height: 2.0rem;
     }
 
     &:first-child {
@@ -316,25 +316,25 @@
   }
 
   b {
-    font-size: 32px;
-    line-height: 44px;
-    margin-top: 54px;
-    margin-bottom: 58px;
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+    margin-top: 5.4rem;
+    margin-bottom: 5.8rem;
     display: block;
 
     @include breakpoint(desktop) {
-      font-size: 26px;
+      font-size: 2.6rem;
       line-height: initial;
     }
 
     @include breakpoint(small-tablet) {
-      font-size: 20px;
-      margin-top: 44px;
-      margin-bottom: 48px;
+      font-size: 2.0rem;
+      margin-top: 4.4rem;
+      margin-bottom: 4.8rem;
     }
 
     @include breakpoint(small-mobile) {
-      font-size: 16px;
+      font-size: 1.6rem;
     }
   }
 
@@ -348,16 +348,16 @@
 
   h3 {
     font-family: var(--riffic);
-    font-size: 22px;
-    line-height: 26px;
-    margin-top: 24px;
-    margin-bottom: 24px;
-    margin-right: -20px;
-    padding-right: 20px;
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+    margin-top: 2.4rem;
+    margin-bottom: 2.4rem;
+    margin-right: -2.0rem;
+    padding-right: 2.0rem;
 
     @include breakpoint(small-tablet) {
-      font-size: 18px;
-      line-height: 22px;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
     }
 
     &:first-child {
@@ -370,12 +370,12 @@
   }
 
   ul, ol {
-    margin-top: 24px;
-    margin-bottom: 60px;
+    margin-top: 2.4rem;
+    margin-bottom: 6.0rem;
 
     @include breakpoint(small-tablet) {
-      margin-top: 20px;
-      margin-bottom: 40px;
+      margin-top: 2.0rem;
+      margin-bottom: 4.0rem;
     }
 
     &:first-child {
@@ -387,22 +387,22 @@
     }
 
     li {
-      font-size: 20px;
-      line-height: 30px;
-      padding-left: 22px;
+      font-size: 2.0rem;
+      line-height: 3.0rem;
+      padding-left: 2.2rem;
       position: relative;
 
       @include breakpoint(small-tablet) {
-        font-size: 16px;
-        line-height: 26px;
-        padding-left: 18px;
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+        padding-left: 1.8rem;
       }
 
       & + & {
-        margin-top: 12px;
+        margin-top: 1.2rem;
 
         @include breakpoint(small-tablet) {
-          margin-top: 10px;
+          margin-top: 1.0rem;
         }
       }
     }
@@ -413,17 +413,17 @@
       &:before {
         position: absolute;
         content: '';
-        top: 10px;
+        top: 1.0rem;
         left: 0;
         background-color: var(--third-color);
-        width: 8px;
-        height: 8px;
+        width: .8rem;
+        height: .8rem;
         border-radius: 100%;
 
         @include breakpoint(small-tablet) {
-          top: 8px;
-          width: 6px;
-          height: 6px;
+          top: .8rem;
+          width: .6rem;
+          height: .6rem;
         }
       }
     }
@@ -435,19 +435,19 @@
 
       &:before {
         color: var(--third-color);
-        margin-right: 6px;
+        margin-right: .6rem;
       }
     }
   }
 
   table {
     border-collapse: collapse;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 5.0rem;
+    margin-bottom: 5.0rem;
 
     @include breakpoint(small-tablet) {
-      margin-top: 20px;
-      margin-bottom: 20px;
+      margin-top: 2.0rem;
+      margin-bottom: 2.0rem;
     }
 
     &:first-child {
@@ -460,18 +460,18 @@
   }
 
   th, td {
-    padding: 16px 20px;
-    font-size: 20px;
-    line-height: 24px;
+    padding: 1.6rem 2.0rem;
+    font-size: 2.0rem;
+    line-height: 2.4rem;
     white-space: nowrap;
 
     @include breakpoint(tablet) {
-      padding: 10px 14px;
-      font-size: 14px;
+      padding: 1.0rem 1.4rem;
+      font-size: 1.4rem;
     }
 
     @include breakpoint(small-mobile) {
-      font-size: 12px;
+      font-size: 1.2rem;
     }
   }
 
@@ -486,7 +486,7 @@
         bottom: 0;
         left: 0;
         width: 100%;
-        height: 1px;
+        height: .1rem;
         background-color: #D8D8D8;
       }
     }
@@ -505,13 +505,13 @@
   }
 
   button {
-    font-size: 22px;
-    line-height: 26px;
+    font-size: 2.2rem;
+    line-height: 2.6rem;
     font-family: var(--riffic);
     color: #000;
-    padding-top: 8px;
-    padding-bottom: 4px;
-    border-bottom: 4px solid transparent;
+    padding-top: .8rem;
+    padding-bottom: .4rem;
+    border-bottom: .4rem solid transparent;
     transition: border-bottom-color 300ms;
 
     &.gl-btn-next, &.gl-btn-prev {
@@ -527,21 +527,26 @@
 .popap__swiper-component-desk {
   width: 100%;
   flex: 0 0 100%;
+  overflow-x: initial;
 }
 
 .popap__swiper-container {
-  height: 762px;
+  height: 76.2rem;
 
   @include breakpoint(desktop) {
-    height: 500px;
+    height: 50.0rem;
+  }
+
+  @include breakpoint(tablet) {
+    overflow: visible;
   }
 
   @include breakpoint(small-tablet) {
-    height: 360px;
+    height: 36.0rem;
   }
 
   @include breakpoint(small-mobile) {
-    height: 300px;
+    height: 30.0rem;
   }
 }
 
@@ -550,12 +555,12 @@
 }
 
 .table {
-  margin-top: 46px;
-  margin-bottom: 46px;
+  margin-top: 4.6rem;
+  margin-bottom: 4.6rem;
 
   @include breakpoint(small-tablet) {
-    margin-top: 26px;
-    margin-bottom: 26px;
+    margin-top: 2.6rem;
+    margin-bottom: 2.6rem;
   }
 
   &:first-child {

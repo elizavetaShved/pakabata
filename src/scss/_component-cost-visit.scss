@@ -1,12 +1,12 @@
-$padding-content-price-wrapper: 38px;
-$padding-content-price-extension: 40px;
+$padding-content-price-wrapper: 3.8rem;
+$padding-content-price-extension: 4.0rem;
 
 .cost-visit {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 112px;
-  padding-top: 100px;
-  margin-top: 100px;
+  margin-bottom: 11.2rem;
+  padding-top: 10.0rem;
+  margin-top: 10.0rem;
   overflow: hidden;
 
   @include breakpoint(desktop) {
@@ -18,23 +18,23 @@ $padding-content-price-extension: 40px;
   }
 
   @include breakpoint(small-tablet) {
-    padding-top: 60px;
-    margin-bottom: 52px;
+    padding-top: 6.0rem;
+    margin-bottom: 5.2rem;
   }
 }
 
 .cost-visit__header-wrapper {
-  margin-right: 36px;
+  margin-right: 3.6rem;
 
   @include breakpoint(desktop) {
     margin-right: 0;
-    margin-bottom: 40px;
+    margin-bottom: 4.0rem;
   }
 }
 
 .cost-visit__price-container {
-  width: 840px;
-  flex: 0 0 840px;
+  width: 84.0rem;
+  flex: 0 0 84.0rem;
   height: min-content;
 
   @include breakpoint(desktop) {
@@ -48,17 +48,17 @@ $padding-content-price-extension: 40px;
 }
 
 .cost-visit__price-wrapper {
-  padding: 42px $padding-content-price-extension;
+  padding: 4.2rem $padding-content-price-extension;
   width: 100%;
   position: relative;
 
   @include breakpoint(small-mobile) {
-    padding: 20px 12px;
+    padding: 2.0rem 1.2rem;
   }
 }
 
 .cost-visit__price-header {
-  margin-bottom: 20px;
+  margin-bottom: 2.0rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -66,36 +66,36 @@ $padding-content-price-extension: 40px;
   @include breakpoint(small-tablet) {
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 28px;
+    margin-bottom: 2.8rem;
   }
 }
 
 .cost-visit__price-caption {
   font-weight: bold;
-  font-size: 32px;
-  line-height: 28px;
+  font-size: 3.2rem;
+  line-height: 2.8rem;
   color: var(--secondary-color);
 
   @include breakpoint(small-tablet) {
-    font-size: 24px;
+    font-size: 2.4rem;
   }
 }
 
 .cost-visit__toggle-wrapper {
-  border: 1px dashed #D8D8D8;
-  border-radius: 38px;
-  padding: 6px;
+  border: .1rem dashed #D8D8D8;
+  border-radius: 3.8rem;
+  padding: .6rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: relative;
-  min-width: 243px;
+  min-width: 24.3rem;
   background-color: #fff;
-  margin-right: 20px;
+  margin-right: 2.0rem;
 
   @include breakpoint(small-tablet) {
     margin-right: 0;
-    margin-top: 32px;
+    margin-top: 3.2rem;
     width: 100%;
   }
 }
@@ -116,22 +116,22 @@ $padding-content-price-extension: 40px;
 }
 
 .cost-visit__toggle-item-content {
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
   color: rgba(21, 5, 51, 0.8);
-  padding: 12px 30px;
+  padding: 1.2rem 3.0rem;
 }
 
 .cost-visit__toggle-background {
   position: absolute;
   content: '';
   width: 50%;
-  top: 6px;
-  bottom: 6px;
+  top: .6rem;
+  bottom: .6rem;
   left: 2%;
   background-color: #FF546C;
-  box-shadow: 0 0 82px rgba(93, 16, 182, 0.1049);
-  border-radius: 60px;
+  box-shadow: 0 0 8.2rem rgba(93, 16, 182, 0.1049);
+  border-radius: 6.0rem;
   transition: left 300ms;
 
   &.mod-right {
@@ -142,64 +142,64 @@ $padding-content-price-extension: 40px;
 .cost-visit__price-grid-wrapper {
   width: 100%;
   background-color: #DAEDFF;
-  border-radius: 20px;
+  border-radius: 2.0rem;
   background-image: url('../img/cost-visit/circles-background.svg');
   background-size: cover;
-  padding: 44px 28px;
+  padding: 4.4rem 2.8rem;
   display: flex;
   justify-content: space-between;
   color: var(--secondary-color);
 
   @include breakpoint(small-tablet) {
     flex-direction: column;
-    padding: 42px 20px;
+    padding: 4.2rem 2.0rem;
   }
 }
 
 .cost-visit__price-grid-item {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 46px;
+  grid-gap: 4.6rem;
 
   & + & {
-    margin-top: 34px;
+    margin-top: 3.4rem;
   }
 
   @include breakpoint(small-mobile) {
-    grid-gap: 6px;
+    grid-gap: .6rem;
     grid-template-columns: 40% 60%;
   }
 }
 
 .cost-visit__price-grid-caption {
-  font-size: 14px;
-  line-height: 28px;
+  font-size: 1.4rem;
+  line-height: 2.8rem;
 }
 
 .cost-visit__price-value-wrapper {
-  width: 180px;
-  height: 80px;
+  width: 18.0rem;
+  height: 8.0rem;
   overflow: hidden;
 }
 
 .cost-visit__price-grid-values-slider {
   display: grid;
-  grid-template-columns: repeat(2, 180px);
+  grid-template-columns: repeat(2, 18.0rem);
   transform: translateX(0);
   transition: 300ms transform;
 }
 
 .cost-visit__price-grid-value {
   font-weight: bold;
-  font-size: 48px;
-  line-height: 60px;
+  font-size: 4.8rem;
+  line-height: 6.0rem;
   width: 100%;
   opacity: 0;
   transition: 300ms opacity;
   text-align: center;
 
   @include breakpoint(small-tablet) {
-    font-size: 40px;
+    font-size: 4.0rem;
   }
 
   &.mod-active {
@@ -208,49 +208,49 @@ $padding-content-price-extension: 40px;
 }
 
 .cost-visit__price-grid-value-comment {
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
   opacity: 0.2;
 }
 
 .cost-visit__price-extension {
-  width: 260px;
-  margin-left: 30px;
+  width: 26.0rem;
+  margin-left: 3.0rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   @include breakpoint(small-tablet) {
     margin-left: 0;
-    margin-top: 40px;
+    margin-top: 4.0rem;
     align-items: flex-start;
     width: 100%;
   }
 }
 
 .cost-visit__price-extension-free-wrapper {
-  padding: 36px $padding-content-price-extension;
-  margin-bottom: 18px;
-  min-width: 256px;
+  padding: 3.6rem $padding-content-price-extension;
+  margin-bottom: 1.8rem;
+  min-width: 25.6rem;
   width: 100%;
 
   @include breakpoint(small-tablet) {
-    margin-bottom: 26px;
+    margin-bottom: 2.6rem;
   }
 }
 
 .cost-visit__price-extension-free-caption {
   font-weight: bold;
-  font-size: 32px;
+  font-size: 3.2rem;
   color: var(--third-color)
 }
 
 .cost-visit__price-extension-free-value {
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 .cost-visit__price-extension-rules {
-  font-size: 14px;
+  font-size: 1.4rem;
   padding: 0 $padding-content-price-extension;
 
 
@@ -273,10 +273,10 @@ $padding-content-price-extension: 40px;
   background-position: center;
 
   &:nth-child(1) {
-    width: 506px;
-    height: 424px;
-    top: -42px;
-    left: -30px;
+    width: 50.6rem;
+    height: 42.4rem;
+    top: -4.2rem;
+    left: -3.0rem;
     background-image: url('../img/cost-visit/silhouettes/back-background-1.svg');
 
     @include breakpoint(small-tablet) {
@@ -285,25 +285,25 @@ $padding-content-price-extension: 40px;
   }
 
   &:nth-child(2) {
-    width: 607px;
-    height: 410px;
-    top: -46px;
-    right: -43px;
+    width: 60.7rem;
+    height: 41.0rem;
+    top: -4.6rem;
+    right: -4.3rem;
     background-image: url('../img/cost-visit/silhouettes/back-background-2.svg');
 
     @include breakpoint(small-tablet) {
-      top: -22px;
-      left: 63px;
-      width: 340px;
-      height: 230px;
+      top: -2.2rem;
+      left: 6.3rem;
+      width: 34.0rem;
+      height: 23.0rem;
     }
   }
 
   &:nth-child(3) {
-    width: 360px;
-    height: 225px;
-    bottom: -27px;
-    left: 178px;
+    width: 36.0rem;
+    height: 22.5rem;
+    bottom: -2.7rem;
+    left: 17.8rem;
     background-image: url('../img/cost-visit/silhouettes/back-background-3.svg');
 
     @include breakpoint(small-tablet) {
@@ -312,28 +312,28 @@ $padding-content-price-extension: 40px;
   }
 
   &:nth-child(4) {
-    width: 138px;
-    height: 171px;
-    bottom: 34px;
-    left: -58px;
+    width: 13.8rem;
+    height: 17.1rem;
+    bottom: 3.4rem;
+    left: -5.8rem;
     background-image: url('../img/cost-visit/silhouettes/back-background-4.svg');
 
     @include breakpoint(small-tablet) {
-      left: -38px;
+      left: -3.8rem;
     }
   }
 }
 
 .cost-visit__hint {
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
   color: var(--secondary-color);
   opacity: 0.2;
   padding: 0 $padding-content-price-extension;
-  margin-top: 54px;
+  margin-top: 5.4rem;
 
   @include breakpoint(small-tablet) {
     text-align: center;
-    margin-top: 26px;
+    margin-top: 2.6rem;
   }
 }

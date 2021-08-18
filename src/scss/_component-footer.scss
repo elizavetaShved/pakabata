@@ -4,7 +4,7 @@
   background-size: cover;
   background-position: center;
   clip-path: ellipse(94% 60% at 50% 60%);
-  margin-top: -30px;
+  margin-top: -3.0rem;
   color: #fff;
   overflow: hidden;
 
@@ -15,32 +15,32 @@
 
 .footer__container {
   @include breakpoint(tablet) {
-    padding-top: 52px;
+    padding-top: 5.2rem;
   }
 
   @include breakpoint(small-tablet) {
-    padding-top: 232px;
+    padding-top: 23.2rem;
   }
 
   @include breakpoint(small-mobile) {
-    padding-top: 312px;
+    padding-top: 31.2rem;
   }
 }
 
 .footer__logo-block {
-  height: 137px;
+  height: 13.7rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 16px;
+  margin-bottom: 1.6rem;
 }
 
 .footer__navigation-block {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 40px;
-  border-bottom: 1px solid rgba(151, 151, 151, 0.3);
+  padding-bottom: 4.0rem;
+  border-bottom: .1rem solid rgba(151, 151, 151, 0.3);
 
   @include breakpoint(small-tablet) {
     flex-direction: column;
@@ -51,47 +51,47 @@
 .footer__navigation-phone {
   display: inline-block;
   font-weight: bold;
-  font-size: 22px;
-  line-height: 26px;
-  margin-right: 20px;
+  font-size: 2.2rem;
+  line-height: 2.6rem;
+  margin-right: 2.0rem;
 
   @include breakpoint(small-tablet) {
     margin-right: 0;
-    margin-bottom: 24px;
+    margin-bottom: 2.4rem;
   }
 }
 
 .footer__navigation-menu-wrapper {
-  margin: 0 -16px;
+  margin: 0 -1.6rem;
 
   @include breakpoint(desktop) {
-    margin: 0 -8px;
+    margin: 0 -.8rem;
   }
 
   @include breakpoint(small-tablet) {
-    margin-bottom: 37px;
+    margin-bottom: 3.7rem;
     display: flex;
     flex-direction: column;
-    margin: 0 -4px;
+    margin: 0 -.4rem;
   }
 }
 
 .footer__navigation-menu-item {
-  font-size: 20px;
-  padding: 16px;
+  font-size: 2.0rem;
+  padding: 1.6rem;
   color: #fff;
 
   @include breakpoint(desktop) {
-    padding: 10px;
+    padding: 1.0rem;
   }
 
   @include breakpoint(small-tablet) {
-    padding: 4px;
+    padding: .4rem;
   }
 }
 
 .footer__additional-block {
-  height: 74px;
+  height: 7.4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -100,26 +100,26 @@
     height: auto;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 12px;
-    margin-bottom: 62px;
+    margin-top: 1.2rem;
+    margin-bottom: 6.2rem;
   }
 }
 
 .footer__additional-links-wrapper {
   display: flex;
   align-items: center;
-  margin: 0 -10px;
+  margin: 0 -1.0rem;
 
   @include breakpoint(small-tablet) {
-    margin-bottom: 40px;
+    margin-bottom: 4.0rem;
   }
 }
 
 .footer__additional-link {
-  padding: 10px;
+  padding: 1.0rem;
 
   & + & {
-    margin-left: 26px;
+    margin-left: 2.6rem;
   }
 }
 
@@ -129,17 +129,17 @@
 }
 
 .footer__additional-author-link {
-  margin-left: 8px;
+  margin-left: .8rem;
 }
 
 .footer__additional-author-link-icon {
-  height: 20px;
-  margin-top: 8px;
+  height: 2.0rem;
+  margin-top: .8rem;
 }
 
 .footer__social-wrapper {
   @include breakpoint(small-tablet) {
-    margin: -8px;
-    margin-top: 36px;
+    margin: -.8rem;
+    margin-top: 3.6rem;
   }
 }

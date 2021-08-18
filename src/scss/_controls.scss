@@ -1,19 +1,19 @@
-$main-btn-height-dest: 54px;
-$transparent-btn-height-dest: 50px; // (54 - (2 + 2))
-$main-btn-height-laptop: 50px;
-$transparent-btn-height-laptop: 46px; // (50 - (2 + 2))
-$transparent-btn-border: 2px;
+$main-btn-height-dest: 5.4rem;
+$transparent-btn-height-dest: 5.0rem; // (54 - (2 + 2))
+$main-btn-height-laptop: 5.0rem;
+$transparent-btn-height-laptop: 4.6rem; // (50 - (2 + 2))
+$transparent-btn-border: .2rem;
 
 .gl-main-btn, .gl-transparent-btn {
-  padding: 0 26px;
+  padding: 0 2.6rem;
   height: $main-btn-height-dest;
-  border-radius: 10px;
+  border-radius: 1.0rem;
   font-weight: bold;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
   white-space: nowrap;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: .2rem;
 
   &:hover {
     text-decoration: none;
@@ -21,9 +21,9 @@ $transparent-btn-border: 2px;
   }
 
   @include breakpoint(large-desktop) {
-    padding: 0 18px;
+    padding: 0 1.8rem;
     height: $main-btn-height-laptop;
-    font-size: 12px;
+    font-size: 1.2rem;
   }
 }
 
@@ -35,7 +35,7 @@ $transparent-btn-border: 2px;
 .gl-btn-wrapper {
   display: flex;
   flex-direction: column;
-  transform: translateY(0px);
+  transform: translateY(.0rem);
   transition: 300ms transform;
 }
 
@@ -134,9 +134,9 @@ $transparent-btn-border: 2px;
 
 // неактивная кнопка
 .gl-radio-btn-content-wrapper {
-  border: 1px dashed rgba(0, 0, 0, 0.2);
-  border-radius: 20px;
-  padding: 10px;
+  border: .1rem dashed rgba(0, 0, 0, 0.2);
+  border-radius: 2.0rem;
+  padding: 1.0rem;
   background-color: #fff;
   cursor: pointer;
   display: flex;
@@ -146,8 +146,8 @@ $transparent-btn-border: 2px;
 }
 
 .gl-radio-btn-content {
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 1.6rem;
+  line-height: 2.0rem;
   color: #000;
   position: relative;
 
@@ -157,8 +157,8 @@ $transparent-btn-border: 2px;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 4px;
-    height: 4px;
+    width: .4rem;
+    height: .4rem;
     border-radius: 100%;
     background-color: #fff;
     opacity: 0;
@@ -172,12 +172,12 @@ $transparent-btn-border: 2px;
     &:checked {
       // активная кнопка
       + .gl-radio-btn-content-wrapper {
-        border: 1px solid transparent;
+        border: .1rem solid transparent;
         background-color: var(--third-color);
 
         .gl-radio-btn-content {
           color: #fff;
-          padding-left: 10px;
+          padding-left: 1.0rem;
 
           &:before {
             opacity: 1;
@@ -190,7 +190,7 @@ $transparent-btn-border: 2px;
 
 .gl-input-wrapper {
   display: block;
-  line-height: 22px;
+  line-height: 2.2rem;
   color: var(--secondary-color);
   transition: 300ms background, 300ms border-color;
 
@@ -204,7 +204,7 @@ $transparent-btn-border: 2px;
       transition: 300ms max-height, 300ms padding, margin-top 300ms;
 
       &.mod-show {
-        max-height: 100px;
+        max-height: 10.0rem;
         opacity: 1;
         z-index: 1;
 
@@ -218,22 +218,22 @@ $transparent-btn-border: 2px;
 
 .gl-input {
   background: #F7F7F7;
-  border-radius: 10px;
-  padding: 14px;
-  font-size: 16px;
-  line-height: 22px;
+  border-radius: 1.0rem;
+  padding: 1.4rem;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
   color: var(--secondary-color);
   box-sizing: border-box;
 
   &::placeholder {
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
     color: var(--secondary-color);
   }
 }
 
 .gl-input-textarea {
-  height: 80px;
+  height: 8.0rem;
 }
 
 .gl-input-number-wrapper {
@@ -254,18 +254,18 @@ $transparent-btn-border: 2px;
 }
 
 .gl-input-number-value {
-  font-size: 14px;
-  border: 1px solid #FF546C;
-  border-radius: 34px;
-  margin: 0 8px;
-  width: 42px; // default, а вообще проставляется в JS
+  font-size: 1.4rem;
+  border: .1rem solid #FF546C;
+  border-radius: 3.4rem;
+  margin: 0 .8rem;
+  width: 4.2rem; // default, а вообще проставляется в JS
   display: block;
-  padding: 0 16px;
+  padding: 0 1.6rem;
   text-align: center;
-  line-height: 22px;
+  line-height: 2.2rem;
 
   @include breakpoint(small-tablet) {
-    line-height: 28px;
+    line-height: 2.8rem;
   }
 }
 
@@ -296,43 +296,43 @@ $transparent-btn-border: 2px;
 
 .gl-checkbox-content {
   display: flex;
-  margin-top: 12px;
+  margin-top: 1.2rem;
   opacity: 0.3;
   user-select: none;
 }
 
 .gl-checkbox-content-text {
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
   color: #150533;
   display: flex;
   align-items: center;
 }
 
 .gl-checkbox-content-icon {
-  width: 18px;
-  height: 18px;
-  border: 1px solid #240956;
-  border-radius: 5px;
-  margin-right: 10px;
+  width: 1.8rem;
+  height: 1.8rem;
+  border: .1rem solid #240956;
+  border-radius: .5rem;
+  margin-right: 1.0rem;
   background-repeat: no-repeat;
-  background-size: 9px 9px;
+  background-size: .9rem .9rem;
   background-position: center;
-  flex: 0 0 18px;
+  flex: 0 0 1.8rem;
 }
 
 .order-form__btn-submit-wrapper {
   display: flex;
   justify-content: flex-end;
-  margin-top: 16px;
+  margin-top: 1.6rem;
 
   @include breakpoint(small-mobile) {
-    margin-top: 32px;
+    margin-top: 3.2rem;
   }
 }
 
 .order-form__btn-submit {
-  min-width: 214px;
+  min-width: 21.4rem;
 
   @include breakpoint(small-mobile) {
     width: 100%;
@@ -342,8 +342,8 @@ $transparent-btn-border: 2px;
 .gl-close-btn-wrapper {
   position: absolute;
   content: '';
-  top: 30px;
-  right: 30px;
+  top: 3.0rem;
+  right: 3.0rem;
   z-index: 2;
 
   .no-touch &:hover,

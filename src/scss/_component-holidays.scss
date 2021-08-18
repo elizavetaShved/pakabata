@@ -1,26 +1,26 @@
 $main-block-width: 60%;
 
 .holidays {
-  margin-bottom: 160px;
-  padding-top: 120px;
+  margin-bottom: 16.0rem;
+  padding-top: 12.0rem;
 
   @include breakpoint(desktop) {
-    margin-bottom: 40px;
+    margin-bottom: 4.0rem;
     overflow: hidden;
   }
 
   @include breakpoint(small-mobile) {
-    padding-top: 40px;
+    padding-top: 4.0rem;
   }
 }
 
 .holidays__title-wrapper {
   width: $main-block-width;
-  margin-bottom: 60px;
+  margin-bottom: 6.0rem;
 
   @include breakpoint(desktop) {
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 4.0rem;
   }
 }
 
@@ -51,10 +51,10 @@ $main-block-width: 60%;
 .holidays__services-container {
   display: flex;
   overflow: hidden;
-  margin-bottom: 60px;
+  margin-bottom: 6.0rem;
 
   @include breakpoint(tablet) {
-    margin-bottom: 40px;
+    margin-bottom: 4.0rem;
   }
 
   @include breakpoint(small-tablet) {
@@ -63,12 +63,12 @@ $main-block-width: 60%;
 }
 
 .holidays__services-title-wrapper {
-  width: 180px;
-  flex: 0 0 180px;
-  padding: 30px 40px;
+  width: 18.0rem;
+  flex: 0 0 18.0rem;
+  padding: 3.0rem 4.0rem;
   font-weight: bold;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -77,70 +77,70 @@ $main-block-width: 60%;
 
   @include breakpoint(xx-mobile) {
     flex: auto;
-    height: 150px;
+    height: 15.0rem;
   }
 
   @include breakpoint(small-tablet) {
-    height: 110px;
+    height: 11.0rem;
     width: 100%;
     clip-path: ellipse(82% 83% at 50% 17%);
   }
 }
 
 .holidays__services-wrapper {
-  padding: 60px 40px 60px 70px;
+  padding: 6.0rem 4.0rem 6.0rem 7.0rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 50px 30px;
+  grid-gap: 5.0rem 3.0rem;
 
   @include breakpoint(tablet) {
     grid-template-columns: repeat(2, 1fr);
   }
 
   @include breakpoint(small-mobile) {
-    padding: 40px 30px;
-    grid-gap: 40px 44px;
+    padding: 4.0rem 3.0rem;
+    grid-gap: 4.0rem 4.4rem;
   }
 }
 
 .holidays__services-item-icon {
   width: auto !important;
-  height: 36px;
+  height: 3.6rem;
   object-fit: contain;
-  margin-bottom: 18px;
+  margin-bottom: 1.8rem;
 
   @include breakpoint(small-tablet) {
-    height: 60px;
-    margin-bottom: 12px;
+    height: 6.0rem;
+    margin-bottom: 1.2rem;
   }
 }
 
 .holidays__services-item-caption {
   font-weight: bold;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
   color: var(--secondary-color);
-  margin-bottom: 16px;
+  margin-bottom: 1.6rem;
 
   @include breakpoint(small-tablet) {
-    font-size: 16px;
-    margin-bottom: 8px;
+    font-size: 1.6rem;
+    margin-bottom: .8rem;
   }
 }
 
 .holidays__services-item-value {
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
   color: var(--secondary-color);
 
   @include breakpoint(small-tablet) {
-    font-size: 14px;
+    font-size: 1.4rem;
   }
 }
 
 .holidays__slider {
   width: 100%;
-  margin-bottom: 60px;
+  margin-bottom: 6.0rem;
   position: relative;
 
   @include breakpoint(tablet) {
@@ -150,13 +150,13 @@ $main-block-width: 60%;
 
 .holidays__slider-title {
   position: absolute;
-  top: 30px;
-  left: 40px;
+  top: 3.0rem;
+  left: 4.0rem;
   font-weight: bold;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
   z-index: 2;
-  width: 290px;
+  width: 29.0rem;
 
   @include breakpoint(tablet) {
     position: initial;
@@ -165,7 +165,7 @@ $main-block-width: 60%;
     color: var(--secondary-color);
     padding-left: var(--padding-page-content-tablet);
     padding-right: var(--padding-page-content-tablet);
-    margin-bottom: 24px;
+    margin-bottom: 2.4rem;
   }
 
   @include breakpoint(mobile) {
@@ -176,31 +176,31 @@ $main-block-width: 60%;
 
 .holidays__swiper-slide-caption {
   position: absolute;
-  bottom: 28px;
-  left: 40px;
-  padding: 10px 18px;
-  font-size: 14px;
-  line-height: 18px;
-  letter-spacing: 2px;
+  bottom: 2.8rem;
+  left: 4.0rem;
+  padding: 1.0rem 1.8rem;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  letter-spacing: .2rem;
   background-color: var(--dark-secondary-color);
-  border-radius: 20px;
+  border-radius: 2.0rem;
   z-index: 2;
   text-transform: uppercase;
 
   @include breakpoint(tablet) {
-    font-size: 12px;
-    line-height: 16px;
-    padding: 10px 16px;
-    bottom: 12px;
-    left: 24px;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    padding: 1.0rem 1.6rem;
+    bottom: 1.2rem;
+    left: 2.4rem;
   }
 
   @include breakpoint(small-mobile) {
-    font-size: 10px;
-    line-height: 12px;
-    padding: 8px 12px;
-    bottom: 8px;
-    left: 8px;
+    font-size: 1.0rem;
+    line-height: 1.2rem;
+    padding: .8rem 1.2rem;
+    bottom: .8rem;
+    left: .8rem;
   }
 }
 
@@ -208,22 +208,22 @@ $main-block-width: 60%;
   &:hover {
     .gl-main-link-back-item {
       &:nth-child(1) {
-        top: -16px;
-        left: -8px;
+        top: -1.6rem;
+        left: -.8rem;
       }
 
       &:nth-child(2) {
-        right: -18px;
+        right: -1.8rem;
       }
 
       &:nth-child(3) {
-        bottom: -16px;
-        left: 42px;
+        bottom: -1.6rem;
+        left: 4.2rem;
       }
 
       &:nth-child(4) {
-        bottom: -8px;
-        left: -14px;
+        bottom: -.8rem;
+        left: -1.4rem;
       }
     }
   }
@@ -247,9 +247,9 @@ $main-block-width: 60%;
 
     &:nth-child(4) {
       transform: rotate(26deg);
-      width: 126px;
-      height: 110px;
-      bottom: 4px;
+      width: 12.6rem;
+      height: 11.0rem;
+      bottom: .4rem;
     }
 
     &:nth-child(5) {
@@ -259,17 +259,17 @@ $main-block-width: 60%;
 }
 
 .holidays__order-form-wrapper {
-  margin-left: 30px;
+  margin-left: 3.0rem;
   height: min-content;
-  width: 454px;
-  flex: 0 0 454px;
+  width: 45.4rem;
+  flex: 0 0 45.4rem;
   box-sizing: content-box;
   position: sticky;
   top: 0;
 
   @include breakpoint(desktop) {
     position: initial;
-    padding-top: 75px;
+    padding-top: 7.5rem;
     margin-left: 0;
   }
 
@@ -285,27 +285,27 @@ $main-block-width: 60%;
 }
 
 .holidays__contacts-wrapper {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 3.0rem;
+  margin-bottom: 3.0rem;
   color: var(--secondary-color);
 
   @include breakpoint(xx-mobile) {
     padding-left: 0;
     padding-right: 0;
-    margin-top: 26px;
-    margin-bottom: 12px;
+    margin-top: 2.6rem;
+    margin-bottom: 1.2rem;
   }
 }
 
 .holidays__contacts-caption {
-  font-size: 16px;
-  line-height: 22px;
-  margin-bottom: 14px;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  margin-bottom: 1.4rem;
 }
 
 .holidays__contacts-phone {
   font-weight: bold;
-  font-size: 22px;
+  font-size: 2.2rem;
 }
 
 .holidays__dude-wrapper {
@@ -329,46 +329,46 @@ $main-block-width: 60%;
   height: 100%;
 
   @include breakpoint(desktop) {
-    margin-bottom: 82px;
+    margin-bottom: 8.2rem;
     width: auto;
-    margin-top: 30px;
+    margin-top: 3.0rem;
   }
 }
 
 .holidays__dude-icon {
   position: absolute;
-  height: 106px;
-  top: -74px;
+  height: 10.6rem;
+  top: -7.4rem;
   right: 0;
-  width: 198px;
+  width: 19.8rem;
   object-fit: contain;
 
   @include breakpoint(desktop) {
-    bottom: -62px;
-    left: 196px;
+    bottom: -6.2rem;
+    left: 19.6rem;
     top: auto;
   }
 }
 
 .holidays__dude-comment {
   position: absolute;
-  bottom: 44px;
-  left: 14px;
-  width: 262px;
+  bottom: 4.4rem;
+  left: 1.4rem;
+  width: 26.2rem;
   height: min-content;
   background: linear-gradient(99.28deg, #FFFEDE -43.79%, #F4D1D1 129.01%), #F3EBEA;
-  border-radius: 20px 20px 0 20px;
+  border-radius: 2.0rem 2.0rem 0 2.0rem;
   font-weight: bold;
-  font-size: 22px;
-  line-height: 28px;
-  padding: 8px 20px;
+  font-size: 2.2rem;
+  line-height: 2.8rem;
+  padding: .8rem 2.0rem;
   color: var(--secondary-color);
 
   @include breakpoint(desktop) {
     position: inherit;
     top: auto;
     left: auto;
-    margin-right: 60px;
+    margin-right: 6.0rem;
   }
 }
 
@@ -386,15 +386,15 @@ $main-block-width: 60%;
   .order-form__back-background-item {
     &:nth-child(2) {
       @include breakpointMF(desktop) {
-        bottom: 80px;
+        bottom: 8.0rem;
       }
     }
   }
 }
 
 .holidays__sent {
-  padding: 30px;
-  height: 500px;
+  padding: 3.0rem;
+  height: 50.0rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -403,14 +403,14 @@ $main-block-width: 60%;
 }
 
 .holidays__sent-title {
-  font-size: 32px;
-  line-height: 28px;
-  margin-bottom: 26px;
+  font-size: 3.2rem;
+  line-height: 2.8rem;
+  margin-bottom: 2.6rem;
   text-align: center;
 }
 
 .holidays__sent-caption {
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
   text-align: center;
 }
