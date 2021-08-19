@@ -66,7 +66,7 @@
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10.0rem;
 
-  @include breakpoint(desktop) {
+  @include breakpoint(laptop) {
     padding: 6.6rem 6.0rem;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 7.0rem 6.0rem;
@@ -157,7 +157,7 @@
     right: 4.0rem;
   }
 
-  @include breakpoint(desktop) {
+  @include breakpoint(laptop) {
     right: 0;
   }
 }
@@ -168,7 +168,7 @@
   margin-left: 13.0rem;
   z-index: 2;
 
-  @include breakpoint(desktop) {
+  @include breakpoint(laptop) {
     margin-left: 6.0rem;
   }
 

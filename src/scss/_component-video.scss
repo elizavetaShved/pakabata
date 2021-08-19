@@ -3,6 +3,10 @@
   display: flex;
   justify-content: center;
 
+  @include breakpoint(desktop) {
+    margin-bottom: 2.2rem;
+  }
+
   @include breakpoint(small-mobile) {
     margin-bottom: 4.0rem;
   }

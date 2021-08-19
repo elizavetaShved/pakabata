@@ -3,7 +3,7 @@
   position: relative;
   margin-bottom: -4.0rem;
 
-  @include breakpoint(desktop) {
+  @include breakpoint(laptop) {
     height: 50.0rem;
   }
 
@@ -25,7 +25,7 @@
       left: -2.0rem;
     }
 
-    @include breakpoint(desktop) {
+    @include breakpoint(laptop) {
       content: none;
     }
   }
@@ -90,7 +90,7 @@
   z-index: 2;
   padding-top: 11.6rem;
 
-  @include breakpoint(desktop) {
+  @include breakpoint(laptop) {
     padding-top: 5.0rem;
   }
 
@@ -107,7 +107,7 @@
 .map__hint-subtitle {
   margin-bottom: 4.8rem;
 
-  @include breakpoint(desktop) {
+  @include breakpoint(laptop) {
     margin-bottom: 2.6rem;
   }
 

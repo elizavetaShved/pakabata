@@ -28,6 +28,10 @@ $animation-duration: 400ms;
   height: 62.0rem;
 
   @include breakpoint(desktop) {
+    height: 55.0rem;
+  }
+
+  @include breakpoint(laptop) {
     height: 42.6rem;
   }
 

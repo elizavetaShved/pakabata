@@ -37,7 +37,7 @@
   overflow-x: auto;
   @include customScrollbarVertical();
 
-  @include breakpoint(desktop) {
+  @include breakpoint(laptop) {
     padding-right: 6.0rem;
     padding-left: 6.0rem;
   }
@@ -76,7 +76,7 @@
   margin-left: 8.0rem;
   padding: 0;
 
-  @include breakpoint(desktop) {
+  @include breakpoint(laptop) {
      margin-right: 6.0rem;
      margin-left: 6.0rem;
   }
@@ -296,7 +296,7 @@
       margin-bottom: 0;
     }
 
-    @include breakpoint(desktop) {
+    @include breakpoint(laptop) {
       font-size: 1.6rem;
       line-height: 2.6rem;
     }
@@ -322,7 +322,7 @@
     margin-bottom: 5.8rem;
     display: block;
 
-    @include breakpoint(desktop) {
+    @include breakpoint(laptop) {
       font-size: 2.6rem;
       line-height: initial;
     }
@@ -533,7 +533,7 @@
 .popap__swiper-container {
   height: 76.2rem;
 
-  @include breakpoint(desktop) {
+  @include breakpoint(laptop) {
     height: 50.0rem;
   }
 

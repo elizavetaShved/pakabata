@@ -4,7 +4,7 @@ $main-block-width: 60%;
   margin-bottom: 16.0rem;
   padding-top: 12.0rem;
 
-  @include breakpoint(desktop) {
+  @include breakpoint(laptop) {
     margin-bottom: 4.0rem;
     overflow: hidden;
   }
@@ -18,7 +18,7 @@ $main-block-width: 60%;
   width: $main-block-width;
   margin-bottom: 6.0rem;
 
-  @include breakpoint(desktop) {
+  @include breakpoint(laptop) {
     width: 100%;
     margin-bottom: 4.0rem;
   }
@@ -35,7 +35,7 @@ $main-block-width: 60%;
   justify-content: space-between;
   position: relative;
 
-  @include breakpoint(desktop) {
+  @include breakpoint(laptop) {
     display: block;
   }
 }
@@ -43,7 +43,7 @@ $main-block-width: 60%;
 .holidays__main-block {
   width: $main-block-width;
 
-  @include breakpoint(desktop) {
+  @include breakpoint(laptop) {
     width: 100%;
   }
 }
@@ -248,7 +248,7 @@ $main-block-width: 60%;
     &:nth-child(4) {
       transform: rotate(26deg);
       width: 12.6rem;
-      height: 11.0rem;
+      height: 7rem;
       bottom: .4rem;
     }
 
@@ -267,7 +267,7 @@ $main-block-width: 60%;
   position: sticky;
   top: 0;
 
-  @include breakpoint(desktop) {
+  @include breakpoint(laptop) {
     position: initial;
     padding-top: 7.5rem;
     margin-left: 0;
@@ -316,7 +316,7 @@ $main-block-width: 60%;
   width: 100%;
   height: min-content;
 
-  @include breakpoint(desktop) {
+  @include breakpoint(laptop) {
     position: inherit;
     display: flex;
     justify-content: flex-end;
@@ -328,7 +328,7 @@ $main-block-width: 60%;
   width: 100%;
   height: 100%;
 
-  @include breakpoint(desktop) {
+  @include breakpoint(laptop) {
     margin-bottom: 8.2rem;
     width: auto;
     margin-top: 3.0rem;
@@ -343,7 +343,7 @@ $main-block-width: 60%;
   width: 19.8rem;
   object-fit: contain;
 
-  @include breakpoint(desktop) {
+  @include breakpoint(laptop) {
     bottom: -6.2rem;
     left: 19.6rem;
     top: auto;
@@ -364,7 +364,7 @@ $main-block-width: 60%;
   padding: .8rem 2.0rem;
   color: var(--secondary-color);
 
-  @include breakpoint(desktop) {
+  @include breakpoint(laptop) {
     position: inherit;
     top: auto;
     left: auto;
@@ -385,7 +385,7 @@ $main-block-width: 60%;
 
   .order-form__back-background-item {
     &:nth-child(2) {
-      @include breakpointMF(desktop) {
+      @include breakpointMF(laptop) {
         bottom: 8.0rem;
       }
     }

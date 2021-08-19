@@ -7,7 +7,15 @@
   align-items: center;
   grid-gap: 2.8rem;
 
+  @include breakpoint(desktop) {
+    margin-top: 1.0rem;
+    margin-bottom: 2.0rem;
+    grid-gap: 1.2rem;
+  }
+
   @include breakpoint(tablet) {
+    grid-gap: 2.8rem;
+    margin-top: 2.0rem;
     grid-template-columns: auto 1fr;
     grid-template-rows: 1fr;
     margin-bottom: 3.2rem;
@@ -182,7 +190,7 @@
     margin-left: 2.0rem;
   }
 
-  @include breakpoint(desktop) {
+  @include breakpoint(laptop) {
     width: 5.0rem;
     height: 5.0rem;
     padding: 0;
@@ -190,7 +198,7 @@
 }
 
 .header__navigate-btn {
-  @include breakpoint(desktop) {
+  @include breakpoint(laptop) {
     display: flex !important;
     align-items: center;
     justify-content: center;

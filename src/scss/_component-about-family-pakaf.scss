@@ -35,7 +35,7 @@
   margin-right: 7.4rem;
   z-index: 4;
 
-  @include breakpoint(desktop) {
+  @include breakpoint(laptop) {
     margin-right: 5.4rem;
   }
 
@@ -66,7 +66,7 @@
 .about-family-pakaf__subtitle {
   color: var(--main-color);
 
-  @include breakpoint(desktop) {
+  @include breakpoint(laptop) {
     margin-bottom: 3.0rem;
   }
 
@@ -80,7 +80,7 @@
   line-height: 3.4rem;
   margin-bottom: 4.0rem;
 
-  @include breakpoint(desktop) {
+  @include breakpoint(laptop) {
     font-size: 2.0rem;
     line-height: 2.6rem;
   }
@@ -119,7 +119,7 @@
   width: 50%;
   flex: 0 0 50%;
 
-  @include breakpoint(desktop) {
+  @include breakpoint(laptop) {
     width: 60%;
     flex: 0 0 60%;
   }

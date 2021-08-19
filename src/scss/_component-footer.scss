@@ -35,6 +35,12 @@
   margin-bottom: 1.6rem;
 }
 
+.footer__logo-icon {
+  @include breakpoint(small-mobile) {
+    height: 8rem;
+  }
+}
+
 .footer__navigation-block {
   display: flex;
   justify-content: space-between;
@@ -64,7 +70,7 @@
 .footer__navigation-menu-wrapper {
   margin: 0 -1.6rem;
 
-  @include breakpoint(desktop) {
+  @include breakpoint(laptop) {
     margin: 0 -.8rem;
   }
 
@@ -81,7 +87,7 @@
   padding: 1.6rem;
   color: #fff;
 
-  @include breakpoint(desktop) {
+  @include breakpoint(laptop) {
     padding: 1.0rem;
   }
 
