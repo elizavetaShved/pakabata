@@ -121,9 +121,18 @@
   width: 100%;
   height: 100%;
 
-  @include breakpoint(small-mobile) {
-    max-height: 86vh;
+  @include breakpoint(laptop) {
     max-width: 80vw;
+  }
+
+  @include breakpoint(small-tablet) {
+    max-height: 50vw;
+    max-width: 90vw;
+  }
+
+  @include breakpoint(small-mobile) {
+    max-height: 36vh;
+    max-width: 90vw;
   }
 }
 

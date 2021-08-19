@@ -1324,10 +1324,17 @@ select:-webkit-autofill:focus {
   z-index: 100;
   width: 100%;
   height: 100%; }
+  @media only screen and (max-width: 1200px) {
+    .gl-modal-wrapper {
+      max-width: 80vw; } }
+  @media only screen and (max-width: 768px) {
+    .gl-modal-wrapper {
+      max-height: 50vw;
+      max-width: 90vw; } }
   @media only screen and (max-width: 576px) {
     .gl-modal-wrapper {
-      max-height: 86vh;
-      max-width: 80vw; } }
+      max-height: 36vh;
+      max-width: 90vw; } }
 
 .gl-video-iframe {
   width: 100%;
