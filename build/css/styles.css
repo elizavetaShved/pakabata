@@ -2252,11 +2252,10 @@ select:-webkit-autofill:focus {
       margin-bottom: 2.0rem; } }
 
 .header__logo-wrapper {
-  grid-row-start: 1;
-  grid-row-end: 3; }
+  grid-row: 1 / 3; }
   @media only screen and (max-width: 1024px) {
     .header__logo-wrapper {
-      grid-row-end: 2; } }
+      grid-row: 1 / 2; } }
 
 .header__logo {
   width: auto !important;
@@ -2274,8 +2273,7 @@ select:-webkit-autofill:focus {
       height: 4.0rem; } }
 
 .header__content-contacts-wrapper {
-  grid-column-start: 2;
-  grid-column-end: 4; }
+  grid-column: 2 / 4; }
 
 .header__content-contacts {
   display: -webkit-box;

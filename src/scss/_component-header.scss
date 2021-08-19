@@ -32,11 +32,10 @@
 }
 
 .header__logo-wrapper {
-  grid-row-start: 1;
-  grid-row-end: 3;
+  grid-row: 1 / 3;
 
   @include breakpoint(tablet) {
-    grid-row-end: 2;
+    grid-row: 1 / 2;
   }
 }
 
@@ -59,8 +58,7 @@
 }
 
 .header__content-contacts-wrapper {
-  grid-column-start: 2;
-  grid-column-end: 4;
+  grid-column: 2 / 4;
 }
 
 .header__content-contacts {
