@@ -1,5 +1,5 @@
 export default function componentCostVisit() {
-  const TRANSLATE_X_STEP = 180;
+  const TRANSLATE_X_STEP = 18;
 
   const hostElem = document.querySelector('#cost-visit-host');
   const toggleBtns = hostElem.querySelectorAll('.cost-visit__toggle-item');
@@ -25,7 +25,7 @@ export default function componentCostVisit() {
       toggleBtns[1].classList.remove('mod-active');
       toggleBackground.classList.remove('mod-right');
       valuesSliderWrapper.forEach(valuesSliderWrapperItem => {
-        valuesSliderWrapperItem.style.transform = 'translateX(0px)';
+        valuesSliderWrapperItem.style.transform = 'translateX(0rem)';
       })
       valuesSmallArr.forEach(valueSmallItem => {
         valueSmallItem.classList.add('mod-active');
@@ -38,7 +38,7 @@ export default function componentCostVisit() {
       toggleBtns[1].classList.add('mod-active');
       toggleBackground.classList.add('mod-right');
       valuesSliderWrapper.forEach(valuesSliderWrapperItem => {
-        valuesSliderWrapperItem.style.transform = `translateX(-${ TRANSLATE_X_STEP }px`;
+        valuesSliderWrapperItem.style.transform = `translateX(-${ TRANSLATE_X_STEP }rem`;
       })
       valuesSmallArr.forEach(valueSmallItem => {
         valueSmallItem.classList.remove('mod-active');

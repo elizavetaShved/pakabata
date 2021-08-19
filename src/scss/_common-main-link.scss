@@ -91,10 +91,6 @@
     opacity: 0;
   }
 
-  @include breakpoint(small-tablet) {
-    padding: 3.4rem 3.0rem;
-  }
-
   @include breakpoint(small-mobile) {
     padding: 3.2rem 2.0rem;
   }

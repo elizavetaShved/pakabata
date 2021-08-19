@@ -2043,9 +2043,6 @@ select:-webkit-autofill:focus {
     -webkit-transition: opacity 500ms;
     transition: opacity 500ms;
     opacity: 0; }
-  @media only screen and (max-width: 768px) {
-    .gl-main-link-content {
-      padding: 3.4rem 3.0rem; } }
   @media only screen and (max-width: 576px) {
     .gl-main-link-content {
       padding: 3.2rem 2.0rem; } }
