@@ -1103,7 +1103,7 @@ a {
   transition: 150ms color; }
   @media only screen and (min-width: 641px) {
     a:hover {
-      color: var(--third-color) !important;
+      color: #F8E0D5 !important;
       text-decoration: underline; } }
   a:link, a:visited {
     color: inherit; }
@@ -3863,9 +3863,17 @@ select:-webkit-autofill:focus {
 .cost-visit__price-grid-item {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 4.6rem; }
+  grid-gap: 4.6rem;
+  opacity: 1; }
   .cost-visit__price-grid-item + .cost-visit__price-grid-item {
     margin-top: 3.4rem; }
+  .cost-visit__price-grid-item.mod-hide {
+    opacity: 0;
+    -webkit-transition: opacity 300ms;
+    transition: opacity 300ms; }
+    @media only screen and (max-width: 768px) {
+      .cost-visit__price-grid-item.mod-hide {
+        display: none; } }
   @media only screen and (max-width: 576px) {
     .cost-visit__price-grid-item {
       grid-gap: .6rem;
@@ -3873,7 +3881,12 @@ select:-webkit-autofill:focus {
 
 .cost-visit__price-grid-caption {
   font-size: 1.4rem;
-  line-height: 2.8rem; }
+  line-height: 2.8rem;
+  opacity: 1;
+  -webkit-transition: opacity 300ms;
+  transition: opacity 300ms; }
+  .cost-visit__price-grid-caption.mod-hide {
+    opacity: 0; }
 
 .cost-visit__price-value-wrapper {
   width: 18.0rem;

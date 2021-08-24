@@ -139,7 +139,7 @@ a {
 
   &:hover {
     @include breakpointMF(small-tablet) {
-      color: var(--third-color) !important;
+      color: #F8E0D5 !important;
       text-decoration: underline;
     }
   }

@@ -160,9 +160,19 @@ $padding-content-price-extension: 4.0rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 4.6rem;
+  opacity: 1;
 
   & + & {
     margin-top: 3.4rem;
+  }
+
+  &.mod-hide {
+    opacity: 0;
+    transition: opacity 300ms;
+
+    @include breakpoint(small-tablet) {
+      display: none;
+    }
   }
 
   @include breakpoint(small-mobile) {
@@ -174,6 +184,12 @@ $padding-content-price-extension: 4.0rem;
 .cost-visit__price-grid-caption {
   font-size: 1.4rem;
   line-height: 2.8rem;
+  opacity: 1;
+  transition: opacity 300ms;
+
+  &.mod-hide {
+    opacity: 0;
+  }
 }
 
 .cost-visit__price-value-wrapper {
