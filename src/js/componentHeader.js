@@ -13,7 +13,7 @@ export default function componentHeader() {
   const orderHolidaysBtns = hostElem.querySelectorAll('.header__order-holidays-btn'); // fixme
 
   const modalWhiteElem = document.querySelector('#modal-white-host');
-  const modalWhiteWrapperElem = modalWhiteElem.querySelector('.modal-white__content-wrapper');
+  // const modalWhiteWrapperElem = modalWhiteElem.querySelector('.modal-white__content-wrapper');
 
   const modalOrderHolidaysElem = document.querySelector('#modal-order-holidays-host');
   const modalOrderFormWrapperElem = modalOrderHolidaysElem.querySelector('.modal-order-holidays__content');
@@ -73,12 +73,12 @@ export default function componentHeader() {
     }
   })
 
-  orderHolidaysBtns.forEach(writeBtn => {
-    writeBtn.onclick = () => {
-      modalWhiteElem.classList.add('mod-show');
-      lockScroll(modalWhiteWrapperElem);
-    }
-  })
+  // orderHolidaysBtns.forEach(writeBtn => {
+  //   writeBtn.onclick = () => {
+  //     modalWhiteElem.classList.add('mod-show');
+  //     lockScroll(modalWhiteWrapperElem);
+  //   }
+  // })
 
   writeBtns.forEach(writeBtn => {
     writeBtn.onclick = () => {
