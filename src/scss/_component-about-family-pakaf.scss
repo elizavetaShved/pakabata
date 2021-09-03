@@ -1,6 +1,7 @@
 .about-family-pakaf {
   position: relative;
   height: min-content;
+  overflow-x: hidden;
 
   @include breakpoint(laptop) {
     height: 70.0rem;
@@ -12,14 +13,60 @@
 }
 
 .about-family-pakaf__mask {
+  position: absolute;
+  object-fit: contain;
   z-index: 3;
 
+  &:nth-child(1) {
+    height: 180px;
+    top: 0;
+    left: 30%;
+  }
+
+  &:nth-child(2) {
+    height: 74px;
+    top: 30%;
+    right: 10%;
+  }
+
+  &:nth-child(3) {
+    height: 48px;
+    bottom: 40%;
+    left: 38%;
+  }
+
+  &:nth-child(4) {
+    height: 116px;
+    bottom: 10%;
+    left: 20%;
+  }
+
+  &:nth-child(5) {
+    height: 54px;
+    bottom: 10%;
+    right: 20%;
+  }
+
   @include breakpoint(tablet) {
-    z-index: 1;
+    &:nth-child(1) {
+      top: 26%;
+      height: 140px;
+      right: -10%;
+      left: auto;
+    }
+
+    &:nth-child(2), &:nth-child(3), &:nth-child(4) {
+      display: none;
+    }
+
+    &:nth-child(5) {
+      height: 36px;
+      top: 40%;
+    }
   }
 }
 
-.about-family-pakaf__blob, .about-family-pakaf__mask {
+.about-family-pakaf__blob {
   position: absolute;
   top: -4.4rem;
   object-fit: cover;

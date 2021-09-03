@@ -3544,7 +3544,8 @@ select:-webkit-autofill:focus {
   position: relative;
   height: -webkit-min-content;
   height: -moz-min-content;
-  height: min-content; }
+  height: min-content;
+  overflow-x: hidden; }
   @media only screen and (max-width: 1200px) {
     .about-family-pakaf {
       height: 70.0rem; } }
@@ -3555,19 +3556,50 @@ select:-webkit-autofill:focus {
       height: min-content; } }
 
 .about-family-pakaf__mask {
+  position: absolute;
+  -o-object-fit: contain;
+     object-fit: contain;
   z-index: 3; }
+  .about-family-pakaf__mask:nth-child(1) {
+    height: 180px;
+    top: 0;
+    left: 30%; }
+  .about-family-pakaf__mask:nth-child(2) {
+    height: 74px;
+    top: 30%;
+    right: 10%; }
+  .about-family-pakaf__mask:nth-child(3) {
+    height: 48px;
+    bottom: 40%;
+    left: 38%; }
+  .about-family-pakaf__mask:nth-child(4) {
+    height: 116px;
+    bottom: 10%;
+    left: 20%; }
+  .about-family-pakaf__mask:nth-child(5) {
+    height: 54px;
+    bottom: 10%;
+    right: 20%; }
   @media only screen and (max-width: 1024px) {
-    .about-family-pakaf__mask {
-      z-index: 1; } }
+    .about-family-pakaf__mask:nth-child(1) {
+      top: 26%;
+      height: 140px;
+      right: -10%;
+      left: auto; }
+    .about-family-pakaf__mask:nth-child(2), .about-family-pakaf__mask:nth-child(3), .about-family-pakaf__mask:nth-child(4) {
+      display: none; }
+    .about-family-pakaf__mask:nth-child(5) {
+      height: 36px;
+      top: 40%; } }
 
-.about-family-pakaf__blob, .about-family-pakaf__mask {
+.about-family-pakaf__blob {
   position: absolute;
   top: -4.4rem;
   -o-object-fit: cover;
      object-fit: cover;
   height: calc(100% + 4.4rem + 10.0rem); }
   @media only screen and (max-width: 1024px) {
-    .about-family-pakaf__blob, .about-family-pakaf__mask {
+    .about-family-pakaf__blob {
       top: 0;
       height: 100%; } }
 

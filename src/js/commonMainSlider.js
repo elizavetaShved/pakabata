@@ -93,12 +93,14 @@ export default function commonMainSlider(sliderComponentDeskElem, sliderComponen
   })
 
   setInterval(() => {
-    if (slidesDeskListElems[swiperDesk.activeIndex + 1]) {
-      swiperDesk.slideTo(swiperDesk.activeIndex + 1);
-      swiperMobile.slideTo(swiperDesk.activeIndex + 1);
-    } else {
-      swiperDesk.slideTo(0);
-      swiperMobile.slideTo(0);
+    if (window.innerWidth > 768) {
+      if (slidesDeskListElems[swiperDesk.activeIndex + 1]) {
+        swiperDesk.slideTo(swiperDesk.activeIndex + 1);
+        swiperMobile.slideTo(swiperDesk.activeIndex + 1);
+      } else {
+        swiperDesk.slideTo(0);
+        swiperMobile.slideTo(0);
+      }
     }
   }, 5000)
 }

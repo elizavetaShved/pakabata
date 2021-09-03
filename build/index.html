@@ -8,10 +8,11 @@
   <meta name="format-detection" content="telephone=no">
   <script src="assets/js/ie11CustomProperties.js"></script>
   <link rel="stylesheet" href="css/styles.min.css"/>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
+
   <title>
     Пакабата
   </title>
@@ -417,18 +418,21 @@
                   <div class="swiper-slide">
                     <div class="gl-swiper-slide-card">
                       <img src="img/about-park/slide-1.jpg" alt="slide" class="gl-swiper-slide-image"
+                           data-fancybox="about-park"
                            data-sizes="auto">
                     </div>
                   </div>
                   <div class="swiper-slide">
                     <div class="gl-swiper-slide-card">
                       <img src="img/about-park/slide-2.jpg" alt="slide" class="gl-swiper-slide-image"
+                           data-fancybox="about-park"
                            data-sizes="auto">
                     </div>
                   </div>
                   <div class="swiper-slide">
                     <div class="gl-swiper-slide-card">
                       <img src="img/about-park/slide-3.jpg" alt="slide" class="gl-swiper-slide-image"
+                           data-fancybox="about-park"
                            data-sizes="auto">
                     </div>
                   </div>
@@ -444,18 +448,21 @@
                   <div class="swiper-slide">
                     <div class="gl-swiper-slide-card">
                       <img src="img/about-park/slide-1.jpg" alt="slide" class="gl-swiper-slide-image"
+                           data-fancybox="about-park"
                            data-sizes="auto">
                     </div>
                   </div>
                   <div class="swiper-slide">
                     <div class="gl-swiper-slide-card">
                       <img src="img/about-park/slide-2.jpg" alt="slide" class="gl-swiper-slide-image"
+                           data-fancybox="about-park"
                            data-sizes="auto">
                     </div>
                   </div>
                   <div class="swiper-slide">
                     <div class="gl-swiper-slide-card">
                       <img src="img/about-park/slide-3.jpg" alt="slide" class="gl-swiper-slide-image"
+                           data-fancybox="about-park"
                            data-sizes="auto">
                     </div>
                   </div>
@@ -619,6 +626,7 @@
                     </div>
                     <div class="gl-swiper-slide-card">
                       <img src="img/holidays/slide-1.jpg" alt="slide" class="gl-swiper-slide-image"
+                           data-fancybox="holidays"
                            data-sizes="auto">
                     </div>
                   </div>
@@ -628,6 +636,7 @@
                     </div>
                     <div class="gl-swiper-slide-card">
                       <img src="img/holidays/slide-2.jpg" alt="slide" class="gl-swiper-slide-image"
+                           data-fancybox="holidays"
                            data-sizes="auto">
                     </div>
                   </div>
@@ -637,6 +646,7 @@
                     </div>
                     <div class="gl-swiper-slide-card">
                       <img src="img/holidays/slide-3.jpg" alt="slide" class="gl-swiper-slide-image"
+                           data-fancybox="holidays"
                            data-sizes="auto">
                     </div>
                   </div>
@@ -659,6 +669,7 @@
                     </div>
                     <div class="gl-swiper-slide-card">
                       <img src="img/holidays/slide-1.jpg" alt="slide" class="gl-swiper-slide-image"
+                           data-fancybox="holidays"
                            data-sizes="auto">
                     </div>
                   </div>
@@ -668,6 +679,7 @@
                     </div>
                     <div class="gl-swiper-slide-card">
                       <img src="img/holidays/slide-2.jpg" alt="slide" class="gl-swiper-slide-image"
+                           data-fancybox="holidays"
                            data-sizes="auto">
                     </div>
                   </div>
@@ -677,6 +689,7 @@
                     </div>
                     <div class="gl-swiper-slide-card">
                       <img src="img/holidays/slide-3.jpg" alt="slide" class="gl-swiper-slide-image"
+                           data-fancybox="holidays"
                            data-sizes="auto">
                     </div>
                   </div>
@@ -742,15 +755,15 @@
           </div>
       
           <div class="holidays__order-form-wrapper">
-            <div class="holidays__dude-wrapper">
-              <div class="holidays__dude-content">
-                <img src="img/holidays/dude.png" alt="dude" class="holidays__dude-icon">
+            <!--<div class="holidays__dude-wrapper">-->
+            <!--  <div class="holidays__dude-content">-->
+            <!--    <img src="img/holidays/dude.png" alt="dude" class="holidays__dude-icon">-->
             
-                <div class="holidays__dude-comment">
-                  Имениннику – бесплатный вход!
-                </div>
-              </div>
-            </div>
+            <!--    <div class="holidays__dude-comment">-->
+            <!--      Имениннику – бесплатный вход!-->
+            <!--    </div>-->
+            <!--  </div>-->
+            <!--</div>-->
       
             <div class="holidays__form-content mod-show">
               <form class="order-form gl-main-block order-form__padding-content "
@@ -890,7 +903,13 @@
       </section>
       <section class="about-family-pakaf" id="about-family-pakaf-host">
         <img src="img/about-family-pakaf/blob.png" class="about-family-pakaf__blob">
-        <img src="img/about-family-pakaf/mask.png" id="about-family-pakaf-rellax" class="about-family-pakaf__mask">
+        <div class="about-family-pakaf__mask-wrapper">
+          <img src="img/about-family-pakaf/mask-1.png" class="about-family-pakaf__mask">
+          <img src="img/about-family-pakaf/mask-2.png" class="about-family-pakaf__mask">
+          <img src="img/about-family-pakaf/mask-3.png" class="about-family-pakaf__mask">
+          <img src="img/about-family-pakaf/mask-4.png" class="about-family-pakaf__mask">
+          <img src="img/about-family-pakaf/mask-5.png" class="about-family-pakaf__mask">
+        </div>
       
         <div class="gl-slider-block-wrapper about-family-pakaf__slider-block-wrapper container">
           <div class="about-family-pakaf__info-wrapper">
@@ -929,18 +948,21 @@
                 <div class="swiper-slide">
                   <div class="gl-swiper-slide-card">
                     <img src="img/about-family-pakaf/slide-1.jpg" alt="slide" class="gl-swiper-slide-image"
+                         data-fancybox="about-family-pakaf"
                          data-sizes="auto">
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="gl-swiper-slide-card">
                     <img src="img/about-family-pakaf/slide-2.jpg" alt="slide" class="gl-swiper-slide-image"
+                         data-fancybox="about-family-pakaf"
                          data-sizes="auto">
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="gl-swiper-slide-card">
                     <img src="img/about-family-pakaf/slide-3.jpg" alt="slide" class="gl-swiper-slide-image"
+                         data-fancybox="about-family-pakaf"
                          data-sizes="auto">
                   </div>
                 </div>
@@ -956,18 +978,21 @@
                 <div class="swiper-slide">
                   <div class="gl-swiper-slide-card">
                     <img src="img/about-family-pakaf/slide-1.jpg" alt="slide" class="gl-swiper-slide-image"
+                         data-fancybox="about-family-pakaf"
                          data-sizes="auto">
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="gl-swiper-slide-card">
                     <img src="img/about-family-pakaf/slide-2.jpg" alt="slide" class="gl-swiper-slide-image"
+                         data-fancybox="about-family-pakaf"
                          data-sizes="auto">
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="gl-swiper-slide-card">
                     <img src="img/about-family-pakaf/slide-3.jpg" alt="slide" class="gl-swiper-slide-image"
+                         data-fancybox="about-family-pakaf"
                          data-sizes="auto">
                   </div>
                 </div>
@@ -1248,18 +1273,21 @@
                               <div class="swiper-slide">
                                 <div class="gl-swiper-slide-card">
                                   <img src="img/popap/slide-1.jpg" alt="slide" class="gl-swiper-slide-image"
+                                       data-fancybox="popup"
                                        data-sizes="auto">
                                 </div>
                               </div>
                               <div class="swiper-slide">
                                 <div class="gl-swiper-slide-card">
                                   <img src="img/popap/slide-2.jpg" alt="slide" class="gl-swiper-slide-image"
+                                       data-fancybox="popup"
                                        data-sizes="auto">
                                 </div>
                               </div>
                               <div class="swiper-slide">
                                 <div class="gl-swiper-slide-card">
                                   <img src="img/popap/slide-3.jpg" alt="slide" class="gl-swiper-slide-image"
+                                       data-fancybox="popup"
                                        data-sizes="auto">
                                 </div>
                               </div>
@@ -1276,18 +1304,21 @@
                               <div class="swiper-slide">
                                 <div class="gl-swiper-slide-card">
                                   <img src="img/popap/slide-1.jpg" alt="slide" class="gl-swiper-slide-image"
+                                       data-fancybox="popup"
                                        data-sizes="auto">
                                 </div>
                               </div>
                               <div class="swiper-slide">
                                 <div class="gl-swiper-slide-card">
                                   <img src="img/popap/slide-2.jpg" alt="slide" class="gl-swiper-slide-image"
+                                       data-fancybox="popup"
                                        data-sizes="auto">
                                 </div>
                               </div>
                               <div class="swiper-slide">
                                 <div class="gl-swiper-slide-card">
                                   <img src="img/popap/slide-3.jpg" alt="slide" class="gl-swiper-slide-image"
+                                       data-fancybox="popup"
                                        data-sizes="auto">
                                 </div>
                               </div>
@@ -1466,18 +1497,21 @@
                               <div class="swiper-slide">
                                 <div class="gl-swiper-slide-card">
                                   <img src="img/popap/slide-1.jpg" alt="slide" class="gl-swiper-slide-image"
+                                       data-fancybox="popup"
                                        data-sizes="auto">
                                 </div>
                               </div>
                               <div class="swiper-slide">
                                 <div class="gl-swiper-slide-card">
                                   <img src="img/popap/slide-2.jpg" alt="slide" class="gl-swiper-slide-image"
+                                       data-fancybox="popup"
                                        data-sizes="auto">
                                 </div>
                               </div>
                               <div class="swiper-slide">
                                 <div class="gl-swiper-slide-card">
                                   <img src="img/popap/slide-3.jpg" alt="slide" class="gl-swiper-slide-image"
+                                       data-fancybox="popup"
                                        data-sizes="auto">
                                 </div>
                               </div>
@@ -1494,18 +1528,21 @@
                               <div class="swiper-slide">
                                 <div class="gl-swiper-slide-card">
                                   <img src="img/popap/slide-1.jpg" alt="slide" class="gl-swiper-slide-image"
+                                       data-fancybox="popup"
                                        data-sizes="auto">
                                 </div>
                               </div>
                               <div class="swiper-slide">
                                 <div class="gl-swiper-slide-card">
                                   <img src="img/popap/slide-2.jpg" alt="slide" class="gl-swiper-slide-image"
+                                       data-fancybox="popup"
                                        data-sizes="auto">
                                 </div>
                               </div>
                               <div class="swiper-slide">
                                 <div class="gl-swiper-slide-card">
                                   <img src="img/popap/slide-3.jpg" alt="slide" class="gl-swiper-slide-image"
+                                       data-fancybox="popup"
                                        data-sizes="auto">
                                 </div>
                               </div>
