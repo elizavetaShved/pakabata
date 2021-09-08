@@ -1,7 +1,10 @@
 .about-family-pakaf {
   position: relative;
   height: min-content;
-  overflow-x: hidden;
+
+  @include breakpoint(tablet) {
+    overflow-x: hidden;
+  }
 
   @include breakpoint(laptop) {
     height: 70.0rem;
