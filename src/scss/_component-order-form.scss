@@ -1,34 +1,34 @@
 .order-form {
-  padding-top: 46px;
-  padding-bottom: 46px;
+  padding-top: 4.6rem;
+  padding-bottom: 4.6rem;
   position: relative;
 
   &.mod-border-right {
-    border-radius: 0 20px 20px 0 !important;
+    border-radius: 0 2.0rem 2.0rem 0 !important;
 
     @include breakpoint(tablet) {
-      border-radius: 20px !important;
+      border-radius: 2.0rem !important;
     }
   }
 
   .gl-input {
     &.parsley-error {
       background-color: rgba(255, 84, 108, 0.05);
-      border: 1px solid rgba(255, 84, 108, 0.3);
+      border: .1rem solid rgba(255, 84, 108, 0.3);
     }
   }
 
   .parsley-errors-list {
     &.filled {
-      margin-top: 4px;
-      font-size: 12px;
-      line-height: 22px;
+      margin-top: .4rem;
+      font-size: 1.2rem;
+      line-height: 2.2rem;
       color: #FF546C;
-      padding-left: 28px;
+      padding-left: 2.8rem;
       background-image: url('../img/common/error-validation.svg');
       background-repeat: no-repeat;
-      background-position: top 50% left 8px;
-      background-size: 16px;
+      background-position: top 50% left .8rem;
+      background-size: 1.6rem;
       display: flex;
       overflow: hidden;
       transition: max-height 300ms;
@@ -40,41 +40,41 @@
 }
 
 .order-form__padding-content {
-  padding-left: 42px;
-  padding-right: 42px;
+  padding-left: 4.2rem;
+  padding-right: 4.2rem;
 
   @include breakpoint(tablet) {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 3.0rem;
+    padding-right: 3.0rem;
 
   }
 
   @include breakpoint(small-mobile) {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 2.0rem;
+    padding-right: 2.0rem;
 
   }
 }
 
 .order-form__order-title {
   font-weight: bold;
-  font-size: 32px;
-  line-height: 28px;
-  margin-bottom: 30px;
+  font-size: 3.2rem;
+  line-height: 2.8rem;
+  margin-bottom: 3.0rem;
   color: var(--secondary-color);
 }
 
 .order-form__order-subtitle {
   color: var(--secondary-color);
   opacity: 0.3;
-  margin-bottom: 14px;
+  margin-bottom: 1.4rem;
 }
 
 .order-form__radio-btns-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 8px;
-  margin-bottom: 24px;
+  grid-gap: .8rem;
+  margin-bottom: 2.4rem;
 
   @include breakpoint(small-tablet) {
     grid-template-columns: repeat(2, auto);
@@ -84,7 +84,7 @@
 .order-form__inputs-text-list {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 8px;
+  grid-gap: .8rem;
 }
 
 .order-form__input-children-wrapper {
@@ -118,60 +118,60 @@
   background-position: center;
 
   &:nth-child(1) {
-    width: 487px;
-    height: 419px;
-    top: -82px;
+    width: 48.7rem;
+    height: 41.9rem;
+    top: -8.2rem;
     left: 0;
     background-image: url('../img/order-form/silhouettes/back-background-1.svg');
 
     @include breakpoint(small-mobile) {
-      width: 360px;
-      height: 306px;
-      top: -62px;
-      left: -32px;
+      width: 36.0rem;
+      height: 30.6rem;
+      top: -6.2rem;
+      left: -3.2rem;
     }
   }
 
   &:nth-child(2) {
-    width: 492px;
-    height: 456px;
-    bottom: -30px;
-    right: -40px;
+    width: 49.2rem;
+    height: 45.6rem;
+    bottom: -3.0rem;
+    right: -4.0rem;
     background-position: left;
     background-image: url('../img/order-form/silhouettes/back-background-2.svg');
 
     @include breakpoint(small-mobile) {
-      top: -32px;
+      top: -3.2rem;
       bottom: auto;
-      right: -183px;
+      right: -13.3rem;
       transform: rotate(-46deg);
     }
   }
 
   &:nth-child(3) {
-    width: 180px;
-    height: 252px;
-    top: 190px;
-    left: -64px;
+    width: 18.0rem;
+    height: 25.2rem;
+    top: 19.0rem;
+    left: -6.4rem;
     background-image: url('../img/order-form/silhouettes/back-background-3.svg');
 
     @include breakpoint(small-mobile) {
       transform: rotate(-216deg);
-      left: -74px;
+      left: -7.4rem;
       top: auto;
       bottom: 0;
     }
   }
 
   &:nth-child(4) {
-    width: 196px;
-    height: 196px;
-    top: 46px;
-    left: -56px;
+    width: 19.6rem;
+    height: 19.6rem;
+    top: 4.6rem;
+    left: -5.6rem;
     background-image: url('../img/order-form/silhouettes/back-background-4.svg');
 
     @include breakpoint(small-mobile) {
-      top: 30%
+      top: 11%
     }
   }
 }

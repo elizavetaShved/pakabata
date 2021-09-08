@@ -10,13 +10,44 @@ export default function componentHeader() {
   const geolocationLinkSidebar = sidebarContainerElem.querySelector('.header__geolocation');
   const menuItemsArr = hostElem.querySelectorAll('.header__menu-item');
   const writeBtns = hostElem.querySelectorAll('.header__write-btn');
-  const orderHolidaysBtns = hostElem.querySelectorAll('.header__order-holidays-btn');
+  const orderHolidaysBtns = hostElem.querySelectorAll('.header__order-holidays-btn'); // fixme
 
   const modalWhiteElem = document.querySelector('#modal-white-host');
-  const modalWhiteWrapperElem = modalWhiteElem.querySelector('.modal-white__content-wrapper');
+  // const modalWhiteWrapperElem = modalWhiteElem.querySelector('.modal-white__content-wrapper');
 
   const modalOrderHolidaysElem = document.querySelector('#modal-order-holidays-host');
   const modalOrderFormWrapperElem = modalOrderHolidaysElem.querySelector('.modal-order-holidays__content');
+
+  let cursorPosition = {
+    x: null,
+    y: null
+  }
+
+  let newCursorPosition = {
+    x: null,
+    y: null
+  }
+
+  document.onmousemove = (e) => {
+    newCursorPosition = {
+      x: e.clientX,
+      y: e.clientY,
+    }
+  }
+
+    setInterval(() => {
+      if (cursorPosition.x === newCursorPosition.x && cursorPosition.y === newCursorPosition.y) {
+        orderHolidaysBtns.forEach(btn => {
+          btn.classList.add('animate__heartBeat');
+
+          btn.addEventListener('animationend', () => {
+            btn.classList.remove('animate__heartBeat');
+          })
+        })
+      }
+
+      cursorPosition = newCursorPosition;
+    }, 7000)
 
   burgerBtn.onclick = () => {
     openSidebar();
@@ -42,14 +73,14 @@ export default function componentHeader() {
     }
   })
 
-  writeBtns.forEach(writeBtn => {
-    writeBtn.onclick = () => {
-      modalWhiteElem.classList.add('mod-show');
-      lockScroll(modalWhiteWrapperElem);
-    }
-  })
+  // orderHolidaysBtns.forEach(writeBtn => {
+  //   writeBtn.onclick = () => {
+  //     modalWhiteElem.classList.add('mod-show');
+  //     lockScroll(modalWhiteWrapperElem);
+  //   }
+  // })
 
-  orderHolidaysBtns.forEach(writeBtn => {
+  writeBtns.forEach(writeBtn => {
     writeBtn.onclick = () => {
       modalOrderHolidaysElem.classList.add('mod-show');
       lockScroll(modalOrderFormWrapperElem);

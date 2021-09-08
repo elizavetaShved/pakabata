@@ -4,7 +4,7 @@ $animation-duration: 400ms;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 3.0rem;
 
   @include breakpoint(tablet) {
     flex-direction: column;
@@ -19,20 +19,24 @@ $animation-duration: 400ms;
   @include breakpoint(tablet) {
     width: 100%;
     flex: 0 0 100%;
-    margin-bottom: 40px;
+    margin-bottom: 4.0rem;
   }
 }
 
 .gl-swiper-container {
   width: 100%;
-  height: 620px;
+  height: 62.0rem;
 
   @include breakpoint(desktop) {
-    height: 426px;
+    height: 55.0rem;
+  }
+
+  @include breakpoint(laptop) {
+    height: 42.6rem;
   }
 
   @include breakpoint(small-mobile) {
-    height: 230px;
+    height: 23.0rem;
   }
 }
 
@@ -54,7 +58,7 @@ $animation-duration: 400ms;
   height: 100%;
   left: 0;
   top: 0;
-  border-radius: 20px;
+  border-radius: 2.0rem;
 }
 
 .gl-btn-prev, .gl-btn-next {
@@ -62,8 +66,8 @@ $animation-duration: 400ms;
   content: '';
   top: 50%;
   transform: translateY(-50%);
-  width: 64px;
-  height: 70px;
+  width: 6.4rem;
+  height: 7.0rem;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -75,7 +79,7 @@ $animation-duration: 400ms;
 }
 
 .gl-btn-prev {
-  left: -46px;
+  left: -4.6rem;
   background-image: url('../img/common/arrows/arrow-left.svg');
 
   &.mod-light-background {
@@ -84,12 +88,12 @@ $animation-duration: 400ms;
 
 
   @include breakpoint(laptop) {
-    left: -10px;
+    left: -1.0rem;
   }
 }
 
 .gl-btn-next {
-  right: -46px;
+  right: -4.6rem;
   background-image: url('../img/common/arrows/arrow-right.svg');
 
   &.mod-light-background {
@@ -98,7 +102,7 @@ $animation-duration: 400ms;
 
 
   @include breakpoint(laptop) {
-    right: -10px;
+    right: -1.0rem;
   }
 }
 

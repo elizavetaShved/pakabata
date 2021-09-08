@@ -1,18 +1,22 @@
 .video {
-  margin-bottom: 48px;
+  margin-bottom: 4.8rem;
   display: flex;
   justify-content: center;
 
+  @include breakpoint(desktop) {
+    margin-bottom: 2.2rem;
+  }
+
   @include breakpoint(small-mobile) {
-    margin-bottom: 40px;
+    margin-bottom: 4.0rem;
   }
 }
 
 .video__btn {
   color: black !important; // todo поменять на пятнисытй цвет
-  padding-left: 60px;
+  padding-left: 6.0rem;
   position: relative;
-  height: 46px;
+  height: 4.6rem;
   display: flex;
   align-items: center;
 
@@ -22,45 +26,42 @@
     top: 0;
     left: 0;
     background-image: url('../img/video/video-palay.svg');
-    width: 46px;
+    width: 4.6rem;
     height: 100%;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 
     @include breakpoint(tablet) {
-      width: 40px;
+      width: 4.0rem;
     }
 
     @include breakpoint(small-mobile) {
-      width: 32px;
+      width: 3.2rem;
     }
   }
 
   @include breakpoint(tablet) {
-    padding-left: 50px;
-    height: 40px;
+    padding-left: 5.0rem;
+    height: 4.0rem;
   }
 
   @include breakpoint(small-mobile) {
-    padding-left: 48px;
-    height: 32px;
+    padding-left: 4.8rem;
+    height: 3.2rem;
   }
 }
 
-.video__btn-text-wrapper {
-  background-image: url('../img/video/font-background.png');
-  background-position: left -10px;
-  background-color: #D394FB;
-  background-size: cover;
-}
-
 .video__btn-text {
-  color: #000;
-  background: #fff;
-  mix-blend-mode: lighten;
+  background-position: left -1.0rem;
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: url('../img/video/font-background.png');
+  background-color: #D394FB;
+  color: white;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1.6rem;
   letter-spacing: .18em;
   text-transform: uppercase;
 }

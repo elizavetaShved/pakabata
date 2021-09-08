@@ -1,9 +1,10 @@
 .about-family-pakaf {
   position: relative;
   height: min-content;
+  overflow-x: hidden;
 
   @include breakpoint(laptop) {
-    height: 700px;
+    height: 70.0rem;
   }
 
   @include breakpoint(tablet) {
@@ -12,18 +13,64 @@
 }
 
 .about-family-pakaf__mask {
+  position: absolute;
+  object-fit: contain;
   z-index: 3;
 
+  &:nth-child(1) {
+    height: 180px;
+    top: 0;
+    left: 30%;
+  }
+
+  &:nth-child(2) {
+    height: 74px;
+    top: 30%;
+    right: 10%;
+  }
+
+  &:nth-child(3) {
+    height: 48px;
+    bottom: 40%;
+    left: 38%;
+  }
+
+  &:nth-child(4) {
+    height: 116px;
+    bottom: 10%;
+    left: 20%;
+  }
+
+  &:nth-child(5) {
+    height: 54px;
+    bottom: 10%;
+    right: 20%;
+  }
+
   @include breakpoint(tablet) {
-    z-index: 1;
+    &:nth-child(1) {
+      top: 26%;
+      height: 140px;
+      right: -10%;
+      left: auto;
+    }
+
+    &:nth-child(2), &:nth-child(3), &:nth-child(4) {
+      display: none;
+    }
+
+    &:nth-child(5) {
+      height: 36px;
+      top: 40%;
+    }
   }
 }
 
-.about-family-pakaf__blob, .about-family-pakaf__mask {
+.about-family-pakaf__blob {
   position: absolute;
-  top: -44px;
+  top: -4.4rem;
   object-fit: cover;
-  height: calc(100% + 44px + 100px); // 44px - его top // 100px = margin след-го блока
+  height: calc(100% + 4.4rem + 10.0rem); // 4.4rem - его top // 10.0rem = margin след-го блока
 
   @include breakpoint(tablet) {
     top: 0;
@@ -32,16 +79,16 @@
 }
 
 .about-family-pakaf__info-wrapper {
-  z-index: 2;
-  margin-right: 74px;
+  margin-right: 7.4rem;
+  z-index: 4;
 
-  @include breakpoint(desktop) {
-    margin-right: 54px;
+  @include breakpoint(laptop) {
+    margin-right: 5.4rem;
   }
 
   @include breakpoint(tablet) {
     margin-right: 0;
-    margin-bottom: 40px;
+    margin-bottom: 4.0rem;
     padding-left: var(--padding-page-content-tablet);
     padding-right: var(--padding-page-content-tablet);
   }
@@ -53,36 +100,36 @@
 }
 
 .about-family-pakaf__slider-block-wrapper {
-  padding-top: 122px;
+  padding-top: 12.2rem;
   align-items: center;
 
   @include breakpoint(tablet) {
     padding-left: 0;
     padding-right: 0;
-    z-index: 999;
+    margin-bottom: 0;
   }
 }
 
 .about-family-pakaf__subtitle {
   color: var(--main-color);
 
-  @include breakpoint(desktop) {
-    margin-bottom: 30px;
+  @include breakpoint(laptop) {
+    margin-bottom: 3.0rem;
   }
 
   @include breakpoint(small-mobile) {
-    margin-bottom: 16px;
+    margin-bottom: 1.6rem;
   }
 }
 
 .about-family-pakaf__caption {
-  font-size: 24px;
-  line-height: 34px;
-  margin-bottom: 40px;
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+  margin-bottom: 4.0rem;
 
-  @include breakpoint(desktop) {
-    font-size: 20px;
-    line-height: 26px;
+  @include breakpoint(laptop) {
+    font-size: 2.0rem;
+    line-height: 2.6rem;
   }
 
   @include breakpoint(tablet) {
@@ -90,18 +137,19 @@
   }
 
   @include breakpoint(small-mobile) {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 1.4rem;
+    line-height: 2.0rem;
   }
 }
 
 .about-family-pakaf__main-btn {
-  min-width: 284px;
+  min-width: 28.4rem;
   z-index: 999;
+  display: block;
 }
 
 .about-family-pakaf__main-btn-content-text {
-  padding-right: 48px;
+  padding-right: 4.8rem;
   position: relative;
 }
 
@@ -110,7 +158,7 @@
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-  height: 28px;
+  height: 2.8rem;
   width: auto !important;
 }
 
@@ -118,7 +166,7 @@
   width: 50%;
   flex: 0 0 50%;
 
-  @include breakpoint(desktop) {
+  @include breakpoint(laptop) {
     width: 60%;
     flex: 0 0 60%;
   }
@@ -127,13 +175,13 @@
     padding: 0;
     width: 100%;
     flex: auto;
-    margin-bottom: 48px;
+    margin-bottom: 4.8rem;
   }
 }
 
 .about-family-pakaf__btn-menu-wrapper {
   @include breakpoint(tablet) {
-    margin-bottom: 52px;
+    margin-bottom: 5.2rem;
   }
 
   @include breakpoint(tablet) {
@@ -144,4 +192,14 @@
 
 #about-family-pakaf-swiper-component-mobile {
   z-index: 999;
+
+  @include breakpoint(tablet) {
+    padding-left: var(--padding-page-content-mobile);
+    padding-right: var(--padding-page-content-mobile);
+    overflow: hidden;
+  }
+}
+
+.about-family-pakaf__swiper-container {
+  overflow: visible;
 }

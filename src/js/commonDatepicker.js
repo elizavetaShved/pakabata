@@ -7,7 +7,8 @@ export default function commonDatepicker(datepicker, datepickerId) {
       format: 'dd.mm.yyyy',
       container: datepickerId,
       language: 'ru',
-      autoclose: true
+      autoclose: true,
+      startDate: new Date()
     })
     // .on('show', () => {
     //   datepicker.classList.add('commonDatepicker-shown')

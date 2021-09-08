@@ -30,17 +30,6 @@ export default function componentModalOrderHolidays() {
     unlockScroll(hostElem);
   }
 
-  formElem.onsubmit = () => {
-    // event.preventDefault();
-    modalContentElems[0].classList.remove('mod-show');
-    modalContentElems[1].classList.add('mod-show');
-
-    if ($(formElem).parsley().isValid()) {
-      formElem.reset();
-      $(formElem).parsley().reset();
-    }
-  }
-
   closeBtn.onclick = () => {
     onUnlockScroll();
   }

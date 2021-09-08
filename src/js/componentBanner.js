@@ -5,7 +5,8 @@ export default function componentBanner() {
   const hostElem = document.querySelector('#banner-host');
   const sliderComponentDeskElem = hostElem.querySelector('#banner-swiper-component-desk');
   const sliderComponentMobileElem = hostElem.querySelector('#banner-swiper-component-mobile');
-  const popapComponent = document.querySelectorAll('.popap');
+  const popapComponent = document.querySelector('.popap');
+  const popapSlider = document.querySelectorAll('.popap-item__swiper-slide');
   const slidesList = hostElem.querySelectorAll('.banner__slide');
 
   const btnNext = hostElem.querySelector('.banner__btn-next');
@@ -22,8 +23,10 @@ export default function componentBanner() {
         if (window.innerWidth <= 1024) {
           actualIndexSlide = index - (slidesList.length / 2);
         }
-        console.log(actualIndexSlide)
-        popapComponent[actualIndexSlide].classList.add('mod-show');
+
+        popapComponent.classList.add('mod-show');
+        window.swiperPopap.slideTo(actualIndexSlide);
+        // actualIndexSlide
         lockScroll(hostElem);
       }
     }

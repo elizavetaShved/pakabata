@@ -1,5 +1,5 @@
 .modal-white__content-wrapper {
-  border-radius: 20px;
+  border-radius: 2.0rem;
   max-height: 100vh;
   position: relative;
   display: flex;
@@ -16,7 +16,7 @@
 }
 
 .modal-white__image {
-  width: 428px !important;
+  width: 42.8rem !important;
   height: 100%;
   object-fit: cover;
 }
@@ -36,75 +36,75 @@
     left: auto;
 
     &:nth-child(1) {
-      width: 870px;
-      height: 436px;
-      top: -120px;
-      left: 20px;
+      width: 87.0rem;
+      height: 43.6rem;
+      top: -12.0rem;
+      left: 2.0rem;
       background-image: url('../img/modal-white/back-background-1.svg');
 
       @include breakpoint(tablet) {
-        width: 540px;
-        height: 447px;
-        top: -60px;
-        left: 10px;
+        width: 54.0rem;
+        height: 44.7rem;
+        top: -6.0rem;
+        left: 1.0rem;
       }
     }
 
     &:nth-child(2) {
-      width: 282px;
-      height: 360px;
-      top: 20px;
-      right: -70px;
+      width: 28.2rem;
+      height: 36.0rem;
+      top: 2.0rem;
+      right: -7.0rem;
       background-image: url('../img/modal-white/back-background-2.svg');
 
       @include breakpoint(tablet) {
-        top: 40px;
-        right: -20px;
+        top: 4.0rem;
+        right: -2.0rem;
       }
     }
 
     &:nth-child(3) {
-      width: 544px;
-      height: 360px;
-      bottom: -50px;
-      right: -70px;
+      width: 54.4rem;
+      height: 36.0rem;
+      bottom: -5.0rem;
+      right: -7.0rem;
       background-image: url('../img/modal-white/back-background-3.svg');
 
       @include breakpoint(tablet) {
-        width: 374px;
-        height: 250px;
+        width: 37.4rem;
+        height: 25.0rem;
         bottom: 0;
-        right: -30px;
+        right: -3.0rem;
       }
     }
 
     &:nth-child(4) {
-      width: 348px;
-      height: 350px;
-      bottom: -50px;
-      left: 10px;
+      width: 34.8rem;
+      height: 35.0rem;
+      bottom: -5.0rem;
+      left: 1.0rem;
       background-image: url('../img/modal-white/back-background-4.svg');
 
       @include breakpoint(tablet) {
-        width: 248px;
-        height: 220px;
+        width: 24.8rem;
+        height: 22.0rem;
         bottom: 0;
-        left: -10px;
+        left: -1.0rem;
       }
     }
 
     &:nth-child(5) {
-      width: 214px;
-      height: 284px;
-      top: 30px;
-      left: -90px;
+      width: 21.4rem;
+      height: 28.4rem;
+      top: 3.0rem;
+      left: -9.0rem;
       background-image: url('../img/modal-white/back-background-5.svg');
 
       @include breakpoint(tablet) {
-        width: 164px;
-        height: 244px;
-        top: 30px;
-        left: -30px;
+        width: 16.4rem;
+        height: 24.4rem;
+        top: 3.0rem;
+        left: -3.0rem;
       }
     }
   }
@@ -117,7 +117,7 @@
   overflow: auto;
 
   @include breakpoint(tablet) {
-    margin: 30px;
+    margin: 3.0rem;
   }
 
   @include breakpoint(small-tablet) {
@@ -132,7 +132,7 @@
 .modal-white__info {
   display: none;
   position: relative;
-  padding-left: 428px;
+  padding-left: 42.8rem;
 
   @include breakpoint(tablet) {
     padding-left: 0;
@@ -146,13 +146,13 @@
     content: '';
     top: 0;
     left: 0;
-    width: 428px;
+    width: 42.8rem;
     height: 100%;
     background-image: url('../img/modal-white/image.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border-radius: 20px 0 0 20px;
+    border-radius: 2.0rem 0 0 2.0rem;
   }
 
   &.mod-show {
@@ -161,11 +161,11 @@
 }
 
 .modal-white__sent-wrapper {
-  width: 490px;
-  height: 674px;
+  width: 49.0rem;
+  height: 67.4rem;
   background-color: #fff;
-  border-radius: 0 20px 20px 0;
-  padding: 42px;
+  border-radius: 0 2.0rem 2.0rem 0;
+  padding: 4.2rem;
 }
 
 .modal-white__sent {
@@ -193,14 +193,14 @@
 }
 
 .modal-white__sent-title {
-  font-size: 32px;
-  line-height: 28px;
-  margin-bottom: 26px;
+  font-size: 3.2rem;
+  line-height: 2.8rem;
+  margin-bottom: 2.6rem;
   text-align: center;
 }
 
 .modal-white__sent-caption {
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
   text-align: center;
 }

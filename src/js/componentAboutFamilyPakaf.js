@@ -11,7 +11,7 @@ export default function componentAboutFamilyPakaf() {
     classCustomBtnNext: '.about-family-pakaf__btn-next'
   }
 
-  new Rellax('#about-family-pakaf-rellax', {
+  new Rellax('.about-family-pakaf__mask', {
     speed: 5,
     center: true
   });

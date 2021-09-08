@@ -8,11 +8,11 @@
 
 .gl-title {
   font-weight: bold;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 2.0rem;
+  line-height: 2.8rem;
   letter-spacing: 0.18em;
   color: var(--third-color);
-  margin-bottom: 18px;
+  margin-bottom: 1.8rem;
   text-transform: uppercase;
 
   &:last-child {
@@ -20,45 +20,45 @@
   }
 
   @include breakpoint(tablet) {
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
   }
 
   @include breakpoint(small-mobile) {
-    font-size: 10px;
-    line-height: 12px;
-    margin-bottom: 16px;
+    font-size: 1.0rem;
+    line-height: 1.2rem;
+    margin-bottom: 1.6rem;
   }
 }
 
 .gl-subtitle {
   font-weight: bold;
-  font-size: 48px;
-  line-height: 56px;
+  font-size: 4.8rem;
+  line-height: 5.6rem;
   color: var(--secondary-color);
-  margin-bottom: 60px;
+  margin-bottom: 6.0rem;
 
   &:last-child {
     margin-bottom: 0;
   }
 
-  @include breakpoint(desktop) {
-    font-size: 38px;
-    line-height: 48px;
-    margin-bottom: 50px;
+  @include breakpoint(laptop) {
+    font-size: 3.8rem;
+    line-height: 4.8rem;
+    margin-bottom: 5.0rem;
   }
 
   @include breakpoint(small-mobile) {
-    font-size: 32px;
-    line-height: 42px;
-    margin-bottom: 40px;
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+    margin-bottom: 4.0rem;
   }
 }
 
 .gl-main-block {
   background: #fff;
-  box-shadow: 0 0 82px rgba(93, 16, 182, 0.1049);
-  border-radius: 20px;
+  box-shadow: 0 0 8.2rem rgba(93, 16, 182, 0.1049);
+  border-radius: 2.0rem;
 }
 
 .gl-nowrap {
@@ -74,7 +74,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 8px;
+  padding: .8rem;
 
   .no-touch &:hover,
   .touch &:active {
@@ -113,7 +113,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 16px;
+  border-radius: 1.6rem;
   max-height: 66vh;
   max-width: 60vw;
   overflow: hidden;
@@ -121,9 +121,18 @@
   width: 100%;
   height: 100%;
 
-  @include breakpoint(small-mobile) {
-    max-height: 86vh;
+  @include breakpoint(laptop) {
     max-width: 80vw;
+  }
+
+  @include breakpoint(small-tablet) {
+    max-height: 50vw;
+    max-width: 90vw;
+  }
+
+  @include breakpoint(small-mobile) {
+    max-height: 36vh;
+    max-width: 90vw;
   }
 }
 

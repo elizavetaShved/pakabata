@@ -4,13 +4,17 @@ import { unlockScroll } from './scrollBlocker';
 
 export default function componentPopap(popapElem) {
   const hostElem = popapElem;
-  const sliderComponentDeskElem = hostElem.querySelector('.popap-swiper-component-desk');
-  const sliderComponentMobileElem = hostElem.querySelector('.popap-swiper-component-mobile');
-  const closeBtn = hostElem.querySelector('.gl-close-btn-wrapper');
-  const popapContentElem = hostElem.querySelector('.popap__content');
+  const sliderComponentDeskElem = hostElem.querySelectorAll('.popap-swiper-component-desk');
+  const sliderComponentMobileElem = hostElem.querySelectorAll('.popap-swiper-component-mobile');
+  const closeBtn = hostElem.querySelectorAll('.gl-close-btn-wrapper');
+  const popapContentElem = hostElem.querySelectorAll('.popap__content');
+  const btnPopapItemNext = hostElem.querySelector('.popap-item__btn-next');
+  const btnPopapItemPrev = hostElem.querySelector('.popap-item__btn-prev');
+  const btnOpenForm = hostElem.querySelector('.popap__btn');
 
   const tagH3 = hostElem.querySelectorAll('h3');
   const tagP = hostElem.querySelectorAll('p');
+  const tagB = hostElem.querySelectorAll('b');
   const tagUl = hostElem.querySelectorAll('ul');
   const tagOl = hostElem.querySelectorAll('ol');
   const tagTable = hostElem.querySelectorAll('table');
@@ -20,12 +24,30 @@ export default function componentPopap(popapElem) {
     elem.classList.add('popap__padding-content');
   }
 
-  const wrapInClassPaddingContent = (elem) => {
+  const wrapInClassPaddingContent = (elem, additionalWrapper) => {
     const newWrapper = document.createElement('div');
-    newWrapper.classList.add('popap__padding-content');
-    newWrapper.classList.add('popap__margin-content');
+    if (elem.className !== 'gl-close-btn-wrapper'
+      && elem.className !== 'gl-transparent-btn popap__btn gl-tablet-hide'
+      && !elem.className.includes('popap-item__btn-next')
+      && !elem.className.includes('popap-item__btn-prev')) {
+      newWrapper.classList.add('popap__padding-content');
+    }
+    if (elem.className !== 'gl-close-btn-wrapper'
+      && elem.className !== 'gl-transparent-btn popap__btn gl-tablet-hide'
+      && !elem.className.includes('popap-item__btn-next')
+      && !elem.className.includes('popap-item__btn-prev')) {
+      newWrapper.classList.add('popap__margin-content');
+    }
+    if (additionalWrapper) {
+      newWrapper.classList.add('popap__additional-margin-content');
+    }
     elem.parentNode.insertBefore(newWrapper, elem);
     newWrapper.appendChild(elem);
+  }
+
+  const closeModal = () => {
+    hostElem.classList.remove('mod-show');
+    unlockScroll(hostElem);
   }
 
   tagH3.forEach(elem => {
@@ -33,6 +55,10 @@ export default function componentPopap(popapElem) {
   })
 
   tagP.forEach(elem => {
+    addClassPaddingContent(elem);
+  })
+
+  tagB.forEach(elem => {
     addClassPaddingContent(elem);
   })
 
@@ -45,28 +71,41 @@ export default function componentPopap(popapElem) {
   })
 
   tagTable.forEach(elem => {
-    wrapInClassPaddingContent(elem);
+    wrapInClassPaddingContent(elem, true);
   })
 
   tagButton.forEach(elem => {
     wrapInClassPaddingContent(elem);
   })
 
-  wrapInClassPaddingContent(sliderComponentDeskElem);
-
-  closeBtn.onclick = () => {
-    closeModal();
-  }
+  closeBtn.forEach(elem => {
+    elem.onclick = () => {
+      closeModal();
+    }
+  })
 
   hostElem.onclick = (e) => {
-    if (!(checkExistParent(e.target, popapContentElem))) {
+    let clickPopapContent = false;
+
+    popapContentElem.forEach(elem => {
+      if (checkExistParent(e.target, elem)) {
+        clickPopapContent = true;
+      }
+    });
+
+    if (!clickPopapContent && !checkExistParent(e.target, btnPopapItemNext) && !checkExistParent(e.target, btnPopapItemPrev)) {
       closeModal();
     }
   }
 
-  const closeModal = () => {
-    hostElem.classList.remove('mod-show');
-    unlockScroll(hostElem);
+  document.onkeydown = (e) => {
+    if (e.key === 'Escape') {
+      closeModal();
+    }
+  }
+
+  btnOpenForm.onclick = () => {
+    closeModal();
   }
 
   const additionally = {
@@ -74,5 +113,7 @@ export default function componentPopap(popapElem) {
     classCustomBtnNext: '.popap__btn-next'
   }
 
-  commonMainSlider(sliderComponentDeskElem, sliderComponentMobileElem, additionally);
+  popapContentElem.forEach((el, index) => {
+    commonMainSlider(sliderComponentDeskElem[index], sliderComponentMobileElem[index], additionally);
+  })
 };

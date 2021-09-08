@@ -1,7 +1,7 @@
 .bulletin-board__links-list {
   width: 100%;
 
-  @include breakpoint(desktop) {
+  @include breakpoint(laptop) {
     grid-template-columns: repeat(2, 1fr);
   }
 

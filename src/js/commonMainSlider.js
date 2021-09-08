@@ -24,6 +24,7 @@ export default function commonMainSlider(sliderComponentDeskElem, sliderComponen
     centeredSlides: true,
     virtual: true,
     lazy: true,
+    simulateTouch : true,
     keyboard: true,
     speed: 400,
   }
@@ -80,14 +81,26 @@ export default function commonMainSlider(sliderComponentDeskElem, sliderComponen
 
   const swiperMobile = new Swiper(sliderContainerMobileElem, {
     ...commonSwiperParams,
-    slidesPerView: 1.12,
+    slidesPerView: 1,
     spaceBetween: 8,
     mousewheel: true,
     breakpoints: {
       640: {
-        slidesPerView: 1.08,
+        slidesPerView: 1,
         spaceBetween: 16,
       },
     }
   })
+
+  setInterval(() => {
+    if (window.innerWidth > 768) {
+      if (slidesDeskListElems[swiperDesk.activeIndex + 1]) {
+        swiperDesk.slideTo(swiperDesk.activeIndex + 1);
+        swiperMobile.slideTo(swiperDesk.activeIndex + 1);
+      } else {
+        swiperDesk.slideTo(0);
+        swiperMobile.slideTo(0);
+      }
+    }
+  }, 5000)
 }

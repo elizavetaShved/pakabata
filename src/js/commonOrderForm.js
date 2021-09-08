@@ -2,14 +2,14 @@ import commonDatepicker from './commonDatepicker';
 import { MAX_LENGTH_CHILDREN, MIN_LENGTH_CHILDREN } from './consts';
 import phoneMask from './phoneMask';
 
-export default function commonOrderForm(container, datepickerId, modalInfoElems) {
+export default function commonOrderForm(container, datepickerId) {
   let INPUT_WIDTH;
   const hostElem = container;
 
   const datepickerElem = hostElem.querySelector('.gl-datepicker');
-  const childrenMinusBtn = hostElem.querySelector('#children-btn-minus');
-  const childrenPlusBtn = hostElem.querySelector('#children-btn-plus');
-  const childrenInput = hostElem.querySelector('#children-input');
+  const childrenMinusBtn = hostElem.querySelector('.children-btn-minus');
+  const childrenPlusBtn = hostElem.querySelector('.children-btn-plus');
+  const childrenInput = hostElem.querySelector('.children-input');
 
   const inputNameWrapper = hostElem.querySelector('.order-form__input-name-wrapper');
   const inputChildrenWrapper = hostElem.querySelector('.order-form__input-children-wrapper');
@@ -89,19 +89,5 @@ export default function commonOrderForm(container, datepickerId, modalInfoElems)
 
   inputChildrenWrapper.onclick = () => {
     openOtherFields();
-  }
-
-  hostElem.onsubmit = () => {
-    // event.preventDefault();
-
-    if (modalInfoElems) {
-      modalInfoElems[0].classList.remove('mod-show');
-      modalInfoElems[1].classList.add('mod-show');
-    }
-
-    if ($(hostElem).parsley().isValid()) {
-      hostElem.reset();
-      $(hostElem).parsley().reset();
-    }
   }
 }
