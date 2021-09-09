@@ -58,9 +58,7 @@ export default function componentCostVisit() {
 
             priceItemElems[1].classList.add('mod-hide');
 
-            priceCaptionsElems.forEach(elem => {
-                elem.classList.add('mod-hide');
-            })
+            priceCaptionsElems[1].classList.add('mod-hide');
         }
     }
 }
