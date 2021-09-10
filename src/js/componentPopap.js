@@ -10,7 +10,7 @@ export default function componentPopap(popapElem) {
   const popapContentElem = hostElem.querySelectorAll('.popap__content');
   const btnPopapItemNext = hostElem.querySelector('.popap-item__btn-next');
   const btnPopapItemPrev = hostElem.querySelector('.popap-item__btn-prev');
-  const btnOpenForm = hostElem.querySelector('.popap__btn');
+  const btnOpenFormElems = hostElem.querySelectorAll('.popap__btn');
 
   const tagH3 = hostElem.querySelectorAll('h3');
   const tagP = hostElem.querySelectorAll('p');
@@ -104,9 +104,11 @@ export default function componentPopap(popapElem) {
     }
   }
 
-  btnOpenForm.onclick = () => {
-    closeModal();
-  }
+  btnOpenFormElems.forEach(btn => {
+    btn.onclick = () => {
+      closeModal();
+    }
+  })
 
   const additionally = {
     classCustomBtnPrev: '.popap__btn-prev',
