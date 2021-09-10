@@ -1341,7 +1341,8 @@ select:-webkit-autofill:focus {
   overflow: hidden; }
 
 .gl-video-mp4 {
-  height: 100%; }
+  height: 100%;
+  width: 100%; }
 
 :root {
   --padding-page-content-tablet: 3.0rem;
@@ -2580,7 +2581,8 @@ select:-webkit-autofill:focus {
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-transition: opacity 1ms;
-  transition: opacity 1ms; }
+  transition: opacity 1ms;
+  background-position: center; }
   @media only screen and (max-width: 1400px) {
     .banner__slide {
       padding: 2.3rem 10.8rem; } }

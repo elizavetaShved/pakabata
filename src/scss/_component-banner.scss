@@ -45,6 +45,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   transition: opacity 1ms;
+  background-position: center;
 
   @include breakpoint(desktop) {
     padding: 2.3rem 10.8rem;

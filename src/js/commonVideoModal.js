@@ -7,26 +7,31 @@ export default function commonVideoModal(hostElem) {
   const videoContainerElem = hostElem.querySelector('.gl-modal-container');
   const videoModalWrapperElem = hostElem.querySelector('.gl-modal-wrapper');
 
-  const onLockScroll = () => {
+  const videoMp4Elems = document.querySelectorAll('.gl-video-mp4');
+
+  const onOpen = () => {
     videoContainerElem.classList.add('mod-show');
     lockScroll(videoContainerElem);
   }
-  const onUnlockScroll = () => {
+  const onClose = () => {
     videoContainerElem.classList.remove('mod-show');
     unlockScroll(videoContainerElem);
+    videoMp4Elems.forEach(video => {
+      video.load();
+    })
   }
 
   openVideoBtn.onclick = () => {
-    onLockScroll();
+    onOpen();
   }
 
   closeVideoBtn.onclick = () => {
-    onUnlockScroll();
+    onClose();
   }
 
   videoContainerElem.onclick = (e) => {
     if (!(checkExistParent(e.target, videoModalWrapperElem))) {
-      onUnlockScroll();
+      onClose();
     }
   }
 }
