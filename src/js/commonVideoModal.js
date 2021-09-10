@@ -17,7 +17,8 @@ export default function commonVideoModal(hostElem) {
     videoContainerElem.classList.remove('mod-show');
     unlockScroll(videoContainerElem);
     videoMp4Elems.forEach(video => {
-      video.load();
+      video.pause();
+      video.currentTime = 0;
     })
   }
 

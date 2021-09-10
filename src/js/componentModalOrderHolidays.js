@@ -3,7 +3,6 @@ import { unlockScroll } from './scrollBlocker';
 
 export default function componentModalOrderHolidays() {
   const hostElem = document.querySelector('#modal-order-holidays-host');
-  const formElem = hostElem.querySelector('.modal-order-holidays__form-wrapper');
   const modalContentWrapperElem = hostElem.querySelector('.modal-order-holidays__content-wrapper');
   const modalContentElems = hostElem.querySelectorAll('.modal-order-holidays__content');
   const closeBtn = hostElem.querySelector('.modal-order-holidays__close-btn');
@@ -13,9 +12,9 @@ export default function componentModalOrderHolidays() {
   const setMarginModal = () => {
     if (window.innerWidth > 1024) {
       let btnPosition;
-      if (window.innerWidth > 1400) {
+      if (window.innerWidth > 1200) {
         btnPosition = openModalBtns[0].getBoundingClientRect();
-      } else if (window.innerWidth <= 1400) {
+      } else if (window.innerWidth <= 1200) {
         btnPosition = openModalBtns[1].getBoundingClientRect();
       }
       modalContentWrapperElem.style.paddingTop = `${ btnPosition.y + btnPosition.height + 20 }px`;
