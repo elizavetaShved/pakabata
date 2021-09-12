@@ -3732,8 +3732,8 @@ select:-webkit-autofill:focus {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 11.2rem;
-  padding-top: 10.0rem;
-  margin-top: 10.0rem;
+  padding-top: 10rem;
+  margin-top: 10rem;
   overflow: hidden; }
   @media only screen and (max-width: 1200px) {
     .cost-visit {
@@ -3746,7 +3746,7 @@ select:-webkit-autofill:focus {
       margin-top: 0; } }
   @media only screen and (max-width: 768px) {
     .cost-visit {
-      padding-top: 6.0rem;
+      padding-top: 6rem;
       margin-bottom: 5.2rem; } }
 
 .cost-visit__header-wrapper {
@@ -3754,13 +3754,13 @@ select:-webkit-autofill:focus {
   @media only screen and (max-width: 1200px) {
     .cost-visit__header-wrapper {
       margin-right: 0;
-      margin-bottom: 4.0rem; } }
+      margin-bottom: 4rem; } }
 
 .cost-visit__price-container {
-  width: 84.0rem;
+  width: 84rem;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 84.0rem;
-          flex: 0 0 84.0rem;
+      -ms-flex: 0 0 84rem;
+          flex: 0 0 84rem;
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content; }
@@ -3782,10 +3782,10 @@ select:-webkit-autofill:focus {
   position: relative; }
   @media only screen and (max-width: 576px) {
     .cost-visit__price-wrapper {
-      padding: 2.0rem 1.2rem; } }
+      padding: 2rem 1.2rem; } }
 
 .cost-visit__price-header {
-  margin-bottom: 2.0rem;
+  margin-bottom: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3831,7 +3831,7 @@ select:-webkit-autofill:focus {
   position: relative;
   min-width: 24.3rem;
   background-color: #fff;
-  margin-right: 2.0rem; }
+  margin-right: 2rem; }
   @media only screen and (max-width: 768px) {
     .cost-visit__toggle-wrapper {
       margin-right: 0;
@@ -3858,7 +3858,7 @@ select:-webkit-autofill:focus {
   font-size: 1.8rem;
   line-height: 2.2rem;
   color: rgba(21, 5, 51, 0.8);
-  padding: 1.2rem 3.0rem; }
+  padding: 1.2rem 3rem; }
 
 .cost-visit__toggle-background {
   position: absolute;
@@ -3870,7 +3870,7 @@ select:-webkit-autofill:focus {
   background-color: #FF546C;
   -webkit-box-shadow: 0 0 8.2rem rgba(93, 16, 182, 0.1049);
           box-shadow: 0 0 8.2rem rgba(93, 16, 182, 0.1049);
-  border-radius: 6.0rem;
+  border-radius: 6rem;
   -webkit-transition: left 300ms;
   transition: left 300ms; }
   .cost-visit__toggle-background.mod-right {
@@ -3879,7 +3879,7 @@ select:-webkit-autofill:focus {
 .cost-visit__price-grid-wrapper {
   width: 100%;
   background-color: #DAEDFF;
-  border-radius: 2.0rem;
+  border-radius: 2rem;
   background-image: url("../img/cost-visit/circles-background.svg");
   background-size: cover;
   padding: 4.4rem 2.8rem;
@@ -3896,13 +3896,14 @@ select:-webkit-autofill:focus {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      padding: 4.2rem 2.0rem; } }
+      padding: 4.2rem 2rem; } }
 
 .cost-visit__price-grid-item {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 4.6rem;
-  opacity: 1; }
+  opacity: 1;
+  overflow: hidden; }
   .cost-visit__price-grid-item + .cost-visit__price-grid-item {
     margin-top: 3.4rem; }
   .cost-visit__price-grid-item.mod-hide {
@@ -3917,6 +3918,27 @@ select:-webkit-autofill:focus {
       grid-gap: .6rem;
       grid-template-columns: 40% 60%; } }
 
+.cost-visit__price-caption-wrapper {
+  width: 20rem;
+  height: 8rem;
+  overflow: hidden; }
+  @media only screen and (max-width: 576px) {
+    .cost-visit__price-caption-wrapper {
+      width: 14rem; } }
+
+.cost-visit__price-grid-caption-slider {
+  display: grid;
+  grid-template-columns: repeat(2, 20rem);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: 300ms -webkit-transform;
+  transition: 300ms -webkit-transform;
+  transition: 300ms transform;
+  transition: 300ms transform, 300ms -webkit-transform; }
+  @media only screen and (max-width: 576px) {
+    .cost-visit__price-grid-caption-slider {
+      grid-template-columns: repeat(2, 14rem); } }
+
 .cost-visit__price-grid-caption {
   font-size: 1.4rem;
   line-height: 2.8rem;
@@ -3927,8 +3949,8 @@ select:-webkit-autofill:focus {
     opacity: 0; }
 
 .cost-visit__price-value-wrapper {
-  width: 18.0rem;
-  height: 8.0rem;
+  width: 18rem;
+  height: 8rem;
   overflow: hidden; }
 
 .cost-visit__price-grid-values-slider {
@@ -3944,7 +3966,7 @@ select:-webkit-autofill:focus {
 .cost-visit__price-grid-value {
   font-weight: bold;
   font-size: 4.8rem;
-  line-height: 6.0rem;
+  line-height: 6rem;
   width: 100%;
   opacity: 0;
   -webkit-transition: 300ms opacity;
@@ -3952,7 +3974,7 @@ select:-webkit-autofill:focus {
   text-align: center; }
   @media only screen and (max-width: 768px) {
     .cost-visit__price-grid-value {
-      font-size: 4.0rem; } }
+      font-size: 4rem; } }
   .cost-visit__price-grid-value.mod-active {
     opacity: 1; }
 
@@ -3962,8 +3984,8 @@ select:-webkit-autofill:focus {
   opacity: 0.2; }
 
 .cost-visit__price-extension {
-  width: 26.0rem;
-  margin-left: 3.0rem;
+  width: 26rem;
+  margin-left: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3977,7 +3999,7 @@ select:-webkit-autofill:focus {
   @media only screen and (max-width: 768px) {
     .cost-visit__price-extension {
       margin-left: 0;
-      margin-top: 4.0rem;
+      margin-top: 4rem;
       -webkit-box-align: start;
           -ms-flex-align: start;
               align-items: flex-start;
@@ -4023,14 +4045,14 @@ select:-webkit-autofill:focus {
     width: 50.6rem;
     height: 42.4rem;
     top: -4.2rem;
-    left: -3.0rem;
+    left: -3rem;
     background-image: url("../img/cost-visit/silhouettes/back-background-1.svg"); }
     @media only screen and (max-width: 768px) {
       .cost-visit__back-background-item:nth-child(1) {
         display: none; } }
   .cost-visit__back-background-item:nth-child(2) {
     width: 60.7rem;
-    height: 41.0rem;
+    height: 41rem;
     top: -4.6rem;
     right: -4.3rem;
     background-image: url("../img/cost-visit/silhouettes/back-background-2.svg"); }
@@ -4038,10 +4060,10 @@ select:-webkit-autofill:focus {
       .cost-visit__back-background-item:nth-child(2) {
         top: -2.2rem;
         left: 6.3rem;
-        width: 34.0rem;
-        height: 23.0rem; } }
+        width: 34rem;
+        height: 23rem; } }
   .cost-visit__back-background-item:nth-child(3) {
-    width: 36.0rem;
+    width: 36rem;
     height: 22.5rem;
     bottom: -2.7rem;
     left: 17.8rem;
