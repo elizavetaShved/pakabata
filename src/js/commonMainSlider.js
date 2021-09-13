@@ -101,6 +101,14 @@ export default function commonMainSlider(sliderComponentDeskElem, sliderComponen
         swiperDesk.slideTo(0);
         swiperMobile.slideTo(0);
       }
+    } else {
+      if (slidesDeskListElems[swiperMobile.activeIndex + 1]) {
+        swiperDesk.slideTo(swiperMobile.activeIndex + 1);
+        swiperMobile.slideTo(swiperMobile.activeIndex + 1);
+      } else {
+        swiperDesk.slideTo(0);
+        swiperMobile.slideTo(0);
+      }
     }
   }, 5000)
 }

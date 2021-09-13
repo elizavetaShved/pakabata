@@ -23,7 +23,7 @@ export default function componentAboutPark() {
 
   commonMainSlider(sliderComponentDeskElem, sliderComponentMobileElem, additionally);
 
-  commonVideoModal(hostElem);
+  // commonVideoModal(hostElem);
 
   // вычисление высоты блока
   const setHeightInfoBlocks = () => {
