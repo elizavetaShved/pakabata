@@ -99,8 +99,8 @@ export default function commonMainSlider(sliderComponentDeskElem, sliderComponen
         swiperDesk.slideTo(swiperDesk.activeIndex + 1);
         swiperMobile.slideTo(swiperDesk.activeIndex + 1);
       } else {
-        swiperDesk.slideTo(0);
-        swiperMobile.slideTo(0);
+        swiperDesk.slideTo(0, 0);
+        swiperMobile.slideTo(0, 0);
       }
     } else {
       if (slidesDeskListElems[swiperMobile.activeIndex + 1]) {
