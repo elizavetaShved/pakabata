@@ -24,7 +24,7 @@ export default function commonMainSlider(sliderComponentDeskElem, sliderComponen
     centeredSlides: true,
     virtual: true,
     lazy: true,
-    simulateTouch : true,
+    simulateTouch: true,
     keyboard: true,
     speed: 400,
   }
@@ -92,7 +92,8 @@ export default function commonMainSlider(sliderComponentDeskElem, sliderComponen
     }
   })
 
-  setInterval(() => {
+  let interval;
+  const changeSlide = () => {
     if (window.innerWidth > 768) {
       if (slidesDeskListElems[swiperDesk.activeIndex + 1]) {
         swiperDesk.slideTo(swiperDesk.activeIndex + 1);
@@ -110,5 +111,27 @@ export default function commonMainSlider(sliderComponentDeskElem, sliderComponen
         swiperMobile.slideTo(0);
       }
     }
-  }, 5000)
-}
+  }
+
+  const startAutoChangeSlide = () => {
+    interval = setInterval(changeSlide, 5000);
+  }
+
+  const clearAutoChangeSlide = () => {
+    if (interval) {
+      clearInterval(interval);
+    }
+  }
+
+  swiperDesk.on('slideChange', () => {
+    clearAutoChangeSlide();
+    startAutoChangeSlide();
+  });
+
+  swiperMobile.on('slideChange', () => {
+    clearAutoChangeSlide();
+    startAutoChangeSlide();
+  });
+
+  startAutoChangeSlide();
+};
