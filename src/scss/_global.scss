@@ -113,25 +113,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  max-height: 66vh;
-  max-width: 60vw;
+  //max-height: 66vh;
+  //max-width: 60vw;
+  width: 60vw;
+  height: 34vw;
   overflow: hidden;
   z-index: 100;
-  width: 100%;
-  height: 100%;
 
   @include breakpoint(laptop) {
-    max-width: 80vw;
+    width: 80vw;
+    height: 45vw;
   }
 
   @include breakpoint(small-tablet) {
-    max-height: 50vw;
-    max-width: 90vw;
-  }
-
-  @include breakpoint(small-mobile) {
-    max-height: 36vh;
-    max-width: 90vw;
+    width: 90vw;
+    height: 51vw;
   }
 }
 

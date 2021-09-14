@@ -1317,23 +1317,18 @@ select:-webkit-autofill:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-height: 66vh;
-  max-width: 60vw;
+  width: 60vw;
+  height: 34vw;
   overflow: hidden;
-  z-index: 100;
-  width: 100%;
-  height: 100%; }
+  z-index: 100; }
   @media only screen and (max-width: 1200px) {
     .gl-modal-wrapper {
-      max-width: 80vw; } }
+      width: 80vw;
+      height: 45vw; } }
   @media only screen and (max-width: 768px) {
     .gl-modal-wrapper {
-      max-height: 50vw;
-      max-width: 90vw; } }
-  @media only screen and (max-width: 576px) {
-    .gl-modal-wrapper {
-      max-height: 36vh;
-      max-width: 90vw; } }
+      width: 90vw;
+      height: 51vw; } }
 
 .gl-video-iframe {
   width: 100%;
