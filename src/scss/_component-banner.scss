@@ -19,19 +19,15 @@
 
 .banner__container {
   width: 100%;
-  height: 42.6rem;
-
-  @include breakpoint(desktop) {
-    height: 36.6rem;
-  }
+  height: calc(27vw - 6rem);
 
   @include breakpoint(tablet) {
-    height: 29.2rem;
+    height: calc(30vw - 3rem);
     overflow: visible;
   }
 
-  @include breakpoint(small-mobile) {
-    height: 22.0rem;
+  @include breakpoint(small-tablet) {
+    height: calc(60vw - 2rem);
   }
 }
 
