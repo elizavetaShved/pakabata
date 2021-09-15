@@ -7,7 +7,7 @@ export default function componentBanner() {
   const sliderComponentMobileElem = hostElem.querySelector('#banner-swiper-component-mobile');
   const popapComponent = document.querySelector('.popap');
   const popapSlider = document.querySelectorAll('.popap-item__swiper-slide');
-  const slidesList = hostElem.querySelectorAll('.banner__slide');
+  const slidesList = hostElem.querySelectorAll('.js-modal-open');
 
   const btnNext = hostElem.querySelector('.banner__btn-next');
   const btnPrev = hostElem.querySelector('.banner__btn-prev');
