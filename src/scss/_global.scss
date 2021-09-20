@@ -79,7 +79,7 @@
   .no-touch &:hover,
   .touch &:active {
     .gl-social-image {
-      fill: var(--third-color);
+      fill: #f8e0d5;
     }
   }
 }
@@ -87,6 +87,8 @@
 .gl-social-image {
   fill: #fff;
   transition: 150ms fill;
+  height: 1.6rem;
+  width: 2rem;
 }
 
 .gl-modal-container {

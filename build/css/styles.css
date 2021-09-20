@@ -1276,12 +1276,14 @@ select:-webkit-autofill:focus {
   padding: .8rem; }
   .no-touch .gl-social-link:hover .gl-social-image,
   .touch .gl-social-link:active .gl-social-image {
-    fill: var(--third-color); }
+    fill: #f8e0d5; }
 
 .gl-social-image {
   fill: #fff;
   -webkit-transition: 150ms fill;
-  transition: 150ms fill; }
+  transition: 150ms fill;
+  height: 1.6rem;
+  width: 2rem; }
 
 .gl-modal-container {
   position: fixed;
