@@ -19,8 +19,11 @@
 
 .banner__container {
   width: 100%;
-  height: calc(27vw - 6rem);
-  max-height: 37rem;
+  height: 42rem;
+
+  @include breakpoint(large-desktop) {
+    height: calc(30vw - 6rem);
+  }
 
   @include breakpoint(tablet) {
     height: calc(30vw - 3rem);

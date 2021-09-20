@@ -2545,8 +2545,10 @@ select:-webkit-autofill:focus {
 
 .banner__container {
   width: 100%;
-  height: calc(27vw - 6rem);
-  max-height: 37rem; }
+  height: 42rem; }
+  @media only screen and (max-width: 1600px) {
+    .banner__container {
+      height: calc(30vw - 6rem); } }
   @media only screen and (max-width: 1024px) {
     .banner__container {
       height: calc(30vw - 3rem);
