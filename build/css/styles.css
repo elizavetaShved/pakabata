@@ -1600,20 +1600,7 @@ select:-webkit-autofill:focus {
 .gl-radio-btn-content {
   font-size: 1.6rem;
   line-height: 2.0rem;
-  color: #000;
-  position: relative; }
-  .gl-radio-btn-content:before {
-    position: absolute;
-    content: '';
-    left: 0;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    width: .4rem;
-    height: .4rem;
-    border-radius: 100%;
-    background-color: #fff;
-    opacity: 0; }
+  color: #000; }
 
 .gl-radio-btn-wrapper .gl-radio-btn {
   display: none; }
@@ -1621,10 +1608,7 @@ select:-webkit-autofill:focus {
     border: .1rem solid transparent;
     background-color: var(--third-color); }
     .gl-radio-btn-wrapper .gl-radio-btn:checked + .gl-radio-btn-content-wrapper .gl-radio-btn-content {
-      color: #fff;
-      padding-left: 1.0rem; }
-      .gl-radio-btn-wrapper .gl-radio-btn:checked + .gl-radio-btn-content-wrapper .gl-radio-btn-content:before {
-        opacity: 1; }
+      color: #fff; }
 
 .gl-input-wrapper {
   display: block;
