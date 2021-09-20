@@ -25,7 +25,11 @@ $animation-duration: 400ms;
 
 .gl-swiper-container {
   width: 100%;
-  height: calc(40vw - 6rem);
+  height: 58rem;
+
+  @include breakpoint(large-desktop) {
+    height: calc(40vw - 6rem);
+  }
 
   @include breakpoint(tablet) {
     height: calc(59vw - 3rem);

@@ -207,6 +207,10 @@
     @media only screen and (max-width: (1024px)) {
       @content;
     }
+  } @else if $class == middle-tablet {
+    @media only screen and (max-width: (960px)) {
+      @content;
+    }
   } @else if $class == small-tablet {
     @media only screen and (max-width: (768px)) {
       @content;

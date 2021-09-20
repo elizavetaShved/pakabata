@@ -1845,7 +1845,10 @@ select:-webkit-autofill:focus {
 
 .gl-swiper-container {
   width: 100%;
-  height: calc(40vw - 6rem); }
+  height: 58rem; }
+  @media only screen and (max-width: 1600px) {
+    .gl-swiper-container {
+      height: calc(40vw - 6rem); } }
   @media only screen and (max-width: 1024px) {
     .gl-swiper-container {
       height: calc(59vw - 3rem); } }
@@ -2798,6 +2801,9 @@ select:-webkit-autofill:focus {
   height: 90%;
   width: 100vw;
   top: 10%; }
+  @media only screen and (max-width: 960px) {
+    .about-park__blob {
+      margin-top: 18rem; } }
 
 .about-park__info-wrapper {
   position: relative;
@@ -2805,6 +2811,9 @@ select:-webkit-autofill:focus {
   @media only screen and (max-width: 1200px) {
     .about-park__info-wrapper {
       margin-bottom: 4.0rem; } }
+  @media only screen and (max-width: 960px) {
+    .about-park__info-wrapper {
+      margin-top: 18rem; } }
 
 .about-park__info-content {
   padding: 8.2rem 9.8rem;
