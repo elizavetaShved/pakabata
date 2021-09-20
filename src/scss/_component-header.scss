@@ -208,22 +208,22 @@
 }
 
 .header__burger-wrapper {
-  width: 5.2rem;
-  height: 4.0rem;
+  width: 52px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
 
   @include breakpoint(tablet) {
-    margin-left: 2.0rem;
+    margin-left: 20px;
   }
 }
 
 .header__burger-content, .header__burger-content:before, .header__burger-content:after {
-  width: 3.2rem;
-  height: .4rem;
+  width: 32px;
+  height: 4px;
   background-color: #fff;
-  border-radius: 1.2rem;
+  border-radius: 12px;
 }
 
 .header__mobile-block-wrapper {
@@ -245,11 +245,11 @@
   }
 
   &:before {
-    top: -.8rem;
+    top: -8px;
   }
 
   &:after {
-    bottom: -.8rem;
+    bottom: -8px;
   }
 }
 
@@ -282,7 +282,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  height: min-content;
+  min-height: 100vh;
   width: 46.2rem;
   background: linear-gradient(270deg, #3E0565 0%, #6813C9 96.28%);
   box-shadow: 0 0 8.2rem rgba(93, 16, 182, 0.1049);
