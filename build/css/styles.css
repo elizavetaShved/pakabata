@@ -3737,6 +3737,18 @@ select:-webkit-autofill:focus {
     .cost-visit {
       padding-top: 6rem;
       margin-bottom: 5.2rem; } }
+  .cost-visit li {
+    padding-left: 1rem;
+    position: relative; }
+    .cost-visit li:before {
+      position: absolute;
+      content: '';
+      top: .6rem;
+      left: 0;
+      background-color: var(--third-color);
+      width: 0.4rem;
+      height: .4rem;
+      border-radius: 100%; }
 
 .cost-visit__header-wrapper {
   margin-right: 3.6rem; }
@@ -3766,7 +3778,7 @@ select:-webkit-autofill:focus {
               flex: none; } }
 
 .cost-visit__price-wrapper {
-  padding: 4.2rem 4rem;
+  padding: 4.2rem 2rem;
   width: 100%;
   position: relative; }
   @media only screen and (max-width: 576px) {
@@ -3970,7 +3982,7 @@ select:-webkit-autofill:focus {
 .cost-visit__price-grid-value-comment {
   font-size: 1.4rem;
   line-height: 1.8rem;
-  opacity: 0.2; }
+  opacity: 0.8; }
 
 .cost-visit__price-extension {
   width: 26rem;
@@ -3995,7 +4007,7 @@ select:-webkit-autofill:focus {
       width: 100%; } }
 
 .cost-visit__price-extension-free-wrapper {
-  padding: 3.6rem 4rem;
+  padding: 2.6rem 2rem;
   margin-bottom: 1.8rem;
   min-width: 25.6rem;
   width: 100%; }
@@ -4006,14 +4018,15 @@ select:-webkit-autofill:focus {
 .cost-visit__price-extension-free-caption {
   font-weight: bold;
   font-size: 3.2rem;
-  color: var(--third-color); }
+  color: var(--third-color);
+  margin-bottom: 1rem; }
 
 .cost-visit__price-extension-free-value {
   font-size: 1.4rem; }
 
 .cost-visit__price-extension-rules {
   font-size: 1.4rem;
-  padding: 0 4rem; }
+  padding: 0 2rem; }
   @media only screen and (max-width: 640px) {
     .cost-visit__price-extension-rules {
       padding: 0; } }
@@ -4075,7 +4088,7 @@ select:-webkit-autofill:focus {
   line-height: 1.8rem;
   color: var(--secondary-color);
   opacity: 0.2;
-  padding: 0 4rem;
+  padding: 0 2rem;
   margin-top: 5.4rem; }
   @media only screen and (max-width: 768px) {
     .cost-visit__hint {

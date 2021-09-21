@@ -1,5 +1,5 @@
 $padding-content-price-wrapper: 3.8rem;
-$padding-content-price-extension: 4rem;
+$padding-content-price-extension: 2rem;
 
 .cost-visit {
   display: flex;
@@ -20,6 +20,22 @@ $padding-content-price-extension: 4rem;
   @include breakpoint(small-tablet) {
     padding-top: 6rem;
     margin-bottom: 5.2rem;
+  }
+
+  li {
+    padding-left: 1rem;
+    position: relative;
+
+    &:before {
+      position: absolute;
+      content: '';
+      top: .6rem;
+      left: 0;
+      background-color: var(--third-color);
+      width: 0.4rem;
+      height: .4rem;
+      border-radius: 100%;
+    }
   }
 }
 
@@ -248,7 +264,7 @@ $padding-content-price-extension: 4rem;
 .cost-visit__price-grid-value-comment {
   font-size: 1.4rem;
   line-height: 1.8rem;
-  opacity: 0.2;
+  opacity: 0.8;
 }
 
 .cost-visit__price-extension {
@@ -267,7 +283,7 @@ $padding-content-price-extension: 4rem;
 }
 
 .cost-visit__price-extension-free-wrapper {
-  padding: 3.6rem $padding-content-price-extension;
+  padding: 2.6rem $padding-content-price-extension;
   margin-bottom: 1.8rem;
   min-width: 25.6rem;
   width: 100%;
@@ -280,7 +296,8 @@ $padding-content-price-extension: 4rem;
 .cost-visit__price-extension-free-caption {
   font-weight: bold;
   font-size: 3.2rem;
-  color: var(--third-color)
+  color: var(--third-color);
+  margin-bottom: 1rem;
 }
 
 .cost-visit__price-extension-free-value {
