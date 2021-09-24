@@ -2872,7 +2872,6 @@ select:-webkit-autofill:focus {
 
 .about-park__dude-image {
   position: absolute;
-  content: '';
   top: -13.4rem;
   right: 8.0rem;
   height: 23.8rem;
