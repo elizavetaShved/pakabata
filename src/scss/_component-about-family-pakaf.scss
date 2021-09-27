@@ -19,6 +19,7 @@
   position: absolute;
   object-fit: contain;
   z-index: 3;
+  //will-change: transform;
 
   &:nth-child(1) {
     height: 180px;
