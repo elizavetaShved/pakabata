@@ -282,7 +282,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  min-height: 100vh;
+  min-height: min-content;
   width: 46.2rem;
   background: linear-gradient(270deg, #3E0565 0%, #6813C9 96.28%);
   box-shadow: 0 0 8.2rem rgba(93, 16, 182, 0.1049);
